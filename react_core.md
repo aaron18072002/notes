@@ -6,6 +6,10 @@
 
 - Props là giá trị nằm trong 1 component mà component đơn giản chỉ là 1 function. Vậy những components đó ( functions đó ) không có khả năng thay đổi các giá trị ( các props ) bên ngoài phạm vi của nó. Điều đó làm cho props trở thành 1 cơ chế one-way-data-flow từ component xuống component con. Giảm thiểu sự phức tạp trong việc xây dựng các component.
 
+-- Children - 1 kiểu props đặc biệt
+
+- Trong React, mỗi component có một prop gọi là Children, cho phép bạn truyền các DOM element bên trong component từ component cha xuống component con. Children không cần phải được khai báo trong danh sách các prop khi định nghĩa component, mà React tự động đưa nó vào trong props của mỗi component.
+
 -- One way binding và Two way binding trong react ( ràng buộc 1 chiều và 2 chiều )
 
 - One way binding: Dữ liệu mà user nhìn thấy ở UI sẽ được tự động cập nhật khi source code thay đổi, không phải ngược lại.
