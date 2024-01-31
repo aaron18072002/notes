@@ -10,3 +10,10 @@
 
 -- One way binding: Dữ liệu mà user nhìn thấy ở UI sẽ được tự động cập nhật khi source code thay đổi, không phải ngược lại.
 -- Two way binding: Là 1 cơ chế mà những tương tác của user làm thay đổi data thì data sẽ đó sẽ được cập nhật và source code ( ví dụ user nhập vào ô tìm kiếm ). Và ngược lại khi data thay đổi thì component sẽ re-render lại và hiển thị data mới nhất cho user.
+
+- JSX ( Javascript eXtensible Markup Languege )
+
+-- JSX hoạt động về cơ bản giống HTML, nhưng chúng ta có thể viết JS với nó nếu dùng dấu ngoặc nhọn ( curly braces {} )
+-- Chúng ta chỉ có thể đặt một Javascript Expesstions vào trong {} ( ví dụ như toán tử 3 ngôi sẽ trả về 1 js expression, hay [].map sẽ trả về 1 array mới,... ).
+-- Statements ( các câu lệnh ) sẽ không truyền vào được {} ( ví dụ như if/else hay swich case,... ).
+-- JSX tạo ra 1 JS Expression bởi vì các cú pháp JSX sẽ được convert thành các lời gọi hàm React.createElement().
