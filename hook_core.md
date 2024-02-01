@@ -4,7 +4,7 @@
 
 -- Khi nào dùng state
 
-- Dùng state khi chúng ta cần 1 giá trị chỉ có thể thuộc về bởi component chứa nó. Và state đó chỉ có thể thay đổi bởi người dùng tương tác với component đó ở phía UI hay logic trong component đó. Và component đó cần phải giữ state đó theo thời gian và xuyên xuốt app's lifecycle.
+- Dùng state khi chúng ta cần 1 giá trị chỉ có thể thuộc về bởi component chứa nó. Và state đó chỉ có thể thay đổi bởi người dùng tương tác với component đó ở phía UI hay logic trong component đó. Và component đó cần phải nhớ và giữ state đó theo thời gian xuyên xuốt app's lifecycle. Chỉ khi component đó unmount và được mount lại thì các state mới được set lại giá trị ban đầu.
 
 -- Các kiểu state
 
