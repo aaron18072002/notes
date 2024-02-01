@@ -1,3 +1,11 @@
+-- State là gì
+
+-- Khi nào dùng state
+
+- Dùng state khi chúng ta cần 1 giá trị chỉ có thể thuộc về bởi component chứa nó. Và state đó chỉ có thể thay đổi bởi người dùng tương tác với component đó ở phía UI hay logic trong component đó. Và component đó cần phải giữ state đó theo thời gian và xuyên xuốt app's lifecycle.
+
+-- Các kiểu state
+
 -- So sánh useCallback và useMemo
 
 - Cả 2 đều ghi nhớ giá trị giữa các lần mà component re-render
