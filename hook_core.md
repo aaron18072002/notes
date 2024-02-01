@@ -8,6 +8,9 @@
 
 -- Các kiểu state
 
+- State đồng bộ, bất đồng độ ( data được get từ API sau đó set vào state để render ra UI ).
+- Local state, Global State ( Redux, Context API, ... ).
+
 -- Cách hoạt động của useState
 
 - useState không có 1 lifecycle riêng biệt như class component với các lifecycle methods như componentDidMount, componentWillMount.
