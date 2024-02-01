@@ -24,6 +24,6 @@
 - useMemo sẽ ghi nhớ value khi hàm đó trả về giá trị tham trị, còn nếu trả về giá trị tham chiếu thì useMemo sẽ ghi nhớ địa chỉ.
 - Còn useCallback sẽ ghi nhớ 1 reference tới hàm đó.
 
--- Vì sao useCallback luôn đi chung với HOC memo trong reactjs
+-- Vì sao useCallback hay đi chung với HOC memo trong reactjs
 
 - Đảm bảo rằng các hàm callback được truyền xuống các component con chỉ được tạo lại khi các dependencies của chúng thay đổi. Bởi vì nếu chỉ sử dụng memo mà không sử dụng useCallback thì các hàm callback được truyền từ component cha vẫn sẽ bị chạy lại khi component cha re-render.
