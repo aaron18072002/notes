@@ -3,10 +3,12 @@
 - Với useContent, khi state thay đổi thì sẽ re-render lại toàn bộ components đang dùng context đó.
 - Với redux thì chỉ re-render các components có data thay đổi.
 
--- Action trong Redux chỉ là các hàm trả về một object chứa type và payload { type, payload }. Và ta sẽ dispatch action đó vào hàm reducer trong store xử lý để update state theo như type của action đó trả về với swich case trong reducer.
--- Middlware trong Redux là 1 hàm nằm giữa action được dispatch và store chứa reducer.
--- Mục đích của middleware trong redux là xử lý các action được dispatch trước khi nó được reducer xử lý.
--- Redux toolkit nó sẽ thiên về các state của client (đồng bộ) còn với những thằng bất đồng bộ thì phải dùng middleware (saga, thunk) để quản lí nó.
+-- Các khái niệm của redux
+
+- Action trong Redux chỉ là các hàm trả về một object chứa type và payload { type, payload }. Và ta sẽ dispatch action đó vào hàm reducer trong store xử lý để update state theo như type của action đó trả về với swich case trong reducer.
+- Middlware trong Redux là 1 hàm nằm giữa action được dispatch và store chứa reducer.
+- Mục đích của middleware trong redux là xử lý các action được dispatch trước khi nó được reducer xử lý.
+- Redux toolkit nó sẽ thiên về các state của client (đồng bộ) còn với những thằng bất đồng bộ thì phải dùng middleware (saga, thunk) để quản lí nó.
 
 -- Redux vs Redux Toolkit
 
