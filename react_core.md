@@ -22,6 +22,8 @@
 -- Các tính chất mà Component cần có?
 
 - Reusability ( Tính tái sử dụng vì một component có thể được gọi ở nhiều nơi trong app của chúng ta ).
+- Maintainability ( Tính dễ bảo trì vì một component quá phức tạp khi gặp bug sẽ rất khó để sửa lỗi ).
+- Effectively: Mỗi component đều phải đảm nhận một vai trò hợp lí ( không đảm nhận quá nhiều layout và logic vì sẽ khiến component quá phức tạp để có thể tái sử dụng và bảo trì ).
 
 -- JSX ( Javascript eXtensible Markup Languege )
 
