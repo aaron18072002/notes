@@ -11,6 +11,18 @@
 - State đồng bộ, bất đồng độ ( data được get từ API sau đó set vào state để render ra UI ).
 - Local state, Global State ( Redux, Context API, ... ).
 
+-- So sánh Local State và Global State
+
+1. Local State
+
+- Local State là những state chỉ thuộc về 1 hoặc 1 ít components.
+- Local State là những state chỉ được khai báo trong 1 component và chỉ component đó hoặc 1 vài component con là được quyền truy cập đến các state đó.
+
+2. Global State
+
+- Global State là các state mà nhiều components cần sử dụng.
+- Global State là state được đặt ở nơi mà nhiều hoặc tất cả components đều có thể truy cập được.
+
 -- Cách hoạt động của useState
 
 - useState không có 1 lifecycle riêng biệt như class component với các lifecycle methods như componentDidMount, componentWillMount.
