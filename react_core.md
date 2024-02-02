@@ -15,6 +15,14 @@
 - One way binding: Dữ liệu mà user nhìn thấy ở UI sẽ được tự động cập nhật khi source code thay đổi, không phải ngược lại.
 - Two way binding: Là 1 cơ chế mà những tương tác của user làm thay đổi data thì data sẽ đó sẽ được cập nhật và source code ( ví dụ user nhập vào ô tìm kiếm ). Và ngược lại khi data thay đổi thì component sẽ re-render lại và hiển thị data mới nhất cho user.
 
+-- Component là gì?
+
+- Components trong reactjs là các hàm hoặc class đại diện cho từng thành phần trong UI.
+
+-- Các tính chất mà Component cần có?
+
+- Reusability ( Tính tái sử dụng vì một component có thể được gọi ở nhiều nơi trong app của chúng ta ).
+
 -- JSX ( Javascript eXtensible Markup Languege )
 
 - JSX hoạt động về cơ bản giống HTML, nhưng chúng ta có thể viết JS với nó nếu dùng dấu ngoặc nhọn ( curly braces {} )
