@@ -27,6 +27,7 @@
 
 -- JSX ( Javascript eXtensible Markup Languege )
 
+- Theo như react.dev, JSX là một cú pháp mở rộng cho Javascript cho phép viết HTML-like markup bên trong Javascript file.
 - JSX hoạt động về cơ bản giống HTML, nhưng chúng ta có thể viết JS với nó nếu dùng dấu ngoặc nhọn ( curly braces {} )
 - Chúng ta chỉ có thể đặt một Javascript Expesstions vào trong {} ( ví dụ như toán tử 3 ngôi sẽ trả về 1 js expression, hay [].map sẽ trả về 1 array mới,... ).
 - Statements ( các câu lệnh ) sẽ không truyền vào được {} ( ví dụ như if/else hay swich case,... ).
