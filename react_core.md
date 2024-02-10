@@ -25,6 +25,12 @@
 - Maintainability ( Tính dễ bảo trì vì một component quá phức tạp khi gặp bug sẽ rất khó để sửa lỗi ).
 - Effectively: Mỗi component đều phải đảm nhận một vai trò hợp lí ( không đảm nhận quá nhiều layout và logic vì sẽ khiến component quá phức tạp để có thể tái sử dụng và bảo trì ).
 
+-- Các loại components ?
+
+- Stateless component.
+- Stateful component.
+- Structural component là loại component mà nó sẽ có cấu trúc phức tạp hơn 1 component thông thường ( Layouts, Pages, ... ). Structural Component là kết quả của components composition.
+
 -- JSX ( Javascript eXtensible Markup Languege )
 
 - Theo như react.dev, JSX là một cú pháp mở rộng cho Javascript cho phép viết HTML-like markup bên trong Javascript file.
