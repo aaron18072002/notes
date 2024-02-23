@@ -56,7 +56,7 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - 1 số các collection classes
 
---> ArrayList: Giống như array nhưng mà nó có thể thay đổi độ dài, thêm, xóa phần tử 1 cách linh hoạt.
+--> ArrayList: Giống như Array nhưng khi khai báo 1 Array ta cần phải set độ dài cố định cho nó. Trong khi với ArrayList, độ dài của nó có thể tăng giảm tùy ý.
 
 --> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key
 
@@ -67,3 +67,15 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 --> Queue:
 
 --> BitArray:
+
+-- OOP
+
+-> 4 tính chất cơ bản của OOP:
+
+--- Tính trừu tượng ( Abstraction ):
+
+--- Tính đóng gói ( Encapsulation ):
+
+--- Tính thừa hưởng ( Inheritance ):
+
+--- Tính đa hình ( Polymorphism ):
