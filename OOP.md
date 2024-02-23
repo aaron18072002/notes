@@ -10,13 +10,13 @@
 
 --- Tính đóng gói ( Encapsulation ): Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
-- private: phạm vi mặc định
+- private: phạm vi mặc định. các thuộc tính và phương thức của class đó chỉ được truy cập từ các object được tạo nền từ class đó
 
-- protected:
+- protected: phạm vi được giới hạn bởi các object được khởi tạo từ class đó hoặc các objects được khởi tạo bởi class mà thừa kế class đó
 
-- public:
+- public: các thuộc tính và phương thức của class đó đều có thể được truy cập bởi các class khác.
 
-- internal:
+- internal: Truy cập bị giới hạn trong phạm vi Assembly của dự án hiện tại, nếu trong cùng assembly của dự án thì nó giống hệt như public.
 
 --- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác
 
@@ -31,4 +31,5 @@
 ---> So sánh đa hình động với abstract class và virtual function:
 
 Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế.
+
 Khác: abstract thì bắt buộc phải overide còn virtual thì không.
