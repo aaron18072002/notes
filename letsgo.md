@@ -79,13 +79,13 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --> ArrayList:
 
-- Về bản chất giống như Array nhưng khi khai báo 1 Array phải thiết lập kích cỡ tính -> bộ nhớ là cố định trong khi với ArrayList kích cở có thể tăng giảm tùy ý.
+- Về bản chất giống như Array nhưng khi khai báo 1 Array phải thiết lập kích cỡ tính -> bộ nhớ là cố định trong khi với ArrayList kích cỡ có thể tăng giảm tùy ý.
 
-- kiểu dữ liệu của các elements trong Array bắt buộc phải giống nhau trong khi ArrayList có thể chứa nhiều kiểu dữ liệu
+- Kiểu dữ liệu của các elements trong Array bắt buộc phải giống nhau trong khi ArrayList có thể chứa nhiều kiểu dữ liệu
 
 - ArrayList chấp nhận giá trị null trong khi Array thì không. Thêm nữa, ArrayList hỗ trợ sẵn các methods có sẵn như count(), add(), capacity(), ...
 
---> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key
+--> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key.
 
 --> StoredList:
 
