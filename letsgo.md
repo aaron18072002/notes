@@ -29,3 +29,10 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 -> C# là gì ?
 
 --- C# là một ngôn ngữ lập trình hướng đối tượng bậc cao do microsoft tạo ra.
+--- C# là một ngôn ngữ biên dịch, nó được convert sang bytecode trên máy ảo CLR ( Common Language Runtime ). Rồi sau đó mới chuyển sang mã máy.
+--- Các biến của C# có thể được phân loại theo vị trí của bộ nhớ.
+--- Có 3 kiểu dữ liệu trong C#
+
+- Values Types ( Kiểu giá trị ): Là kiểu giá trị mà được lưu trữ dưới dạng value trong bộ nhớ. Có nghĩa là biến đó lưu trữ trực tiếp giá trị được gán ( Bool, byte, char, decimal, double, Enum, float, int, long, short and struct ).
+- Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ.
+- Pointer Types
