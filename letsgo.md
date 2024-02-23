@@ -35,6 +35,7 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 --- Có 3 kiểu dữ liệu trong C#
 
 - Values Types ( Kiểu giá trị ): Là kiểu giá trị mà được lưu trữ dưới dạng value trong bộ nhớ. Có nghĩa là biến đó lưu trữ trực tiếp giá trị được gán ( Bool, byte, char, decimal, double, Enum, float, int, long, short and struct ).
+
 - Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, classes and delegate ).
 
   --> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
@@ -48,15 +49,35 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 - Toán tử so sánh: ( == != >= <= > < )
 - Toán tử logic: ( && || ! )
 
+--- Có 4 kiểu class trong C#
+
+- static class: Những class này không thể tạo ra các instance ( object ). Khi khai báo 1 static class thì tất cả biến, hàm trong class cũng phải là static.
+
+- partial class:
+
+- abstract class:
+
 --- Collection trong C#
 
 - Những class mà dùng để chứa ( storage ) và truy xuất ( retrieval ) dữ liệu được gọi là các collection classes. Những class này hỗ trợ các cấu trúc dữ liệu như stacks, queues, lists, hash tables.
 
 - Những collection classes có vai trò như cấp phát động ( dynamic allocating ) bộ nhớ cho các element hoặc truy cập vào list các item bằng index hoặc key ( trong khi array chỉ có thể truy cập vào element bằng index ).
 
+- Đặc điểm của Collection:
+
+--> Các collection classes nằm trong System.Collections.
+
+--> Collection trong C# cũng được support các hàm được tích hợp sẵn như: sắp xếp, thêm, xóa, ...
+
+--> Không cần khai báo kích thước cụ thể khi khởi tạo.
+
+--> Tăng giảm số lượng phần tử 1 cách linh hoạt.
+
+--> Lưu trữ được nhiều phần tử thuộc nhiều type khác nhau.
+
 - 1 số các collection classes
 
---> ArrayList: Giống như Array nhưng khi khai báo 1 Array ta cần phải set độ dài cố định cho nó. Trong khi với ArrayList, độ dài của nó có thể tăng giảm tùy ý.
+--> ArrayList: Về bản chất giống như Array nhưng thêm xóa linh hoạt hơn và nó tự điều chỉnh kích cỡ 1 cách tự động.
 
 --> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key
 
