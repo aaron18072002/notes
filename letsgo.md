@@ -61,13 +61,13 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Những class mà dùng để chứa ( storage ) và truy xuất ( retrieval ) dữ liệu được gọi là các collection classes. Những class này hỗ trợ các cấu trúc dữ liệu như stacks, queues, lists, hash tables.
 
-- Những collection classes có vai trò như cấp phát động ( dynamic allocating ) bộ nhớ cho các element hoặc truy cập vào list các item bằng index hoặc key ( trong khi array chỉ có thể truy cập vào element bằng index ).
+- Những collection classes có vai trò như cấp phát động ( dynamic allocating ) bộ nhớ cho các instances hoặc truy cập vào list các item bằng index hoặc key ( trong khi array chỉ có thể truy cập vào element bằng index ).
 
 - Đặc điểm của Collection:
 
 --> Các collection classes nằm trong System.Collections.
 
---> Collection trong C# cũng được support các hàm được tích hợp sẵn như: sắp xếp, thêm, xóa, ...
+--> Collection trong C# cũng được support các methods được tích hợp sẵn như: sắp xếp, thêm, xóa, ...
 
 --> Không cần khai báo kích thước cụ thể khi khởi tạo.
 
@@ -77,7 +77,13 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - 1 số các collection classes
 
---> ArrayList: Về bản chất giống như Array nhưng thêm xóa linh hoạt hơn và nó tự điều chỉnh kích cỡ 1 cách tự động.
+--> ArrayList:
+
+- Về bản chất giống như Array nhưng khi khai báo 1 Array phải thiết lập kích cỡ tính -> bộ nhớ là cố định trong khi với ArrayList kích cở có thể tăng giảm tùy ý.
+
+- kiểu dữ liệu của các elements trong Array bắt buộc phải giống nhau trong khi ArrayList có thể chứa nhiều kiểu dữ liệu
+
+- ArrayList chấp nhận giá trị null trong khi Array thì không. Thêm nữa, ArrayList hỗ trợ sẵn các methods có sẵn như count(), add(), capacity(), ...
 
 --> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key
 
