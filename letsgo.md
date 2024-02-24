@@ -57,6 +57,8 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - abstract class:
 
+- sealed class: Lớp này không thể được kế thừa
+
 --- Collection trong C#
 
 - Những class mà dùng để chứa ( storage ) và truy xuất ( retrieval ) dữ liệu được gọi là các collection classes. Những class này hỗ trợ các cấu trúc dữ liệu như stacks, queues, lists, hash tables.
