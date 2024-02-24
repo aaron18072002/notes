@@ -89,7 +89,7 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --> Hashtable:
 
-- Là 1 collection lưu trữ data dưới dạng key-value và có thể được truy xuất bởi key.
+- Là 1 collection lưu trữ data dưới dạng key-value và chỉ có thể được truy xuất bởi key.
 
 - Mỗi phần từ trong Hashtable bao gồm 1 cặp key-value được C# định nghĩa là 1 DictionaryEntry.
 
@@ -97,9 +97,17 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --> SortedList:
 
+- Là sự kết hợp giữa ArrayList và HashTable nên cũng được hỗ trợ các methods và thuộc tính giống như 2 collection classes đó.
+
 - Giống như Hashtable, SortedList cũng là một collection chứa các phần tử dưới dạng key-value. Nhưng các phần tử sẽ được sắp xếp theo key. Việc sắp xếp đó sẽ được tự động mỗi khi thêm 1 phần tử khác vào.
 
+- Có thể truy xuất giá trị từ key lẫn index.
+
 --> Stack:
+
+- Trong C# thì Stack là 1 collection hoặc là 1 kiểu cấu trúc dữ liệu hoạt động theo cơ chế ( LIFO - Last In First Out ). Nó không thể truy xuất phần tử theo index.
+
+- Thêm phần tử gọi là Push ( Đẩy vào ), Xóa phần tử gọi là Pop ( Đẩy ra - đẩy phần tử cuối cùng ).
 
 --> Queue:
 
