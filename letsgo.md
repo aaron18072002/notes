@@ -123,6 +123,6 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Thêm phần tử vào Queue gọi là Enqueue ( xếp hàng ), Lấy phần tử ra khỏi Queue gọi Dequeue ( ra khỏi hàng ) và luôn luôn lấy phần tử được thêm vào đầu tiên.
 
-- Hỗ trợ các methods như Enqueue(), Dequeue(), ...
+- Hỗ trợ các methods như Enqueue(), Dequeue(), so on and so forth
 
 --> BitArray:
