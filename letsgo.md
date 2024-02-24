@@ -85,11 +85,19 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Kiểu dữ liệu của các elements trong Array bắt buộc phải giống nhau trong khi ArrayList có thể chứa nhiều kiểu dữ liệu
 
-- ArrayList chấp nhận giá trị null trong khi Array thì không. Thêm nữa, ArrayList hỗ trợ sẵn các methods có sẵn như count(), add(), capacity(), ...
+- ArrayList chấp nhận giá trị null trong khi Array thì không. Thêm nữa, ArrayList hỗ trợ sẵn các methods và thuộc tính có sẵn như count, add(), capacity(), ...
 
---> HashTable: Các element được lưu trữ dưới dạng key-value và có thể được truy xuất bởi key.
+--> Hashtable:
 
---> StoredList:
+- Là 1 collection lưu trữ data dưới dạng key-value và có thể được truy xuất bởi key.
+
+- Mỗi phần từ trong Hashtable bao gồm 1 cặp key-value được C# định nghĩa là 1 DictionaryEntry.
+
+- Có các methods và thuộc tính hỗ trợ: count, Add(), ContainsKey(), ContainsValue(), ...
+
+--> SortedList:
+
+- Giống như Hashtable, SortedList cũng là một collection chứa các phần tử dưới dạng key-value. Nhưng các phần tử sẽ được sắp xếp theo key. Việc sắp xếp đó sẽ được tự động mỗi khi thêm 1 phần tử khác vào.
 
 --> Stack:
 
