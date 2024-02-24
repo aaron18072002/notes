@@ -105,7 +105,7 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --> Stack:
 
-- Trong C# thì Stack là 1 collection hoặc là 1 kiểu cấu trúc dữ liệu hoạt động theo cơ chế ( LIFO - Last In First Out ). Nó không thể truy xuất phần tử theo index.
+- Trong C# thì Stack là 1 collection và là 1 kiểu cấu trúc dữ liệu hoạt động theo cơ chế ( LIFO - Last In First Out ). Nó không thể truy xuất phần tử theo index.
 
 - Thêm phần tử gọi là Push ( Đẩy vào ), Lấy phần tử gọi là Pop ( Đẩy ra - lấy phần tử được thêm vào cuối cùng ).
 
@@ -115,8 +115,14 @@ Peek() - Trả về phần tử trên cùng trong Stack.
 
 Pop() - Trả về phần tử trên cùng trong Stack và xóa phần tử đó khỏi Stack.
 
-Push(object Value) - Thêm 1 phần tử vào đầu Stack.
+Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều methods khác ...
 
 --> Queue:
+
+- Trong C# thì Queue là 1 collection và là 1 kiểu cấu trúc dữ liệu hoạt động theo cơ chế ( FIFO - First In First Out ). Là 1 danh sách lưu trữ các đối tượng nhưng không thể truy xuất các đối tượng đó theo index.
+
+- Thêm phần tử vào Queue gọi là Enqueue ( xếp hàng ), Lấy phần tử ra khỏi Queue gọi Dequeue ( ra khỏi hàng ) và luôn luôn lấy phần tử được thêm vào đầu tiên.
+
+- Hỗ trợ các methods như Enqueue(), Dequeue(), ...
 
 --> BitArray:
