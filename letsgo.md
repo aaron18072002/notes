@@ -107,7 +107,15 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Trong C# thì Stack là 1 collection hoặc là 1 kiểu cấu trúc dữ liệu hoạt động theo cơ chế ( LIFO - Last In First Out ). Nó không thể truy xuất phần tử theo index.
 
-- Thêm phần tử gọi là Push ( Đẩy vào ), Xóa phần tử gọi là Pop ( Đẩy ra - đẩy phần tử cuối cùng ).
+- Thêm phần tử gọi là Push ( Đẩy vào ), Lấy phần tử gọi là Pop ( Đẩy ra - lấy phần tử được thêm vào cuối cùng ).
+
+- Được hỗ trợ các methods như:
+
+Peek() - Trả về phần tử trên cùng trong Stack.
+
+Pop() - Trả về phần tử trên cùng trong Stack và xóa phần tử đó khỏi Stack.
+
+Push(object Value) - Thêm 1 phần tử vào đầu Stack.
 
 --> Queue:
 
