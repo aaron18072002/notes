@@ -4,7 +4,7 @@
 
 --- Tính trừu tượng ( Abstraction ): Trong C#, tính trừu tượng là tiến trình che giấu các chi tiết bên trong của một object và chỉ hiển thị chức năng chính của object đó. VD: Chúng ta biết được rằng bóp phanh là xe sẽ dừng lại cho dù không biết chi tiết là xe sẽ dừng theo cơ chế nào.
 
---> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đố khác nhau như thế nào:
+--> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đó khác nhau như thế nào:
 
 - aa
 
