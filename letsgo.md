@@ -147,6 +147,14 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Dictionary là 1 Generic Collecion, là sự kết hợp giữa Hashtable và Generic
 
+- Trong C# thì dữ liệu trong Dictionary có kiểu KeyValuePair<TKey,TValue> tương tự như DictionaryEntry của Hashtable
+
+- So sánh Hashtable và Dictionary
+
+Hashtable: Threadsafe, Hỗ trợ multi threading ko đụng độ tài nguyên, Cặp key-value lưu kiểu object, Dùng cho dữ liệu lớn, Các phần tử được sắp xếp theo key mỗi lần thêm hoặc xóa, Tìm kiếm nhanh hơn Dictionary.
+
+Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-value lúc khai báo, Không hiệu quả cho dữ liệu lớn, Các phần tử nằm theo thứ tự được thêm vào ( Mỗi khi thêm phần tử là thêm vào cuối ), Tìm kiếm chậm hơn Hastable
+
 --- Generic trong C#
 
 - Generic trong C# là một tính năng trong C#. Trong đó kiểu dữ liệu ( của biến, tham số, kiểu trả về của các methods ) được xác định ở giai tạo khởi tạo.
