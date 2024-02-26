@@ -26,10 +26,12 @@
 
 --> Đa hình tĩnh:
 
---> Đa hình động: Trong c# có thể dùng abstract class hoặc virutal function để triển khai đa hinh động.
+--> Đa hình động: Trong c# có thể dùng abstract class hoặc virutal methods để triển khai đa hình động.
 
----> So sánh đa hình động với abstract class và virtual function:
+---> So sánh đa hình động với abstract class và virtual methods ( 1 phương thức ảo là 1 phương thức có thể ghi đề được ):
 
 Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế.
 
-Khác: abstract thì bắt buộc phải overide còn virtual thì không.
+Khác: Các Class con kế thừa abstract class phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
+
+-

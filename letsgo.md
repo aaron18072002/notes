@@ -51,11 +51,11 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --- Có 4 kiểu class trong C#
 
-- static class: Những class này không thể tạo ra các instance ( object ). Khi khai báo 1 static class thì tất cả biến, hàm trong class cũng phải là static.
+- static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- partial class:
+- partial class: partial class cho phép các method và thuộc tính của nó phân chia hoặc chia sẻ qua các file (.cs)
 
-- abstract class:
+- abstract class: Abstract có nghĩa là "dở dang, chưa hoàn thiện" -> không thể tạo các instances từ Abstract Class. Nếu trong app của chúng ta có quá nhiều Class giống nhau về thuộc tính hay method nào đó thì ta có thể tạo ra 1 Abstract Class cung cấp Abstract method để cho các Class kia có thể kế thừa và ghi đè lại Abstract Method đó để giải quyết vấn đề. ( Abstract methods tên là TinhDienTich thuộc Abstract Shape - Các Class con kế thừa Class Shape có thể override lại phương thức TinhDienTich để tính toán ).
 
 - sealed class: Lớp này không thể được kế thừa
 
