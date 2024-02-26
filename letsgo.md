@@ -59,6 +59,12 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - sealed class: Lớp này không thể được kế thừa
 
+--- Từ khóa Static
+
+- Static Class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
+
+- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances.
+
 --- Collection trong C#
 
 - Những class mà dùng để chứa ( storage ) và truy xuất ( retrieval ) dữ liệu được gọi là các collection classes. Những class này hỗ trợ các cấu trúc dữ liệu như stacks, queues, lists, hash tables.
@@ -160,3 +166,5 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 - Generic trong C# là một tính năng trong C#. Trong đó kiểu dữ liệu ( của biến, tham số, kiểu trả về của các methods ) được xác định ở giai tạo khởi tạo.
 
 - Generic allow to define generic classes, interface, abstract classes, fields, methods, events, delegates using Type Parameter without specific data type. A type parameter is a placeholder for paritucal type specified ( type được chỉ định cụ thể ) when create an instance of the generic type.
+
+--- Delegate trong C#
