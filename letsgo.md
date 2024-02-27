@@ -171,6 +171,10 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 - Delegate trong C# là một biến tham chiếu trỏ tới địa chỉ của 1 function. Delegate đóng vai trò như 1 callback, có thể dùng làm tham số cho 1 action nào đó, trong khi function bình thường thì không thể.
 
+- Một delegate có thể gọi nhiều function liên tiếp với điểu kiện là tất cả những functions đó đều có cùng kiểu dữ liệu tham số và kiểu dữ liệu trả về với delegate đó. Những functions sau đó sẽ được implment 1 cách tuần tự.
+
+- Dùng delegate khi ta có 1 function, ta muốn 1 biến tham chiếu tới function để có thể dùng biến đó đóng vai trò làm 1 tham số của 1 function khác.
+
 - Predicate ( Predicate<T in> ): Predicate tương tự như 1 delegate với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
 
 - Action ( Action<T in1, T in2, ...> ): Action tương tự như 1 delegate với kiểu trả về là void. Với in1, int2 là tham số nhận vào.
