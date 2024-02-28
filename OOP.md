@@ -34,7 +34,7 @@ Giống: Đều phải khai báo virtual và abstract để có thể overide �
 
 Khác: Các Class con kế thừa abstract class phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
 
--- Dependency Inversion
+-- Dependency Inversion Principle
 
 --- Là nguyên lí cuối cùng trong SOLID, trong đó:
 

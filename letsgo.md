@@ -24,6 +24,25 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 ---- Prototype
 
+--- Structural Design Patterns: Bao gồm những design patterns dùng để quản lý cấu trúc của các Class and interface cũng như quản lí các mối quan hệ giữa các Class với nhau.
+---- Decorater Design Pattern:
+
+---- Adapter Design Pattern:
+
+---- Proxy Design Pattern:
+
+---- Facade Design P
+
+--- Behavioral Design Patterns: Bao gồm những design patterns cung cấp các solutions để các class và object giao tiếp và tương tác với nhau. Các patterns này mô tả cách mà các class và object khác nhau liên lạc với nhau và phân chia nghiệm vụ
+
+---- Strategy Design Pattern:
+
+---- Observer Design Pattern:
+
+---- Command Design Pattern:
+
+---- Chain Of Responsibility Pattern:
+
 -- C#
 
 -> C# là gì ?
