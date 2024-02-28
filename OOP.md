@@ -67,3 +67,11 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 - Setter injection:
 
 - Interface injection:
+
+-- Proxy và Reverse Proxy, Load Balance
+
+- Proxy là một server trung gian nằm giữa client và server. Nhận request từ client rồi chuyển tiếp nó đến server hoặc ngược lại. Proxy đóng vai trò như một tường lửa để bảo vệ client, cung cấp một số tính năng như caching, ẩn địa chỉ IP của client.
+
+- Reverse Proxy là một loại Proxy đặc biệt nằm trước server Back End, có nghiệm vụ bảo vệ server, có nghiệm vụ điều hướng các request tới từng server. Reverse Proxy có thể đóng vai trò như 1 Load Balancer.
+
+- Load Balancer là một chức năng của Reverse Proxy, có nghiệm vụ phân phối các client requests hoặc network load một cách hiệu quả trên nhiều servers.
