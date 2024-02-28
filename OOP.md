@@ -34,4 +34,36 @@ Giống: Đều phải khai báo virtual và abstract để có thể overide �
 
 Khác: Các Class con kế thừa abstract class phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
 
--
+-- Dependency Inversion
+
+--- Là nguyên lí cuối cùng trong SOLID, trong đó:
+
+- Các module cấp cao không phụ thuộc vào các module cấp thấp. Cả 2 nên phụ thuộc vào abstraction.
+
+- Các Class giao tiếp thông qua interface, không phải việc implement.
+
+- VD: Với code thông thường, các module cấp cao sẽ phụ thuộc vào các module cấp thấp, tạo ra các dependency. Trong trường hợp đó, khi các module cấp thấp thay đổi thì các module cấp cao phải thay đổi theo. Dẫn đến việc code thay đổi nhiều, khó maintain.
+
+-- Inversion of control
+
+--- Là 1 design pattern được tạo ra để code có thể tuân theo nguyên lý Dependency Inversion. Có nhiều cách để thực hiện pattern này, Dependency Injection là 1 trong số đó.
+
+-- Dependency Injection
+
+--- Là 1 kỹ thuật để thực hiện hóa Inversion Of Control Pattern, nhắm giúp code của chúng ta tuân thủ theo nguyên lý Dependency Inversion.
+
+--- DI được dùng để giảm sự phụ thuộc giữa các object, giúp chúng ta dễ dàng thay đổi code hơn, dễ maintain hơn.
+
+--- Các module phụ thuộc ( dependency ) sẽ được inject vào các module cấp cao:
+
+- Các module không implement trực tiếp với nhau, mà thông qua interface. Các module cấp thấp sẽ implment interface, sau đó các module cấp cao sẽ implment các module cấp thấp thông qua interface.
+
+- Việc khởi tạo các module cấp thấp sẽ được DI Container thực hiện.
+
+--- Có 3 loại Dependency Injection:
+
+- Constructor injection:
+
+- Setter injection:
+
+- Interface injection:
