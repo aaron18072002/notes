@@ -188,9 +188,9 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 --- Delegate trong C#
 
-- Delegate trong C# là một biến tham chiếu trỏ tới địa chỉ của 1 function. Delegate đóng vai trò như 1 callback, có thể dùng làm tham số cho 1 action nào đó, trong khi function bình thường thì không thể.
+- Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods.
 
-- Một delegate có thể gọi nhiều function liên tiếp với điểu kiện là tất cả những functions đó đều có cùng kiểu dữ liệu tham số và kiểu dữ liệu trả về với delegate đó. Những functions sau đó sẽ được implment 1 cách tuần tự.
+- Một biến delegate có thể gọi nhiều function liên tiếp với điểu kiện là tất cả những functions đó đều có cùng kiểu dữ liệu tham số và kiểu dữ liệu trả về với delegate đó. Những functions đó được implment 1 cách tuần tự.
 
 - Dùng delegate khi ta có 1 function, ta muốn 1 biến tham chiếu tới function để có thể dùng biến đó đóng vai trò làm 1 tham số của 1 function khác.
 
