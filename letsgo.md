@@ -1,48 +1,3 @@
--- Design pattern
-
--> Design pattern là khái niệm để nói về các mô hình, kiến trúc, các kiểu thiết kế phần mềm hoặc hệ thống.
-
--> Có 3 loại design pattern phổ biến
-
---- Creational: Bao gồm những loại patterns cung cấp solutions để tạo ra các object 1 cách linh hoạt.
-
----- Singleton
-
----- Factory Method: Factory method cung cấp interface mà trong đó định nghĩa các methods cho việc tạo ra các object nhưng nó cho phép các subclasses ( lớp con ) có thể thay đổi type của object mà nó tạo ra theo các business logic cụ thể.
-
-Cấu trúc của một Factory Method:
-
-- Super Class: 1 Super Class trong Factory Method có thể là 1 interface hay đơn giản là 1 class thông thường.
-- Sub Classes: Các class con mà implement các methods của Super Class với các tham số khác nhau theo từng nghiệp vụ của nó.
-- Factory Class: 1 Class chịu trách nghiệm khởi tạo các object dựa theo params ( các tham số đầu vào ). Class này sẽ cung cấp 1 method dành cho việc khởi tạo và truy xuất object.
-
-VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng dụng đó chỉ có thể tạo ra các object từ class Car dẫn đến việc ứng dụng của chúng ta chỉ có thể handle các request từ đường bộ. Nhưng sau đó khách hàng muốn ứng dụng chúng ta handle thêm các request từ đường biển. Nếu như dùng if else mỗi lần tạo ra các object mới thì sẽ bị tình trạng lặp code và không linh hoạt.
-
----- Abstract Factory
-
----- Builder
-
----- Prototype
-
---- Structural Design Patterns: Bao gồm những design patterns dùng để quản lý cấu trúc của các Class and interface cũng như quản lí các mối quan hệ giữa các Class với nhau.
----- Decorater Design Pattern:
-
----- Adapter Design Pattern:
-
----- Proxy Design Pattern:
-
----- Facade Design P
-
---- Behavioral Design Patterns: Bao gồm những design patterns cung cấp các solutions để các class và object giao tiếp và tương tác với nhau. Các patterns này mô tả cách mà các class và object khác nhau liên lạc với nhau và phân chia nghiệm vụ
-
----- Strategy Design Pattern:
-
----- Observer Design Pattern:
-
----- Command Design Pattern:
-
----- Chain Of Responsibility Pattern:
-
 -- C#
 
 -> C# là gì ?
@@ -197,3 +152,11 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 - Predicate ( Predicate<T in> ): Predicate tương tự như 1 delegate với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
 
 - Action ( Action<T in1, T in2, ...> ): Action tương tự như 1 delegate với kiểu trả về là void. Với in1, int2 là tham số nhận vào.
+
+--- Event trong C#
+
+- Event trong C# là 1 kiểu multicast delegate đặc biệt chỉ có thể được gọi trong class hoặc struct nơi mà nó được khai báo.
+
+- Event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
+
+- 1 biến event nhận về 2 đối số: tham số đầu tiên là object chứa event đó, tham số thứ 2 thông qua generic để define a type cho event.
