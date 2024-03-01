@@ -42,15 +42,17 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Pattern này định nghĩa 1 cơ chế subcription.
 
-- Tạo ra mối quan hệ 1 - nhiều giữa các object với nhau, để cho khi 1 object thay đổi trạng thái của nó thì các objects phụ phuộc vào object đó sẽ được notify và update 1 cách tự động.
+- Tạo ra mối quan hệ 1 - nhiều giữa các object với nhau, để cho khi 1 object thay đổi trạng thái hoặc event của nó thì các objects phụ phuộc vào object đó sẽ được notify và update 1 cách tự động.
 
-- Subject: đóng vai trò như object giữ value hoặc event mà các objects khác theo dõi.
+- Subject - Observable: Observable class có nghiệm vụ hold các List Observer và các methods.
 
-- Subcriber: là interface để Subject notify mỗi khi có state thay đổi hoặc có event nào đó.
+- Subcriber: là interface nằm trong Observable Class để nó notify cho Observers mỗi khi có state thay đổi hoặc có event nào đó.
 
 - Observers:
 
 VẤN ĐỀ: Chúng ta làm việc với 1 component có nghiệm vụ fetch và update database. Và component đó có thể được dùng bởi nhiều applications. Có khả năng ràng nếu 1 application update database thì các applications khác vẫn sẽ dùng database cũ. Observer Pattern sẽ khắc phục điều này. Lúc này thì component đóng vai trò 1 như 1 subject, có nghiệm vụ noitifies các applications bất cứ khi nào mà state thay đổi.
+
+VẤN ĐỀ: Tạo 1 class hệ thống an ninh cho 1 building ( observable ) và class nhân viên bảo vệ ( observer ) sẽ phụ thuộc vào class đó. Observable Class này sẽ chứa 2 List là externalVisitor ( khách ) và observer ( nvien ) và các methods để mỗi khi xác nhận khách ra hoặc vào sẽ notify cho các observers ( nvien ) biết.
 
 --- Command Design Pattern:
 
