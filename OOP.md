@@ -10,7 +10,7 @@
 
 --- Tính đóng gói ( Encapsulation ): Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
-- private: phạm vi mặc định. các thuộc tính và phương thức của class đó chỉ được truy cập từ các object được khởi tạo trực tiếp từ class đó.
+- private: phạm vi mặc định. các thuộc tính và phương thức của class đó chỉ được truy cập từ các object được khởi tạo trực tiếp từ class đó. Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods.
 
 - protected: phạm vi được giới hạn bởi các object được khởi tạo từ class đó hoặc các objects được khởi tạo bởi class mà thừa kế class đó
 

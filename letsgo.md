@@ -160,3 +160,47 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 - Event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
 
 - 1 biến event nhận về 2 đối số: tham số đầu tiên là object chứa event đó, tham số thứ 2 thông qua generic để define a type cho event.
+
+--- Multithreading trong C#
+
+- Multithreading là 1 kỹ thuật để cùng 1 lúc có thể xử lý nhiều tác vụ. Mặc định C# có 2 luồng: main thread và luồng xử lý giao diện
+
+--- Sự khác biệt giữa late binding và early binding trong C#
+
+- Late binding và early binding là ví dụ về tính đa hình trong OOP
+
+- Early binding: xảy ra tại thời điểm biên dịch. Nó kiểm tra các methods và thuộc tính của đối tượng tĩnh.
+
+VÍ DỤ: khi gọi 1 method từ 1 object, early binding sẽ kiểm tra rằng method đó tồn tại và có thể được gọi từ đối tượng đó hay không.
+
+- Late binding: xảy ra tại thời điểm runtime. Late binding xảy ra khi đối tượng là dynamic type - là kiểu đối tượng có type chưa được xác định cụ thể tại thời điểm biên dịch.
+
+--- Mutex trong C#
+
+- Trong multithreading, Mutex là 1 cơ chế đồng bộ hóa được sử dụng để đảm bảo rằng chỉ có 1 luồng ( thread ) có thể truy cập vào 1 tài nguyên cụ thể tại 1 thời điểm cụ thể. Mutex được sử dụng để tránh conflict thread và đảm bảo dữ liệu được truy cập 1 cách an toàn.
+
+--- Overloading và Override
+
+Cả 2 đều là những kỹ thuật giúp tạo nên tính đa hình ( Polymorphism )
+
+Overloading - Nạp chồng: Khi các methods có cùng tên nhưng giá trị trả về lại khác nhau tại các ngữ cảnh khác nhau. Chỉ có method main() là không được nạp chồng.
+
+Để implement overloading trong C#:
+
+- Thay đổi số lượng tham số
+
+- Thay đổi thứ tự tham số
+
+- Sử dụng type khác nhau cho tham số
+
+Override: Ghi đè lại method ở class cha mà class con kế thừa
+
+--- Namespace trong C#
+
+- Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các related object.
+
+--- Explicit Conversion trong C#
+
+- Chuyển đổi ngầm trong C# sẽ được auto implment khi mà chúng ta convert 1 data type sang 1 data type lớn hơn.
+
+--- Ref và Out
