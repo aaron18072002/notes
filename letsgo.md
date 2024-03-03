@@ -37,7 +37,7 @@
 
 - Static Class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances.
+- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha.
 
 --- Collection trong C#
 
@@ -183,7 +183,7 @@ VÍ DỤ: khi gọi 1 method từ 1 object, early binding sẽ kiểm tra rằng
 
 Cả 2 đều là những kỹ thuật giúp tạo nên tính đa hình ( Polymorphism )
 
-Overloading - Nạp chồng: Khi các methods có cùng tên nhưng giá trị trả về lại khác nhau tại các ngữ cảnh khác nhau. Chỉ có method main() là không được nạp chồng.
+Overloading - Nạp chồng: Kỹ thuật tạo ra các methods có cùng tên nhưng giá trị trả về lại khác nhau tại các ngữ cảnh khác nhau. Chỉ có method main() là không được nạp chồng.
 
 Để implement overloading trong C#:
 
@@ -203,4 +203,52 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Chuyển đổi ngầm trong C# sẽ được auto implment khi mà chúng ta convert 1 data type sang 1 data type lớn hơn.
 
---- Ref và Out
+--- String và StringBuilder trong C#
+
+- String là đối tượng immutable. Nghĩa là mỗi lần thao tác với 1 String, C# sẽ tự động tạo ra 1 String mới trong memory,
+
+- StringBuilder allow bạn change 1 chuỗi trực tiếp trong memory thay vì tạo 1 bản copy mới. Default size của 1 StringBuilder là 16 nhưng nó có thể update 1 cách tự động.
+
+--- Sự khác biệt giữa cách truyền tham số ref và out
+
+- Cả 2 đều được dùng để truyền tham chiếu tới hàm
+
+- Biến truyền vào với keyword out không cần phải khởi tạo giá trị ban đầu.
+
+--- So sánh toán tử == và equals()
+
+- Cả 2 đều trả về true, false.
+
+- Toán tử == sẽ so sánh điểm tham chiếu của biến được so sánh.
+
+- Phương thức equals() dùng để so sánh giá trị được mang bởi các đối tượng.
+
+--- Constructor trong C#
+
+- Một method khởi tạo có cùng tên với class cha của nó.
+
+- Có nghiệm vụ khởi tạo giá trị cho các thuộc tính trong class hoặc nhận giá trị đầu vào và gán các trị đó vào các thuộc tính.
+
+--- Từ khóa this
+
+- This dùng để tham chiếu ( references ) - ánh xạ đến đối tượng hiện tại.
+
+- public Animal(string name, string sound) : this(name) - this(name) ám chỉ việc gọi 1 constructor khác cùng class nơi mà chỉ nhận 1 tham số là name.
+
+--- Struct trong C#
+
+- Struct như 1 custom type do chúng ta tự định nghĩa với fields và methods giống như 1 class.
+
+- Struct là 1 value type, nó lưu trữ giá trị trực tiếp của nó trong memory.
+
+- Struct khác với class là nó không thể được kế thừa.
+
+--- So sánh Const và ReadOnly trong C#
+
+- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const được gán giá trị lúc khai báo và không thể modify.
+
+- ReadOnly là 1 runtime constant. Biến ReadOnly có thể được gán giá trị lúc khai báo hoặc trong constructor.
+
+- Const áp dụng với basic type, string và 1 số type mà không thể modify tại thời điểm biên dịch.
+
+- ReadOnly áp dụng được cho tham chiếu lẫn tham trị trừ Delegate và event.

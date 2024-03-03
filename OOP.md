@@ -12,13 +12,15 @@
 
 - private: phạm vi mặc định. các thuộc tính và phương thức của class đó chỉ được truy cập từ các object được khởi tạo trực tiếp từ class đó. Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods.
 
-- protected: phạm vi được giới hạn bởi các object được khởi tạo từ class đó hoặc các objects được khởi tạo bởi class mà thừa kế class đó
+- protected: phạm vi được giới hạn bởi các object được khởi tạo từ class đó hoặc các objects được khởi tạo bởi class mà thừa kế class đó.
 
-- public: các thuộc tính và phương thức của class đó đều có thể được truy cập bởi các class khác.
+- public: các thuộc tính và phương thức của class đó đều có thể được truy cập từ bên ngoài class đó bởi mọi class khác.
 
 - internal: Truy cập bị giới hạn trong phạm vi Assembly của dự án hiện tại, nếu trong cùng assembly của dự án thì nó giống hệt như public.
 
---- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác
+- protected internal: các thuộc tính và methods của protected interal class có thể được truy cập bởi class trong cùng 1 Assembly từ các class con thừa hưởng class đó.
+
+--- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác.
 
 --- Tính đa hình ( Polymorphism ): Tính da hình là việc cùng một thuộc tính hay phương thức nhưng giá trị trả về có thể khác nhau theo từng object tùy thuộc vào tham số truyền vào lúc khởi tạo. VD: 2 Object Honda và Mazda đều được khởi tạo từ class Car nhưng thuộc tính speed có thể khác nhau.
 
