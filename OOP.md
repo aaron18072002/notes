@@ -6,13 +6,13 @@
 
 --> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đó khác nhau như thế nào:
 
-- aa
+- Interface cũng giống như abstract class, không dùng để tạo ra các object mà dùng để tạo ra các cơ sở cho các lớp kế thửa. Những khác với Abstract class, các phương thức của interface mặc định là abstract methods, vì vậy các lớp thừa kế bắt buộc phải override lại các phương thức đó ( không cần từ khóa override ). Một lớp kế thừa có thể kế thừa nhiều interface và có nghiệm vụ bắt buộc phải ghi đè lại các phương thức trong interface đó.
 
 --- Tính đóng gói ( Encapsulation ): Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
-- private: phạm vi mặc định. các thuộc tính và phương thức của class đó chỉ được truy cập từ các object được khởi tạo trực tiếp từ class đó. Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods.
+- private - phạm vi mặc định: Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods. Không thể truy cập được từ bên ngoài class cũng như không thể truy cập bởi các class kế thừa.
 
-- protected: phạm vi được giới hạn bởi các object được khởi tạo từ class đó hoặc các objects được khởi tạo bởi class mà thừa kế class đó.
+- protected: Không thể truy cập được từ bên ngoài class nhưng các class thừa kế có thể truy cập được.
 
 - public: các thuộc tính và phương thức của class đó đều có thể được truy cập từ bên ngoài class đó bởi mọi class khác.
 
@@ -20,21 +20,23 @@
 
 - protected internal: các thuộc tính và methods của protected interal class có thể được truy cập bởi class trong cùng 1 Assembly từ các class con thừa hưởng class đó.
 
---- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác.
+--- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác. Một biến của class cha có thể được gán lại bởi class con nhưng ngược lại thì không.
 
 --- Tính đa hình ( Polymorphism ): Tính da hình là việc cùng một thuộc tính hay phương thức nhưng giá trị trả về có thể khác nhau theo từng object tùy thuộc vào tham số truyền vào lúc khởi tạo. VD: 2 Object Honda và Mazda đều được khởi tạo từ class Car nhưng thuộc tính speed có thể khác nhau.
 
 - Trong C# có 2 loại đa hình:
 
---> Đa hình tĩnh:
-
---> Đa hình động: Trong c# có thể dùng abstract class hoặc virutal methods để triển khai đa hình động.
+---> Đa hình tĩnh thể hiện qua overload method, còn đa hình động chính là override lại phương thức đó khi kế thừa.
 
 ---> So sánh đa hình động với abstract class và virtual methods ( 1 phương thức ảo là 1 phương thức có thể ghi đề được ):
 
 Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế.
 
 Khác: Các Class con kế thừa abstract class phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
+
+-- Virtual Method
+
+- Là các method được định nghĩa trong lớp cơ sở, có thể được ghi đè ở lớp thừa kế.
 
 -- Dependency Inversion Principle
 
@@ -52,7 +54,7 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 -- Dependency Injection
 
---- Là 1 kỹ thuật để thực hiện hóa Inversion Of Control Pattern, nhắm giúp code của chúng ta tuân thủ theo nguyên lý Dependency Inversion.
+--- Là 1 kỹ thuật sử dụng da hình động ( dynamic pholymorphism ) để thực hiện hóa Inversion Of Control Pattern, nhắm giúp code của chúng ta tuân thủ theo nguyên lý Dependency Inversion.
 
 --- DI được dùng để giảm sự phụ thuộc giữa các object, giúp chúng ta dễ dàng thay đổi code hơn, dễ maintain hơn.
 

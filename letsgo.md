@@ -3,14 +3,26 @@
 -> C# là gì ?
 
 --- C# là một ngôn ngữ lập trình hướng đối tượng bậc cao do microsoft tạo ra.
+
 --- C# là một ngôn ngữ biên dịch, nó được convert sang bytecode trên máy ảo CLR ( Common Language Runtime ). Rồi sau đó mới chuyển sang mã máy.
+
+--- CLR( Common Languege Runtime ) có thể xem như 1 máy ảo, tại đó ứng dụng dựa trên .NET được thực thi.
+
+--- CLR không phải 1 trình biên dịch. Mà nó được xem như 1 môi trường thực thi code ( runtime enviroment ).
+
 --- Các biến của C# có thể được phân loại theo vị trí của bộ nhớ.
+
+--- Field và Property
+
+- Field: là biến được khai báo trong class.
+
+- Property: là 1 phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
 
 --- Có 3 kiểu dữ liệu trong C#
 
 - Values Types ( Kiểu giá trị ): Là kiểu giá trị mà được lưu trữ dưới dạng value trong bộ nhớ. Có nghĩa là biến đó lưu trữ trực tiếp giá trị được gán ( Bool, byte, char, decimal, double, Enum, float, int, long, short and struct ).
 
-- Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, classes and delegate ).
+- Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, collections , classes and delegate ).
 
   --> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
 
@@ -27,9 +39,9 @@
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- partial class: partial class cho phép các method và thuộc tính của nó phân chia hoặc chia sẻ qua các file (.cs)
+- partial class: partial class được xem như các lớp con của 1 lớp cha nào đó nằm ở nhiều file (.cs) khác nhau. Nhiều file này kết hợp thành 1 trong compile-time. Các partial class muốn liên kết thì phải có cùng tên và namespace. Giống như việc chia nhỏ 1 class cha thành nhiều class con và phân bổ chúng ở nhiều file (.cs) khác nhau.
 
-- abstract class: Abstract có nghĩa là "dở dang, chưa hoàn thiện" -> không thể tạo các instances từ Abstract Class. Nếu trong app của chúng ta có quá nhiều Class giống nhau về thuộc tính hay method nào đó thì ta có thể tạo ra 1 Abstract Class cung cấp Abstract method để cho các Class kia có thể kế thừa và ghi đè lại Abstract Method đó để giải quyết vấn đề. ( Abstract methods tên là TinhDienTich thuộc Abstract Shape - Các Class con kế thừa Class Shape có thể override lại phương thức TinhDienTich để tính toán ).
+- abstract class: Abstract có nghĩa là "dở dang, chưa hoàn thiện" -> không thể tạo các instances từ Abstract Class. Abstract class cung cấp những cơ sở để những class con có thể kế thừa và override lại các method sẵn có .Nếu trong app của chúng ta có quá nhiều Class giống nhau về thuộc tính hay method nào đó thì ta có thể tạo ra 1 Abstract Class cung cấp Abstract method để cho các Class kia có thể kế thừa và ghi đè lại Abstract Method đó để giải quyết vấn đề. ( Abstract methods tên là TinhDienTich thuộc Abstract Shape - Các Class con kế thừa Class Shape có thể override lại phương thức TinhDienTich để tính toán ).
 
 - sealed class: Lớp này không thể được kế thừa
 
@@ -141,6 +153,12 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 - Generic allow to define generic classes, interface, abstract classes, fields, methods, events, delegates using Type Parameter without specific data type. A type parameter is a placeholder for paritucal type specified ( type được chỉ định cụ thể ) when create an instance of the generic type.
 
+--- Anonymous Type ( Kiểu vô danh )
+
+- Được khai báo bằng từ khóa new.
+
+- Read-only, không thể modify các biến trong kiểu vô danh.
+
 --- Delegate trong C#
 
 - Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
@@ -169,11 +187,11 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 - Late binding và early binding là ví dụ về tính đa hình trong OOP
 
-- Early binding: xảy ra tại thời điểm biên dịch. Nó kiểm tra các methods và thuộc tính của đối tượng tĩnh.
+- Early binding: xảy ra tại thời điểm biên dịch. Nó kiểm tra các methods và thuộc tính của static class.
 
 VÍ DỤ: khi gọi 1 method từ 1 object, early binding sẽ kiểm tra rằng method đó tồn tại và có thể được gọi từ đối tượng đó hay không.
 
-- Late binding: xảy ra tại thời điểm runtime. Late binding xảy ra khi đối tượng là dynamic type - là kiểu đối tượng có type chưa được xác định cụ thể tại thời điểm biên dịch.
+- Late binding: xảy ra tại thời điểm runtime. Late binding xảy ra khi đối tượng là dynamic type. Biến kiểu động - ngầm định - khai báo với từ khóa dynamic, type biến của dynamic type được xác định tại thời điểm runtime ( khác với var - type được xác định tại thời điểm biên dịch ).
 
 --- Mutex trong C#
 
@@ -197,7 +215,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Namespace trong C#
 
-- Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các related object.
+- Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các class, struct chúng ta muốn lưu trữ trong namespace đó.
 
 --- Explicit Conversion trong C#
 
@@ -211,9 +229,9 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Sự khác biệt giữa cách truyền tham số ref và out
 
-- Cả 2 đều được dùng để truyền tham chiếu tới hàm
+- Cả 2 đều được dùng để truyền tham chiếu tới hàm.
 
-- Biến truyền vào với keyword out không cần phải khởi tạo giá trị ban đầu.
+- Biến truyền vào với keyword out không cần phải khởi tạo giá trị ban đầu. Vậy nên biến out chỉ dùng để xuất giá trị ra thôi.
 
 --- So sánh toán tử == và equals()
 
@@ -245,10 +263,14 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- So sánh Const và ReadOnly trong C#
 
-- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const được gán giá trị lúc khai báo và không thể modify.
+- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const được gán giá trị lúc khai báo và không thể modify. Type của const được xác định ở thời điểm biên dịch.
 
-- ReadOnly là 1 runtime constant. Biến ReadOnly có thể được gán giá trị lúc khai báo hoặc trong constructor.
+- ReadOnly là 1 runtime constant. Biến ReadOnly có thể được gán giá trị lúc khai báo hoặc trong constructor. Type của readOnly được xác định ở thời điểm khởi tạo.
 
 - Const áp dụng với basic type, string và 1 số type mà không thể modify tại thời điểm biên dịch.
 
 - ReadOnly áp dụng được cho tham chiếu lẫn tham trị trừ Delegate và event.
+
+--- Từ khóa null
+
+- null là từ khóa ám chỉ rằng nó không tham chiếu tới đối tượng nào cả.
