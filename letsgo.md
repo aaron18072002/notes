@@ -273,6 +273,8 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Lambda trong C# giống như 1 anonymous function, tương tự như arrow function trong js.
 
+- Hàm Lambda dùng để thực thi 1 logic đơn giản mà không cần tạo ra 1 hàm riêng biệt. Hàm lambda sử dụng khi muốn truyền một hàm nhỏ và có thể không cần sử dụng lại hàm đó.
+
 - Lambda có thể làm việc với delegate, event handling, async/await, functional programming.
 
 --- Build in method Select(), Where() trong C#
@@ -294,3 +296,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - EventHandler là một kiểu delegate được tích hợp sẵn trong .NET chuyên sử dụng để khai báo và tạo ra các sự kiện ( events ).
 
 - EventHandler ~ delegate void Name(object? sender, EventArgs arg).
+
+--- Extension Method ( phương thức mở rộng ) trong C#
+
+- Phương thức mở rộng là các phương thức được thêm vào lớp, cấu trúc, interface có sẵn mà không cần thiết phải thay đổi code của lớp đó. Các phương thức mở rộng là static.
+
+- Sử dụng phương thức mở rộng khi muốn tạo ra 1 phương thức tĩnh mà không cần phải tạo 1 lớp con hay thay đổi lớp gốc.
+
+- Để chỉ một phương thức thành 1 phương thức mở rộng, ta sử dụng keyword this ở trước tham số đầu tiên. This này là đối tượng bạn muốn mở rộng.
