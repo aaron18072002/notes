@@ -155,29 +155,9 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 --- Anonymous Type ( Kiểu vô danh )
 
-- Được khai báo bằng từ khóa new.
+- Được khai báo bằng từ khóa new { }.
 
 - Read-only, không thể modify các biến trong kiểu vô danh.
-
---- Delegate trong C#
-
-- Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
-
-- Một biến delegate có thể gọi nhiều function hay nhận 1 chuỗi các tham chiếu liên tiếp gọi là multicast, một function có thể được gọi nhiều lần. Những functions đó được implment 1 cách tuần tự.
-
-- Dùng delegate khi ta có 1 function, ta muốn 1 biến tham chiếu tới function để có thể dùng biến đó đóng vai trò làm 1 tham số của 1 function khác ( tương tự như callback ).
-
-- Predicate ( Predicate<T in> ): Predicate tương tự như 1 delegate với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
-
-- Action ( Action<T in1, T in2, ...> ): Action tương tự như 1 delegate với kiểu trả về là void. Với in1, int2 là tham số nhận vào.
-
---- Event trong C#
-
-- Event trong C# là 1 kiểu multicast delegate đặc biệt chỉ có thể được gọi trong class hoặc struct nơi mà nó được khai báo.
-
-- Event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
-
-- 1 biến event nhận về 2 đối số: tham số đầu tiên là object chứa event đó, tham số thứ 2 thông qua generic để define a type cho event.
 
 --- Multithreading trong C#
 
@@ -191,7 +171,7 @@ Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-v
 
 VÍ DỤ: khi gọi 1 method từ 1 object, early binding sẽ kiểm tra rằng method đó tồn tại và có thể được gọi từ đối tượng đó hay không.
 
-- Late binding: xảy ra tại thời điểm runtime. Late binding xảy ra khi đối tượng là dynamic type. Biến kiểu động - ngầm định - khai báo với từ khóa dynamic, type biến của dynamic type được xác định tại thời điểm runtime ( khác với var - type được xác định tại thời điểm biên dịch ).
+- Late binding: xảy ra tại thời điểm runtime. Late binding xảy ra khi đối tượng là 1 dynamic type. Biến kiểu động - ngầm định - khai báo với từ khóa dynamic, type của biến dynamic type được xác định tại thời điểm runtime ( khác với var - type được xác định tại thời điểm biên dịch ).
 
 --- Mutex trong C#
 
@@ -274,3 +254,43 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 --- Từ khóa null
 
 - null là từ khóa ám chỉ rằng nó không tham chiếu tới đối tượng nào cả.
+
+--- Delegate trong C#
+
+- Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
+
+- Một biến delegate có thể gọi nhiều function hay nhận 1 chuỗi các tham chiếu liên tiếp gọi là multicast, một function có thể được gọi nhiều lần. Những functions đó được implment 1 cách tuần tự.
+
+- Dùng delegate muốn thực thi 1 lúc nhiều function hay dùng 1 function để làm tham số cho 1 function khác.
+
+- Predicate ( Predicate<T in> ): Predicate là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
+
+- Action ( Action<T in1, T in2, ...> ): Action là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là void. Với in1, int2 là tham số nhận vào.
+
+- Func ( Func<T1, T2, T3, ... Tn> ): Func là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về nằm ở cuối cùng.
+
+--- Lambda trong C#
+
+- Lambda trong C# giống như 1 anonymous function, tương tự như arrow function trong js.
+
+- Lambda có thể làm việc với delegate, event handling, async/await, functional programming.
+
+--- Build in method Select(), Where() trong C#
+
+- Select() = map(), Where() = filter()
+
+--- Event trong C#
+
+- Publisher: class phát sự kiện.
+
+- Subcriber: class nhận sự kiện.
+
+- event trong C# là 1 cơ chế thông báo cho các class khác rằng 1 hành động đã xảy ra.
+
+- event có thể được xem như 1 mutilcast delegate. event phải được khai báo như 1 field, không phải 1 thuộc tính.
+
+- event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
+
+- EventHandler là một kiểu delegate được tích hợp sẵn trong .NET chuyên sử dụng để khai báo và tạo ra các sự kiện ( events ).
+
+- EventHandler ~ delegate void Name(object? sender, EventArgs arg).
