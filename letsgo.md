@@ -53,6 +53,8 @@
 
 --- Collection trong C#
 
+- Một collection (bộ, tập hợp) là một nhóm các đối tượng có sự liên quan đến nhau. Số đối tượng trong collect có thể thay đổi tăng giảm. Có nhiều loại collection như Stack, Queue, List, ArrayList ,HashBable, Dictionary.
+
 - Những class mà dùng để chứa ( storage ) và truy xuất ( retrieval ) dữ liệu được gọi là các collection classes. Những class này hỗ trợ các cấu trúc dữ liệu như stacks, queues, lists, hash tables.
 
 - Những collection classes có vai trò như cấp phát động ( dynamic allocating ) bộ nhớ cho các instances hoặc truy cập vào list các item bằng index hoặc key ( trong khi array chỉ có thể truy cập vào element bằng index ).
@@ -137,15 +139,15 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 --> Dictionary
 
-- Dictionary là 1 Generic Collecion, là sự kết hợp giữa Hashtable và Generic
+- Lớp Dictionary<Tkey,TValue> khá giống SortedList, Dictionary được thiết kế với mục đích tăng hiệu quả với tập dữ liệu lớn, phức tạp.
 
-- Trong C# thì dữ liệu trong Dictionary có kiểu KeyValuePair<TKey,TValue> tương tự như DictionaryEntry của Hashtable
+- Có thể truy cập đến các phần tử Dictionary thông qua key lẫn index. Không cho phép trùng key
 
-- So sánh Hashtable và Dictionary
+--> HashSet
 
-Hashtable: Threadsafe, Hỗ trợ multi threading ko đụng độ tài nguyên, Cặp key-value lưu kiểu object, Dùng cho dữ liệu lớn, Các phần tử được sắp xếp theo key mỗi lần thêm hoặc xóa, Tìm kiếm nhanh hơn Dictionary.
+- HashSet là tập hợp các phần tử không cùng giá trị.
 
-Dictionary: Không hỗ trợ multi threading, Định nghĩa kiểu của key-value lúc khai báo, Không hiệu quả cho dữ liệu lớn, Các phần tử nằm theo thứ tự được thêm vào ( Mỗi khi thêm phần tử là thêm vào cuối ), Tìm kiếm chậm hơn Hastable
+- Dùng để giải quyết các bài toán liên quan tới phép giao, phép hợp.
 
 --- Generic trong C#
 
@@ -243,7 +245,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- So sánh Const và ReadOnly trong C#
 
-- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const được gán giá trị lúc khai báo và không thể modify. Type của const được xác định ở thời điểm biên dịch.
+- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const bắt buộc phải được gán giá trị lúc khai báo và không thể modify. Type của const được xác định ở thời điểm biên dịch.
 
 - ReadOnly là 1 runtime constant. Biến ReadOnly có thể được gán giá trị lúc khai báo hoặc trong constructor. Type của readOnly được xác định ở thời điểm khởi tạo.
 
@@ -289,7 +291,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - event trong C# là 1 cơ chế thông báo cho các class khác rằng 1 hành động đã xảy ra.
 
-- event có thể được xem như 1 mutilcast delegate. event phải được khai báo như 1 field, không phải 1 thuộc tính.
+- 1 biến event có thể được xem như 1 mutilcast delegate. event phải được khai báo như 1 field, không phải 1 thuộc tính.
 
 - event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
 
@@ -304,3 +306,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Sử dụng phương thức mở rộng khi muốn tạo ra 1 phương thức tĩnh mà không cần phải tạo 1 lớp con hay thay đổi lớp gốc.
 
 - Để chỉ một phương thức thành 1 phương thức mở rộng, ta sử dụng keyword this ở trước tham số đầu tiên. This này là đối tượng bạn muốn mở rộng.
+
+--- Overloading Operator ( quá tải toán tử ) trong C#
+
+- Là kỹ thuật giúp define ra các toán tử mới trên những đối tượng do bạn định nghĩa.
+
+--- Indexer trong C#
+
+- Indexer là kỹ thuật giúp chúng ta truy cập vào các trường dữ liệu của 1 lớp thông qua [chỉ mục] do chúng ta tự định nghĩa.
