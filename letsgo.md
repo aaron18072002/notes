@@ -16,7 +16,7 @@
 
 - Field: là biến được khai báo trong class.
 
-- Property: là 1 phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
+- Property: là 1 cặp phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
 
 --- Có 3 kiểu dữ liệu trong C#
 
@@ -160,10 +160,6 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 - Được khai báo bằng từ khóa new { }.
 
 - Read-only, không thể modify các biến trong kiểu vô danh.
-
---- Multithreading trong C#
-
-- Multithreading là 1 kỹ thuật để cùng 1 lúc có thể xử lý nhiều tác vụ. Mặc định C# có 2 luồng: main thread và luồng xử lý giao diện
 
 --- Sự khác biệt giữa late binding và early binding trong C#
 
@@ -314,3 +310,21 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 --- Indexer trong C#
 
 - Indexer là kỹ thuật giúp chúng ta truy cập vào các trường dữ liệu của 1 lớp thông qua [chỉ mục] do chúng ta tự định nghĩa.
+
+--- Multithreading trong C#
+
+- Multithreading là 1 kỹ thuật để cùng 1 lúc có thể xử lý nhiều tác vụ. Mặc định C# có 2 luồng: main thread và thread UI.
+
+--- Async/Await trong C#
+
+- Lập trình bất đồng bộ ( asynchronous ) là tạo ra các app có thể chạy đa luồng ( multithreading )
+
+- Lớp Task<T> biểu thị cho tác vụ bất đồng bộ, từ đó chạy được code bất đồng bộ.
+
+--- Reflection trong C#
+
+- Là kỹ thuật lấy thông tin của kiểu dữ liệu ở thời điểm thực thi ( runtime ).
+
+- Lớp Type là lớp cung cấp 1 số methods để lấy thông tin của 1 đối tượng: GetMethod(), GetFields(), GetProperties(), ... trong thời gian chạy ( runtime ).
+
+--- So sánh Lock và Mutex trong C#
