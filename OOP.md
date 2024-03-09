@@ -58,7 +58,9 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 --- DI được dùng để giảm sự phụ thuộc giữa các object, giúp chúng ta dễ dàng thay đổi code hơn, dễ maintain hơn.
 
---- Các module phụ thuộc ( dependency ) sẽ được inject vào các module cấp cao:
+--- DI thiết kế sao cho các dependency (phụ thuộc) của một đối tượng CÓ THỂ được đưa vào, tiêm vào đối tượng đó (Injection) khi nó cần tới (khi đối tượng khởi tạo)
+
+--- 1 số thư viện hỗ trợ DI: Microsoft.Extensions.DependencyInjection, Unity, Ninjet, ...
 
 - Các module không implement trực tiếp với nhau, mà thông qua interface. Các module cấp thấp sẽ implment interface, sau đó các module cấp cao sẽ implment các module cấp thấp thông qua interface.
 

@@ -323,8 +323,16 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Reflection trong C#
 
-- Là kỹ thuật lấy thông tin của kiểu dữ liệu ở thời điểm thực thi ( runtime ).
+- Là kỹ thuật lấy thông tin của 1 object bằng thông tin kiểu dữ liệu ( GetType ) ở thời điểm thực thi ( runtime ).
 
 - Lớp Type là lớp cung cấp 1 số methods để lấy thông tin của 1 đối tượng: GetMethod(), GetFields(), GetProperties(), ... trong thời gian chạy ( runtime ).
+
+--- Attribute/Annotation trong C#
+
+- Attribute là 1 thẻ khai báo. Attribute cho phép gán metadata ( siêu dữ liệu ) vào lớp, phương thức hoặc thuộc tính những đoạn code mở rộng.
+
+- metadata: loại data cung cấp các thông tin vê đối tượng như tên, type, desc, quyền truy cập, các ràng buộc , ...
+
+- 1 số Attribute được build-in trong .NET, [required()], [StringLength()], [DataType()], ...
 
 --- So sánh Lock và Mutex trong C#
