@@ -42,7 +42,7 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 --- Là nguyên lí cuối cùng trong SOLID, trong đó:
 
-- Các module cấp cao không phụ thuộc vào các module cấp thấp. Cả 2 nên phụ thuộc vào abstraction.
+- Các module cấp cao không phụ thuộc vào các module cấp thấp. Cả 2 nên phụ thuộc vào interface.
 
 - Các Class giao tiếp thông qua interface, không phải việc implement.
 
@@ -54,6 +54,8 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 -- Dependency Injection
 
+--- Dependency là gì: ClassA cần gọi 1 hàm của ClassB để hoàn thành task thì ta gọi ClassB là dependency của ClassA.
+
 --- Là 1 kỹ thuật sử dụng da hình động ( dynamic pholymorphism ) để thực hiện hóa Inversion Of Control Pattern, nhắm giúp code của chúng ta tuân thủ theo nguyên lý Dependency Inversion.
 
 --- DI được dùng để giảm sự phụ thuộc giữa các object, giúp chúng ta dễ dàng thay đổi code hơn, dễ maintain hơn.
@@ -64,8 +66,6 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 - Các module không implement trực tiếp với nhau, mà thông qua interface. Các module cấp thấp sẽ implment interface, sau đó các module cấp cao sẽ implment các module cấp thấp thông qua interface.
 
-- Việc khởi tạo các module cấp thấp sẽ được DI Container thực hiện.
-
 --- Có 3 loại Dependency Injection:
 
 - Constructor injection:
@@ -73,6 +73,26 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 - Setter injection:
 
 - Interface injection:
+
+--- Cấu trúc DI trong ASP.NET Core
+
+- ServiceCollection - DI Container: Cung cấp các method như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider.
+
+- Service lifetime
+
+- Service Provider: Là 1 container chứa all các services đã được đăng kí.
+
+- Inject Dependency: Các dependencies được inject vào các controller, middleware, hoặc các thành phần khác của ứng dụng thông qua Dependency Injection. ASP.NET Core tự động quản lý việc tạo và cung cấp các dependencies này dựa trên định nghĩa và cấu hình của IServiceCollection.
+
+-- Các loại service lifetime khi đăng kí DI
+
+--- Bất cứ khi nào chúng ta yêu cầu Service ( hay gọi là Dependency ) - DI Container sẽ quyết định xem có tạo mới 1 instance hay sử dụng lại 1 instance trước đó. Vòng đời của Service phụ thuộc vào khi khởi tạo instance và nó tồn tại bao lâu. Có 3 mức độ vòng đời.
+
+- Transient: Mỗi lần gọi service, một instance mới của service tạo.
+
+- Scoped: Instance được khởi tạo mỗi scope. ( Scope ở đây là mỗi lần có request đến app ). Cùng 1 request thì service sẽ được tái sử dụng.
+
+- Singleton: Instance của server được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi.
 
 -- Proxy và Reverse Proxy, Load Balance
 
