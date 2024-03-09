@@ -50,7 +50,11 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 -- Inversion of control
 
---- Là 1 design pattern được tạo ra để code có thể tuân theo nguyên lý Dependency Inversion. Có nhiều cách để thực hiện pattern này, Dependency Injection là 1 trong số đó.
+--- Chúng ta phải thiết kế ra 1 cơ chế mà khi ClassA cần 1 dependency thì cơ chế đó sẽ tự động bơm dependency ấy vào cho ClassA. Thì dependency ấy là gì sẽ quyết định bởi interface trong ClassA.
+
+--- Dependency không được tạo từ bên trong lớp mà phải được inject từ bên ngoài vào.
+
+--- Có 3 cách tiêm dependency: Constructor injection, Setter injection, Interface injection.
 
 -- Dependency Injection
 
@@ -66,17 +70,17 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 - Các module không implement trực tiếp với nhau, mà thông qua interface. Các module cấp thấp sẽ implment interface, sau đó các module cấp cao sẽ implment các module cấp thấp thông qua interface.
 
---- Có 3 loại Dependency Injection:
+--- VD: services.AddSingleton<IClassB, ClassB>();:
 
-- Constructor injection:
+- Dòng này đăng ký ClassB như một dịch vụ trong container DI, nhưng thông qua interface IClassB.
 
-- Setter injection:
+- Interface IClassB cung cấp một cách để truy cập các phương thức và thuộc tính của ClassB mà không cần phụ thuộc trực tiếp vào ClassB (nguyên tắc Dependency Inversion).
 
-- Interface injection:
+- Khi một thành phần của ứng dụng yêu cầu dịch vụ IClassB, container DI sẽ cung cấp một instance của ClassB.
 
 --- Cấu trúc DI trong ASP.NET Core
 
-- ServiceCollection - DI Container: Cung cấp các method như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider.
+- ServiceCollection - DI Container: Cung cấp các method như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider. Tự động khởi tạo các dependency và inject nó vào dịch vụ của chúng ta. Dịch vụ là lớp thực hiện các chức và dependency là lớp chứa chức năng đó.
 
 - Service lifetime
 
@@ -84,15 +88,13 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 - Inject Dependency: Các dependencies được inject vào các controller, middleware, hoặc các thành phần khác của ứng dụng thông qua Dependency Injection. ASP.NET Core tự động quản lý việc tạo và cung cấp các dependencies này dựa trên định nghĩa và cấu hình của IServiceCollection.
 
--- Các loại service lifetime khi đăng kí DI
-
---- Bất cứ khi nào chúng ta yêu cầu Service ( hay gọi là Dependency ) - DI Container sẽ quyết định xem có tạo mới 1 instance hay sử dụng lại 1 instance trước đó. Vòng đời của Service phụ thuộc vào khi khởi tạo instance và nó tồn tại bao lâu. Có 3 mức độ vòng đời.
+--- Bất cứ khi nào chúng ta gọi Service - DI Container sẽ quyết định xem có tạo mới 1 instance hay sử dụng lại 1 instance trước đó. Vòng đời của Service phụ thuộc vào khi khởi tạo instance và nó tồn tại bao lâu. Có 3 mức độ vòng đời.
 
 - Transient: Mỗi lần gọi service, một instance mới của service tạo.
 
 - Scoped: Instance được khởi tạo mỗi scope. ( Scope ở đây là mỗi lần có request đến app ). Cùng 1 request thì service sẽ được tái sử dụng.
 
-- Singleton: Instance của server được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi.
+- Singleton: Instance của service được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi.
 
 -- Proxy và Reverse Proxy, Load Balance
 
