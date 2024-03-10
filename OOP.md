@@ -88,6 +88,8 @@ Khác: Các Class con kế thừa abstract class phải override abstract method
 
 - Inject Dependency: Các dependencies được inject vào các controller, middleware, hoặc các thành phần khác của ứng dụng thông qua Dependency Injection. ASP.NET Core tự động quản lý việc tạo và cung cấp các dependencies này dựa trên định nghĩa và cấu hình của IServiceCollection.
 
+--- Một hàm nhận về tham số là 1 provider và dùng provider đó để cung cấp các dịch vụ gọi là Factory.
+
 --- Bất cứ khi nào chúng ta gọi Service - DI Container sẽ quyết định xem có tạo mới 1 instance hay sử dụng lại 1 instance trước đó. Vòng đời của Service phụ thuộc vào khi khởi tạo instance và nó tồn tại bao lâu. Có 3 mức độ vòng đời.
 
 - Transient: Mỗi lần gọi service, một instance mới của service tạo.
