@@ -6,7 +6,9 @@
 
 --> Creational: Bao gồm những loại patterns cung cấp solutions để tạo ra các object 1 cách linh hoạt.
 
---- Singleton
+--- Singleton: Singleton Pattern đảm bảo rằng một class chỉ có duy nhất 1 instance được khởi tạo và cung cấp phương thức truy cập tới instance đó từ mọi nơi trong app ( global access ).
+
+VẤN ĐỀ:
 
 --- Factory Method: Factory method cung cấp interface mà trong đó định nghĩa các methods cho việc tạo ra các object nhưng nó cho phép các subclasses ( lớp con ) có thể thay đổi type của object mà nó tạo ra theo các business logic cụ thể.
 
@@ -61,10 +63,6 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 - Subject - Observable: Observable class có nghiệm vụ hold các List Observer và các methods.
 
 - Subcriber: là interface nằm trong Observable Class để nó notify cho Observers mỗi khi có state thay đổi hoặc có event nào đó.
-
-- Observers:
-
-VẤN ĐỀ: Chúng ta làm việc với 1 component có nghiệm vụ fetch và update database. Và component đó có thể được dùng bởi nhiều applications. Có khả năng ràng nếu 1 application update database thì các applications khác vẫn sẽ dùng database cũ. Observer Pattern sẽ khắc phục điều này. Lúc này thì component đóng vai trò 1 như 1 subject, có nghiệm vụ noitifies các applications bất cứ khi nào mà state thay đổi.
 
 VẤN ĐỀ: Tạo 1 class hệ thống an ninh cho 1 building ( observable ) và class nhân viên bảo vệ ( observer ) sẽ phụ thuộc vào class đó. Observable Class này sẽ chứa 2 List là externalVisitor ( khách ) và observer ( nvien ) và các methods để mỗi khi xác nhận khách ra hoặc vào sẽ notify cho các observers ( nvien ) biết.
 
