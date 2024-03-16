@@ -335,4 +335,38 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - 1 số Attribute được build-in trong .NET, [required()], [StringLength()], [DataType()], ...
 
---- So sánh Lock và Mutex trong C#
+--- using trong C#
+
+- using được sử dụng để tạo một phạm vi có giới hạn cho một đối tượng và đảm bảo rằng đối tượng sẽ được giải phóng ngay sau khi phạm vi đó kết thúc.
+
+--- Task trong c#
+
+- Task là một loại dữ liệu đại diện cho một tác vụ (hoặc một công việc) được thực thi bất đồng bộ. Task cung cấp một cơ chế để theo dõi tiến trình và kết quả của tác vụ.
+
+- Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task).
+
+- Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
+
+--- HttpClientHandler, DelegatingHandler cho HttpClient
+
+- DelegatingHandler: là 1 handler đặc biệt, nó như 1 Middleware để tạo ra một pipeline ( chuỗi các handler ).
+
+--- Stream trong C#
+
+- Stream đại diện cho 1 luồng dữ liệu, tức là 1 chuỗi liên tục các byte đang được truyền hoặc xử lý.
+
+- Trong C# thì stream là 1 lớp trừu tượng, được sử dụng để làm việc các với luồng dữ liệu, cho phép đọc và ghi dữ liệu từ các nguồn khác như folder, memory và mạng ( FileStream,... )
+
+- Có 2 loại stream: Input và Output.
+
+- Stream là tài nguyên có hạn nên cần Close() khi ko cần use nữa.
+
+--- ADO.NET trong C#
+
+- ADO ( ActiveX Data Object ) là tập hợp các thư viện cho phép application tương tác ( CRUD ) với database.
+
+- Kiến trúc của ADO gồm 2 phần: DataProvider và DataSet
+
+DataProvider: Là tập hợp các class và Interface để connect và tương tác với database. Mỗi loại data thì có 1 DataProvider riêng ( ví dụ: DataProvider default trong .NET Core là SqlClient connect đến SqlServer ).
+
+DataSet:
