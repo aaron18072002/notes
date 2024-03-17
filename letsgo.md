@@ -35,6 +35,30 @@
 - Toán tử so sánh: ( == != >= <= > < )
 - Toán tử logic: ( && || ! )
 
+--- Errors trong C#
+
+- Runtime errors: Xảy ra khi application đang chạy
+
+- Compilation errors: Xảy ra trong quá trình biên dịch
+
+--- Parsing trong C#
+
+- Là tiến trình ( process ) chuyển đổi ( transform ) data type.
+
+--- Exception trong c#
+
+- Exception là cách mà C# trình bày ( represent ) các runtime errors
+
+--- Solution, Project khi trong Visual Studio
+
+- Solution là 1 collection của các Projects
+
+--- String Interpolation và String Concatenation trong C#
+
+- String Interpolation: $"{variable}"
+
+- String Concatenation: " " + variable + " "
+
 --- Có 4 kiểu class trong C#
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
