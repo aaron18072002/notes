@@ -63,6 +63,16 @@
 
 - 1 expresstion là 1 đoạn code ( a piece of code ) mà tạo ra ( produces - evaluates ) a value.
 
+--- Break và Continue trong C#
+
+- Break: Dừng việc thực thi ( execution ) của toàn bộ vòng lặp
+
+- Continue: Break lần lặp ( iteration ) hiện tại và đi thẳng đến lần lặp tiếp theo.
+
+--- Multi dimensional Array ( mảng đa chiều ) trong C#
+
+- VÍ DỤ: new nums[i,j] ( i là chiều ngang - horizen, j là chiều dọc - vertical )
+
 --- Có 4 kiểu class trong C#
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
