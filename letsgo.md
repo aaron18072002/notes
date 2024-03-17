@@ -55,9 +55,13 @@
 
 --- String Interpolation và String Concatenation trong C#
 
-- String Interpolation: $"{variable}"
+- String Interpolation: $"{variable}".
 
-- String Concatenation: " " + variable + " "
+- String Concatenation: " " + variable + " ".
+
+--- Expresstion trong C#
+
+- 1 expresstion là 1 đoạn code ( a piece of code ) mà tạo ra ( produces - evaluates ) a value.
 
 --- Có 4 kiểu class trong C#
 
