@@ -2,7 +2,7 @@
 
 -> 4 tính chất cơ bản của OOP:
 
---- Tính trừu tượng ( Abstraction ): Trong C#, tính trừu tượng là tiến trình che giấu các chi tiết bên trong của một object và chỉ hiển thị chức năng chính của object đó. VD: Chúng ta biết được rằng bóp phanh là xe sẽ dừng lại cho dù không biết chi tiết là xe sẽ dừng theo cơ chế nào.
+--- Tính trừu tượng ( Abstraction ): Trong C#, tính trừu tượng là tiến trình ( process ) che giấu ( hiding ) các chi tiết ( underlying details ) bên trong của một object và chỉ hiển thị chức năng chính của object đó. VD: Chúng ta biết được rằng bóp phanh là xe sẽ dừng lại cho dù không biết chi tiết là xe sẽ dừng theo cơ chế nào.
 
 --> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đó khác nhau như thế nào:
 
@@ -10,7 +10,7 @@
 
 --- Tính đóng gói ( Encapsulation ): Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
-- private - phạm vi mặc định: Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods. Không thể truy cập được từ bên ngoài class cũng như không thể truy cập bởi các class kế thừa.
+- private - phạm vi mặc định: Chỉ có được truy cập bên trong trong class đó ( within the class ). Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods. Không thể truy cập được từ bên ngoài class cũng như không thể truy cập bởi các class kế thừa.
 
 - protected: Không thể truy cập được từ bên ngoài class nhưng các class thừa kế có thể truy cập được.
 

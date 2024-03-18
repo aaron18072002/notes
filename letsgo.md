@@ -14,9 +14,15 @@
 
 --- Field và Property
 
-- Field: là biến được khai báo trong class.
+- Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó.
 
 - Property: là 1 cặp phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
+
+--- Constructor trong C#
+
+- Một method dùng để khởi tạo ( instantiate ) có cùng tên với class cha của nó.
+
+- Có nghiệm vụ khởi tạo giá trị cho các thuộc tính trong class hoặc nhận giá trị đầu vào và gán các trị đó vào các thuộc tính.
 
 --- Có 3 kiểu dữ liệu trong C#
 
@@ -249,6 +255,10 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Biến truyền vào với keyword out không cần phải khởi tạo giá trị ban đầu. Vậy nên biến out chỉ dùng để xuất giá trị ra thôi.
 
+- Dùng out khi muốn vượt qua ( bypass ) giới hạn của 1 function là chỉ trả về 1 result.
+
+- VẤN ĐỀ: Khi chúng ta truyền 1 biến như 1 tham số của 1 function, 1 bản copy của biến đó sẽ được tạo ra, nó không affect tới biến gốc.
+
 --- So sánh toán tử == và equals()
 
 - Cả 2 đều trả về true, false.
@@ -256,12 +266,6 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Toán tử == sẽ so sánh điểm tham chiếu của biến được so sánh.
 
 - Phương thức equals() dùng để so sánh giá trị được mang bởi các đối tượng.
-
---- Constructor trong C#
-
-- Một method khởi tạo có cùng tên với class cha của nó.
-
-- Có nghiệm vụ khởi tạo giá trị cho các thuộc tính trong class hoặc nhận giá trị đầu vào và gán các trị đó vào các thuộc tính.
 
 --- Từ khóa this
 
