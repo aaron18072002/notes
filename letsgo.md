@@ -20,6 +20,10 @@
 
 - Property: là 1 cặp phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
 
+- Field không thể bị override, nhưng Property thì có thể bị override.
+
+- Methods đại diện cho ( represent ) cho action trong khi Properties đại diện cho data.
+
 --- Constructor trong C#
 
 - Một method dùng để khởi tạo ( instantiate ) có cùng tên với class cha của nó.
@@ -93,6 +97,10 @@
 
 - VÍ DỤ: new nums[i,j] ( i là chiều ngang - horizen, j là chiều dọc - vertical )
 
+--- Khái niệm Repositories trong C#
+
+- Repositories là khái niệm dùng để nói về class or component mà nó đóng gói ( encapsulate ) logic cần thiết để ( required to ) access data sources.
+
 --- Có 4 kiểu class trong C#
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
@@ -107,7 +115,7 @@
 
 - Static Class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha.
+- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object ( not belong to specified instance ) mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha. Không thể dùng một non-static method bên trong 1 static method.
 
 --- Collection trong C#
 
@@ -251,7 +259,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Namespace trong C#
 
-- Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các class, struct chúng ta muốn lưu trữ trong namespace đó.
+- Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các relatived types.
 
 --- Explicit Conversion trong C#
 
@@ -303,7 +311,9 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- So sánh Const và ReadOnly trong C#
 
-- Const là 1 compile-time constant cũng như 1 implicitly static. Biến const bắt buộc phải được gán giá trị lúc khai báo và không thể modify. Type của const được xác định ở thời điểm biên dịch.
+- Cả biến const và ciến readonly đều không thể bị modified.
+
+- Const là 1 compile-time constant cũng như là 1 implicitly static. Biến const bắt buộc phải được gán giá trị lúc khai báo và không thể modify. Type của const được xác định ở thời điểm biên dịch.
 
 - ReadOnly là 1 runtime constant. Biến ReadOnly có thể được gán giá trị lúc khai báo hoặc trong constructor. Type của readOnly được xác định ở thời điểm khởi tạo.
 
