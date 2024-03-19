@@ -16,6 +16,8 @@
 
 - Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó.
 
+- Name của Public Field nên start với uppercase, còn Private Field thì start với \_. VD: ( public int Num, private int \_num ).
+
 - Property: là 1 cặp phương thức đặc biệt dùng dể truy cập và sửa đổi giá trị của field. VD: { get; set; }
 
 --- Constructor trong C#
@@ -23,6 +25,14 @@
 - Một method dùng để khởi tạo ( instantiate ) có cùng tên với class cha của nó.
 
 - Có nghiệm vụ khởi tạo giá trị cho các thuộc tính trong class hoặc nhận giá trị đầu vào và gán các trị đó vào các thuộc tính.
+
+--- Top-level statement
+
+- Các Top-level statement code khi compile sẽ auto được thêm vào class Program và static void Main(). Và chỉ có 1 file là được viết Top-level statement.
+
+--- Methods trong class
+
+- Name của methods nên bắt đầu bằng verb.
 
 --- Có 3 kiểu dữ liệu trong C#
 
@@ -65,9 +75,13 @@
 
 - String Concatenation: " " + variable + " ".
 
---- Expresstion trong C#
+--- Expresstion và Statement trong C#
 
 - 1 expresstion là 1 đoạn code ( a piece of code ) mà tạo ra ( produces - evaluates ) a value.
+
+- statement là a piece of code that does not evaluates a value. VD ( if else statement ).
+
+--- Expression-bodied methods: 1 cách viết function shorter trong C# giống với arrow function trong js.
 
 --- Break và Continue trong C#
 
@@ -223,13 +237,13 @@ VÍ DỤ: khi gọi 1 method từ 1 object, early binding sẽ kiểm tra rằng
 
 Cả 2 đều là những kỹ thuật giúp tạo nên tính đa hình ( Polymorphism )
 
-Overloading - Nạp chồng: Kỹ thuật tạo ra các methods có cùng tên nhưng giá trị trả về lại khác nhau tại các ngữ cảnh khác nhau. Chỉ có method main() là không được nạp chồng.
+Overloading - Nạp chồng: Kỹ thuật tạo ra các methods có cùng tên nhưng giá trị trả về và logic trong đó có thể khác nhau tại các ngữ cảnh khác nhau. Chỉ có method main() là không được nạp chồng.
 
 Để implement overloading trong C#:
 
-- Thay đổi số lượng tham số
+- Thay đổi số lượng tham số ( count of parameters ).
 
-- Thay đổi thứ tự tham số
+- Thay đổi thứ tự tham số ( order of parameters ).
 
 - Sử dụng type khác nhau cho tham số
 
@@ -269,9 +283,15 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Từ khóa this
 
-- This dùng để tham chiếu ( references ) - ánh xạ đến đối tượng hiện tại.
+- This dùng để tham chiếu ( references ) - ánh xạ đến đối tượng hiện tại ( current object ).
 
-- public Animal(string name, string sound) : this(name) - this(name) ám chỉ việc gọi 1 constructor khác cùng class nơi mà chỉ nhận 1 tham số là name.
+- Hoặc dùng để refer to another constructor trong cùng 1 class. VD: public Animal(string name, string sound) : this(name) - this(name) ám chỉ việc gọi 1 constructor khác cùng class nơi mà chỉ nhận 1 tham số là name.
+
+--- Default Value trong C#
+
+- Có thể set Default Value với các parameters trong function và parameter with default value phải nằm cuối order of parameters . VÍ DỤ: public int Reshedule(string patientName, int daysFromNow = 7).
+
+- Default Value phải là ( must be ) a compile-time constant.
 
 --- Struct trong C#
 
