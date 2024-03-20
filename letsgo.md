@@ -14,7 +14,9 @@
 
 --- Field và Property
 
-- Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó.
+- Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó - việc này gọi là backing field.
+
+- Một số default value cho từng type: int - 0, object - null, ...
 
 - Name của Public Field nên start với uppercase, còn Private Field thì start với \_. VD: ( public int Num, private int \_num ).
 
@@ -100,6 +102,22 @@
 --- Khái niệm Repositories trong C#
 
 - Repositories là khái niệm dùng để nói về class or component mà nó đóng gói ( encapsulate ) logic cần thiết để ( required to ) access data sources.
+
+--- Enum type trong C#
+
+- Enum ( stands for enumeration ): là 1 data type được sử dụng để định nghĩa một tập hợp các hằng số được định danh bằng tên ( a set of named constants ). Mỗi hằng số trong enum có một số nguyên tương ứng.
+
+- Enum là kiểu tham trị.
+
+--- Casting trong C#
+
+- Casting là một quá trình ( process ) chuyển đổi một variable từ type này sang type khác.
+
+- Có 2 kiểu casting: Implicit Casting và Explicit Casting.
+
+--- Base keyword trong C#
+
+- Base dùng để refer to base class constructor, và tất cả những method ở base class mà class con ( derived class ) có thể truy cập được.
 
 --- Có 4 kiểu class trong C#
 
@@ -261,9 +279,19 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Namespace là một keyword được dùng để khai báo ( declare ) 1 phạm vi chứa một tập hợp ( a set ) các relatived types.
 
---- Explicit Conversion trong C#
+--- Implicit Conversion và Explicit trong C#
 
-- Chuyển đổi ngầm trong C# sẽ được auto implment khi mà chúng ta convert 1 data type sang 1 data type lớn hơn.
+- Implicit Conversion - Chuyển đổi ngầm trong C# sẽ được auto implment khi mà chúng ta convert 1 data type sang 1 data type lớn hơn.
+
+- Một số implicit conversion gọi là upcasting: Xảy ra khi convert một devired class thành một base class. VÍ DỤ: Ingredient cherry = new Cherry();
+
+- Downcasting - explicit cast expression ngược lại với upcasting, nó require an explicit cast. VÍ DỤ: Animal cat = (Cat)new Animal();
+
+- Khi convert thất bại, cast expression sẽ throw InvalidCastException. Còn với as, nó sẽ return null. VÍ DỤ: Cat cat = animal as Cat;
+
+--- Toán tử is trong C#
+
+- Dùng để check type của một object và trả về boolean. VÍ DỤ: bool isString = word is string;
 
 --- String và StringBuilder trong C#
 

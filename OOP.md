@@ -12,7 +12,7 @@
 
 - private - phạm vi mặc định: Các private methods, properties, field Chỉ có được truy cập bên trong trong class chứa nó ( within the class they belong to ). Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods. Không thể truy cập được từ bên ngoài class cũng như không thể truy cập bởi các class kế thừa.
 
-- protected: Không thể truy cập được từ bên ngoài class nhưng các class thừa kế có thể truy cập được.
+- protected: Không thể truy cập được từ bên ngoài class nhưng bên trong các class thừa kế có thể truy cập được.
 
 - public: các thuộc tính và phương thức của class đó đều có thể được truy cập từ bên ngoài class đó bởi mọi class khác.
 
@@ -20,19 +20,21 @@
 
 - protected internal: các thuộc tính và methods của protected interal class có thể được truy cập bởi class trong cùng 1 Assembly từ các class con thừa hưởng class đó.
 
---- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể sử dụng các thuộc tính ( properties ) và các phương thức ( methods ) của 1 class khác. Một biến của class cha có thể được gán lại bởi class con nhưng ngược lại thì không.
+--- Tính kế thừa ( Inheritance ): Tính kế thừa là việc mà một class có thể tái sử dụng ( resuse ), mở rộng ( extend ) và modify các thuộc tính ( properties ) hoặc các phương thức ( methods ) của 1 class khác. Một biến của class cha ( base class ) có thể được gán lại bởi class con ( derived class ) nhưng ngược lại thì không.
 
---- Tính đa hình ( Polymorphism ): Tính da hình là việc cùng một thuộc tính hay phương thức nhưng giá trị trả về có thể khác nhau theo từng object tùy thuộc vào tham số truyền vào lúc khởi tạo. VD: 2 Object Honda và Mazda đều được khởi tạo từ class Car nhưng thuộc tính speed có thể khác nhau.
+--- Tính đa hình ( Polymorphism ): Tính da hình là việc nhiều thuộc tính hay phương thức có cùng tên nhưng giá trị trả về có thể khác nhau theo từng object tùy thuộc vào tham số truyền vào lúc khởi tạo. VD: 2 Object Honda và Mazda đều được khởi tạo từ class Car nhưng thuộc tính speed có thể khác nhau.
 
 - Trong C# có 2 loại đa hình:
 
 ---> Đa hình tĩnh thể hiện qua overload method, còn đa hình động chính là override lại phương thức đó khi kế thừa.
 
----> So sánh đa hình động với abstract class và virtual methods ( 1 phương thức ảo là 1 phương thức có thể ghi đề được ):
+---> C# không hỗ trợ đa kế thừa - mutilple inheritance ( nghĩa là 1 class con không thể kế thừa hơn 1 class cha - base class ).
+
+---> So sánh đa hình động với abstract class và virtual methods ( 1 phương thức ảo là 1 phương thức có thể bị ghi đè được ):
 
 Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế.
 
-Khác: Các Class con kế thừa abstract class phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
+Khác: Các Class con kế thừa abstract class bắt buộc phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
 
 -- Virtual Method
 
