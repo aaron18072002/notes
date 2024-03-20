@@ -125,15 +125,15 @@
 
 - partial class: partial class được xem như các lớp con của 1 lớp cha nào đó nằm ở nhiều file (.cs) khác nhau. Nhiều file này kết hợp thành 1 trong compile-time. Các partial class muốn liên kết thì phải có cùng tên và namespace. Giống như việc chia nhỏ 1 class cha thành nhiều class con và phân bổ chúng ở nhiều file (.cs) khác nhau.
 
-- abstract class: Abstract có nghĩa là "dở dang, chưa hoàn thiện" -> không thể tạo các instances từ Abstract Class. Abstract class cung cấp những cơ sở để những class con có thể kế thừa và override lại các method sẵn có .Nếu trong app của chúng ta có quá nhiều Class giống nhau về thuộc tính hay method nào đó thì ta có thể tạo ra 1 Abstract Class cung cấp Abstract method để cho các Class kia có thể kế thừa và ghi đè lại Abstract Method đó để giải quyết vấn đề. ( Abstract methods tên là TinhDienTich thuộc Abstract Shape - Các Class con kế thừa Class Shape có thể override lại phương thức TinhDienTich để tính toán ).
+- abstract class: Abstract có nghĩa là "dở dang, chưa hoàn thiện" -> không thể tạo các instances từ Abstract Class ( Abstract class cannot be instantiate ). Abstract class cung cấp những cơ sở để những class con có thể kế thừa và override lại các method sẵn có .Nếu trong app của chúng ta có quá nhiều Class giống nhau về thuộc tính hay method nào đó thì ta có thể tạo ra 1 Abstract Class cung cấp Abstract method để cho các Class kia có thể kế thừa và ghi đè lại Abstract Method đó để giải quyết vấn đề. ( Abstract methods tên là TinhDienTich thuộc Abstract Shape - Các Class con kế thừa Class Shape có thể override lại phương thức TinhDienTich để tính toán ).
 
-- sealed class: Lớp này không thể được kế thừa
+- sealed class: Lớp này không thể được kế thừa.
 
 --- Từ khóa Static
 
-- Static Class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
+- Static Class: 1 Class được xác định là static là class tĩnh ( implicit static ) và implicut sealed, không thể tạo các object và thừa kế từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object ( not belong to specified instance ) mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha. Không thể dùng một non-static method bên trong 1 static method.
+- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object ( not belong to specified instance ) mà thuộc về Class, không thể overrdie 1 static method ,chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha. Không thể dùng một non-static method bên trong 1 static method.
 
 --- Collection trong C#
 

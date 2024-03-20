@@ -30,11 +30,11 @@
 
 ---> C# không hỗ trợ đa kế thừa - mutilple inheritance ( nghĩa là 1 class con không thể kế thừa hơn 1 class cha - base class ).
 
----> So sánh đa hình động với abstract class và virtual methods ( 1 phương thức ảo là 1 phương thức có thể bị ghi đè được ):
+---> So sánh đa hình động với abstract methods và virtual methods ( 1 phương thức ảo là 1 phương thức có thể bị ghi đè được ):
 
-Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế.
+Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế. Chỉ có thể được defined bên trong 1 abstract class. Abstract method là một empty method và chỉ chờ devired class override. Thêm nữa, chúng ta có thể không cần phải override abstract method nếu derived class cũng là 1 abstract class.
 
-Khác: Các Class con kế thừa abstract class bắt buộc phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override.
+Khác: Các Class con kế thừa abstract class bắt buộc phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các logic methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override. Với abstract method thì chỉ có thể defined bên trong abstract class lẫn interface, còn virtual methods thì có thê được defined bên trong abstract class lẫn non-abstract class.
 
 -- Virtual Method
 
