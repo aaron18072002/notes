@@ -397,11 +397,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Extension Method ( phương thức mở rộng ) trong C#
 
-- Phương thức mở rộng là các phương thức được thêm vào lớp, cấu trúc, interface có sẵn mà không cần thiết phải thay đổi code của lớp đó. Các phương thức mở rộng là static.
+- Phương thức mở rộng là các phương thức được thêm vào lớp, interface có sẵn mà không cần thiết phải thay đổi code của lớp đó. Class mà chữa extension methods phải là static và bản thân extension methods đó cũng phải là static.
 
 - Sử dụng phương thức mở rộng khi muốn tạo ra 1 phương thức tĩnh mà không cần phải tạo 1 lớp con hay thay đổi lớp gốc.
 
-- Để chỉ một phương thức thành 1 phương thức mở rộng, ta sử dụng keyword this ở trước tham số đầu tiên. This này là đối tượng bạn muốn mở rộng.
+- Để chỉ một phương thức thành 1 phương thức mở rộng, ta sử dụng keyword this ở trước tham số đầu tiên. This này reference tới đối tượng bạn dùng phương thức mở rộng cho.
 
 --- Overloading Operator ( quá tải toán tử ) trong C#
 
