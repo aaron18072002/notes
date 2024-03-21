@@ -66,6 +66,12 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 VẤN ĐỀ: Tạo 1 class hệ thống an ninh cho 1 building ( observable ) và class nhân viên bảo vệ ( observer ) sẽ phụ thuộc vào class đó. Observable Class này sẽ chứa 2 List là externalVisitor ( khách ) và observer ( nvien ) và các methods để mỗi khi xác nhận khách ra hoặc vào sẽ notify cho các observers ( nvien ) biết.
 
---- Command Design Pattern:
+--- Template Method Design Pattern:
+
+- Định nghĩa một lớp cơ sở (base class) chứa phương thức template, trong đó mỗi bước của thuật toán được xác định như là một phương thức trừu tượng hoặc phương thức ảo (virtual method).
+
+- Mỗi lớp con (sub class) có thể implment các abstract method, điều này cho phép nó tùy chỉnh hành vi của các bước của thuật toán.
+
+- Trong quá trình chạy, lớp cơ sở gọi các phương thức được định nghĩa trong template của mình, và các lớp con sẽ cung cấp hành động cụ thể cho mỗi phương thức.
 
 --- Chain Of Responsibility Pattern:
