@@ -26,6 +26,8 @@
 
 - Methods đại diện cho ( represent ) cho action trong khi Properties đại diện cho data.
 
+- Computed Property là một Property chỉ có phương thức Get;
+
 --- Constructor trong C#
 
 - Một method dùng để khởi tạo ( instantiate ) có cùng tên với class cha của nó.
@@ -118,6 +120,14 @@
 --- Base keyword trong C#
 
 - Base dùng để refer to base class constructor, và tất cả những method ở base class mà class con ( derived class ) có thể truy cập được.
+
+--- Mảng IEnumrable trong C# có các thuộc tính sau
+
+- Là 1 mảng read-only, không thể thêm hay bớt elements.
+
+- Chỉ duyệt theo 1 chiều, từ đầu đến cuối.
+
+- IEnumrable có thể đại diện cho mọi Collection bao gồm cả Array.
 
 --- Có 4 kiểu class trong C#
 

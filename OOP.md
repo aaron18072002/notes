@@ -6,7 +6,11 @@
 
 --> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đó khác nhau như thế nào:
 
-- Interface cũng giống như abstract class, không dùng để tạo ra các object mà dùng để tạo ra các cơ sở cho các lớp kế thửa. Những khác với Abstract class, các phương thức của interface mặc định là abstract methods, vì vậy các lớp thừa kế bắt buộc phải override lại các phương thức đó ( không cần từ khóa override ). Một lớp kế thừa có thể kế thừa nhiều interface và có nghiệm vụ bắt buộc phải ghi đè lại toàn bộ các phương thức trong interface đó. Interface chỉ có thể chứa các phương thức, thuộc tính, sự kiện và indexers.
+- Interface cũng giống như abstract class, không dùng để tạo ra các object mà dùng để tạo ra các cơ sở cho các lớp kế thửa. Nhưng khác với Abstract class, tất cả các phương thức của interface mặc định là abstract methods, vì vậy các lớp thừa kế bắt buộc phải override lại các phương thức đó ( không cần từ khóa override ). Một lớp kế thừa có thể kế thừa nhiều interface và có nghiệm vụ bắt buộc phải ghi đè lại toàn bộ các phương thức trong interface đó.
+
+- Trong Interface should only define các methods and properties, các methods và properties của Interface không được sealed hay static. Các methods trong Interface đều là Implicit Virtual và Implicit Public. Và các devired class bắt buộc ( obligated ) phải override lại các methods đó.
+
+- 1 abstract class có thể các fields của nó còn interface thì không.
 
 --- Tính đóng gói ( Encapsulation ): Thể hiện việc bó ( bundling ) các methods, fields, properties vào trong 1 class cụ thể. Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
@@ -34,7 +38,7 @@
 
 Giống: Đều phải khai báo virtual và abstract để có thể overide ở class thừa kế. Chỉ có thể được defined bên trong 1 abstract class. Abstract method là một empty method và chỉ chờ devired class override. Thêm nữa, chúng ta có thể không cần phải override abstract method nếu derived class cũng là 1 abstract class.
 
-Khác: Các Class con kế thừa abstract class bắt buộc phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các logic methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override. Với abstract method thì chỉ có thể defined bên trong abstract class lẫn interface, còn virtual methods thì có thê được defined bên trong abstract class lẫn non-abstract class.
+Khác: Các Class con kế thừa abstract class bắt buộc phải override abstract method ở lớp cha. Còn với virtual methods thì nếu các logic methods ở lớp cha phù hợp với lớp con rồi thì không cần phải override. Với abstract method thì chỉ có thể defined bên trong abstract class lẫn interface, còn virtual methods thì có thể được defined bên trong abstract class lẫn non-abstract class.
 
 -- Virtual Method
 
