@@ -83,13 +83,23 @@
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
 
-- Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào.
+- Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó.
+
+--- Throw ex và throw
+
+- throw ex: Exception sẽ được tạo mới và ném đi. Stack Trace sẽ start từ vị trí ( place ) nơi Exception được ném. Điều này có nghĩa những method calls trước đó bị mất. Nghĩa là throw ex không bảo toàn ( does not preserves ) Stack Trace.
+
+- throw : Stack Trace sẽ start từ place nơi mà Exception được khởi tạo, không phải place mà Exception throw. Điều này bảo toàn ( Preserves ) những thông tin và các method calls trước đó.
 
 --- Stack Trace trong Exception
 
 - Stack Trace là một thuộc tính của Exception.
 
 - Stack Trace là 1 call stack chứa tất cả những methods mà đã được gọi trước thời điểm mà Exception được thrown ra.
+
+--- InnerException trong Exception
+
+- InnerException là 1 thuộc tính của Exception. Dùng để lưu trữ Exception gốc mà đã tạo ra Exception hiện tại.
 
 --- Solution, Project khi trong Visual Studio
 
