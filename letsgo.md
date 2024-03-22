@@ -59,23 +59,41 @@
 - Toán tử so sánh: ( == != >= <= > < )
 - Toán tử logic: ( && || ! )
 
---- Errors trong C#
-
-- Runtime errors: Xảy ra khi application đang chạy
-
-- Compilation errors: Xảy ra trong quá trình biên dịch
-
 --- Parsing trong C#
 
 - Là tiến trình ( process ) chuyển đổi ( transform ) data type.
+
+--- Errors trong C#
+
+- Runtime errors: Xảy ra khi application đang run.
+
+- Compilation errors: Xảy ra trong quá trình biên dịch. Prevent app của chúng ta khỏi việc compiled and run.
+
+- Logical errros: App không bị crash nhưng nó không work đúng cách.
 
 --- Exception trong c#
 
 - Exception là cách mà C# trình bày ( represent ) các runtime errors
 
+- Tất cả Exception trong C# đều devired from System.Exception base class.
+
+- Chỉ nên dùng try catch chỉ khi chúng ta thật sự thấy được là code có thể cause an error, có thể dùng multiple catch với multiple exceptions khác nhau. Logic trong finally luôn chạy dù try hay catch được gọi. Và finally thường dùng để clean một resources bị leak. VÍ DỤ: Dùng để ngắt connect tới db sau khi try hoặc catch đã dùng xong.
+
+- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException
+
+- StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
+
+- Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào.
+
+--- Stack Trace trong Exception
+
+- Stack Trace là một thuộc tính của Exception.
+
+- Stack Trace là 1 call stack chứa tất cả những methods mà đã được gọi trước thời điểm mà Exception được thrown ra.
+
 --- Solution, Project khi trong Visual Studio
 
-- Solution là 1 collection của các Projects
+- Solution là 1 collection các Projects
 
 --- String Interpolation và String Concatenation trong C#
 
