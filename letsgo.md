@@ -79,11 +79,13 @@
 
 - Chỉ nên dùng try catch chỉ khi chúng ta thật sự thấy được là code có thể cause an error, có thể dùng multiple catch với multiple exceptions khác nhau. Logic trong finally luôn chạy dù try hay catch được gọi. Và finally thường dùng để clean một resources bị leak. VÍ DỤ: Dùng để ngắt connect tới db sau khi try hoặc catch đã dùng xong.
 
-- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException
+- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
 
 - Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó.
+
+- Một custom exception nên có chữ cuối là Exception và devired base Exception class.
 
 --- Throw ex và throw
 
@@ -100,6 +102,12 @@
 --- InnerException trong Exception
 
 - InnerException là 1 thuộc tính của Exception. Dùng để lưu trữ Exception gốc mà đã tạo ra Exception hiện tại.
+
+--- Global Try Catch block
+
+- Dùng để catch bất cứ Exception nào chưa được handle ở bất cứ đâu.
+
+- Nó bao quanh ( surround ) entry point. Entry point là nơi mà first method được gọi. Trong method đó có thể gọi nhiều methods khác nữa. Trong console app, Main method nằm trong class Program.
 
 --- Solution, Project khi trong Visual Studio
 
