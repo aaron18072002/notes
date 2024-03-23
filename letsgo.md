@@ -81,6 +81,8 @@
 
 - Dùng quá nhiều exceptions có thể reduce performance. Exception chỉ nên được dùng cho những trường hợp cần sử dụng nó, chứ không phải control flow của program.
 
+- Xài if else statements thay vì mutiple catch exceptions cũng có thể tăng performance.
+
 - Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.

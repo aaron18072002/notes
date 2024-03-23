@@ -12,6 +12,8 @@
 
 - 1 abstract class có thể các fields của nó còn interface thì không.
 
+- Methods implement interface nên là public và non-static. Bởi vì đa số những methods đó đều là các dependency.
+
 --- Tính đóng gói ( Encapsulation ): Thể hiện việc bó ( bundling ) các methods, fields, properties vào trong 1 class cụ thể. Tính đóng gói thể hiện phạm vi và tính chất của một object. Trong C# thì tính đóng gói được thể hiện thông qua việc khai báo access modifier.
 
 - private - phạm vi mặc định: Các private methods, properties, field Chỉ có được truy cập bên trong trong class chứa nó ( within the class they belong to ). Các methods cùng cấp trong cùng class cũng không thể gọi các private properties và private methods. Không thể truy cập được từ bên ngoài class cũng như không thể truy cập bởi các class kế thừa.
