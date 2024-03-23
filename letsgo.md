@@ -87,7 +87,9 @@
 
 - OutOfMemoryException: Xảy ra khi memory leaks hoặc quá nhiều memory cần được sử dụng so với sức chứa ( capabilities ) của app.
 
-- Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó.
+- Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó. Nếu specific exception không thể mô tả chi tiết error hơn global exception thì ta nên catch nó ở global exception luôn.
+
+- Ở locally - specific exception (lowest level): không nên log error mà nên handle nó meaning hơn.
 
 - Một custom exception nên có chữ cuối là Exception và devired base Exception class.
 
@@ -398,6 +400,12 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Const áp dụng với basic type, string và 1 số type mà không thể modify tại thời điểm biên dịch.
 
 - ReadOnly áp dụng được cho tham chiếu lẫn tham trị trừ Delegate và event.
+
+--- Init với các thuộc tính readonly trong C#
+
+- Từ khóa init được sử dụng trong các thuộc tính chỉ đọc (read-only properties) để thiết lập giá trị ban đầu của thuộc tính trong constructor hoặc trong quá trình khởi tạo đối tượng.
+
+- VÍ DỤ: public string Title { get; init; }, init ở đây có nghĩa Title vẫn có thể bị gán trong phạm vi cửa class hoặc trong constructor. Và nó cũng ám chỉ Title là implicit readonly.
 
 --- Từ khóa null
 
