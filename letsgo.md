@@ -79,9 +79,13 @@
 
 - Chỉ nên dùng try catch chỉ khi chúng ta thật sự thấy được là code có thể cause an error, có thể dùng multiple catch với multiple exceptions khác nhau. Logic trong finally luôn chạy dù try hay catch được gọi. Và finally thường dùng để clean một resources bị leak. VÍ DỤ: Dùng để ngắt connect tới db sau khi try hoặc catch đã dùng xong.
 
+- Dùng quá nhiều exceptions có thể reduce performance. Exception chỉ nên được dùng cho những trường hợp cần sử dụng nó, chứ không phải control flow của program.
+
 - Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
+
+- OutOfMemoryException: Xảy ra khi memory leaks hoặc quá nhiều memory cần được sử dụng so với sức chứa ( capabilities ) của app.
 
 - Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó.
 
