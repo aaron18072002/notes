@@ -83,7 +83,7 @@
 
 - Xài if else statements thay vì mutiple catch exceptions cũng có thể tăng performance.
 
-- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException, InvalidCastException.
+- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException, InvalidCastException, KeyNotFoundException.
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
 
@@ -313,6 +313,8 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 --> Dictionary
 
+- Dictionary là 1 generic collection. Là 1 collection với các cặp key-value làm phần tử. Mỗi phần tử của Dictionary có type là KeyValuePair<T1, T2> .
+
 - Lớp Dictionary<Tkey,TValue> khá giống SortedList, Dictionary được thiết kế với mục đích tăng hiệu quả với tập dữ liệu lớn, phức tạp.
 
 - Có thể truy cập đến các phần tử Dictionary thông qua key lẫn index. Không cho phép trùng key
@@ -459,7 +461,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo ( define ) biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
 
-- Một biến delegate có thể gọi nhiều function hay nhận 1 chuỗi các tham chiếu liên tiếp gọi là multicast, một function có thể được gọi nhiều lần. Những functions đó được implment 1 cách tuần tự.
+- Một biến delegate có thể tham chiếu ( reference ) tới nhiều functions gọi là mutilcast và một function có thể được gọi nhiều lần trong cùng 1 biến delegate. Những functions đó được implment 1 cách tuần tự.
 
 - Dùng delegate muốn thực thi 1 lúc nhiều function hay dùng 1 function để làm tham số cho 1 function khác.
 
