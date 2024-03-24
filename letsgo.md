@@ -83,7 +83,7 @@
 
 - Xài if else statements thay vì mutiple catch exceptions cũng có thể tăng performance.
 
-- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException
+- Một type exception hay dùng: NullReferenceException, FormatException, DivideByZeroException, ArgumentException, ArgumentNullException, ArgumentOutOfRangeException, IndexOutOfRangeException, InvalidOperatorException, NotImplmentedException, HttpRequestException, InvalidCastException.
 
 - StackOverflowException: Thường xảy ra khi dùng hàm đệ quy mà điều kiện dừng sai dẫn đến infinity loop.
 
@@ -161,6 +161,8 @@
 
 - Có 2 kiểu casting: Implicit Casting và Explicit Casting.
 
+- Cast là performance-heavy operator.
+
 --- Base keyword trong C#
 
 - Base dùng để refer to base class constructor, và tất cả những method ở base class mà class con ( derived class ) có thể truy cập được.
@@ -173,7 +175,23 @@
 
 - IEnumrable có thể đại diện cho mọi Collection bao gồm cả Array.
 
---- Có 4 kiểu class trong C#
+--- Type class trong C#
+
+- Type là class represent cho types. Nó chứa các properties như type's name, namespace mà nó thuộc về ( belong to ), the base type, hoặc là 1 list các type's constructors. Nó là một phần của cơ chế reflection ( reflection mechnism ).
+
+--- GetType() và typeof() trong C#
+
+- Cả 2 đều return Type data.
+
+- typeof để lấy info về data type tại thời điểm compile, còn GetType() thì được dùng để lấy info và data type của một instance tại thời điểm run-time.
+
+--- Keyword where trong C#
+
+- where dùng để thiết lập các ràng buộc ( constrains ) về type cho các type parameters. VÍ DỤ: public class MyClass<T> where T : class - nghĩa là tham số kiểu T phải là một tham số kiểu class.
+
+--- Boxing và Unboxing trong C#
+
+- --- Có 4 kiểu class trong C#
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
@@ -275,6 +293,10 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Không như ArrayList, List là Collection Class bắt buộc phải chỉ định kiểu đầu vào khi muốn tạo 1 instance.
 
+- Cả List và ArrayList đều add item vào cuối danh sách khi dùng method Add().
+
+- UNDER THE HOOD: Khi một element mới được thêm vào, một List mới sẽ được tạo ra và sức chứa của nó sẽ lớn hơn List cũ rồi List cũ sẽ gán toàn bộ element của nó qua List mới, sau đó List cũ sẽ được thay thế bởi List mới, cuối cùng thì element mới được thêm vào cuối List đó.
+
 --> Dictionary
 
 - Lớp Dictionary<Tkey,TValue> khá giống SortedList, Dictionary được thiết kế với mục đích tăng hiệu quả với tập dữ liệu lớn, phức tạp.
@@ -287,11 +309,17 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Dùng để giải quyết các bài toán liên quan tới phép giao, phép hợp.
 
+--> Tuple
+
+- Tuple là 1 generic collection, nó có thể lưu trữ ( stored ) một tập hợp các phần từ ( a set of elements ) với nhiều kiểu dữ liệu khác nhau ( mutiple diferent data types ).
+
 --- Generic trong C#
 
-- Generic trong C# là một tính năng trong C#. Trong đó kiểu dữ liệu ( của biến, tham số, kiểu trả về của các methods ) được xác định ở giai tạo khởi tạo.
+- Generic trong C# là một tính năng trong C#. Trong đó kiểu dữ liệu ( của biến, tham số, kiểu trả về của các methods, class ) được xác định ở giai tạo khởi tạo.
 
 - Generic allow to define generic classes, interface, abstract classes, fields, methods, events, delegates using Type Parameter without specific data type. A type parameter is a placeholder for paritucal type specified ( type được chỉ định cụ thể ) when create an instance of the generic type.
+
+- C# complier chỉ có thể dùng typeo of arguments để suy ra ( infer ) generic type, không thể dùng type của reuslt được.
 
 --- Anonymous Type ( Kiểu vô danh )
 
@@ -470,6 +498,8 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 --- Indexer trong C#
 
 - Indexer là kỹ thuật giúp chúng ta truy cập vào các trường dữ liệu của 1 lớp thông qua [chỉ mục] do chúng ta tự định nghĩa.
+
+- Indexer provide a way to access elements of a collection or class by using square bracket notation ( dấu ngoặc vuông - [] ).
 
 --- Multithreading trong C#
 
