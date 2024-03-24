@@ -187,7 +187,21 @@
 
 --- Keyword where trong C#
 
-- where dùng để thiết lập các ràng buộc ( constrains ) về type cho các type parameters. VÍ DỤ: public class MyClass<T> where T : class - nghĩa là tham số kiểu T phải là một tham số kiểu class.
+- where dùng để thiết lập các ràng buộc về type ( type constrains ) cho các type parameters trong generic. VÍ DỤ: public class MyClass<T> where T : class - nghĩa là tham số kiểu T phải là một tham số kiểu class.
+
+- 1 type parameter có thể có nhiều type constrains và được ngăn cách bởi dấu phẩy. VÍ DỤ: public T GetPetName<T>(T pet) where T : Pet, IComparable<T>
+
+- Chúng ta cũng có thể gán type constrains cho nhiều type parameters. VÍ DỤ: public void PrintPetAndOwnerName<TPet, TOwner>(TPet pet, TOwner owner) where TPet : Pet, IComparable<Tpet> where IOwner : new()
+
+- 1 số type constrains thường dùng: https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
+
+--- IComparable<T> trong C#
+
+- IComparable là một interface cung cấp cách để 2 object so sánh với nhau cho mục đích sorting.
+
+- Class implement IComparable cung cấp một phương thức CompareTo(obj) để so sánh nó với một đối tượng khác. Phương thức này trả về negative number nếu đối tượng hiện tại nhỏ hơn đối tượng được so sánh, trả về 0 nếu chúng bằng nhau, và trả về positive number nếu đối tượng hiện tại lớn hơn đối tượng được so sánh. Trả về negative number chứng tỏ current object sẽ đứng trước object trong tham số, và ngược lại.
+
+- Ta thường dùng IComparable để so sánh 2 object với cùng data type.
 
 --- Boxing và Unboxing trong C#
 
@@ -443,7 +457,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Delegate trong C#
 
-- Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
+- Delegate trong C# là một kiểu dữ liệu đặc biệt để khai báo ( define ) biến tham chiếu trỏ tới địa chỉ các hàm hoặc methods. Với điều kiện là các hàm và methods đó có cùng kiểu dữ liệu trả và cùng kiểu dữ liệu tham số đầu vào.
 
 - Một biến delegate có thể gọi nhiều function hay nhận 1 chuỗi các tham chiếu liên tiếp gọi là multicast, một function có thể được gọi nhiều lần. Những functions đó được implment 1 cách tuần tự.
 
@@ -451,9 +465,9 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Predicate ( Predicate<T in> ): Predicate là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
 
-- Action ( Action<T in1, T in2, ...> ): Action là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là void. Với in1, int2 là tham số nhận vào.
+- Action ( Action<T in1, T in2, ...> ): Action là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là void.
 
-- Func ( Func<T1, T2, T3, ... Tn> ): Func là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về nằm ở cuối cùng.
+- Func ( Func<T1, T2, T3, ... Tn> ): Func là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là type parameter cuối cùng.
 
 --- Lambda trong C#
 
@@ -461,7 +475,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Hàm Lambda dùng để thực thi 1 logic đơn giản mà không cần tạo ra 1 hàm riêng biệt. Hàm lambda sử dụng khi muốn truyền một hàm nhỏ và có thể không cần sử dụng lại hàm đó.
 
-- Lambda có thể làm việc với delegate, event handling, async/await, functional programming.
+- Lambda có thể làm việc với event handling, async/await, functional programming và đặc biệt là delegate và LINQ library.
 
 --- Build in method Select(), Where() trong C#
 
