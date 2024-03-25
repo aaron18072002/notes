@@ -463,7 +463,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Một biến delegate có thể tham chiếu ( reference ) tới nhiều functions gọi là mutilcast và một function có thể được gọi nhiều lần trong cùng 1 biến delegate. Những functions đó được implment 1 cách tuần tự.
 
-- Dùng delegate muốn thực thi 1 lúc nhiều function hay dùng 1 function để làm tham số cho 1 function khác.
+- Dùng delegate muốn thực thi 1 lúc nhiều function hay dùng 1 function để làm tham số cho 1 function khác và gọi lại function đó bên trong để thực hiện logic.
 
 - Predicate ( Predicate<T in> ): Predicate là 1 delegate được tích hợp sẵn ( build-in ) trong C# với kiểu trả về là bool. Predicate chỉ có thể nhận vào 1 params duy nhất.
 
@@ -477,7 +477,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Hàm Lambda dùng để thực thi 1 logic đơn giản mà không cần tạo ra 1 hàm riêng biệt. Hàm lambda sử dụng khi muốn truyền một hàm nhỏ và có thể không cần sử dụng lại hàm đó.
 
-- Lambda có thể làm việc với event handling, async/await, functional programming và đặc biệt là delegate và LINQ library.
+- Lambda có thể làm việc với event handling, async/await, functional programming và đặc biệt là với delegate và LINQ library.
 
 --- Build in method Select(), Where() trong C#
 

@@ -42,15 +42,15 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --- Strategy Design Pattern:
 
-- Định nghĩa 1 tập hợp các thuật toán giống nhau, encapsulate chúng và khiến chúng thay thế cho nhau. Strategy Pattern làm cho phần thuật toán đó độc lập khỏi client sử dụng nó.
+- Định nghĩa 1 tập hợp các thuật toán, encapsulate chúng trong 1 interface và khiến chúng thay thế cho nhau tùy thuộc vào yêu cầu của Client. Strategy Pattern làm cho phần thuật toán đó độc lập khỏi client sử dụng nó.
 
-- VẤN ĐỀ: Tạo 1 cơ chế mà khi Client gọi thì Context sẽ cho các options, Client có nghiệm vụ truyền option đó vào Context, và từ option đó Context sẽ thực hiện thuật toán.
+- VẤN ĐỀ: Tạo 1 cơ chế mà khi Client gọi thì Context sẽ cho các options, Client có nghiệm vụ truyền 1 trong các options đó vào Context, và từ option đó Context sẽ thực hiện thuật toán phù hợp.
 
-- Context: Class nhận vào instance của class mà implment ( triển khai ) IStrategy do client gửi vào để thực hiện mong muốn của Client.
+- Context: Class chứa instance của class mà implment IStrategy và dùng instance đó để thực hiện mong muốn của Client.
 
 - IStrategy: Interface mà cung cấp chức năng để Context sử dụng
 
-- Concrete Strategy - Stratege Instance: Những Class mà implment IStrategy và ghi đè lại logic theo từng context.
+- Concrete Strategy: Những Class mà implment IStrategy và ghi đè lại logic theo từng context. Concrete Strategy sẽ được tạo ra ở thời điểm run-time.
 
 - Client: Có trách nghiệm tạo ra các Strategy Instance và pass nó vào Context.
 

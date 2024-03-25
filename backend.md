@@ -35,3 +35,7 @@
 -- Ping là lệnh hoặc tool được sử dụng để kiểm tra kết nối giữa local pc và 1 địa chỉ IP trên mạng.
 
 -- Ping được sử dụng để kiểm tra liệu một server hoặc 1 địa chỉ IP có thể kết nối với máy tính của bạn hay không. Nó cũng có thể đo đạc và giám sát thời gian phản hồi (latency).
+
+- Caching
+
+-- Caching là cơ chế mà cho phép chúng ta có thể chứa data ở khu vực chứa tạm thời ( temporary storage area ). Nên khi lần tới chúng ta cần sử dụng data đó, data đó được get nhanh hơn.
