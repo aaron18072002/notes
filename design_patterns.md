@@ -32,6 +32,18 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 --- Decorater Design Pattern:
 
+- Cung cấp những solutions để tự động thêm ( dynamically adds ) các chức năng mới vào một object hiện có mà không làm ảnh hưởng tới behavior của các object khác trong cùng base class.
+
+- Decorater Pattern giúp code của chúng ta followed theo Open-Closed Principle.
+
+- Component Interface (Interface hoặc abstract class): Định nghĩa giao diện cho đối tượng cơ bản và các đối tượng được mở rộng. Đây có thể là một interface hoặc một lớp abstract.
+
+- Concrete Component (Lớp cơ bản): Triển khai giao diện được xác định bởi Component Interface. Đây là đối tượng gốc mà chúng ta muốn mở rộng hoặc thêm các chức năng mới.
+
+- Decorator (Lớp trừu tượng Decorator): Là một lớp trừu tượng (abstract class) triển khai cùng giao diện như Component Interface. Decorator chứa một tham chiếu đến đối tượng của Component Interface và thêm các chức năng mới hoặc thay đổi hành vi của đối tượng gốc thông qua việc mở rộng và gọi lại phương thức của đối tượng gốc.
+
+- Concrete Decorator (Lớp Decorator cụ thể): Triển khai Decorator, thêm các chức năng mới hoặc thay đổi hành vi của đối tượng gốc.
+
 --- Adapter Design Pattern:
 
 --- Proxy Design Pattern:

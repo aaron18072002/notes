@@ -207,7 +207,7 @@
 
 - --- Có 4 kiểu class trong C#
 
-- static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
+- static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta. Một static class không được nested trong 1 class khác.
 
 - partial class: partial class được xem như các lớp con của 1 lớp cha nào đó nằm ở nhiều file (.cs) khác nhau. Nhiều file này kết hợp thành 1 trong compile-time. Các partial class muốn liên kết thì phải có cùng tên và namespace. Giống như việc chia nhỏ 1 class cha thành nhiều class con và phân bổ chúng ở nhiều file (.cs) khác nhau.
 
