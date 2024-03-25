@@ -203,6 +203,16 @@
 
 - Ta thường dùng IComparable để so sánh 2 object với cùng data type.
 
+--- LINQ trong C#
+
+- LINQ ( Language Integrated Query ) là 1 thư viện chứa nhiều methods giúp chúng ta query nhiều loại data một 1 cách simple và hiệu quả ( efficient ) hơn. Cụ thể, LINQ cung cấp một cú pháp để query, filter, group, và transform dữ liệu từ các nguồn dữ liệu khác nhau như List, Array, databases, XML, và các collections khác.
+
+- Hầu hết các methods trong LINQ đều là extension method cho các biến thuộc IEnumrable<T> type. Và LINQ methods sẽ không modify collection gốc mà thay vào đó sẽ tạo ra 1 collection mới.
+
+- Deferred Execution ( hoãn thực thi ) nghĩa là việc tính toán của 1 LINQ expression bị delay cho đến khi result được dùng đến. Nó giúp chúng ta luôn làm việc với data mới nhất và giúp cải thiện performce bằng việc tránh các logic chưa cần dùng đến. VÍ DỤ: Khi sử dụng các methods như "Where", "Select", "OrderBy",... thì các methods đó không thực thi ngay lập tức mà thay vào đó nó tạo ra 1 query, chỉ khi mà chúng ta yêu cầu result bằng cách lặp qua result đó hoặc sử dụng một method mà thay đổi result như "ToList()", "ToArray()" thì LINQ expression mới thực thi.
+
+- 1 số LINQ methods thường dùng: All(), Any(), Count() - return int, LongCount() - return long, Contains(), OrderBy() - mặc định là ascending, OrderByDescending(), Last(), First(), LastOrDefault(), FirstOrDefault(), Select() = map(), Where() = filter() trong JS
+
 --- Boxing và Unboxing trong C#
 
 - --- Có 4 kiểu class trong C#
@@ -343,6 +353,8 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Read-only, không thể modify các biến trong kiểu vô danh.
 
+- Chỉ chứa được fields và methods, không chứa được methods.
+
 --- Sự khác biệt giữa late binding và early binding trong C#
 
 - Late binding và early binding là ví dụ về tính đa hình trong OOP
@@ -478,10 +490,6 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Hàm Lambda dùng để thực thi 1 logic đơn giản mà không cần tạo ra 1 hàm riêng biệt. Hàm lambda sử dụng khi muốn truyền một hàm nhỏ và có thể không cần sử dụng lại hàm đó.
 
 - Lambda có thể làm việc với event handling, async/await, functional programming và đặc biệt là với delegate và LINQ library.
-
---- Build in method Select(), Where() trong C#
-
-- Select() = map(), Where() = filter()
 
 --- Event trong C#
 
