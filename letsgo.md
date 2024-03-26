@@ -1,17 +1,3 @@
--- C#
-
--> C# là gì ?
-
---- C# là một ngôn ngữ lập trình hướng đối tượng bậc cao do microsoft tạo ra.
-
---- C# là một ngôn ngữ biên dịch, nó được convert sang bytecode trên máy ảo CLR ( Common Language Runtime ). Rồi sau đó mới chuyển sang mã máy.
-
---- CLR( Common Languege Runtime ) có thể xem như 1 máy ảo, tại đó ứng dụng dựa trên .NET được thực thi.
-
---- CLR không phải 1 trình biên dịch. Mà nó được xem như 1 môi trường thực thi code ( runtime enviroment ).
-
---- Các biến của C# có thể được phân loại theo vị trí của bộ nhớ.
-
 --- Field và Property
 
 - Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó - việc này gọi là backing field.
@@ -417,7 +403,9 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Dùng out khi muốn vượt qua ( bypass ) giới hạn của 1 function là chỉ trả về 1 result.
 
-- VẤN ĐỀ: Khi chúng ta truyền 1 biến như 1 tham số của 1 function, 1 bản copy của biến đó sẽ được tạo ra, nó không affect tới biến gốc.
+- Về mặt kỹ thuật, khi bạn truyền một biến bằng ref, một con trỏ ( pointer ) đến vùng nhớ của biến đó được truyền vào phương thức. Với out cũng truyền con trỏ đến vùng nhớ của biến, nhưng với điều kiện rằng phương thức phải gán giá trị cho biến đó trước khi kết thúc.
+
+- VẤN ĐỀ: Chúng ta muốn truyền 1 tham trị với tư cách là tham số vào 1 function và ta muốn biến tham trị đó modify bởi logic trong function.
 
 --- So sánh toán tử == và equals()
 
@@ -524,6 +512,10 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Indexer là kỹ thuật giúp chúng ta truy cập vào các trường dữ liệu của 1 lớp thông qua [chỉ mục] do chúng ta tự định nghĩa.
 
 - Indexer provide a way to access elements of a collection or class by using square bracket notation ( dấu ngoặc vuông - [] ).
+
+- Thread trong C#
+
+-- Thread là các đơn vị ( units ) mà control flow của program.
 
 --- Multithreading trong C#
 
