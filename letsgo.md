@@ -34,7 +34,11 @@
 
 - Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, collections , classes, interface and delegate ).
 
-  --> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
+- Struct khác với Class như thế nào: Tất cả struct là sealed, nghĩa là nó không thể được kế thừa, vì thế không thể chứ abstract và virtual. Struct không có Finalizer method.
+
+- Có thể biến 1 struct trở thành immutable với keyword readonly, sau đó tất cả field và properties cửa struct đó cũng phải là expilicit readonly hoặc init. VÍ DỤ: readonly struct Point { private readony int z; public int X { get; init; } }
+
+--> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
 
 - Pointer Types ( Kiểu con trỏ ): Nhằm mục đích lưu trữ địa chỉ của 1 con trỏ khác.
 
@@ -445,15 +449,23 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - ReadOnly áp dụng được cho tham chiếu lẫn tham trị trừ Delegate và event.
 
---- Init với các thuộc tính readonly trong C#
+--- Init expression trong C#
 
-- Từ khóa init được sử dụng trong các thuộc tính chỉ đọc (read-only properties) để thiết lập giá trị ban đầu của thuộc tính trong constructor hoặc trong quá trình khởi tạo đối tượng.
+- Từ khóa init được sử dụng để chỉ định một thuộc tính (property) chỉ có thể được gán giá trị một lần duy nhất trong quá trình khởi tạo, sau đó không thể thay đổi giá trị của nó. Nó tương tự như việc sử dụng set trong một thuộc tính chỉ đọc (read-only property), nhưng khác biệt chính là bạn có thể gán giá trị trong quá trình khởi tạo, sau đó không thể thay đổi nó ở bất kỳ thời điểm nào sau đó.
 
 - VÍ DỤ: public string Title { get; init; }, init ở đây có nghĩa Title vẫn có thể bị gán trong phạm vi cửa class hoặc trong constructor. Và nó cũng ám chỉ Title là implicit readonly.
+
+--- With expression trong C#
+
+- Từ khóa with dùng để để tạo ra một bản sao của một đối tượng đã tồn tại với một số thay đổi được áp dụng. Điều này giúp tránh việc phải tạo ra một bản sao hoàn toàn mới của đối tượng và sao chép lại các giá trị không thay đổi.
+
+- VÍ DỤ: Person person = new Person { Name = "John", Age = 30 }; Person newPerson = originalPerson with { Age = 40 };
 
 --- Từ khóa null
 
 - null là từ khóa ám chỉ rằng nó không tham chiếu tới đối tượng nào cả.
+
+- Nếu 1 reference type variable tham chiếu tới null, nghĩa là nó không tham chiếu tới object nào cả.
 
 --- Delegate trong C#
 
