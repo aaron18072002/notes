@@ -34,7 +34,7 @@
 
 - Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, collections , classes, interface and delegate ).
 
-- Struct khác với Class như thế nào: Tất cả struct là sealed, nghĩa là nó không thể được kế thừa, vì thế không thể chứ abstract và virtual. Struct không có Finalizer method.
+- Struct khác với Class như thế nào: Tất cả struct là sealed, nghĩa là nó không thể được kế thừa, vì thế không thể chứa abstract và virtual. Struct không có Finalizer method.
 
 - Có thể biến 1 struct trở thành immutable với keyword readonly, sau đó tất cả field và properties cửa struct đó cũng phải là expilicit readonly hoặc init. VÍ DỤ: readonly struct Point { private readony int z; public int X { get; init; } }
 
@@ -185,13 +185,21 @@
 
 - 1 số type constrains thường dùng: https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters
 
---- IComparable<T> trong C#
+--- IComparable<T> Interface trong C#
 
 - IComparable là một interface cung cấp cách để 2 object so sánh với nhau cho mục đích sorting.
 
 - Class implement IComparable cung cấp một phương thức CompareTo(obj) để so sánh nó với một đối tượng khác. Phương thức này trả về negative number nếu đối tượng hiện tại nhỏ hơn đối tượng được so sánh, trả về 0 nếu chúng bằng nhau, và trả về positive number nếu đối tượng hiện tại lớn hơn đối tượng được so sánh. Trả về negative number chứng tỏ current object sẽ đứng trước object trong tham số, và ngược lại.
 
 - Ta thường dùng IComparable để so sánh 2 object với cùng data type.
+
+--- IEquatable Interface trong C#
+
+- Mục đích: Được sử dụng để xác định cách so sánh giữa hai đối tượng của cùng một kiểu dữ liệu.
+
+- Phương thức: Interface này chỉ định một phương thức Equals(object) mà mọi lớp triển khai phải thực hiện. Phương thức này cho phép so sánh một đối tượng với một đối tượng khác cùng kiểu và trả về kết quả là true nếu chúng bằng nhau và false nếu không.
+
+- Sử dụng: Thích hợp khi bạn cần kiểm tra tính bằng nhau của hai đối tượng cùng kiểu, chẳng hạn khi so sánh hai đối tượng dựa trên nội dung của chúng. Và khi bạn không muốn sử dụng method Equal() mặc định của System.Object vì method này sử dụng các mechanism như boxing, unboxing và reflection gây ảnh hưởng tiêu cực tới performance.
 
 --- LINQ trong C#
 
@@ -513,9 +521,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Để chỉ một phương thức thành 1 phương thức mở rộng, ta sử dụng keyword this ở trước tham số đầu tiên. This này reference tới đối tượng bạn dùng phương thức mở rộng cho.
 
---- Overloading Operator ( quá tải toán tử ) trong C#
+--- Overloading Operator trong C#
 
-- Là kỹ thuật giúp define ra các toán tử mới trên những đối tượng do bạn định nghĩa.
+- Là kỹ thuật giúp define ra các toán tử mới trên những đối tượng do bạn định nghĩa ( defined bên trong class ).
+
+- Có kiểu Overloading Operator là implicit và explicit.
 
 --- Indexer trong C#
 
