@@ -211,6 +211,22 @@
 
 - 1 số LINQ methods thường dùng: All(), Any(), Count() - return int, LongCount() - return long, Contains(), OrderBy() - mặc định là ascending, OrderByDescending(), Last(), First(), LastOrDefault(), FirstOrDefault(), Select() = map(), Where() = filter() trong JS
 
+--- Hash Functions trong .NET
+
+- GetHashCode() là 1 hash function được triển khai cho C# object ( cả value type và reference type ).
+
+- Đối với các kiểu giá trị như int, double, struct, enum,... GetHashCode() thường sẽ tính hash code dựa trên giá trị của chính nó. Ví dụ, hash code của một số nguyên sẽ bằng giá trị của số nguyên đó. Vì thế có thể sẽ dẫn đến key của 2 value type bằng nhau nếu chúng có value như nhau.
+
+- Đối với các kiểu tham chiếu, GetHashCode() thường sẽ sử dụng địa chỉ của đối tượng để tính hash code. Mặc định, phương thức GetHashCode() sẽ trả về giá trị hash code dựa trên địa chỉ bộ nhớ của đối tượng. Điều này đồng nghĩa với việc hai đối tượng tham chiếu khác nhau sẽ có hai mã hash code khác nhau, ngay cả khi chúng tham chiếu đến cùng một nội dung.
+
+- Trong .NET, các hàm băm (hash function) thường được sử dụng để ánh xạ dữ liệu từ các loại dữ liệu khác nhau sang các giá trị hash code duy nhất. Cụ thể, .NET Framework cung cấp một số lớp để thực hiện các chức năng băm, chẳng hạn như MD5, SHA1, SHA256, SHA384, và SHA512.
+
+- Hash code đóng vai trò như key trong hashed collection. Các loại hashed collections phổ biến: Dictionary, HashSet, ...
+
+- Nếu chúng override lại implemention của Equal() thì ta cũng nên override lại GetHashCode(). VÍ DỤ: Nếu chúng ta ghi đè lại Equal() để so sánh theo ID của object thì ta cũng nên ghi đè lại GetHashCode() để hash theo ID cho nó đồng bộ.
+
+- Nếu 1 object được sử dụng để làm key của 1 Dictionary, nó nên là immutable object, hoặc ít nhất các thuộc tính của nó phải là immutable.
+
 --- Có 4 kiểu class trong C#
 
 - static class: 1 Class được xác định là static là class tĩnh, không thể tạo các object từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta. Một static class không được nested trong 1 class khác.
@@ -334,6 +350,20 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 --> Tuple
 
 - Tuple là 1 generic collection, nó có thể lưu trữ ( stored ) một tập hợp các phần từ ( a set of elements ) với nhiều kiểu dữ liệu khác nhau ( mutiple diferent data types ).
+
+- Tuple chỉ chứa max được 8 phần tử.
+
+--- ValueTuple trong C#
+
+- ValueTuple là value type trong khi Tuple là reference type. ValueTuple là mutable trong khi Tuple là immutable.
+
+--- Record và Positional Record và Record Structs trong C#
+
+- Record: là một cấu trúc dữ liệu có thể immutable, được xác định bằng cách sử dụng từ khóa record, nghĩa là nó được truyền theo giá trị và không thể thay đổi sau khi tạo. Record là một kiểu dữ liệu tham chiếu, nhưng nó support việc so sánh theo giá trị. Khác với struct, records hỗ trợ việc inheritance.
+
+- Record Structs: Thuộc kiểu dữ liệu tham trị. Record Structs mặc định là mutable.
+
+- Positional record: Là một loại record trong C# có cú pháp ngắn gọn cho việc định nghĩa các thuộc tính của nó. Trong một positional record, các thuộc tính được xác định theo thứ tự vị trí của chúng trong khai báo record, và không cần phải xác định tên cho từng thuộc tính. Positional Record mặc định là mutable.
 
 --- Generic trong C#
 
@@ -527,6 +557,12 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Có kiểu Overloading Operator là implicit và explicit.
 
+- Các Overloading Operator bắt buộc phải là static method. VÍ DỤ: public static bool operator ==(Point p1, Point p2) { return p1.Equals(p2); }
+
+--- Pure Function trong C#
+
+- Là những Functions chỉ xử lý tham số mà nó được truyền vào chứ không có side effect ( ảnh hưởng tới các biến, hàm, class bên ngoài ).
+
 --- Indexer trong C#
 
 - Indexer là kỹ thuật giúp chúng ta truy cập vào các trường dữ liệu của 1 lớp thông qua [chỉ mục] do chúng ta tự định nghĩa.
@@ -567,9 +603,15 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Các object chỉ được dùng làm Attribute Type Parameter: string, bool, hoặc numeric types, Enums, Type, Mảng 1 chiều.
 
---- using trong C#
+--- Using trong C#
 
 - using được sử dụng để tạo một phạm vi có giới hạn cho một đối tượng và đảm bảo rằng đối tượng sẽ được giải phóng ngay sau khi phạm vi đó kết thúc.
+
+--- Preprocessor Directives (Những chỉ thị tiền xử lý) trong C#
+
+- Preprocessor Directives (Những chỉ thị tiền xử lý) trong C# là các commands được xử lý bởi trình biên dịch trước khi quá trình biên dịch thực sự bắt đầu. Chúng được sử dụng để kiểm soát việc biên dịch của mã nguồn dựa trên các điều kiện được xác định trước. Một trong những mục đích phổ biến của chúng là để kiểm soát các cảnh báo (warnings) mà chúng ta muốn thấy trong quá trình biên dịch.
+
+- 1 số PD thường dùng: #warning, #error, #nullable disable, #nullable enable, ...
 
 --- Task trong c#
 
