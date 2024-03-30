@@ -157,13 +157,19 @@
 
 - Base dùng để refer to base class constructor, và tất cả những method ở base class mà class con ( derived class ) có thể truy cập được.
 
---- Mảng IEnumrable trong C# có các thuộc tính sau
+--- Mảng thuộc IEnumrable interface trong C# có các thuộc tính sau
 
 - Là 1 mảng read-only, không thể thêm hay bớt elements.
 
 - Chỉ duyệt theo 1 chiều, từ đầu đến cuối.
 
 - IEnumrable có thể đại diện cho mọi Collection bao gồm cả Array.
+
+- ICollection interface và IList interface trong .NET
+
+- IEnumarable -> ICollection -> IList. Với IEumarable là base class của ICollection và ICollection và base class của IList.
+
+- IList bổ sung các method như IndexOf(item), Insert(int index, T item), RemoveAt(int index) và kỹ thuật indexer theo index.
 
 --- Type class trong C#
 
