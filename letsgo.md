@@ -625,6 +625,20 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task).
 
+- Params keyword trong C#
+
+- Trong C#, từ khóa params được sử dụng để khai báo một method với một số lượng đối số không xác định được truyền vào. Điều này có nghĩa là bạn có thể truyền vào một số lượng biến đối số không giới hạn khi gọi phương thức đó.
+
+- VD: public void Calculator(params int[] numbers) { }
+
+--- Yield Statement trong C#
+
+- Yield statement trong C# được sử dụng để tạo ra một iterator từ một phương thức. Iterator là một object cho phép bạn duyệt qua một tập hợp các phần tử một cách tuần tự.
+
+- Nếu 1 method có yield statement bên trong, method đó trở thành 1 iterator method. Khi gọi một iterator method, code bên trong phương thức không được thực thi ngay lập tức. Thay vào đó, phương thức trả về một đối tượng iterator mới, mà sau đó có thể được sử dụng để duyệt qua các phần tử một cách tuần tự. Một iterator luôn luôn tiếp tục tại nơi mà nó kết thúc lần trước.
+
+- Khi sử dụng yield, bạn có thể trả về từng phần tử của tập hợp một cách lười biếng, có nghĩa là phần tử sẽ được tính toán và trả về chỉ khi cần thiết. Điều này cho phép bạn làm việc với các tập hợp lớn mà không cần phải tạo ra toàn bộ tập hợp trước.
+
 - Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
 
 --- HttpClientHandler, DelegatingHandler cho HttpClient
