@@ -359,11 +359,11 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 --- Record và Positional Record và Record Structs trong C#
 
-- Record: là một cấu trúc dữ liệu có thể immutable, được xác định bằng cách sử dụng từ khóa record, nghĩa là nó được truyền theo giá trị và không thể thay đổi sau khi tạo. Record là một kiểu dữ liệu tham chiếu, nhưng nó support việc so sánh theo giá trị. Khác với struct, records hỗ trợ việc inheritance.
+- Record: là một cấu trúc dữ liệu có thể immutable, được xác định bằng cách sử dụng từ khóa record, nghĩa là nó được truyền theo giá trị và không thể thay đổi sau khi tạo. Record là một kiểu dữ liệu tham chiếu, nhưng nó support việc so sánh theo giá trị. Khác với struct, records hỗ trợ việc inheritance. Record thường dùng để DTO từ json file.
 
-- Record Structs: Thuộc kiểu dữ liệu tham trị. Record Structs mặc định là mutable.
+- Record Structs: Thuộc kiểu dữ liệu tham trị. Record Structs mặc định là mutable. Record Structs đã auto override ToString() để trả về toàn bộ fields của nó.
 
-- Positional record: Là một loại record trong C# có cú pháp ngắn gọn cho việc định nghĩa các thuộc tính của nó. Trong một positional record, các thuộc tính được xác định theo thứ tự vị trí của chúng trong khai báo record, và không cần phải xác định tên cho từng thuộc tính. Positional Record mặc định là mutable.
+- Positional record: Là một loại record trong C# có cú pháp ngắn gọn cho việc định nghĩa các thuộc tính của nó ( không có constructor ). Trong một positional record, các thuộc tính được xác định theo thứ tự vị trí của chúng trong khai báo record, và không cần phải xác định tên cho từng thuộc tính. Positional Record mặc định là mutable.
 
 --- Generic trong C#
 
