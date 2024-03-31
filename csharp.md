@@ -34,13 +34,17 @@
 
 - Reference Types ( Kiểu tham chiếu ): Không giống như kiểu giá trị, kiểu tham chiếu không lưu trữ trực tiếp giá trị của nó. Thay vào đó, nó lưu trữ địa chỉ nơi mà giá trị được giữ trong bộ nhớ. Giống như nó đang lưu trữ một con trỏ trỏ đến địa chỉ nơi biến được lưu trữ ( String, arrays, collections , classes, interface and delegate ).
 
+--> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
+
+- Pointer Types ( Kiểu con trỏ ): Nhằm mục đích lưu trữ địa chỉ của 1 con trỏ khác.
+
+--- Struct trong C#
+
 - Struct khác với Class như thế nào: Tất cả struct là sealed, nghĩa là nó không thể được kế thừa, vì thế không thể chứa abstract và virtual. Struct không có Finalizer method.
 
 - Có thể biến 1 struct trở thành immutable với keyword readonly, sau đó tất cả field và properties cửa struct đó cũng phải là expilicit readonly hoặc init. VÍ DỤ: readonly struct Point { private readony int z; public int X { get; init; } }
 
---> Trong đó, Array là một tập hợp các giá trị có cùng kiểu dữ liệu được lưu trữ tại các vị trí liền kề nhau trong bộ nhớ.
-
-- Pointer Types ( Kiểu con trỏ ): Nhằm mục đích lưu trữ địa chỉ của 1 con trỏ khác.
+- Một struct thường không nên chứa field hoặc properties kiểu referrence type. Nguyên nhân chính là bởi vì cách các đối tượng kiểu cấu trúc được xử lý và sao chép. Khi một đối tượng kiểu cấu trúc được sao chép, toàn bộ nội dung của nó sẽ được sao chép sang một bản sao mới, bao gồm cả các trường và thuộc tính. Nếu một struct chứa một trường hoặc thuộc tính của kiểu tham chiếu, việc sao chép đối tượng sẽ chỉ sao chép tham chiếu đến đối tượng gốc, không phải là sao chép toàn bộ đối tượng đó.
 
 --- Có 4 loại toán tử trong C#
 
@@ -437,9 +441,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- String và StringBuilder trong C#
 
-- String là đối tượng immutable. Nghĩa là mỗi lần thao tác với 1 String, C# sẽ tự động tạo ra 1 String mới trong memory,
+- Về mặt cấu trúc giải thuật, String là array chứa các characters, mà length của array là fixed. Do đó, String là đối tượng immutable. Nghĩa là mỗi lần thao tác với 1 String, C# sẽ tự động tạo ra 1 String mới trong memory hay nói cách khác là tạo một array of characters mới. String cũng support Equals() và GetHashCode() method.
 
-- StringBuilder allow bạn change 1 chuỗi trực tiếp trong memory thay vì tạo 1 bản copy mới. Default size của 1 StringBuilder là 16 nhưng nó có thể update 1 cách tự động.
+- String tối ưu hơn Char[] ở cơ chế string interning: String Interning trong C# là một quá trình tối ưu hóa bộ nhớ mà C# thực hiện để giảm bớt việc lặp lại cấp phát bộ nhớ cho các chuỗi có cùng giá trị. Khi bạn tạo một chuỗi mới, .NET Framework đầu tiên kiểm tra xem chuỗi đó đã được interned (được tham chiếu đến một vùng bộ nhớ duy nhất) chưa. Nếu chuỗi đã được interned trước đó, thì tham chiếu đến vùng bộ nhớ đó sẽ được trả về. Nếu không, chuỗi mới sẽ được thêm vào pool intern và được tham chiếu đến vùng bộ nhớ mới. String Interning sẽ không hoạt động nếu ta set string là 1 mutable. String Interning sử dụng Flyweight Design Pattern.
+
+- StringBuilder allow bạn change 1 chuỗi trực tiếp trong memory thay vì tạo 1 bản copy mới. Default size của 1 StringBuilder là 16 nhưng nó có thể update 1 cách tự động. 1 StringBuilder object hỗ trợ các method như AppendLine, Clear, Replace, ...
 
 --- Sự khác biệt giữa cách truyền tham số ref và out
 
@@ -633,11 +639,19 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Yield Statement trong C#
 
-- Yield statement trong C# được sử dụng để tạo ra một iterator từ một phương thức. Iterator là một object cho phép bạn duyệt qua một tập hợp các phần tử một cách tuần tự.
+- Yield statement trong C# được sử dụng để tạo ra một từ một phương thức. Iterator là một object cho phép bạn duyệt qua một tập hợp các phần tử một cách tuần tự.
 
 - Nếu 1 method có yield statement bên trong, method đó trở thành 1 iterator method. Khi gọi một iterator method, code bên trong phương thức không được thực thi ngay lập tức. Thay vào đó, phương thức trả về một đối tượng iterator mới, mà sau đó có thể được sử dụng để duyệt qua các phần tử một cách tuần tự. Một iterator luôn luôn tiếp tục tại nơi mà nó kết thúc lần trước.
 
 - Khi sử dụng yield, bạn có thể trả về từng phần tử của tập hợp một cách lười biếng, có nghĩa là phần tử sẽ được tính toán và trả về chỉ khi cần thiết. Điều này cho phép bạn làm việc với các tập hợp lớn mà không cần phải tạo ra toàn bộ tập hợp trước.
+
+--- Checked keyword trong C#
+
+- Từ khóa checked defined một scope mà trong đó các toán tử toán học sẽ được kiểm tra để đảm bảo không xảy ra hiện tượng numeric overflow. Nếu xảy ra thì sẽ throw OverflowExeception(). VD: try { checked { z = x + y; } } catch(OverflowException ex) {}
+
+- Checked Scope có thể gây ảnh hưởng tới performance.
+
+- Numeric Overflow là hiện tượng mà một biến numeric type chứa 1 giá trị vượt quá sức chứa của nó.
 
 - Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
 

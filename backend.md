@@ -39,3 +39,19 @@
 - Caching
 
 -- Caching là cơ chế mà cho phép chúng ta có thể chứa data ở khu vực chứa tạm thời ( temporary storage area ). Nên khi lần tới chúng ta cần sử dụng data đó, data đó được get nhanh hơn.
+
+- What is REST ?
+
+-- REST stands for Representational State Transfer. This is a software architectural for providing standards between computer systems on the web, making it easier to communicate with each other.
+
+-- There are 4 basic HTTP verbs used to interact with resources in a REST system:
+
+--> GET: retrive a specifec resources ( by id ) or a collection of resources.
+
+--> POST: create a new resource.
+
+--> PUT: update a entire specific resource ( by id ).
+
+--> PATCH: update a partial specific resource ( by id ).
+
+--> DELETE: remove a specific resource by id.

@@ -44,11 +44,9 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Concrete Decorator (Lớp Decorator cụ thể): Triển khai Decorator, thêm các chức năng mới hoặc thay đổi hành vi của đối tượng gốc.
 
---- Adapter Design Pattern:
+--- Flyweight Design Pattern:
 
---- Proxy Design Pattern:
-
---- Facade Design Pattern:
+- Flyweight Design Pattern được sử dụng để tối ưu hóa việc sử dụng bộ nhớ bằng cách chia sẻ data nhiều nhất có thể trong nhiều object giống nhau. Bằng cách này, Flyweight giúp giảm lượng bộ nhớ được sử dụng trong ứng dụng bằng cách loại bỏ sự lặp lại của dữ liệu trong các đối tượng.
 
 --> Behavioral Design Patterns: Bao gồm những design patterns cung cấp các solutions để các class và object giao tiếp và tương tác với nhau. Các patterns này mô tả cách mà các class và object khác nhau liên lạc với nhau và phân chia nghiệm vụ.
 
