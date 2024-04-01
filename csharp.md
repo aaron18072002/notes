@@ -659,6 +659,22 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - DelegatingHandler: là 1 handler đặc biệt, nó như 1 Middleware để tạo ra một pipeline ( chuỗi các handler ).
 
+--- Process và Thread trong C#
+
+- Trong ngôn ngữ lập trình C#, một process (tiến trình) thường đề cập đến một chương trình đang được thực thi trên hệ thống hoặc một phiên bản thực hiện của một ứng dụng. Các Process hoạt động độc lập và không phụ thuộc vào nhau. Mỗi process có một không gian bộ nhớ riêng, không thể truy cập trực tiếp bởi các process khác. Mỗi process có thể chứa một hoặc nhiều luồng, mỗi luồng thực hiện một nhiệm vụ cụ thể trong quá trình đó.
+
+- Thread là một đơn vị thực thi ( an execution unit ) nhỏ nhất trong một process.
+
+- Multithreading ( đa luồng ) trong C#
+
+- Đa luồng cho phép một chương trình thực thi nhiều luồng (threads) cùng một lúc. Bằng cách này, chương trình có thể thực hiện nhiều tác vụ đồng thời, cải thiện hiệu suất và đáp ứng của ứng dụng. Các thread một ứng dụng đa luồng có thể thực thi theo cơ chế Concurrent và Parallel.
+
+--- Concurrent và Parallel trong Multithreading
+
+- Concurrent: Là khi 2 hoặc nhiều thread có thể start, run và complete trong các khoảng thời gian chồng chéo nhau. Tức là một phần nhỏ của một luồng có thể được thực thi trước, sau đó một phần nhỏ của luồng khác, và tiếp tục như vậy. Điều này tạo ra sự song song trong việc thực hiện các tác vụ mà không cần phải đợi mỗi luồng hoàn thành trước khi bắt đầu luồng tiếp theo.
+
+- Parallel: Là khi nhiều thread được thực thi trong cùng một thời điểm, và những thread này thường được thực thi trên các core khác nhau trong CPU.
+
 --- Stream trong C#
 
 - Stream đại diện cho 1 luồng dữ liệu, tức là 1 chuỗi liên tục các byte đang được truyền hoặc xử lý.
