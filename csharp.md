@@ -539,22 +539,6 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Lambda có thể làm việc với event handling, async/await, functional programming và đặc biệt là với delegate và LINQ library.
 
---- Event trong C#
-
-- Publisher: class phát sự kiện.
-
-- Subcriber: class nhận sự kiện.
-
-- event trong C# là 1 cơ chế thông báo cho các class khác rằng 1 hành động đã xảy ra.
-
-- 1 biến event có thể được xem như 1 mutilcast delegate. event phải được khai báo như 1 field, không phải 1 thuộc tính.
-
-- event dựa trên delegate model, trong khi delegate model dựa trên Observer Design Pattern.
-
-- EventHandler là một kiểu delegate được tích hợp sẵn trong .NET chuyên sử dụng để khai báo và tạo ra các sự kiện ( events ).
-
-- EventHandler ~ delegate void Name(object? sender, EventArgs arg).
-
 --- Extension Method ( phương thức mở rộng ) trong C#
 
 - Phương thức mở rộng là các phương thức được thêm vào lớp, interface có sẵn mà không cần thiết phải thay đổi code của lớp đó. Class mà chứa extension methods phải là static và bản thân extension methods đó cũng phải là static.
@@ -631,6 +615,8 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task).
 
+- Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
+
 - Params keyword trong C#
 
 - Trong C#, từ khóa params được sử dụng để khai báo một method với một số lượng đối số không xác định được truyền vào. Điều này có nghĩa là bạn có thể truyền vào một số lượng biến đối số không giới hạn khi gọi phương thức đó.
@@ -653,7 +639,21 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Numeric Overflow là hiện tượng mà một biến numeric type chứa 1 giá trị vượt quá sức chứa của nó.
 
-- Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
+--- Event trong C#
+
+- Event trong C# là 1 cơ chế thông báo cho các class khác rằng 1 hành động đã xảy ra.
+
+- Event phải được khai báo như 1 field, không phải 1 thuộc tính. Một biến event có thể được xem như 1 mutilcast delegate vì nó có thể tham chiếu tới nhiều methods của các observer object. Event khác với 1 field thuộc type delegate ở chỗ là event chỉ có thể được invoke() ở bên trong class chứa nó còn biến delagate có thể được gọi ở bất kì đâu tùy thuộc vào access modifier.
+
+- Event implement Observer Design Pattern. Mechanism của Event đựa trên việc dùng delegates.
+
+- Method Invoke() được sử dụng để gọi tất cả các phương thức đăng ký với sự kiện đó. Đây là một cách để kích hoạt sự kiện và gửi thông điệp đến tất cả các đăng ký. Khi bạn gọi Invoke(), tất cả các phương thức đăng ký được gọi tuần tự.
+
+- EventHandler là một kiểu delegate được tích hợp sẵn trong .NET chuyên sử dụng để khai báo và tạo ra các sự kiện ( events ).
+
+- EventHandler ~ delegate void Name(object? sender, EventArgs e). Tham số sender: Đây là đối tượng gửi sự kiện. Thường thì nó là đối tượng mà sự kiện được kích hoạt từ đó. Tham số e: Đây là đối tượng chứa thông tin về sự kiện. Thông thường, nó là một đối tượng của lớp EventArgs hoặc một lớp con của EventArgs.
+
+--- Null-Propagating operator trong C#: Giống toán tử ?. trong JS
 
 --- HttpClientHandler, DelegatingHandler cho HttpClient
 

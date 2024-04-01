@@ -70,9 +70,9 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Tạo ra mối quan hệ 1 - nhiều giữa các object với nhau, để cho khi 1 object thay đổi trạng thái hoặc event của nó thì các objects phụ phuộc vào object đó sẽ được notify và update 1 cách tự động.
 
-- Subject - Observable: Observable class có nghiệm vụ hold các List Observer và các methods.
+- Subject - Observable: Đây là đối tượng mà các Observer đăng ký để nhận thông báo. Subject chứa một danh sách các Observer đã đăng ký và cung cấp các phương thức để thêm, xóa và thông báo cho các Observer khi có sự thay đổi. Khi muốn notify, Observable class chỉ đơn giản là tạo 1 method Notify() rồi lặp qua tất cả các Observers rồi cho chúng gọi method Update() với thông tin muốn thông báo.
 
-- Subcriber: là interface nằm trong Observable Class để nó notify cho Observers mỗi khi có state thay đổi hoặc có event nào đó.
+- Observer: Đây là các đối tượng đăng ký để nhận thông báo từ Subject khi có sự thay đổi. Observer thường triển khai một phương thức được gọi là update() hoặc tương tự để xử lý thông báo từ Subject.
 
 VẤN ĐỀ: Tạo 1 class hệ thống an ninh cho 1 building ( observable ) và class nhân viên bảo vệ ( observer ) sẽ phụ thuộc vào class đó. Observable Class này sẽ chứa 2 List là externalVisitor ( khách ) và observer ( nvien ) và các methods để mỗi khi xác nhận khách ra hoặc vào sẽ notify cho các observers ( nvien ) biết.
 
