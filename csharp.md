@@ -565,20 +565,6 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Indexer provide a way to access elements of a collection or class by using square bracket notation ( dấu ngoặc vuông - [] ).
 
-- Thread trong C#
-
--- Thread là các đơn vị ( units ) mà control flow của program.
-
---- Multithreading trong C#
-
-- Multithreading là 1 kỹ thuật để cùng 1 lúc có thể xử lý nhiều tác vụ. Mặc định C# có 2 luồng: main thread và thread UI.
-
---- Async/Await trong C#
-
-- Lập trình bất đồng bộ ( asynchronous ) là tạo ra các app có thể chạy đa luồng ( multithreading )
-
-- Lớp Task<T> biểu thị cho tác vụ bất đồng bộ, từ đó chạy được code bất đồng bộ.
-
 --- Reflection trong C#
 
 - Reflection là cơ chế cho phép bạn xem và tương tác với cấu trúc của các loại (types) trong thời gian chạy của ứng dụng.
@@ -608,14 +594,6 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Preprocessor Directives (Những chỉ thị tiền xử lý) trong C# là các commands được xử lý bởi trình biên dịch trước khi quá trình biên dịch thực sự bắt đầu. Chúng được sử dụng để kiểm soát việc biên dịch của mã nguồn dựa trên các điều kiện được xác định trước. Một trong những mục đích phổ biến của chúng là để kiểm soát các cảnh báo (warnings) mà chúng ta muốn thấy trong quá trình biên dịch.
 
 - 1 số PD thường dùng: #warning, #error, #nullable disable, #nullable enable, ...
-
---- Task trong c#
-
-- Task là một loại dữ liệu đại diện cho một tác vụ (hoặc một công việc) được thực thi bất đồng bộ. Task cung cấp một cơ chế để theo dõi tiến trình và kết quả của tác vụ.
-
-- Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task).
-
-- Task cung cấp các phương thức và thuộc tính để theo dõi trạng thái của tác vụ, như IsCompleted, IsFaulted, Result,...
 
 - Params keyword trong C#
 
@@ -674,6 +652,48 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 - Concurrent: Là khi 2 hoặc nhiều thread có thể start, run và complete trong các khoảng thời gian chồng chéo nhau. Tức là một phần nhỏ của một luồng có thể được thực thi trước, sau đó một phần nhỏ của luồng khác, và tiếp tục như vậy. Điều này tạo ra sự song song trong việc thực hiện các tác vụ mà không cần phải đợi mỗi luồng hoàn thành trước khi bắt đầu luồng tiếp theo.
 
 - Parallel: Là khi nhiều thread được thực thi trong cùng một thời điểm, và những thread này thường được thực thi trên các core khác nhau trong CPU.
+
+--- Async/Await trong C#
+
+- Asynchronous programming là một phương pháp lập trình cho phép các tác vụ I/O operations that await (như gọi API, truy vấn cơ sở dữ liệu, hoặc đọc/ghi dữ liệu từ tệp tin) được thực hiện mà không chặn luồng chính của ứng dụng. Thay vì chờ đợi cho đến khi tác vụ I/O hoàn thành, ứng dụng có thể tiếp tục thực hiện các tác vụ khác hoặc tiếp tục xử lý sự kiện trong khi tác vụ I/O đang chờ đợi.
+
+- Trong C#, asynchronous programming thường được thực hiện bằng cách sử dụng các từ khóa async và await, cũng như các phương thức trả về Task hoặc Task<T>. VD: public async Task<List<Person>> GetPerson(string url)
+
+--- Task Class và Task Parallel Library (TPL) trong c#
+
+- Task là một data type đại diện cho một tác vụ (hoặc một công việc) được thực thi bất đồng bộ trên mỗi Thread riêng biệt. Task cung cấp một cơ chế để theo dõi tiến trình và kết quả của tác vụ.
+
+- Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task). Task khá giống với Promise trong JS. Cả hai đều đại diện cho một giá trị mà có thể không khả dụng ngay lập tức, nhưng sẽ được xử lý và trả về kết quả tại một thời điểm trong tương lai.
+
+- Task hỗ trợ các property như Result và các methods như Wait(), WaitAll(), Canceling, Executed, ... và hanlding exceptions.
+
+- TPL queues tasks vào ThreadPool.
+
+- Contination là function mà sẽ được thực thi sau khi Task được completed. Có thể defined một continuation với ContinueWuth() method.
+
+- Child Task: là một task được tạo ra và thực thi bởi một task khác, thường được gọi là parent task. Child task thường được tạo ra như là một phần của logic của parent task và thực hiện các công việc con hoặc song song với công việc của parent task.
+
+- Task Lifecycle: Created -> WaitingForActivcation -> WaitingToRun -> Running -> WaitingForChildrenToComplete -> Cancled, RanToCompletion, Faulted.
+
+--- So sánh asynchonous trong single thread và asynchonous trong multithread với C#
+
+-- Single-Threaded Asynchronous Programming:
+
+- Non-blocking I/O: Trong single-threaded asynchronous programming, một thread làm việc chủ yếu vẫn sẽ thực hiện các tác vụ I/O (Input/Output) không đồng bộ như gửi yêu cầu HTTP, truy vấn cơ sở dữ liệu, hoặc đọc tệp tin, nhưng không chờ đợi cho đến khi các tác vụ này hoàn thành.
+
+- Callback hoặc async/await: C# cung cấp các cơ chế như callback hoặc async/await để xử lý asynchrony trên single thread. Khi một tác vụ I/O không đồng bộ được gọi, thread có thể tiếp tục thực hiện các công việc khác mà không bị chặn.
+
+- Event Loop: Trong single-threaded asynchronous programming, một vòng lặp sự kiện (event loop) thường được sử dụng để quản lý việc thực thi các tác vụ không đồng bộ và đảm bảo rằng các callback được gọi khi các tác vụ hoàn thành.
+
+-- Multi-Threaded Asynchronous Programming: Trong multi-threaded asynchronous programming, nhiều thread có thể được sử dụng để thực hiện các tác vụ không đồng bộ. Mỗi thread có thể xử lý một phần của tác vụ, giúp tăng hiệu suất và đáp ứng của ứng dụng.
+
+--- ThreadPool trong C#
+
+- ThreadPool tạo ra một số lượng các threads under the hood, và tái sử dụng các Threads đó thay vì tạo cái mới.
+
+--- Cancellation token trong C#
+
+- Một cancellation token là 1 object được shared bởi code mà request the cancellation và tác vụ (task) đã bị hủy. Nó cho phép code request hủy thông báo cho tác vụ rằng nó cần phải hủy bỏ và tác vụ có thể theo dõi trạng thái hủy bằng cách sử dụng token này. 1 obj cancellation được implment tử class CancellationTokenSource.
 
 --- Stream trong C#
 
