@@ -734,7 +734,7 @@ Mutex:
 
 -- ADO ( ActiveX Data Object ) là 1 thư viện chứa tập hợp các classes, methods và interface giúp application handle data trong database. Các thành phần cốt lõi của ADO.NET gồm:
 
-- Connection,
+- Connection - Đại diện cho một kết nối đến cơ sở dữ liệu. Nó chứa thông tin như chuỗi kết nối, thông tin xác thực, và các thiết lập khác.
 
 - Command - Thực thi các truy vấn hoặc các lệnh lên cơ sở dữ liệu.
 
