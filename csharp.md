@@ -732,10 +732,20 @@ Mutex:
 
 --- ADO.NET trong C#
 
-- ADO ( ActiveX Data Object ) là tập hợp các thư viện cho phép application tương tác ( CRUD ) với database.
+-- ADO ( ActiveX Data Object ) là 1 thư viện chứa tập hợp các classes, methods và interface giúp application handle data trong database. Các thành phần cốt lõi của ADO.NET gồm:
 
-- Kiến trúc của ADO gồm 2 phần: DataProvider và DataSet
+- Connection,
 
-DataProvider: Là tập hợp các class và Interface để connect và tương tác với database. Mỗi loại data thì có 1 DataProvider riêng ( ví dụ: DataProvider default trong .NET Core là SqlClient connect đến SqlServer ).
+- Command - Thực thi các truy vấn hoặc các lệnh lên cơ sở dữ liệu.
 
-DataSet:
+- DataReader - Đọc dữ liệu từ cơ sở dữ liệu dưới dạng một luồng tuần tự của dòng dữ liệu.
+
+- DataAdapter - Đóng gói kết nối với cơ sở dữ liệu và thực hiện các thao tác như truy vấn dữ liệu và cập nhật dữ liệu. Nó hoạt động với các đối tượng DataSet và DataTable.
+
+- DataView - DataView là một tập hợp của các dòng dữ liệu từ một DataTable trong DataSet. Nó cung cấp một cách để xem và làm việc với dữ liệu từ một bảng dữ liệu theo cách mà không ảnh hưởng đến bảng dữ liệu gốc.
+
+- Với 2 thành phần chính đó là:
+
+- DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
+
+- DataSet: Là một thành phần của ADO.NET được sử dụng để lưu trữ dữ liệu từ cơ sở dữ liệu, thường là kết quả của các truy vấn. DataSet không phụ thuộc vào loại cơ sở dữ liệu cụ thể mà được sử dụng như một cấu trúc dữ liệu độc lập, có thể lưu trữ và xử lý dữ liệu tạm thời trước khi được hiển thị hoặc xử lý bởi ứng dụng. DataSet bao gồm một hoặc nhiều bảng dữ liệu, mỗi bảng chứa các hàng và cột tương ứng với dữ liệu trả về từ cơ sở dữ liệu.
