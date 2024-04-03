@@ -85,10 +85,6 @@
 
 - Nên cố gằng throw ra specific exception nhất có thể vì nếu throw base Exception. Sẽ không thể phân biệt ( distingish ) đó chính xác là kiểu exception nào. Và có thể base Exception sẽ catch nhầm một exception nào đó. Nếu specific exception không thể mô tả chi tiết error hơn global exception thì ta nên catch nó ở global exception luôn.
 
-- Ở locally - specific exception (lowest level): không nên log error mà nên handle nó meaning hơn.
-
-- Một custom exception nên có chữ cuối là Exception và devired base Exception class.
-
 --- Throw ex và throw
 
 - throw ex: Exception sẽ được tạo mới và ném đi. Stack Trace sẽ start từ vị trí ( place ) nơi Exception được ném. Điều này có nghĩa những method calls trước đó bị mất. Nghĩa là throw ex không bảo toàn ( does not preserves ) Stack Trace.
@@ -665,15 +661,25 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task). Task khá giống với Promise trong JS. Cả hai đều đại diện cho một giá trị mà có thể không khả dụng ngay lập tức, nhưng sẽ được xử lý và trả về kết quả tại một thời điểm trong tương lai.
 
-- Task hỗ trợ các property như Result và các methods như Wait(), WaitAll(), Canceling, Executed, ... và hanlding exceptions.
+- Task hỗ trợ các property như Result và các methods như Wait(), WaitAll(), Canceling, Executed, ... và hanlding exceptions. Các method như Wait() và WaitAll() cũng đều blocked main thread. Dùng async/ await thì không block main thread và cũng không tạo Thread mới.
 
 - TPL queues tasks vào ThreadPool.
 
-- Contination là function mà sẽ được thực thi sau khi Task được completed. Có thể defined một continuation với ContinueWuth() method.
+- Contination là function mà sẽ được thực thi sau khi Task được completed. Có thể defined một continuation với ContinueWith() method. VD: var t1 = Task.Run(lambda).ContinueWith(lambda, TaskConinuationOptions.OnlyOnFaulted)
 
 - Child Task: là một task được tạo ra và thực thi bởi một task khác, thường được gọi là parent task. Child task thường được tạo ra như là một phần của logic của parent task và thực hiện các công việc con hoặc song song với công việc của parent task.
 
 - Task Lifecycle: Created -> WaitingForActivcation -> WaitingToRun -> Running -> WaitingForChildrenToComplete -> Cancled, RanToCompletion, Faulted.
+
+--- Khác nhau giữa Task Class và Thread Class trong C#
+
+- Cả 2 đều tạo ra luồng mới nhưng cách hoạt động khác nhau.
+
+- Khi bạn tạo một Task bằng cách sử dụng Task.Run() hoặc Task.Factory.StartNew(), Task sẽ tạo ra một luồng mới thông qua ThreadPool. Khi công việc của Task hoàn thành, luồng này sẽ được trả lại vào ThreadPool để sử dụng lại cho các tác vụ khác.
+
+- ThreadPool là một pool (bể) của các luồng đã được tạo trước bởi hệ thống để sử dụng lại và quản lý hiệu quả tài nguyên. Khi bạn tạo một Task, hệ thống sẽ cố gắng lấy một luồng từ ThreadPool để thực thi công việc của Task.
+
+- Khi bạn tạo một Thread bằng cách tạo một đối tượng Thread mới và gọi phương thức Start(), bạn thực sự tạo ra một luồng mới trong hệ thống. Khi luồng kết thúc công việc của mình, nó sẽ được hệ thống giải phóng và thu hồi tài nguyên.
 
 --- So sánh asynchonous trong single thread và asynchonous trong multithread với C#
 
@@ -687,13 +693,32 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 -- Multi-Threaded Asynchronous Programming: Trong multi-threaded asynchronous programming, nhiều thread có thể được sử dụng để thực hiện các tác vụ không đồng bộ. Mỗi thread có thể xử lý một phần của tác vụ, giúp tăng hiệu suất và đáp ứng của ứng dụng.
 
---- ThreadPool trong C#
-
-- ThreadPool tạo ra một số lượng các threads under the hood, và tái sử dụng các Threads đó thay vì tạo cái mới.
-
 --- Cancellation token trong C#
 
-- Một cancellation token là 1 object được shared bởi code mà request the cancellation và tác vụ (task) đã bị hủy. Nó cho phép code request hủy thông báo cho tác vụ rằng nó cần phải hủy bỏ và tác vụ có thể theo dõi trạng thái hủy bằng cách sử dụng token này. 1 obj cancellation được implment tử class CancellationTokenSource.
+- Một cancellation token là 1 object được shared bởi code mà request the cancellation và tác vụ (task) đã bị hủy. Nó cho phép code request hủy thông báo cho tác vụ rằng nó cần phải hủy bỏ và tác vụ có thể theo dõi trạng thái hủy bằng cách sử dụng token này. 1 obj cancellation được implment từ class CancellationTokenSource.
+
+--- Race condition trong multithreading
+
+- Race condition là một vấn đề xảy ra khi hai hoặc nhiều tiến trình hoặc luồng cùng truy cập vào một tài nguyên chia sẻ và thay đổi nó mà không đồng bộ hóa đúng cách. Khi đó, kết quả cuối cùng của tài nguyên chia sẻ phụ thuộc vào thứ tự thực thi của các luồng, và có thể dẫn đến kết quả không mong muốn hoặc không xác định.
+
+--- Lock và Mutex trong C#
+
+Lock:
+
+- Lock là một cấu trúc ngôn ngữ (language construct) trong C# được sử dụng để đảm bảo rằng chỉ có một luồng có thể truy cập vào một phần mã được bảo vệ (critical section) tại một thời điểm.
+
+- Khi một luồng thực thi đến một khối lock, nó sẽ yêu cầu khóa cho đối tượng được chỉ định và giữ khóa đó cho đến khi nó hoàn thành việc thực thi khối đó. Trong thời gian này, các luồng khác sẽ bị chặn (blocked) và phải đợi cho đến khi luồng hiện tại giải phóng khóa.
+
+- lock thường được sử dụng để bảo vệ các biến hoặc tài nguyên chia sẻ mà không được thay đổi cùng một lúc bởi nhiều luồng.
+
+Mutex:
+
+- Mutex là một kiểu đối tượng trong C# được sử dụng để đảm bảo rằng chỉ có một luồng có thể thực hiện một phần mã được bảo vệ (critical section) tại một thời điểm.
+
+- Mutex có thể được chia sẻ qua các quy trình và luồng khác nhau, cho phép đồng bộ hóa giữa các ứng dụng khác nhau.
+  Khi một luồng yêu cầu một Mutex, nó sẽ cố gắng khóa Mutex. Nếu Mutex đã được khóa bởi một luồng khác, luồng yêu cầu sẽ bị chặn (blocked) cho đến khi Mutex được giải phóng.
+
+- Mutex thường được sử dụng trong các tình huống đòi hỏi đồng bộ hóa giữa các ứng dụng hoặc giữa các luồng trong cùng một ứng dụng khi sử dụng lock không đủ.
 
 --- Stream trong C#
 
