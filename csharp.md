@@ -738,9 +738,9 @@ Mutex:
 
 - Command - Thực thi các SQL query trên data source. Base class là DbCommand.
 
-- DataReader - Cho phép lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dung DataAdapter thay vì DataReader. Base class là DbDataReader.
+- DataReader - Thực thi các Command để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader.
 
-- DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu.
+- DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu. Constructor của DataAdapter nhận 1 Command obj.
 
 - DataView - DataView là một tập hợp của các dòng dữ liệu từ một DataTable trong DataSet. Nó cung cấp một cách để xem và làm việc với dữ liệu từ một bảng dữ liệu theo cách mà không ảnh hưởng đến bảng dữ liệu gốc.
 
