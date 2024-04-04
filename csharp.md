@@ -734,13 +734,13 @@ Mutex:
 
 -- ADO ( ActiveX Data Object ) là 1 thư viện chứa tập hợp các classes, methods và interface giúp application handle data trong database. Các thành phần cốt lõi của ADO.NET gồm:
 
-- Connection - Đại diện cho một kết nối đến cơ sở dữ liệu. Nó chứa thông tin như chuỗi kết nối, thông tin xác thực, và các thiết lập khác.
+- Connection - Dùng để connect to database. Base class là DbConnection.
 
-- Command - Thực thi các truy vấn hoặc các lệnh lên cơ sở dữ liệu.
+- Command - Thực thi các SQL query trên data source. Base class là DbCommand.
 
-- DataReader - Đọc dữ liệu từ cơ sở dữ liệu dưới dạng một luồng tuần tự của dòng dữ liệu.
+- DataReader - Cho phép lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dung DataAdapter thay vì DataReader. Base class là DbDataReader.
 
-- DataAdapter - Đóng gói kết nối với cơ sở dữ liệu và thực hiện các thao tác như truy vấn dữ liệu và cập nhật dữ liệu. Nó hoạt động với các đối tượng DataSet và DataTable.
+- DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu.
 
 - DataView - DataView là một tập hợp của các dòng dữ liệu từ một DataTable trong DataSet. Nó cung cấp một cách để xem và làm việc với dữ liệu từ một bảng dữ liệu theo cách mà không ảnh hưởng đến bảng dữ liệu gốc.
 
@@ -748,4 +748,4 @@ Mutex:
 
 - DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
 
-- DataSet: Là một thành phần của ADO.NET được sử dụng để lưu trữ dữ liệu từ cơ sở dữ liệu, thường là kết quả của các truy vấn. DataSet không phụ thuộc vào loại cơ sở dữ liệu cụ thể mà được sử dụng như một cấu trúc dữ liệu độc lập, có thể lưu trữ và xử lý dữ liệu tạm thời trước khi được hiển thị hoặc xử lý bởi ứng dụng. DataSet bao gồm một hoặc nhiều bảng dữ liệu, mỗi bảng chứa các hàng và cột tương ứng với dữ liệu trả về từ cơ sở dữ liệu.
+- DataSet: Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu
