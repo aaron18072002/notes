@@ -1,16 +1,23 @@
-- KEYWORDs
+- HTTP và HTTPS
 
--- Các Collection của C#, Design Pattern của C#, Dependency Injection
+-- HTTPS (Hypertext Transfer Protocol Secure) là một phiên bản bảo mật của giao thức HTTP (Hypertext Transfer Protocol). HTTPS sử dụng SSL (Secure Sockets Layer) hoặc TLS (Transport Layer Security) để mã hóa dữ liệu truyền từ máy khách đến máy chủ và ngược lại. SSL/TLS cung cấp một lớp bảo vệ bổ sung để đảm bảo rằng thông tin truyền qua mạng được mã hóa và không thể đọc được bởi bất kỳ ai ngoài người gửi và người nhận.
 
--- Các thuật toán sắp xếp
+- Cấu trúc của 1 HTTP Request
 
--- SQL
+-- Request Line: Dòng này chứa các thông tin cơ bản về request, bao gồm: Phương thức (method): GET, POST, PUT, DELETE, ... Đường dẫn của tài nguyên được yêu cầu trên máy chủ (URI). Phiên bản của giao thức HTTP được sử dụng (ví dụ: HTTP/1.1)
 
--- Proxy, Reserve Proxy, Load Balance
+-- Headers: Đây là danh sách các cặp key-value mô tả thông tin chi tiết về yêu cầu, bao gồm: User-Agent: Thông tin về trình duyệt hoặc ứng dụng gửi yêu cầu, Host: Tên miền hoặc địa chỉ IP của máy chủ mà yêu cầu đang gửi đến, Content-Type: Loại nội dung của dữ liệu gửi kèm (đối với các phương thức như POST, PUT), Content-Length: Kích thước của dữ liệu gửi kèm (nếu có),
+Accept: Các định dạng dữ liệu mà client có thể chấp nhận từ server, vv.
 
--- Abstract và Interface trong C#
+-- Body: Đây là phần optional của request và chứa dữ liệu gửi kèm (nếu có), như dữ liệu form trong trường hợp của method POST hoặc PUT.
 
--- Luồng làm việc của FE lẫn BE
+- Cấu trúc của 1 HTTP Response
+
+-- Status Line: Dòng này chứa mã trạng thái HTTP và thông điệp trạng thái, bao gồm: Phiên bản của giao thức HTTP được sử dụng (ví dụ: HTTP/1.1), Status code: Đại diện cho kết quả của yêu cầu, ví dụ như 200 (OK), 404 (Not Found), 500 (Internal Server Error), ... Status message: Một thông điệp mô tả vắn tắt về mã trạng thái.
+
+-- Header: Chứa các cặp key-value sau: Content-Type: Loại nội dung của dữ liệu được trả về, Server: Thông tin về máy chủ (phần mềm máy chủ và phiên bản), Date: Thời điểm mà phản hồi được tạo ra, Cache-Control: Các hướng dẫn về cách xử lý bộ nhớ cache.
+
+-- Body: Phần này có thể chứa HTML, văn bản, JSON, hình ảnh, video, ... Tùy thuộc vào loại nội dung mà server trả về.
 
 - CORS
 
