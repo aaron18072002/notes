@@ -742,7 +742,7 @@ Mutex:
 
 - Command - Thực thi các SQL query trên data source. Base class là DbCommand. Các Properties của SqlCommand: CommandText, Connection, CommandType. Một số methods của Command: ExecReader() - Dùng khi T-SQL trả về nhiều hơn 1 giá trị, truy vấn rows của 1 table, ExecNonQuery() - Dùng khi muốn INSERT, UPDATE, DELETE data, ExecScalar() - Dùng khi chỉ muốn return 1 giá trị, kết hợp với aggregate functions ( Count, Avg, Sum ).
 
-- DataReader - Object của SqlDataReader không thể được create bởi new keyword mà thay vào đó nó được tạo ra bởi việc thực thi các method của DBCommand để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader. Một số Properties: FieldCount, HasRows, IsClosed, Item[string/int32].
+- DataReader - Object của SqlDataReader không thể được create bởi new keyword mà thay vào đó nó được tạo ra bởi việc thực thi các method của DBCommand để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader. Một số Properties: FieldCount, HasRows, IsClosed, Item[string/int32] và Methods: Read(), GetName(int i).
 
 - DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu. Constructor của DataAdapter nhận 1 Command obj.
 
