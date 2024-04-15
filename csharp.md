@@ -585,6 +585,8 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - using được sử dụng để tạo một phạm vi có giới hạn cho một đối tượng và đảm bảo rằng đối tượng sẽ được giải phóng ngay sau khi phạm vi đó kết thúc.
 
+- adding namespace vào file.
+
 --- Preprocessor Directives (Những chỉ thị tiền xử lý) trong C#
 
 - Preprocessor Directives (Những chỉ thị tiền xử lý) trong C# là các commands được xử lý bởi trình biên dịch trước khi quá trình biên dịch thực sự bắt đầu. Chúng được sử dụng để kiểm soát việc biên dịch của mã nguồn dựa trên các điều kiện được xác định trước. Một trong những mục đích phổ biến của chúng là để kiểm soát các cảnh báo (warnings) mà chúng ta muốn thấy trong quá trình biên dịch.
@@ -738,9 +740,9 @@ Mutex:
 
 - Connection - Dùng để connect to database. Base class là DbConnection.
 
-- Command - Thực thi các SQL query trên data source. Base class là DbCommand.
+- Command - Thực thi các SQL query trên data source. Base class là DbCommand. Các Properties của SqlCommand: CommandText, Connection, CommandType. Một số methods của Command: ExecReader() - Dùng khi T-SQL trả về nhiều hơn 1 giá trị, truy vấn rows của 1 table, ExecNonQuery() - Dùng khi muốn INSERT, UPDATE, DELETE data, ExecScalar() - Dùng khi chỉ muốn return 1 giá trị, kết hợp với aggregate functions ( Count, Avg, Sum ).
 
-- DataReader - Thực thi các Command để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader.
+- DataReader - Object của SqlDataReader không thể được create bởi new keyword mà thay vào đó nó được tạo ra bởi việc thực thi các method của DBCommand để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader. Một số Properties: FieldCount, HasRows, IsClosed, Item[string/int32].
 
 - DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu. Constructor của DataAdapter nhận 1 Command obj.
 
@@ -751,6 +753,12 @@ Mutex:
 - DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
 
 - DataSet: Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu
+
+-- Perforamce của DataReader tốt hơn DataAdapter, vì?
+
+- Forward-only và Readonly: DataReader là một giao diện dành riêng cho việc đọc dữ liệu từ cơ sở dữ liệu một cách tuần tự (forward-only) và chỉ có khả năng đọc dữ liệu (readonly). Điều này có nghĩa là khi dữ liệu được đọc từ cơ sở dữ liệu, nó sẽ không được lưu trữ hoàn toàn trong bộ nhớ và chỉ cần một lượng nhỏ bộ nhớ để lưu trữ dữ liệu hiện tại. Do đó, DataReader tiêu tốn ít bộ nhớ hơn so với DataAdapter, làm tăng hiệu suất của ứng dụng khi xử lý dữ liệu lớn.
+
+- Cơ chế Lazy Loading: Khi sử dụng DataReader, dữ liệu không được trả về từ cơ sở dữ liệu và lưu trữ hoàn toàn trong bộ nhớ trước. Thay vào đó, dữ liệu được trả về dưới dạng một luồng (stream) và chỉ được truy cập khi cần thiết. Điều này giúp giảm thiểu việc sử dụng bộ nhớ và tăng hiệu suất của ứng dụng, đặc biệt là khi xử lý các tập dữ liệu lớn.
 
 --- Windows Authentication và SQL Authentication
 
