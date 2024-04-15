@@ -732,7 +732,9 @@ Mutex:
 
 --- ADO.NET trong C#
 
--- ADO ( ActiveX Data Object ) là 1 thư viện chứa tập hợp các classes, methods và interface giúp application handle data trong database. Các thành phần cốt lõi của ADO.NET gồm:
+-- ADO.NET là một module của .NET Framework được dùng để tạo nên 1 connetion giữa application và database.
+
+-- ADO ( ActiveX Data Object ) là 1 thư viện chứa tập hợp các classes, methods và interface giúp application manipulate data trong database. Các thành phần cốt lõi của ADO.NET gồm:
 
 - Connection - Dùng để connect to database. Base class là DbConnection.
 
@@ -744,8 +746,24 @@ Mutex:
 
 - DataView - DataView là một tập hợp của các dòng dữ liệu từ một DataTable trong DataSet. Nó cung cấp một cách để xem và làm việc với dữ liệu từ một bảng dữ liệu theo cách mà không ảnh hưởng đến bảng dữ liệu gốc.
 
-- Với 2 thành phần chính đó là:
+-- Với 2 thành phần chính đó là:
 
 - DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
 
 - DataSet: Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu
+
+--- Windows Authentication và SQL Authentication
+
+-- Windows Authentication - Integrated Security:
+
+- Windows Authentication, còn được gọi là Integrated Security, sử dụng thông tin xác thực của người dùng được đăng nhập vào hệ điều hành Windows hiện tại để xác thực truy cập vào cơ sở dữ liệu.
+
+- Khi sử dụng Windows Authentication, ADO.NET sẽ sử dụng tên và mật khẩu của người dùng hiện tại đang chạy ứng dụng để xác thực kết nối với cơ sở dữ liệu, thay vì sử dụng một tên đăng nhập và mật khẩu riêng biệt.
+
+- Xác thực Windows thường được xem là an toàn hơn vì nó không yêu cầu lưu trữ mật khẩu trong mã nguồn ứng dụng.
+
+- Khi kết nối đến databse bằng cách sử dụng Windows Authentication, bạn thường đặt Integrated Security=true trong chuỗi kết nối. Điều này cho biết cho ADO.NET sử dụng các thông tin xác thực của người dùng hiện tại đã đăng nhập cho việc xác thực.
+
+-- SQL Authentication:
+
+- Cung cấp một tên đăng nhập và mật khẩu riêng biệt trong chuỗi kết nối. Trong trường hợp này, bạn đặt Integrated Security=false để chỉ rõ rằng ADO.NET không sử dụng bảo mật tích hợp của Windows cho việc xác thực, mà thay vào đó dựa vào tên đăng nhập và mật khẩu được cung cấp trong chuỗi kết nối.
