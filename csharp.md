@@ -744,7 +744,7 @@ Mutex:
 
 - DataReader - Object của SqlDataReader không thể được create bởi new keyword mà thay vào đó nó được tạo ra bởi việc thực thi các method của DBCommand để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader. Một số Properties: FieldCount, HasRows, IsClosed, Item[string/int32] và Methods: Read(), GetName(int i), GetValue(int i).
 
-- DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và chèn các data đó vào DataSet. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu. Constructor của DataAdapter nhận 1 Command obj.
+- DataAdapter - Là cầu nối giữa DataSource và DataSet, tạo một connection với DataSource và Fill các data đó vào DataSet hoặc DataTable. Nó cũng đóng vai trò là một cơ chế để truy cập dữ liệu từ nguồn dữ liệu và điều khiển việc chèn, cập nhật, xóa dữ liệu giữa DataSet và nguồn dữ liệu. Constructor của DataAdapter nhận 1 Command obj.
 
 - DataView - DataView là một tập hợp của các dòng dữ liệu từ một DataTable trong DataSet. Nó cung cấp một cách để xem và làm việc với dữ liệu từ một bảng dữ liệu theo cách mà không ảnh hưởng đến bảng dữ liệu gốc.
 
@@ -753,6 +753,8 @@ Mutex:
 - DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
 
 - DataSet: Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu. DataTable là một đối tượng biểu diễn một bảng dữ liệu cụ thể. DataSet là một đối tượng chứa một tập hợp các DataTable và relations giữa chúng.
+
+- DataTable trong ADO.NET được sử dụng để tạo một bảng dữ liệu mới trong bộ nhớ để lưu trữ dữ liệu từ cơ sở dữ liệu hoặc từ các nguồn dữ liệu khác.
 
 -- Nên dùng DataAdapter khi:
 
@@ -785,3 +787,15 @@ Mutex:
 -- SQL Authentication:
 
 - Cung cấp một tên đăng nhập và mật khẩu riêng biệt trong chuỗi kết nối. Trong trường hợp này, bạn đặt Integrated Security=false để chỉ rõ rằng ADO.NET không sử dụng bảo mật tích hợp của Windows cho việc xác thực, mà thay vào đó dựa vào tên đăng nhập và mật khẩu được cung cấp trong chuỗi kết nối.
+
+--- ConnectionPool trong ADO.NET
+
+- Flow ngầm khi dùng ADO.NET connect tới database. ADO.NET -> Socket -> HandShake -> Connection String Parsed -> Authenticate -> Connection Object Created -> SQL Executed -> Connection Object Pooled/Garbage Collector.
+
+- Connection Pooling có ý nghĩa là. Khi một connection object được mở (Open) ADO.NET sẽ đưa connection object đó vào một nơi gọi là connection pool.
+
+- Trong connection pool, connection object sẽ được cached (lưu trữ tạm thời). Khi bạn cần một kết nối mới, thay vì tạo mới từ đầu, ADO.NET sẽ lấy một connection object từ pool nếu có sẵn. Điều này giúp tiết kiệm tài nguyên và giảm thời gian xử lý so với việc tạo mới kết nối mỗi khi cần.
+
+- Khi bạn gọi phương thức Open trên một connection object đã được cached trong connection pool, nó sẽ không tạo mới một kết nối, mà thay vào đó sẽ sử dụng lại connection object đã có trong pool và bắt đầu thực thi các lệnh truy vấn hoặc thao tác dữ liệu khác.
+
+- Điều này cung cấp hiệu suất cao hơn cho ứng dụng, đặc biệt là trong các tình huống có nhiều yêu cầu kết nối đến cơ sở dữ liệu, giúp giảm thiểu thời gian chờ và tối ưu hóa việc sử dụng tài nguyên hệ thống.
