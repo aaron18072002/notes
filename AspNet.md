@@ -67,3 +67,11 @@
 2. URL Template với văn bản cố định: Khi có nhiều URL template có cùng số lượng phân đoạn và một phân đoạn là văn bản cố định, URL template với văn bản cố định sẽ có ưu tiên hơn so với một phân đoạn là tham số. Ví dụ, URL template "a/b" sẽ có ưu tiên hơn "a/{parameter}".
 
 3. URL Template có ràng buộc cho tham số: Trong trường hợp có nhiều URL template với cùng một số lượng phân đoạn và cùng một phân đoạn là tham số, URL template có ràng buộc cho tham số sẽ có ưu tiên hơn so với một tham số không có ràng buộc. Ví dụ, URL template "a/{id:int}" sẽ có ưu tiên hơn "a/{id}".
+
+- Khái niệm Controller trong ASP.NET
+
+-- Một controller là một lớp (class) chứa một tập hợp các phương thức hành động (action methods). Mỗi phương thức hành động trong controller thường được xem như là một điểm cuối (endpoint) trong ứng dụng web của bạn.
+
+-- Khi một HTTP request đến, ASP.NET sẽ sử dụng định tuyến (routing) để xác định controller và action method tương ứng để xử lý request đó. Controller chịu trách nhiệm xử lý logic liên quan đến request và trả về response.
+
+-- Method MapController() internally và automatically gọi UseRouting() và UseEndpoints() methods.
