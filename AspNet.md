@@ -70,8 +70,10 @@
 
 - Khái niệm Controller trong ASP.NET
 
--- Một controller là một lớp (class) chứa một tập hợp các phương thức hành động (action methods). Mỗi phương thức hành động trong controller thường được xem như là một điểm cuối (endpoint) trong ứng dụng web của bạn.
+-- Một controller là một lớp (class) chứa một tập hợp các phương thức hành động (action methods). Mỗi action method trong controller thường được xem như là một điểm cuối (endpoint) trong ứng dụng web của bạn.
 
 -- Khi một HTTP request đến, ASP.NET sẽ sử dụng định tuyến (routing) để xác định controller và action method tương ứng để xử lý request đó. Controller chịu trách nhiệm xử lý logic liên quan đến request và trả về response.
 
 -- Method MapController() internally và automatically gọi UseRouting() và UseEndpoints() methods.
+
+- Một Controller Class phải có chữ cuối là Controller và [Controller] attribute phải được thêm vào class đó hoặc base class của nó.
