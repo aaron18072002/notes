@@ -91,3 +91,13 @@
 -- Khai báo Model: Trong bước này, bạn định nghĩa một lớp (Model) đại diện cho dữ liệu mà bạn muốn ánh xạ từ request. Lớp này chứa các thuộc tính tương ứng với các trường dữ liệu bạn muốn lấy từ request.
 
 -- Request Binding: Khi một HTTP request được gửi đến server, ASP.NET sẽ tự động phân tích dữ liệu từ request và cố gắng ánh xạ chúng vào các thuộc tính của đối tượng Model dựa trên tên của các trường trong request và tên của các thuộc tính trong Model. Nếu tên trường và tên thuộc tính khớp nhau, dữ liệu sẽ được ánh xạ tự động. Điều này giúp bạn tránh việc phải viết mã để thủ công lấy dữ liệu từ request và gán cho các thuộc tính của đối tượng.
+
+-- Validation với Annotation:
+
+- 3 Properties của ModelState
+
+-- IsValid: Return boolean, chỉ ra liệu có ít nhất một validation error hay không.
+
+-- Values: Chứa các giá trị của các fields trong model sau khi đã được ánh xạ từ dữ liệu đầu vào. Kể cả các Errors.
+
+-- ErrorCount:
