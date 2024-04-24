@@ -90,8 +90,6 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 - ServiceCollection - DI Container: Cung cấp các method như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider. Tự động khởi tạo các dependency và inject nó vào dịch vụ của chúng ta. Dịch vụ là lớp thực hiện các chức và dependency là lớp chứa chức năng đó.
 
-- Service lifetime
-
 - Service Provider: Là 1 container chứa all các services đã được đăng kí.
 
 - Inject Dependency: Các dependencies được inject vào các controller, middleware, hoặc các thành phần khác của ứng dụng thông qua Dependency Injection. ASP.NET Core tự động quản lý việc tạo và cung cấp các dependencies này dựa trên định nghĩa và cấu hình của IServiceCollection.
@@ -100,9 +98,11 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 --- Bất cứ khi nào chúng ta gọi Service - DI Container sẽ quyết định xem có tạo mới 1 instance hay sử dụng lại 1 instance trước đó. Vòng đời của Service phụ thuộc vào khi khởi tạo instance và nó tồn tại bao lâu. Có 3 mức độ vòng đời.
 
-- Transient: Mỗi lần gọi service, một instance mới của service tạo.
+-- Service lifetime
 
-- Scoped: Instance được khởi tạo mỗi scope. ( Scope ở đây là mỗi lần có request đến app ). Cùng 1 request thì service sẽ được tái sử dụng.
+- Transient: Mỗi lần Service được inject, Instance của Service đó sẽ được tạo ra. Và TransientService sẽ được Dispose tại kết thúc của scope (thường là browser request).
+
+- Scoped: Instance được khởi tạo mỗi scope. ( Scope ở đây là mỗi lần có request đến app ). Cùng 1 request thì service sẽ được tái sử dụng. Và khi Controller trả về Response rồi thì ScopeService sẽ auto Dispose - Nên dùng cho DatabaseService.
 
 - Singleton: Instance của service được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi.
 
