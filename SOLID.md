@@ -16,4 +16,4 @@
 
 - Dependency Inversion Principle
 
---- High-level module không nên depend on low-level module. Cả 2 nên depend on abstraction.
+--- High-level module không nên depend on low-level module. Cả 2 nên depend on abstraction. Module ở đây chính là Class.

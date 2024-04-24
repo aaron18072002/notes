@@ -103,3 +103,9 @@
 -- Values: Chứa các giá trị của các fields trong model sau khi đã được ánh xạ từ dữ liệu đầu vào. Kể cả các Errors.
 
 -- ErrorCount:
+
+- Service trong ASP.NET
+
+-- Service là 1 abstraction layer (middle layer) nằm giữa presentation layer - MVC (hoặc application layer) và data layer.
+
+-- Service thường chứa các business logic: calculate logic, validation logic, access data logic...
