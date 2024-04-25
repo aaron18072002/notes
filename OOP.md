@@ -104,7 +104,7 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 - Scoped: Instance được khởi tạo mỗi scope. ( Scope ở đây là mỗi lần có request đến app ). Cùng 1 request thì service sẽ được tái sử dụng. Và khi Controller trả về Response rồi thì ScopeService sẽ auto Dispose - Nên dùng cho DatabaseService.
 
-- Singleton: Instance của service được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi.
+- Singleton: Instance của service được tạo duy nhất lúc khởi chạy app và được dùng ở mọi nơi - Nên dùng cho global state.
 
 -- Proxy và Reverse Proxy, Load Balance
 
@@ -113,3 +113,5 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 - Reverse Proxy là một loại Proxy đặc biệt nằm trước server Back End, có nghiệm vụ bảo vệ server, có nghiệm vụ điều hướng các request tới từng server. Reverse Proxy có thể đóng vai trò như 1 Load Balancer.
 
 - Load Balancer là một chức năng của Reverse Proxy, có nghiệm vụ phân phối các client requests hoặc network load một cách hiệu quả trên nhiều servers.
+
+
