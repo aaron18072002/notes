@@ -117,3 +117,15 @@
 -- Get: Load values vào 1 object mới.
 
 -- Bind: Load values vào 1 object đã được khai báo.
+
+- [ApiController] attribute trong ASP.NET
+
+-- Khi bạn đánh dấu một lớp với [ApiController], ASP.NET sẽ nhận biết lớp đó là một API Controller và tự động thực hiện một số công việc:
+
+-- 1. Routing: Attribute này kích hoạt tính năng routing tự động trong ASP.NET Web API. Khi một yêu cầu HTTP được nhận, hệ thống sẽ so khớp nó với các phương thức trong lớp API Controller dựa trên các quy tắc định tuyến.
+
+-- 2. Model Binding: Khi một yêu cầu HTTP đến, ASP.NET sẽ tự động liên kết các tham số của phương thức API Controller từ dữ liệu trong yêu cầu. Điều này bao gồm dữ liệu từ URL (query string), dữ liệu từ phần thân của yêu cầu (request body), hoặc các header HTTP.
+
+-- 3. Validation: ASP.NET cung cấp tính năng validation tự động cho các tham số của phương thức API Controller. Khi bạn định nghĩa các quy tắc validation cho các tham số (ví dụ: yêu cầu một trường cụ thể không được trống), hệ thống sẽ tự động kiểm tra và trả về lỗi nếu dữ liệu không hợp lệ.
+
+-- 4. Content Negotiation: Khi một phương thức API Controller trả về một đối tượng, ASP.NET sẽ tự động serialize đối tượng đó vào định dạng dữ liệu được yêu cầu. Điều này có nghĩa là nếu yêu cầu yêu cầu JSON, đối tượng sẽ được serialize thành JSON; nếu yêu cầu XML, đối tượng sẽ được serialize thành XML.
