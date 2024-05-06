@@ -19,11 +19,3 @@
 -- Vowel: nguyên âm - u,e,o,a,i - "an"
 
 -- Dont use articles for proper nouns of people or places.
-
-- Quantifiers
-
--- Countable nouns: many, few, a few, fewer, several.
-
--- Uncountable nouns: much, little, a bit of.
-
--- With both: all, some any, lots of, plenty of, enough.
