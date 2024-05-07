@@ -129,3 +129,9 @@
 -- 3. Validation: ASP.NET cung cấp tính năng validation tự động cho các tham số của phương thức API Controller. Khi bạn định nghĩa các quy tắc validation cho các tham số (ví dụ: yêu cầu một trường cụ thể không được trống), hệ thống sẽ tự động kiểm tra và trả về lỗi nếu dữ liệu không hợp lệ.
 
 -- 4. Content Negotiation: Khi một phương thức API Controller trả về một đối tượng, ASP.NET sẽ tự động serialize đối tượng đó vào định dạng dữ liệu được yêu cầu. Điều này có nghĩa là nếu yêu cầu yêu cầu JSON, đối tượng sẽ được serialize thành JSON; nếu yêu cầu XML, đối tượng sẽ được serialize thành XML.
+
+- EntityFramework Core
+
+-- DbContext binded với database
+
+-- DbSet binded với một table cụ thể.
