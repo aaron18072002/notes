@@ -30,8 +30,10 @@
 
 - Subject (Chủ ngữ) and Object (Tân ngữ) and Prounouns (Đại từ)
 
--- Personal prounouns (đại từ nhân xưng): replaces a noun or a noun phrase that is either the subject or the object of a sentence: i, you, he, she, it, we, you, they
+-- Subject personal prounouns (đại từ nhân xưng): replaces a noun or a noun phrase that is either the subject or the object of a sentence: i, you, he, she, it, we, you, they.
 
--- Possessive adjectives (tính từ sở hữu): my, your, his, her, it, our, your, their
+-- Object personal pronouns: me, you, him, her, it, us, you, them.
 
--- Proceesive pronouns (đại từ sở hữu): mine, yours, his, hesr, its, ours, yours, theirs
+-- Possessive adjectives (tính từ sở hữu): my, your, his, her, it, our, your, their.
+
+-- Proceesive pronouns (đại từ sở hữu): mine, yours, his, hesr, its, ours, yours, theirs.
