@@ -1,3 +1,7 @@
+--- Khái niệm biến - variable
+
+- Biến là 1 vùng nhớ chúng ta dùng để lưu các dữ liệu tạm thời giúp cho chương trình có thể lưu các giá trị mà nó cần trong lúc chạy.
+
 --- Field và Property
 
 - Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó - việc này gọi là backing field.
