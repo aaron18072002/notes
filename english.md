@@ -37,3 +37,15 @@
 -- Possessive adjectives (tính từ sở hữu): my, your, his, her, it, our, your, their.
 
 -- Proceesive pronouns (đại từ sở hữu): mine, yours, his, hesr, its, ours, yours, theirs.
+
+-- Reflexive pronouns (đại từ phản thân): myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.
+
+-- Reciprocal pronouns (đại từ đối ứng): each other, one another.
+
+-- Demonstrative pronouns (đại từ chỉ định): (this, these - Near/Close by), (that, those - Far).
+
+-- Relative pronouns (đại từ quan hệ): who, whom, whose, which, that.
+
+-- Interrogative pronouns (đại từ nghi vấn): who, what, where, whom, which, whose.
+
+-- Indefinite pronouns (đại từ bất định): everyone, everybody, everywhere, everything, someone, somebody, somewhere, something, anyone, anybody, anywhere, anything, no one, nobody, nowhere, nothing.
