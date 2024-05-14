@@ -57,3 +57,5 @@
 -- After a noun or an indefinite pronoun: Is there any special
 
 -- After a linking verb:
+
+-- Order of adjectives: Quantity -> Opinion -> Size or measurements -> Age -> Shape -> Color -> Proper adjectives(origin, nationality, religion) -> Material -> Purpose.
