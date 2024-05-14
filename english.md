@@ -49,3 +49,11 @@
 -- Interrogative pronouns (đại từ nghi vấn): who, what, where, whom, which, whose.
 
 -- Indefinite pronouns (đại từ bất định): everyone, everybody, everywhere, everything, someone, somebody, somewhere, something, anyone, anybody, anywhere, anything, no one, nobody, nowhere, nothing.
+
+- Adjectives
+
+-- Between artical and nouns: a good news
+
+-- After a noun or an indefinite pronoun: Is there any special
+
+-- After a linking verb:
