@@ -59,3 +59,11 @@
 -- After a linking verb:
 
 -- Order of adjectives: Quantity -> Opinion -> Size or measurements -> Age -> Shape -> Color -> Proper adjectives(origin, nationality, religion) -> Material -> Purpose.
+
+- Adverbs
+
+-- At the beginning of the phrase.
+
+-- In the middle of the phrase, but before the verb.
+
+-- At the end of a sentence, or after a verb or clause.
