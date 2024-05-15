@@ -135,3 +135,41 @@
 -- DbContext binded với database
 
 -- DbSet binded với một table cụ thể.
+
+- Mapping Kiểu Dữ Liệu C# Sang Kiểu Dữ Liệu SQL Server
+
+-- byte -> TINYINT
+
+-- short -> SMALLINT
+
+-- int -> INT
+
+-- long -> BIGINT
+
+-- float -> REAL
+
+-- double -> FLOAT
+
+-- decimal -> DECIMAL
+
+-- bool -> BIT
+
+-- char -> CHAR(1)
+
+-- string -> NVARCHAR(MAX) (mặc định), hoặc NVARCHAR(độ dài)
+
+-- byte[] -> VARBINARY(MAX), VARBINARY(độ dài), hoặc IMAGE
+
+-- Guid -> UNIQUEIDENTIFIER
+
+-- Enum -> INT (mặc định), hoặc kiểu cơ bản của enum
+
+-- DateTime -> DATETIME
+
+--DateTimeOffset -> DATETIMEOFFSET
+
+-- TimeSpan -> TIME
+
+-- DateOnly (C# 10) -> DATE
+
+-- TimeOnly (C# 10) -> TIME
