@@ -174,6 +174,14 @@
 
 -- TimeOnly (C# 10) -> TIME
 
+- Logging trong ASP.NET
+
+-- Logging là tiến trình ghi lại các sự kiện xảy ra trong ứng dụng theo thời gian thực. Mục đích của logging là lưu lại các chi tiết của lỗi như phương thức hành động (action method), dịch vụ (service), và các thông tin khác có thể giúp bạn debug và phân tích ứng dụng.
+
+--HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực. 
+
+-- Logging provider chỉ ra nơi mà store/display logs.
+
 - What is Entity Framework?
 
 -- Working with databases can often be rather complicated. You have to manage database connections, convert data from your application to a format the database can understand, and handle many other subtle issues. The .NET ecosystem has libraries you can use for this, such as ADO.NET. However, it can still be complicated to manually build SQL queries and convert the data from the database into C# classes back and forth. EF, which stands for Entity Framework, is a library that provides an object-oriented way to access a database. It acts as an object-relational mapper, communicates with the database, and maps database responses to .NET classes and objects. Entity Framework (EF) Core is a lightweight, open-source, and cross-platform version of the Entity Framework.
