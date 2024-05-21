@@ -69,3 +69,29 @@
 -- In the middle of the phrase, but before the verb.
 
 -- At the end of a sentence, or after a verb or clause.
+
+-- There are 6 difference ways of adverb
+
+-- Adverb of manner: tell you the way the action is performed.
+
+-- Adverb of time: tell you when, how long or how often an action has occured.
+
+-- Adverb of place: Answer the question where the action is describes happens.
+
+-- Adverb of degree: Answer the question how much or to what extent.
+
+-- Adverb of certainty: Express how certain a subject feels about an action or event.
+
+-- Intergorative adverb:
+
+- Preposition
+
+-- Preposition is word or combination of word, used to show the relationship between a noun or pronoun in a sentence to another word in the same sentence.
+
+-- There are 5 different ways of preposition.
+
+-- Simple preposition: in, on, off, over, at, ...
+
+-- Double prepositions are two simple prepositions used together: into, upon, out of, ...
+
+-- Compound prepositions usually a simple preposition and another word: across from, in addition to, from beneath, ...
