@@ -62,6 +62,8 @@
 
 - Adverbs
 
+-- Adverb is a word used to describe or modify verbs, adjectives and prepositions.
+
 -- At the beginning of the phrase.
 
 -- In the middle of the phrase, but before the verb.
