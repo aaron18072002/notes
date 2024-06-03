@@ -601,7 +601,9 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Trong C#, từ khóa params được sử dụng để khai báo một method với một số lượng đối số không xác định được truyền vào. Điều này có nghĩa là bạn có thể truyền vào một số lượng biến đối số không giới hạn khi gọi phương thức đó.
 
-- VD: public void Calculator(params int[] numbers) { }
+- Mục đích là truyền thẳng giá trị vào hàm luôn mà không cần phải tạo một array trước.
+
+- VD: public void Calculator(params object[] numbers) { }
 
 --- Yield Statement trong C#
 
