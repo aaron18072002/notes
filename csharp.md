@@ -73,6 +73,8 @@
 
 - Exception là cách mà C# trình bày ( represent ) các runtime errors
 
+- Bất kỳ Exception nào mà không được catch đều gây kết thúc chương trình.
+
 - Tất cả Exception trong C# đều devired from System.Exception base class.
 
 - Chỉ nên dùng try catch chỉ khi chúng ta thật sự thấy được là code có thể cause an error, có thể dùng multiple catch với multiple exceptions khác nhau. Logic trong finally luôn chạy dù try hay catch được gọi. Và finally thường dùng để clean một resources bị leak. VÍ DỤ: Dùng để ngắt connect tới db sau khi try hoặc catch đã dùng xong.
