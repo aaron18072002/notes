@@ -88,12 +88,22 @@
 
 -- Preposition is word or combination of word, used to show the relationship between a noun or pronoun in a sentence to another word in the same sentence.
 
--- There are 5 different ways of preposition.
+-- There are 5 different ways of preposition: 
+
+--- Preposition of position or place:
+
+--- Preposition of movement or direction:
+
+--- Preposition of time:
+
+--- Preposition of purpose: 
 
 -- Simple preposition: in, on, off, over, at, ...
 
 -- Double prepositions are two simple prepositions used together: into, upon, out of, ...
 
 -- Compound prepositions usually a simple preposition and another word: across from, in addition to, from beneath, ...
+
+- The use cases of ON, AT, IN, FOR, DURING
 
 -- ON for days and date, AT for specific time, IN for period of time, FOR indicate the duration of time, DURING indicate events happening at the same time.
