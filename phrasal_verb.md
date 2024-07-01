@@ -1,0 +1,7 @@
+- check out = leave
+- check [someone/something] out = admire/appreciate - ngưỡng mộ, đánh giá cao ai/thứ gì đó
+- check in = hỏi xem người khác có ổn không, người khác đang làm như thế nào
+- come from = nationality - quốc tịch hoặc nơi người đó đang sống
+- comming apart = breaking - đang bị phá vỡ
+- comming down = start being sick or ill - bắt đầu bị bệnh
+- came across = i found - tôi đã tìm thấy gì đó

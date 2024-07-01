@@ -88,7 +88,7 @@
 
 -- Preposition is word or combination of word, used to show the relationship between a noun or pronoun in a sentence to another word in the same sentence.
 
--- There are 5 different ways of preposition: 
+-- There are 5 different ways of preposition:
 
 --- Preposition of position or place:
 
@@ -96,7 +96,7 @@
 
 --- Preposition of time:
 
---- Preposition of purpose: 
+--- Preposition of purpose:
 
 -- Simple preposition: in, on, off, over, at, ...
 
@@ -104,6 +104,26 @@
 
 -- Compound prepositions usually a simple preposition and another word: across from, in addition to, from beneath, ...
 
-- The use cases of ON, AT, IN, FOR, DURING
+-- Một số cách sử dụng giới từ:
 
--- ON for days and date, AT for specific time, IN for period of time, FOR indicate the duration of time, DURING indicate events happening at the same time.
+--- ON for days and date, AT for specific time, IN for period of time, FOR indicate the duration of time, DURING indicate events happening at the same time.
+
+--- By: Use for express cause and manner ( nguyên nhân và cách thức ).
+
+--- In: Use for express a conditional state of being ( chỉ ra 1 trạng thái có điều kiện ).
+
+--- On: Indicates the state of being or intention ( trạng thái chuẩn bị làm gì đó - dự định ).
+
+--- Of: Indicates the cause or relationship between subjects ( Mối quan hệ giữa các đối tượng ) or expresses feelings for someone/something ( cảm nhận về 1 ai đó ).
+
+--- To: Indicates who receives an action or indicates a destination or use to show the connection between people and things or used to describe someone's behaviour toward someone else ( mô tả hành vi của người này với người kia ).
+
+--- With: Describes relationships or connections.
+
+--- Between: Expresses the relationship between two or more things.
+
+--- At: Use this preposition to talk about skills and abilities with adjectives like good, bad, fantastic, horrible.
+
+--- About: Use to explain the cause of feeling.
+
+--- For: Indicates an objective ( chỉ ra 1 mục tiêu ) or also use to explain the cause of feeling.
