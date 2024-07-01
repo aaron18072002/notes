@@ -52,9 +52,9 @@
 
 - Adjectives
 
--- Between artical and nouns: a good news
+-- Between artical and nouns - nằm giữa mạo từ và danh từ: a good news
 
--- After a noun or an indefinite pronoun: Is there any special
+-- After a noun or an indefinite pronoun - sau danh từ hoặc đại từ bất định: Is there any special
 
 -- After a linking verb:
 
@@ -88,6 +88,8 @@
 
 -- Preposition is word or combination of word, used to show the relationship between a noun or pronoun in a sentence to another word in the same sentence.
 
+-- Preposition alwways followed by a noun or pronoun ( luôn theo sau một danh từ ).
+
 -- There are 5 different ways of preposition:
 
 --- Preposition of position or place:
@@ -106,7 +108,7 @@
 
 -- Một số cách sử dụng giới từ:
 
---- ON for days and date, AT for specific time, IN for period of time, FOR indicate the duration of time, DURING indicate events happening at the same time.
+--- ON for days and date, SINCE - AT for specific time, IN for period of time ( khoảng thời gian như năm, tháng, mùa ), FOR indicate the duration of time, DURING indicate events happening at the same time.
 
 --- By: Use for express cause and manner ( nguyên nhân và cách thức ).
 
@@ -114,7 +116,7 @@
 
 --- On: Indicates the state of being or intention ( trạng thái chuẩn bị làm gì đó - dự định ).
 
---- Of: Indicates the cause or relationship between subjects ( Mối quan hệ giữa các đối tượng ) or expresses feelings for someone/something ( cảm nhận về 1 ai đó ).
+--- Of: Indicates the cause or relationship between subjects ( Mối quan hệ giữa các đối tượng trong câu ) or expresses feelings for someone/something ( cảm nhận về 1 ai đó ).
 
 --- To: Indicates who receives an action or indicates a destination or use to show the connection between people and things or used to describe someone's behaviour toward someone else ( mô tả hành vi của người này với người kia ).
 
@@ -126,4 +128,8 @@
 
 --- About: Use to explain the cause of feeling.
 
---- For: Indicates an objective ( chỉ ra 1 mục tiêu ) or also use to explain the cause of feeling.
+--- For: Indicates an objective ( chỉ ra 1 mục tiêu - đối với ai đó ) or also use to explain the cause of feeling.
+
+- Conjuntions ( sự liên kết - liên từ )
+
+-- Là một từ mà connect các từ giống nhau hoặc nhóm các từ lại như phrases ( cụm từ ), clauses ( mệnh đề ) và sentences.
