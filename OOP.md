@@ -6,9 +6,11 @@
 
 --> Trong C# có thể dùng tính trừu tượng bằng abstract và interface và 2 thứ đó khác nhau như thế nào:
 
+- Abstract class là một lớp được tạo ra với mục đích trở thành một lớp cha trong cây thừa kế, tức là khi có nhiều lớp với những đặc điểm tương tự, có thể xếp chung vào một loại, khi đó việc tạo ra một lớp chứa những đặc điểm chung và cho các lớp con thừa kế từ đó sẽ giúp bạn sử dụng lại code, dễ quản lý, áp dụng đa hình... Lớp cha có thể không đủ cụ thể để hiện thực hóa toàn bộ, do vậy một số, thậm chí có thể toàn bộ các phương thức sẽ chỉ là trừu tượng.
+
 - Interface cũng giống như abstract class, không dùng để tạo ra các object mà dùng để tạo ra các cơ sở cho các lớp kế thửa. Nhưng khác với Abstract class, tất cả các phương thức của interface mặc định là abstract methods, vì vậy các lớp thừa kế bắt buộc phải override lại các phương thức đó ( không cần từ khóa override ). Một lớp kế thừa có thể kế thừa nhiều interface và có nghiệm vụ bắt buộc phải ghi đè lại toàn bộ các phương thức trong interface đó.
 
-- Trong Interface should only define các methods and properties, các methods và properties của Interface không được sealed hay static. Các methods trong Interface đều là Implicit Virtual và Implicit Public. Và các devired class bắt buộc ( obligated ) phải override lại các methods đó.
+- Trong Interface should only define các methods and properties, các methods và properties của Interface không được sealed hay static. Các methods trong Interface đều là Implicit Abstract và Implicit Public. Và các devired class bắt buộc ( obligated ) phải override lại các methods đó.    
 
 - 1 abstract class có thể các fields của nó còn interface thì không.
 

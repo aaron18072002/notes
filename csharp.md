@@ -257,9 +257,11 @@
 
 - Static Class: 1 Class được xác định là static là class tĩnh ( implicit static ) và implicit sealed, không thể tạo các object và thừa kế từ class đó, khi khai báo 1 static class thì yêu cầu tất cả các thuộc tính lẫn methods trong class đó cũng phải static. Static Class dùng để lưu các thông tin dùng chung cho toàn bộ app của chúng ta.
 
-- Static cho thuộc tính ( properties ) và phương thức ( methods ): Hàm và biến static không thuộc về object ( not belong to specified instance ) mà thuộc về Class, không thể overrdie 1 static method ,chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha. Một biến static gắn liền với type (ở đây type chính là bản thân class) chứ không phải 1 object nào cả.
+- Static cho thuộc tính ( properties ): Hàm và biến static không thuộc về object ( not belong to specified instance ) mà thuộc về Class, chúng có thể được truy cập trực tiếp từ Class mà không cần tạo ra các instances. Static Properties sẽ trả về kết quả giống nhau cho mọi object được tạo ra tử class cha. Một biến static gắn liền với type (ở đây type chính là bản thân class) chứ không phải 1 object nào cả.
 
 - Static cho phương thức ( methods ): Không thể dùng một non-static method bên trong 1 static method. Hay nói cách khác là trong một hàm static chỉ có thể gọi 1 hàm static khác. Và dùng static method khi chính method đó không tác động đến bất kì biến non-static nào trong class hay một static method không thể tác động đến biến non-static.
+
+- Một static method hay static property không thể bị kế thừa hoặc implement bởi các lớp triển khai Interface đó.
 
 - Constructor static được gọi tự động khi class được sử dụng lần đầu tiên.
 
