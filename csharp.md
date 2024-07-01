@@ -2,6 +2,10 @@
 
 - Biến là 1 vùng nhớ chúng ta dùng để lưu các dữ liệu tạm thời giúp cho chương trình có thể lưu các giá trị mà nó cần trong lúc chạy.
 
+--- Khái niệm cấp phát bộ nhớ cho function - method
+
+- Tất cả các hàm, dù có là hàm bình thường hay hàm trong một class, thì không bao giờ phải cấp phát bộ nhớ. Nói một cách chính xác là code của các function được chứa trong phần bộ nhớ code, được cấp phát một lần lúc tải chương trình vào RAM, và sẽ không thể thay đổi, phần bộ nhớ code thường sẽ được đánh dấu là “execute only”, tức là chỉ chạy mà không được phép đọc hay ghi. Khi ta gọi new một object, chỉ có phần dữ liệu được cấp phát, mỗi lần một method của object được gọi, nó cũng sẽ nhận được địa chỉ của vùng nhớ chứa phần dữ liệu đó, nhờ đó nó có thể truy cập các biến bên trong.
+
 --- Field và Property
 
 - Field: là biến được khai báo trong class. Nếu không khởi tạo giá trị cho Field, nó sẽ tự động set default value của type của Field cho Field đó - việc này gọi là backing field.
@@ -258,6 +262,8 @@
 - Static cho phương thức ( methods ): Không thể dùng một non-static method bên trong 1 static method. Hay nói cách khác là trong một hàm static chỉ có thể gọi 1 hàm static khác. Và dùng static method khi chính method đó không tác động đến bất kì biến non-static nào trong class hay một static method không thể tác động đến biến non-static.
 
 - Constructor static được gọi tự động khi class được sử dụng lần đầu tiên.
+
+- Vấn đề khi sử dụng static: khó kiểm soát vì có thể truy cập từ bất kì đâu trong chương trình, nếu thay đổi giá trị của nó sẽ ảnh hưởng đến tất cả những nơi sử dụng biến static này, dùng singleton pattern để khắc phục
 
 --- Collection trong C#
 
