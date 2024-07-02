@@ -136,7 +136,7 @@
 
 -- Liên từ kết hợp (Coordinating Conjunctions): Dùng để link 2 hoặc nhiều main clauses, FANBOYS - (F – For, A – and, N – nor, B – but, O – or, Y – yet, S – so).
 
--- Liên từ tương quan (Correlative Conjunctions): Là một cặp các từ như Either … or (hoặc … hoặc), Neither … nor (không … cũng không), Whether … or (liệu có…hay không), Both … and (cả … và) ... Dùng để connect các từ bằng nhau về mặt ngữ pháp.
+-- Liên từ tương quan (Correlative Conjunctions): Là một cặp các từ như Either … or (hoặc … hoặc), Neither … nor (không … cũng không), Whether … or (liệu có…hay không), Both … and (cả … và) ... Dùng để connect các phần bằng nhau về mặt ngữ pháp.
 
 -- Liên từ phụ thuộc (Subordinating conjunctions - Subordinator): Dùng để connect 1 dependent clause với 1 independent clause. Chỉ dùng dấu phẩy (comma) chỉ khi Subordinator đứng đầu câu. Một số ví dụ:
 
@@ -157,3 +157,5 @@
 --- Liên từ điều kiện: If, Unless, Provided that = As long as = miễn là/miễn sao.
 
 --- Liên từ chỉ so sánh: as … as (như), Than (hơn), Like (như, giống như).
+
+- Interjections - Thán từ
