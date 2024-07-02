@@ -134,17 +134,17 @@
 
 -- Là một từ mà connect các từ giống nhau hoặc nhóm các từ lại như phrases ( cụm từ ), clauses ( mệnh đề ) và sentences. Có 3 kiểu Conjuntions:
 
--- Liên từ kết hợp (Coordinating Conjunctions): FANBOYS - (F – For, A – and, N – nor, B – but, O – or, Y – yet, S – so).
+-- Liên từ kết hợp (Coordinating Conjunctions): Dùng để link 2 hoặc nhiều main clauses, FANBOYS - (F – For, A – and, N – nor, B – but, O – or, Y – yet, S – so).
 
--- Liên từ tương quan (Correlative Conjunctions): Là một cặp các từ như Either … or (hoặc … hoặc), Neither … nor (không … cũng không), Whether … or (liệu có…hay không), ...
+-- Liên từ tương quan (Correlative Conjunctions): Là một cặp các từ như Either … or (hoặc … hoặc), Neither … nor (không … cũng không), Whether … or (liệu có…hay không), Both … and (cả … và) ... Dùng để connect các từ bằng nhau về mặt ngữ pháp.
 
--- Liên từ phụ thuộc (Subordinating conjunctions): dùng để connect dependent clause với independent clause. Một số ví dụ:
+-- Liên từ phụ thuộc (Subordinating conjunctions - Subordinator): Dùng để connect 1 dependent clause với 1 independent clause. Chỉ dùng dấu phẩy (comma) chỉ khi Subordinator đứng đầu câu. Một số ví dụ:
 
 --- Liên từ chỉ thời gian và nơi chốn: After, Before, Since, Until/Till (mãi/cho đến khi), As soon as (ngay khi), By the time (trước khi), While (trong lúc), When (khi), Once (ngay khi), Where (ở đâu), Wherever (bất kì nơi nào).
 
 --- Liên từ chỉ cách thức: As (như), As if / as though (như thể), Like (giống như), By (means of) (bằng cách).
 
---- Liên từ chỉ nguyên do: Because = Since = As
+--- Liên từ chỉ nguyên do: Because = Since = As = bởi vì.
 
 --- Liên từ chỉ kết quả: So (that) (để mà), Therefore = As a result (of) = Consequently = do đó/kết quả là.
 

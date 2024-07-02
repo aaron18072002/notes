@@ -5,3 +5,4 @@
 - comming apart = breaking - đang bị phá vỡ
 - comming down = start being sick or ill - bắt đầu bị bệnh
 - came across = i found - tôi đã tìm thấy gì đó
+- fell over: ngã lăn ra
