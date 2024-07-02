@@ -44,6 +44,8 @@ VD: Giả sử chúng ta có 1 ứng dụng quản lý giao thông. Nhưng ứng
 
 - Concrete Decorator (Lớp Decorator cụ thể): Triển khai Decorator, thêm các chức năng mới hoặc thay đổi hành vi của đối tượng gốc.
 
+- Nói dễ hiểu thì 1 lớp Decorater là 1 lớp dùng để thêm method của 1 lớp mà cùng kiểu dữ liệu với lớp Decorater luôn ( Nghĩa là cả 2 lớp để implement 1 interface hoặc cùng thừa kế 1 class cha ).
+
 --- Flyweight Design Pattern:
 
 - Flyweight Design Pattern được sử dụng để tối ưu hóa việc sử dụng bộ nhớ bằng cách chia sẻ data nhiều nhất có thể trong nhiều object giống nhau. Bằng cách này, Flyweight giúp giảm lượng bộ nhớ được sử dụng trong ứng dụng bằng cách loại bỏ sự lặp lại của dữ liệu trong các đối tượng.
