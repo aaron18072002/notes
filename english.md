@@ -132,4 +132,28 @@
 
 - Conjuntions ( sự liên kết - liên từ )
 
--- Là một từ mà connect các từ giống nhau hoặc nhóm các từ lại như phrases ( cụm từ ), clauses ( mệnh đề ) và sentences.
+-- Là một từ mà connect các từ giống nhau hoặc nhóm các từ lại như phrases ( cụm từ ), clauses ( mệnh đề ) và sentences. Có 3 kiểu Conjuntions:
+
+-- Liên từ kết hợp (Coordinating Conjunctions): FANBOYS - (F – For, A – and, N – nor, B – but, O – or, Y – yet, S – so).
+
+-- Liên từ tương quan (Correlative Conjunctions): Là một cặp các từ như Either … or (hoặc … hoặc), Neither … nor (không … cũng không), Whether … or (liệu có…hay không), ...
+
+-- Liên từ phụ thuộc (Subordinating conjunctions): dùng để connect dependent clause với independent clause. Một số ví dụ:
+
+--- Liên từ chỉ thời gian và nơi chốn: After, Before, Since, Until/Till (mãi/cho đến khi), As soon as (ngay khi), By the time (trước khi), While (trong lúc), When (khi), Once (ngay khi), Where (ở đâu), Wherever (bất kì nơi nào).
+
+--- Liên từ chỉ cách thức: As (như), As if / as though (như thể), Like (giống như), By (means of) (bằng cách).
+
+--- Liên từ chỉ nguyên do: Because = Since = As
+
+--- Liên từ chỉ kết quả: So (that) (để mà), Therefore = As a result (of) = Consequently = do đó/kết quả là.
+
+--- Liên từ chỉ mục đích: In order that = So that = để/để mà.
+
+--- Liên từ chỉ sự nhượng bộ: Although = Though = Even though = mặc dù.
+
+--- Liên từ chỉ sự tương phản: While = Whereas = trong khi đó, Unlike.
+
+--- Liên từ điều kiện: If, Unless, Provided that = As long as = miễn là/miễn sao.
+
+--- Liên từ chỉ so sánh: as … as (như), Than (hơn), Like (như, giống như).
