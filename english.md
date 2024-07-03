@@ -159,3 +159,19 @@
 --- Liên từ chỉ so sánh: as … as (như), Than (hơn), Like (như, giống như).
 
 - Interjections - Thán từ
+
+- Verbs - ĐỘNG TỪ
+
+-- Verb chỉ ra một hành động (action) hay sự sở hữu ( possesion ).
+
+-- Mỗi sentence đều có ít nhất 1 động từ chính và động từ to be không thể làm động từ chính được.
+
+-- Có 3 kiểu động từ: Action (Động từ hành động), Linking (Động từ liên kết) - mô tả feeling của trong subject trong câu ( có thể thay thế bằng động từ to be ) và Trợ động từ (Auxiliary Verbs).
+
+-- Action Verb có 2 loai: Nội động từ (Intransitive Verbs) và Ngoại động từ (Transitive Verbs):
+
+--- Ngoại động từ trong tiếng Anh là những động từ kết hợp với một hoặc nhiều tân ngữ để tạo thành câu hoàn chỉnh về mặt ý nghĩa. VD: She reads a book.
+
+--- Nội động từ là những từ dùng để chỉ hành động bắt nguồn từ một chủ thể và không tác động lên đối tượng khác. VD: She sings.
+
+-- Trợ động từ (Auxiliary Verbs): Thường đứng trước Action và Linking Verb để hỗ trợ cho động từ chính trong câu, thường để thể hiện Thì (Tense), diễn đạt phủ định, câu hỏi, hoặc yêu cầu.
