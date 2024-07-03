@@ -760,7 +760,7 @@ Mutex:
 
 - Connection - Dùng để connect to database. Base class là DbConnection.
 
-- Command - Thực thi các SQL query trên data source. Base class là DbCommand. Các Properties của SqlCommand: CommandText, Connection, CommandType. Một số methods của Command: ExecReader() - Dùng khi T-SQL trả về nhiều hơn 1 giá trị, truy vấn rows của 1 table, ExecNonQuery() - Dùng khi muốn INSERT, UPDATE, DELETE data, ExecScalar() - Dùng khi chỉ muốn return 1 giá trị, kết hợp với aggregate functions ( Count, Avg, Sum ).
+- Command - Thực thi các SQL query trên data source. Base class là DbCommand. Các Properties của SqlCommand: CommandText, Connection, CommandType. Một số methods của Command: ExecReader() - Dùng khi T-SQL trả về nhiều hơn 1 giá trị, truy vấn rows của 1 table, ExecNonQuery() - Dùng khi muốn INSERT, UPDATE, DELETE data - Sẽ trả về số dòng bị ảnh hưởng, ExecScalar() - Dùng khi chỉ muốn return 1 giá trị, kết hợp với aggregate functions ( Count, Avg, Sum ). Tất cả methods trên của một object Command đều trả về một DataReader.
 
 - DataReader - Object của SqlDataReader không thể được create bởi new keyword mà thay vào đó nó được tạo ra bởi việc thực thi các method của DBCommand để lấy data từ database ở mode readonly và forward. Nghĩa là chỉ có thể read và display data chứ không thể update hay delete data. Nếu muốn modify data thì nên dùng DataAdapter thay vì DataReader. Base class là DbDataReader. Một số Properties: FieldCount, HasRows, IsClosed, Item[string/int32] và Methods: Read(), GetName(int i), GetValue(int i).
 
@@ -772,13 +772,13 @@ Mutex:
 
 - DataProvider: Là tập hợp các class và interface để kết nối và tương tác với cơ sở dữ liệu. Mỗi loại cơ sở dữ liệu thường có một DataProvider riêng, cung cấp các chức năng để thực hiện các thao tác như truy vấn, cập nhật dữ liệu. Một số DataProviders phổ biến bao gồm: System.SqlClient - Kết nối và tương tác với SQL Server db, System.OracleClient - Kết nối với Oracle db, System.EntityClient - Cung cấp data access for Entity Data Model (EDM).
 
-- DataSet: Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu. DataTable là một đối tượng biểu diễn một bảng dữ liệu cụ thể. DataSet là một đối tượng chứa một tập hợp các DataTable và relations giữa chúng.
+- DataSet ( Dis-Connected Data ): Tạo ra ra 1 bản copy của database ở local application. DataSet cho phép bạn làm việc với dữ liệu mà không cần duy trì kết nối trực tiếp đến cơ sở dữ liệu. DataTable là một đối tượng biểu diễn một bảng dữ liệu cụ thể. DataSet là một đối tượng chứa một tập hợp các DataTable và relations giữa chúng.
 
 - DataTable trong ADO.NET được sử dụng để tạo một bảng dữ liệu mới trong bộ nhớ để lưu trữ dữ liệu từ cơ sở dữ liệu hoặc từ các nguồn dữ liệu khác.
 
 -- Nên dùng DataAdapter khi:
 
-- Disconnected Data Operations: SqlDataAdapter rất lý tưởng khi ứng dụng của bạn cần làm việc với dữ liệu ngoại tuyến. Nó cho phép bạn điền một DataSet hoặc DataTable với dữ liệu từ cơ sở dữ liệu, thực hiện thay đổi ở địa phương, và sau đó áp dụng các thay đổi trở lại cơ sở dữ liệu khi kết nối có sẵn.
+- Dis-Connected Data Operations: SqlDataAdapter rất lý tưởng khi ứng dụng của bạn cần làm việc với dữ liệu ngoại tuyến. Nó cho phép bạn điền một DataSet hoặc DataTable với dữ liệu từ cơ sở dữ liệu, thực hiện thay đổi ở địa phương, và sau đó áp dụng các thay đổi trở lại cơ sở dữ liệu khi kết nối có sẵn.
 
 - Batch Updates: SqlDataAdapter hỗ trợ cập nhật tập hợp, cho phép bạn tích lũy các thay đổi được thực hiện cho nhiều hàng trong bộ nhớ và sau đó áp dụng chúng vào cơ sở dữ liệu trong một lượt cập nhật duy nhất. Điều này có thể tăng hiệu suất và giảm số lượng chuyến đi đến cơ sở dữ liệu.
 
@@ -786,7 +786,7 @@ Mutex:
 
 - Caching and Offline Access: Bạn có thể sử dụng SqlDataAdapter để điền một DataSet với dữ liệu, lưu trữ nó trong bộ nhớ và cho phép người dùng làm việc với dữ liệu ngay cả khi ngoại tuyến hoặc không kết nối với cơ sở dữ liệu. Điều này hữu ích cho các tình huống khi việc duy trì kết nối liên tục với cơ sở dữ liệu không khả thi hoặc không cần thiết.
 
--- Perforamce của DataReader tốt hơn DataAdapter, vì?
+-- Performance của DataReader tốt hơn DataAdapter, vì?
 
 - Forward-only và Readonly: DataReader là một giao diện dành riêng cho việc đọc dữ liệu từ cơ sở dữ liệu một cách tuần tự (forward-only) và chỉ có khả năng đọc dữ liệu (readonly). Điều này có nghĩa là khi dữ liệu được đọc từ cơ sở dữ liệu, nó sẽ không được lưu trữ hoàn toàn trong bộ nhớ và chỉ cần một lượng nhỏ bộ nhớ để lưu trữ dữ liệu hiện tại. Do đó, DataReader tiêu tốn ít bộ nhớ hơn so với DataAdapter, làm tăng hiệu suất của ứng dụng khi xử lý dữ liệu lớn.
 

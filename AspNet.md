@@ -1,4 +1,4 @@
----  ASP.NET Core: Cả bốn công nghệ đó (ASP.NET Core MVC, ASP.NET Core Web API, ASP.NET Core Razor Pages và ASP.NET Core Blazor) đều là các module hoặc phần của ASP.NET Core framework. ASP.NET Core là một framework mạnh mẽ cho việc xây dựng ứng dụng web, và các công nghệ trên được thiết kế để cung cấp các phương tiện và tính năng khác nhau để phát triển các loại ứng dụng web khác nhau, từ ứng dụng đơn giản đến các ứng dụng phức tạp hơn. Mỗi công nghệ này cung cấp một cách tiếp cận và tính năng riêng biệt, nhưng tất cả đều được xây dựng trên cùng một nền tảng ASP.NET Core.
+--- ASP.NET Core: Cả bốn công nghệ đó (ASP.NET Core MVC, ASP.NET Core Web API, ASP.NET Core Razor Pages và ASP.NET Core Blazor) đều là các module hoặc phần của ASP.NET Core framework. ASP.NET Core là một framework mạnh mẽ cho việc xây dựng ứng dụng web, và các công nghệ trên được thiết kế để cung cấp các phương tiện và tính năng khác nhau để phát triển các loại ứng dụng web khác nhau, từ ứng dụng đơn giản đến các ứng dụng phức tạp hơn. Mỗi công nghệ này cung cấp một cách tiếp cận và tính năng riêng biệt, nhưng tất cả đều được xây dựng trên cùng một nền tảng ASP.NET Core.
 
 - ASP.NET Core MVC: Thích hợp cho việc xây dựng các ứng dụng web từ trung bình đến phức tạp, ASP.NET Core MVC cung cấp một mô hình lập trình mạnh mẽ dựa trên mô hình MVC cho việc phân tách logic ứng dụng. Đây là lựa chọn phổ biến cho các ứng dụng web có nhu cầu phức tạp về điều hướng, quản lý dữ liệu và tương tác người dùng.
 
@@ -166,7 +166,7 @@
 
 -- DateTime -> DATETIME
 
---DateTimeOffset -> DATETIMEOFFSET
+-- DateTimeOffset -> DATETIMEOFFSET
 
 -- TimeSpan -> TIME
 
@@ -178,7 +178,7 @@
 
 -- Logging là tiến trình ghi lại các sự kiện xảy ra trong ứng dụng theo thời gian thực. Mục đích của logging là lưu lại các chi tiết của lỗi như phương thức hành động (action method), dịch vụ (service), và các thông tin khác có thể giúp bạn debug và phân tích ứng dụng.
 
---HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực. 
+--HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
 
 -- Logging provider chỉ ra nơi mà store/display logs.
 
@@ -222,7 +222,7 @@
 
 3. Each property must have a public getter and setter.
 
-3. Any collection navigation properties must be typed as ICollection <T>.
+4. Any collection navigation properties must be typed as ICollection <T>.
 
 - What are the various Entity States in EF?
 
@@ -248,7 +248,7 @@
 
 - What is Migrations History Table?
 
--- In EF Core, Migrations history table (__MigrationHistory) is a part of the application database and used by Code First Migrations to store details about migrations applied to a database. This table is created when you apply the first migration to the database. This table stores metadata describing the schema version history of one or more EF Code First models within a given database.
+-- In EF Core, Migrations history table (\_\_MigrationHistory) is a part of the application database and used by Code First Migrations to store details about migrations applied to a database. This table is created when you apply the first migration to the database. This table stores metadata describing the schema version history of one or more EF Code First models within a given database.
 
 - How you apply code first migrations through code in EF Core?
 
@@ -258,5 +258,5 @@
 
 using (var context = new MyDbContext(...))
 {
-    context.Database.Migrate();
+context.Database.Migrate();
 }
