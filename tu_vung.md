@@ -1,6 +1,8 @@
 - occurrence = happening (n): xảy ra
 - obligation (n) = duty (n) : nghĩa vụ
 - possession (n): sở hữu
+- predict (v) = guess: dự đoán
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước
+- reserve (v): đặt chỗ

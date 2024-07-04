@@ -164,14 +164,34 @@
 
 -- Verb chỉ ra một hành động (action) hay sự sở hữu ( possesion ).
 
--- Mỗi sentence đều có ít nhất 1 động từ chính và động từ to be không thể làm động từ chính được.
+-- Mỗi sentence đều có ít nhất 1 động từ chính và động từ to be không thể làm động từ chính được. Và 3 kiểu động từ:
 
--- Có 3 kiểu động từ: Action (Động từ hành động), Linking (Động từ liên kết) - mô tả feeling của trong subject trong câu ( có thể thay thế bằng động từ to be ) và Trợ động từ (Auxiliary Verbs).
-
--- Action Verb có 2 loai: Nội động từ (Intransitive Verbs) và Ngoại động từ (Transitive Verbs):
+-- Action (Động từ hành động) - hay động từ chính: chỉ ra 1 hành động hoặc sự sở hữu. Action Verb có 2 loại: Nội động từ (Intransitive Verbs) và Ngoại động từ (Transitive Verbs):
 
 --- Ngoại động từ trong tiếng Anh là những động từ kết hợp với một hoặc nhiều tân ngữ để tạo thành câu hoàn chỉnh về mặt ý nghĩa. VD: She reads a book.
 
 --- Nội động từ là những từ dùng để chỉ hành động bắt nguồn từ một chủ thể và không tác động lên đối tượng khác. VD: She sings.
 
--- Trợ động từ (Auxiliary Verbs): Thường đứng trước Action và Linking Verb để hỗ trợ cho động từ chính trong câu, thường để thể hiện Thì (Tense), diễn đạt phủ định, câu hỏi, hoặc yêu cầu.
+-- Linking (Động từ liên kết) - mô tả của subject của sentence ( có thể thay thế bằng động từ to be )
+
+-- Trợ động từ (Auxiliary Verbs): Là những động từ hỗ trợ biến thể một động từ chính như: Do, does, have, has, should, will, can, could,…. Trợ động từ dùng để bổ sung ý nghĩa cho các động từ chính và không thể thay thế cho các động từ chính.
+
+--- Model Verbs - Là 1 kiểu của Trợ động từ: Chỉ ra sự cần thiết (necessity), khả năng (ability) và dự định (intension). Một số VD: can, could, may, might, must, ought to = must, shall, should, will, would, ...
+
+-- Vị trí của động từ:
+
+–-- Đứng sau chủ ngữ để diễn tả hành động của chủ thể đó
+
+Ví dụ: She learns English at school (Cô ấy học tiếng Anh ở trường)
+
+–-- Đứng sau trạng từ chỉ tần suất
+
+Ví dụ: He never wakes up early. (Anh ta chẳng bao giờ thức dậy sớm)
+
+--– Đứng trước tân ngữ
+
+Ví dụ: Turn off the light before you leave the room (Tắt điện trước khi ra khỏi phòng nhé!)
+
+--– Đứng trước tính từ (Động từ tobe)
+
+Ví dụ: She is really tall (Cô ấy rất cao)
