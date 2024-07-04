@@ -195,3 +195,9 @@ Ví dụ: Turn off the light before you leave the room (Tắt điện trước k
 --– Đứng trước tính từ (Động từ tobe)
 
 Ví dụ: She is really tall (Cô ấy rất cao)
+
+- Các thì trong tiếng Anh:
+
+-- HIỆN TẠI ĐƠN ( PRESENT SIMPLE TENSE ): Nói về 1 hành động mà chúng ta làm thường xuyên hoặc Một sự thật ở hiện tại hoặc Một sự thật hiển nhiên hoặc Đề cặp về lịch trình hoặc sự kiện trong tương lai với thời gian cố định hoặc Nói về cảm xúc hiện tại của subject.
+
+--- Chỉ dùng TRỢ ĐỘNG TỪ cho câu nghi vấn hoặc câu phủ định trong HIỆN TẠI ĐƠN. VD: I do not have a car - I have a car. Nếu dùng trong câu khẳng định thì có mục đích nhấn mạnh.

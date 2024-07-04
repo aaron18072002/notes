@@ -6,3 +6,7 @@
 - towards (preposition): hướng tới
 - forward (adv): phía trước
 - reserve (v): đặt chỗ
+- routines (n) = habits: thói quen
+- infinitive (n): dạng nguyên thể
+- further (adv): xa hơn
+- contraction (n): viết tắt
