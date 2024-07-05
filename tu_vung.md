@@ -2,6 +2,7 @@
 - obligation (n) = duty (n) : nghĩa vụ
 - possession (n): sở hữu
 - predict (v) = guess: dự đoán
+- prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước
