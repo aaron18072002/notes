@@ -206,7 +206,7 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Một sự thật hiển nhiên
 
---- Đề cặp về lịch trình hoặc sự kiện trong tương lai với thời gian cố định hoặc Nói về cảm xúc hiện tại của subject.
+--- Đề cập về lịch trình hoặc sự kiện trong tương lai với thời gian cố định hoặc Nói về cảm xúc hiện tại của subject.
 
 --- Chỉ dùng TRỢ ĐỘNG TỪ cho câu nghi vấn hoặc câu phủ định trong HIỆN TẠI ĐƠN. VD: I do not have a car - I have a car. Nếu dùng trong câu khẳng định thì có mục đích nhấn mạnh.
 
@@ -216,7 +216,7 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Một kế hoạch trong tương lai hoặc 1 sự sắp xếp ( arrangement ).
 
---- Diễn tả hành động đang thay đổi, đang lớn dần, đang phát triển.
+--- Diễn tả thứ gì đó đang thay đổi, đang lớn dần, đang phát triển.
 
 --- Nói về thứ gì đó cứ lặp đi lặp lại
 
