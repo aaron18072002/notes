@@ -5,7 +5,7 @@
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
-- forward (adv): phía trước
+- forward (adv): phía trước / (v): chuyển hướng
 - reserve (v): đặt chỗ
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
