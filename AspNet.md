@@ -58,7 +58,7 @@
 
 - UseRouting trong Asp.Net
 
--- Routings trong ASP.NET Core được dùng để map URL của request tới controller actions.
+-- Routing trong ASP.NET Core là 1 tiến trình mapping HTTP Request đầu vào với enpoint tương ứng bằng cách kiểm tra HTTP method và url. Nếu match, gọi enpoint tương ứng. Để kích hoạt tiến trình này, ta cần gọi UseRouting method() ở program.cs file.
 
 -- Khi method UseRouting() được thực thi, ta kích hoạt routing middleware. Khi một HTTP Request đến, routing middleware sẽ kiểm tra URL của request và matching nó với các quy tắc định tuyến đã được cấu hình trước. Các quy tắc này định rõ cách mà các URL sẽ được ánh xạ đến các action methods cụ thể trong ứng dụng của bạn.
 
