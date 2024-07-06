@@ -11,3 +11,7 @@
 - infinitive (n): dạng nguyên thể
 - further (adv): xa hơn
 - contraction (n): viết tắt
+- state (v): diễn đạt
+- regret (n): hối hận
+- remain (v): giữ nguyên
+- remand (v): nhác nhở

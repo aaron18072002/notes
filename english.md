@@ -196,7 +196,7 @@ Ví dụ: Turn off the light before you leave the room (Tắt điện trước k
 
 Ví dụ: She is really tall (Cô ấy rất cao)
 
-- Các thì trong tiếng Anh:
+- Các thì trong tiếng Anh: ( TENSES )
 
 -- HIỆN TẠI ĐƠN ( PRESENT SIMPLE TENSE ): Dùng khi:
 
@@ -209,3 +209,29 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Đề cặp về lịch trình hoặc sự kiện trong tương lai với thời gian cố định hoặc Nói về cảm xúc hiện tại của subject.
 
 --- Chỉ dùng TRỢ ĐỘNG TỪ cho câu nghi vấn hoặc câu phủ định trong HIỆN TẠI ĐƠN. VD: I do not have a car - I have a car. Nếu dùng trong câu khẳng định thì có mục đích nhấn mạnh.
+
+-- HIỆN TẠI TIẾP DIỄN ( PRESENT CONTINUOUS ): Dùng khi:
+
+--- Diễn tả hành động đang diễn ra.
+
+--- Một kế hoạch trong tương lai hoặc 1 sự sắp xếp ( arrangement ).
+
+--- Diễn tả hành động đang thay đổi, đang lớn dần, đang phát triển.
+
+--- Nói về thứ gì đó cứ lặp đi lặp lại
+
+--- Khẳng định (Affirmative): S + am/is/are + V-ing + O
+
+--- Phủ định (Negative): S + am/is/are + not + V-ing + O
+
+--- Nghi vấn (Interrogative): Am/Is/Are + S + V-ing + O + ?
+
+--- Câu hỏi Wh-: Wh-word ( Where/What/When ) + am/is/are + S + V-ing + O + ?
+
+--- Không dùng THÌ HIỆN TẠI TIẾP DIỄN với STATIVE VERBS - ĐỘNG TỪ CHỈ TRẠNG THÁI:
+
+---- Thinking and Feeling: dislike, love, hate, remember, prefer, know.
+
+---- Senses: appear, feel, smell, sound.
+
+---- Opinion: agree, belong, disagree, need.
