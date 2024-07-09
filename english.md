@@ -230,8 +230,18 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Không dùng THÌ HIỆN TẠI TIẾP DIỄN với STATIVE VERBS - ĐỘNG TỪ CHỈ TRẠNG THÁI:
 
----- Thinking and Feeling: dislike, love, hate, remember, prefer, know.
+---- Thinking and Feeling: dislike, like, love, hate, remember, prefer, know.
 
 ---- Senses: appear, feel, smell, sound.
 
 ---- Opinion: agree, belong, disagree, need.
+
+-- QUÁ KHỨ ĐƠN ( PAST SIMPLE TENSE ), Dùng khi:
+
+--- Nói về 1 hành động đã xảy 1 ra lần tại quá khứ.
+
+--- Nói về 1 hành động đã kết thúc tại một thời điểm không xác định.
+
+--- Nói về 1 hành động xả ra thường xuyên tại quá khứ.
+
+--- Hay dùng với I wish .../ If only để nói về điều ta muốn ở hiện tại, nhưng thường là bất khả thi.
