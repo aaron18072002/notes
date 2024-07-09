@@ -92,6 +92,8 @@
 
 -- Một Controller Class phải có chữ cuối là Controller và [Controller] attribute phải được thêm vào class đó hoặc base class của nó.
 
+-- Khi một url matching với 1 endpoint nào đó, ASP.NET Core sẽ tự động tạo ra 1 object của Controller chứa endpoint đó.
+
 - Các kiểu FileResult trong ASP.NET Core
 
 -- VirtualFileResult: Được sử dụng khi file muốn trả về nằm trong thư mục wwwroot của dự án.
