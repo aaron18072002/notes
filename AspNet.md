@@ -70,11 +70,13 @@
 
 -- Ràng buộc về type: /files/filename:string
 
+-- Ràng buộc về length: /file/filename:length(4,7)
+
 - Các ưu tiên về quy trình lựa chọn endpoint trong routing của ASP.NET Core được sắp xếp như sau:
 
 0. Route Parameters là case insentitive. Nghĩa là /files/{filename}.{extension} không khác gì /files/{fileName}.{EXTENSION}
 
-1. URL Template với nhiều phân đoạn: Khi có nhiều URL template cùng phù hợp với một URL, quy tắc này xác định rằng URL template có số lượng phân đoạn lớn hơn sẽ có ưu tiên hơn. Ví dụ, URL template "a/b/c/d" sẽ có ưu tiên hơn "a/b/c".
+1. URL Template với nhiều phân đoạn ( segments ): Khi có nhiều URL template cùng phù hợp với một URL, quy tắc này xác định rằng URL template có số lượng phân đoạn lớn hơn sẽ có ưu tiên hơn. Ví dụ, URL template "a/b/c/d" sẽ có ưu tiên hơn "a/b/c".
 
 2. URL Template với văn bản cố định: Khi có nhiều URL template có cùng số lượng phân đoạn và một phân đoạn là văn bản cố định - literal text, URL template với văn bản cố định sẽ có ưu tiên hơn so với một phân đoạn là tham số. Ví dụ, URL template "a/b" sẽ có ưu tiên hơn "a/{parameter}".
 
