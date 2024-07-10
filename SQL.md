@@ -33,3 +33,17 @@
 - IS NULL (trả về true nếu giá trị null).
 
 - EXISTS (trả về true nếu truy vấn con trả về bất kỳ hàng nào).
+
+-- WILDCARD
+
+- %: Đại diện cho 1 hoặc không có ký tự nào hoặc nhiều ký tự.
+
+- []: Đại diện cho bất kỳ ký tự nào trong ngoặc vuông.
+
+- [^]: Đại diện cho bất kỳ ký tự nào không nằm trong ngoặc vuông.
+
+- [char1-char2]: Đại diện cho bất kỳ ký tự nào nằm trong khoảng từ char1 đến char2.
+
+-- IN
+
+- Toán tử IN cho phép bạn chỉ định nhiều giá trị cho 1 field trong mệnh đề WHERE.
