@@ -94,13 +94,17 @@
 
 -- Khi một url matching với 1 endpoint nào đó, ASP.NET Core sẽ tự động tạo ra 1 object của Controller chứa endpoint đó.
 
+- ContentResult:
+
+-- Trả về text/plain, html/text, json/text, pdf files, application/xml, ...
+
 - Các kiểu FileResult trong ASP.NET Core
 
 -- VirtualFileResult: Được sử dụng khi file muốn trả về nằm trong thư mục wwwroot của dự án.
 
 -- PhysiccalFileResult: Được sử dụng khi file muốn trả về không nằm trong thư mục wwwroot, mà có thể nằm ở bất kỳ đâu trên hệ thống tệp kể cả bên ngoài project.
 
--- FileContentResult: Nó được sử dụng khi muốn trả về dữ liệu của tệp dưới dạng một mảng byte, thường là từ một dữ liệu đã được tạo ra trong bộ nhớ hoặc từ một nguồn dữ liệu khác (từ 1 api khác).
+-- FileContentResult: Nó được sử dụng khi muốn trả về dữ liệu của tệp dưới dạng một mảng byte, thường là từ một dữ liệu đã được tạo ra trong bộ nhớ hoặc từ một nguồn dữ liệu khác (từ 1 api khác) hoặc image từ database.
 
 - Model Binding trong ASP.NET
 
