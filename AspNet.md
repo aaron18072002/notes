@@ -94,7 +94,7 @@
 
 -- Khi một url matching với 1 endpoint nào đó, ASP.NET Core sẽ tự động tạo ra 1 object của Controller chứa endpoint đó.
 
-- ContentResult:
+- ContentResult trong ASP.NET
 
 -- Trả về text/plain, html/text, json/text, pdf files, application/xml, ...
 
@@ -106,17 +106,23 @@
 
 -- FileContentResult: Nó được sử dụng khi muốn trả về dữ liệu của tệp dưới dạng một mảng byte, thường là từ một dữ liệu đã được tạo ra trong bộ nhớ hoặc từ một nguồn dữ liệu khác (từ 1 api khác) hoặc image từ database.
 
+- RedirectResult trong ASP.NET
+
+-- 301: Moved/Permenantly, 302: Found/Temporary
+
+-- RedirectToAction: Chuyển tiếp sang một action method khác trong application của ta.
+
+-- LocalRedirectResult: Chuyển tiếp sang url mà không thuộc application của ta hoặc dùng với nhứng url phức tạp. Ví dụ: return LocalRedirectResult("google.com")
+
 - Model Binding trong ASP.NET
 
 -- Model Binding là một kỹ thuật cho phép tự động ánh xạ dữ liệu từ HTTP requests vào các đối tượng trong ứng dụng web của bạn.
 
--- AddRouting():
-
--- Khai báo Model: Trong bước này, bạn định nghĩa một lớp (Model) đại diện cho dữ liệu mà bạn muốn ánh xạ từ request. Lớp này chứa các thuộc tính tương ứng với các trường dữ liệu bạn muốn lấy từ request.
+-- Model binding giúp tự động ràng buộc (bind) dữ liệu từ nguồn dữ liệu - Request đến các thuộc tính của Model trong ứng dụng. Nó giúp giảm thiểu công việc phức tạp của việc truy xuất và gán dữ liệu một cách thủ công. Thay vì phải xử lý các thông tin đầu vào từ người dùng một cách rời rạc, model binding cho phép bạn định nghĩa các Model với các thuộc tính tương ứng và gửi dữ liệu từ nguồn dữ liệu đến các thuộc tính này một cách tự động.
 
 -- Request Binding: Khi một HTTP request được gửi đến server, ASP.NET sẽ tự động phân tích dữ liệu từ request và cố gắng ánh xạ chúng vào các thuộc tính của đối tượng Model dựa trên tên của các trường trong request và tên của các thuộc tính trong Model. Nếu tên trường và tên thuộc tính khớp nhau, dữ liệu sẽ được ánh xạ tự động. Điều này giúp bạn tránh việc phải viết mã để thủ công lấy dữ liệu từ request và gán cho các thuộc tính của đối tượng.
 
--- Validation với Annotation:
+-- Thứ tự nguồn dữ liệu ưu tiên mà Model Binding sẽ đọc từ Request: Form fields -> Request Body -> Route Parameters -> Query string.
 
 - 3 Properties của ModelState
 
@@ -125,12 +131,6 @@
 -- Values: Chứa các giá trị của các fields trong model sau khi đã được ánh xạ từ dữ liệu đầu vào. Kể cả các Errors.
 
 -- ErrorCount:
-
-- Service trong ASP.NET
-
--- Service là 1 abstraction layer (middle layer) nằm giữa presentation layer - MVC (hoặc application layer) và data layer.
-
--- Service thường chứa các business logic: calculate logic, validation logic, access data logic...
 
 - Sự khác nhau giữa 2 methods Bind() và Get<T>()
 
