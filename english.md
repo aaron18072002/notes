@@ -245,3 +245,20 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Nói về 1 hành động xả ra thường xuyên tại quá khứ.
 
 --- Hay dùng với I wish .../ If only để nói về điều ta muốn ở hiện tại, nhưng thường là bất khả thi.
+
+-- QUÁ KHỨ TIẾP DIỄN ( PASS CONTINUOUS ), Dùng khi:
+
+--- Nói về một action mà đã xảy ra trong quá khứ cho đến khi một hành khác động xảy ra.
+
+--- Nói về một action mà đã xảy ra trước hoặc sau một thời điểm cụ thể.
+
+--- Nói về một action mà đã diễn ra trong 1 khoảng thời gian dài.
+
+--- Để mở đầu 1 câu chuyện.
+
+--- Để chỉ ra 1 sự thay đổi trong suy nghĩ.
+
+--- Giống với PASS SIMPLE TENSE, dùng với I wish .../ If only để bày tỏ về điều ta muốn ở hiện tại, nhưng thường là bất khả thi.
+
+--- Giống với PRESENT CONTINUOUS, không dùng với STATIVE VERB - động từ chỉ trạng thái.
+.
