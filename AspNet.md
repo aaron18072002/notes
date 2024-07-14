@@ -120,17 +120,25 @@
 
 -- Model binding giúp tự động ràng buộc (bind) dữ liệu từ nguồn dữ liệu - Request đến các thuộc tính của Model trong ứng dụng. Nó giúp giảm thiểu công việc phức tạp của việc truy xuất và gán dữ liệu một cách thủ công. Thay vì phải xử lý các thông tin đầu vào từ người dùng một cách rời rạc, model binding cho phép bạn định nghĩa các Model với các thuộc tính tương ứng và gửi dữ liệu từ nguồn dữ liệu đến các thuộc tính này một cách tự động.
 
--- Request Binding: Khi một HTTP request được gửi đến server, ASP.NET sẽ tự động phân tích dữ liệu từ request và cố gắng ánh xạ chúng vào các thuộc tính của đối tượng Model dựa trên tên của các trường trong request và tên của các thuộc tính trong Model. Nếu tên trường và tên thuộc tính khớp nhau, dữ liệu sẽ được ánh xạ tự động. Điều này giúp bạn tránh việc phải viết mã để thủ công lấy dữ liệu từ request và gán cho các thuộc tính của đối tượng.
+-- Request Binding: Khi một HTTP request được gửi đến server, ASP.NET sẽ tự động phân tích dữ liệu từ request và cố gắng ánh xạ chúng vào các thuộc tính của đối tượng Model dựa trên tên của các trường trong request và tên của các thuộc tính trong Model. Nếu tên trường và tên thuộc tính khớp nhau, dữ liệu sẽ được ánh xạ tự động và một object của Model sẽ được tạo ra. Điều này giúp bạn tránh việc phải viết mã để thủ công lấy dữ liệu từ request và gán cho các thuộc tính của đối tượng.
 
 -- Thứ tự nguồn dữ liệu ưu tiên mà Model Binding sẽ đọc từ Request: Form fields -> Request Body -> Route Parameters -> Query string.
 
-- 3 Properties của ModelState
+- So sánh Form-Urlencoded và Form-Data
+
+-- Trong ASP.NET, cả 2 đều được xem là Form Fields.
+
+-- Khi số lượng fields nhiều hoặc muốn upload file thì nên dùng Form-Data vì From-Urlencoded mặc định là application/x-www-form-urlencoded trong khi của Form-Data là multipart/form-data ( có thể dùng với nhiều nguồn dữ liệu ).
+
+- 3 Properties của ModelState - ModelState là property của ControllerBase
+
+-- ModelState dùng để catch errors từ Model Validation Attribute.
 
 -- IsValid: Return boolean, chỉ ra liệu có ít nhất một validation error hay không.
 
--- Values: Chứa các giá trị của các fields trong model sau khi đã được ánh xạ từ dữ liệu đầu vào. Kể cả các Errors.
+-- Values: Chứa các giá trị của các fields trong model sau khi đã được ánh xạ từ dữ liệu đầu vào và các errors tương ứng ( nếu có ).
 
--- ErrorCount:
+-- ErrorCount: Trả về tổng số errors đã catch.
 
 - Sự khác nhau giữa 2 methods Bind() và Get<T>()
 
@@ -156,44 +164,6 @@
 
 -- DbSet binded với một table cụ thể.
 
-- Mapping Kiểu Dữ Liệu C# Sang Kiểu Dữ Liệu SQL Server
-
--- byte -> TINYINT
-
--- short -> SMALLINT
-
--- int -> INT
-
--- long -> BIGINT
-
--- float -> REAL
-
--- double -> FLOAT
-
--- decimal -> DECIMAL
-
--- bool -> BIT
-
--- char -> CHAR(1)
-
--- string -> NVARCHAR(MAX) (mặc định), hoặc NVARCHAR(độ dài)
-
--- byte[] -> VARBINARY(MAX), VARBINARY(độ dài), hoặc IMAGE
-
--- Guid -> UNIQUEIDENTIFIER
-
--- Enum -> INT (mặc định), hoặc kiểu cơ bản của enum
-
--- DateTime -> DATETIME
-
--- DateTimeOffset -> DATETIMEOFFSET
-
--- TimeSpan -> TIME
-
--- DateOnly (C# 10) -> DATE
-
--- TimeOnly (C# 10) -> TIME
-
 - Logging trong ASP.NET
 
 -- Logging là tiến trình ghi lại các sự kiện xảy ra trong ứng dụng theo thời gian thực. Mục đích của logging là lưu lại các chi tiết của lỗi như phương thức hành động (action method), dịch vụ (service), và các thông tin khác có thể giúp bạn debug và phân tích ứng dụng.
@@ -201,82 +171,3 @@
 --HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
 
 -- Logging provider chỉ ra nơi mà store/display logs.
-
-- What is Entity Framework?
-
--- Working with databases can often be rather complicated. You have to manage database connections, convert data from your application to a format the database can understand, and handle many other subtle issues. The .NET ecosystem has libraries you can use for this, such as ADO.NET. However, it can still be complicated to manually build SQL queries and convert the data from the database into C# classes back and forth. EF, which stands for Entity Framework, is a library that provides an object-oriented way to access a database. It acts as an object-relational mapper, communicates with the database, and maps database responses to .NET classes and objects. Entity Framework (EF) Core is a lightweight, open-source, and cross-platform version of the Entity Framework.
-
--- Here are the essential differences between the two:
-
--- Cross-platform: We can use EF Core in cross-platform apps that target .NET Core. EF 6.x targets .NET Framework, so you’re limited to Windows.
-
--- Performance: EF Core is fast and lightweight. It significantly outperforms EF 6.x.
-
-- What is SQL injection attack?
-
--- A SQL injection attack is an attack mechanism used by hackers to steal sensitive information from the database of an organization. It is the application layer (means front-end) attack which takes benefit of inappropriate coding of our applications that allows a hacker to insert SQL commands into your code that is using SQL statement.
-
--- SQL Injection arises since the fields available for user input allow SQL statements to pass through and query the database directly. SQL Injection issue is a common issue with an ADO.NET Data Services query.
-
-- How to handle SQL injection attacks in Entity Framework?
-
--- Entity Framework is injection safe since it always generates parameterized SQL commands which help to protect our database against SQL Injection.
-
--- A SQL injection attack can be made in Entity SQL syntax by providing some malicious inputs that are used in a query and in parameter names. To avoid this one, you should never combine user inputs with Entity SQL command text.
-
-- What are POCO classes?
-
--- The term POCO does not mean to imply that your classes are either plain or old. The term POCO simply specifies that the POCO classes don’t contain any reference that is specific to the entity framework or .NET framework.
-
--- Basically, POCO (Plain Old CLR Object) entities are existing domain objects within your application that you use with Entity Framework.
-
-- What is the proxy object?
-
--- An object that is created from a POCO class (model class) to support change tracking and lazy loading, is known as a proxy object.
-
--- There are some rules for creating a proxy class object:
-
-1. The class must be public and not sealed.
-
-2. Each navigation property must be marked as virtual.
-
-3. Each property must have a public getter and setter.
-
-4. Any collection navigation properties must be typed as ICollection <T>.
-
-- What are the various Entity States in EF?
-
--- Each and every entity has a state during its lifecycle which is defined by an enum (EntityState) that have the following values:
-
-1. Added
-
-2. Modified
-
-3. Deleted
-
-4. Unchanged
-
-5. Detached
-
-- What are various approaches in Code First for model designing?
-
--- POCO model classes with data annotations
-
--- POCO model classes with FluentAPI in DbContext
-
--- In Entity Framework Code First approach, our POCO classes are mapped to the database objects using a set of conventions defined in Entity Framework. If you do not want to follow these conventions while defining your POCO classes, or you want to change the way the conventions work then you can use the fluent API or data annotations to configure and to map your POCO classes to the database tables. There are two approaches, which you can use to define the model in EF Code First:
-
-- What is Migrations History Table?
-
--- In EF Core, Migrations history table (\_\_MigrationHistory) is a part of the application database and used by Code First Migrations to store details about migrations applied to a database. This table is created when you apply the first migration to the database. This table stores metadata describing the schema version history of one or more EF Code First models within a given database.
-
-- How you apply code first migrations through code in EF Core?
-
--- Entity Framework Core supports “Migrate()” method, which can be called anywhere either in controller or in any other middleware when you want to perform code first migrations programmatically instead of applying migrations using “Update-Database” command.
-
--- Eg:
-
-using (var context = new MyDbContext(...))
-{
-context.Database.Migrate();
-}
