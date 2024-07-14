@@ -623,7 +623,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Yield statement trong C# được sử dụng để tạo ra một từ một phương thức. Iterator là một object cho phép bạn duyệt qua một tập hợp các phần tử một cách tuần tự.
 
-- Nếu 1 method có yield statement bên trong, method đó trở thành 1 iterator method. Khi gọi một iterator method, code bên trong phương thức không được thực thi ngay lập tức. Thay vào đó, phương thức trả về một đối tượng iterator mới, mà sau đó có thể được sử dụng để duyệt qua các phần tử một cách tuần tự. Một iterator luôn luôn tiếp tục tại nơi mà nó kết thúc lần trước.
+- Nếu 1 method có yield statement bên trong, method đó trở thành 1 iterator method. Khi gọi một iterator method, code bên trong phương thức không được thực thi ngay lập tức. Thay vào đó, phương thức trả về một đối tượng iterator mới, mà sau đó có thể được sử dụng để duyệt qua các phần tử một cách tuần tự. Một iterator luôn luôn tiếp tục tại nơi mà nó kết thúc lần trước. Phương thức không trả về một kết quả duy nhất và kết thúc ngay lập tức. Thay vào đó, nó trả về từng phần tử một và tạm dừng việc thực thi phương thức cho đến khi phương thức được gọi lại để lấy phần tử tiếp theo.
 
 - Khi sử dụng yield, bạn có thể trả về từng phần tử của tập hợp một cách lười biếng, có nghĩa là phần tử sẽ được tính toán và trả về chỉ khi cần thiết. Điều này cho phép bạn làm việc với các tập hợp lớn mà không cần phải tạo ra toàn bộ tập hợp trước.
 

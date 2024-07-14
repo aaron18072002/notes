@@ -142,6 +142,10 @@
 
 - Sự khác nhau giữa 2 methods Bind() và Get<T>()
 
+-- Bind Attribute được sử dụng để chỉ định các thuộc tính của một mô hình mà bạn muốn liên kết từ dữ liệu yêu cầu. Điều này giúp kiểm soát và giới hạn những dữ liệu nào từ người dùng sẽ được ánh xạ đến đối tượng mô hình, ngăn chặn các thuộc tính không mong muốn hoặc không an toàn khỏi việc bị ghi đè. Mặc định thì toàn bộ properties của 1 Model đều được Binded.
+
+-- BindNever Attribute dùng chỉ định 1 field cụ thể không được Binded.
+
 -- Get: Load values vào 1 object mới.
 
 -- Bind: Load values vào 1 object đã được khai báo.
