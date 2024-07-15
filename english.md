@@ -261,4 +261,9 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Giống với PASS SIMPLE TENSE, dùng với I wish .../ If only để bày tỏ về điều ta muốn ở hiện tại, nhưng thường là bất khả thi.
 
 --- Giống với PRESENT CONTINUOUS, không dùng với STATIVE VERB - động từ chỉ trạng thái.
-.
+
+-- TƯƠNG LAI ĐƠN ( FUTURE SIMPLE ), Dùng khi:
+
+--- Nói về một hành động sẽ bắt đầu và kết thúc trong tương lai.
+
+--- would like / plan / mean / want / hope / expect ( PRESENT SIMPLE ) + infinitive.
