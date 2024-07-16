@@ -267,3 +267,27 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Nói về một hành động sẽ bắt đầu và kết thúc trong tương lai.
 
 --- would like / plan / mean / want / hope / expect ( PRESENT SIMPLE ) + infinitive.
+
+--- Dùng với will khi:
+
+-> Niềm tin hoặc dự đoán về tương lai.
+
+-> Sự mong muốn hoặc khao khác.
+
+-> Đề nghị hoặc lời hứa.
+
+-> Quyết định tức thì ( instant decision ).
+
+--- Dùng với be going to khi:
+
+-> Một kế hoạch hoặc dự định trong tương lai.
+
+-> Một sự kiện có thể xảy ra dự trên bằng chứng có thể thấy.
+
+-- TƯƠNG LAI TIẾP DIỄN ( FUTURE CONTINUOUS ), Dùng khi:
+
+--- Nói về 1 hành động sẽ được tiến hành tại 1 thời điểm trong tương lai.
+
+--- Nói về 1 hành động sẽ xảy ra trước hoặc sau một thời điểm cụ thể trong tương lai.
+
+--- Trong cấu trúc của một câu ở thì tương lai tiếp diễn, trạng từ luôn nằm giữa WILL và động từ TO BE.
