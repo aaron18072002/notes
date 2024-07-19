@@ -4,6 +4,7 @@
 - predict (v) = guess: dự đoán
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - precidence (n): quyền ưu tiên
+- punctual (v): đúng giờ
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng

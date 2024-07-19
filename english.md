@@ -291,3 +291,13 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Nói về 1 hành động sẽ xảy ra trước hoặc sau một thời điểm cụ thể trong tương lai.
 
 --- Trong cấu trúc của một câu ở thì tương lai tiếp diễn, trạng từ luôn nằm giữa WILL và động từ TO BE.
+
+-- HIỆN TẠI HOÀN THÀNH ( PRESENT PERFECT )
+
+--- Nói về 1 hành động đã bắt đầu ở quá khứ và vẫn xảy ra / hoặc đúng ở hiện tại.
+
+--- Một trải nghiệm ở một thời điểm không xác định ở quá khứ.
+
+--- Chỉ dùng từ yet trong câu phủ định hoặc nghi vấn.
+
+--- KHÔNG được dùng HTHT cho một hành động xảy ra ở 1 thời điểm xác định trong quá khứ / Dùng QKD cho cái ni.
