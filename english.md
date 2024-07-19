@@ -200,13 +200,13 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 -- HIỆN TẠI ĐƠN ( PRESENT SIMPLE TENSE ): Dùng khi:
 
---- Nói về 1 hành động mà chúng ta làm thường xuyên
+--- Nói về 1 hành động mà chúng ta làm thường xuyên.
 
---- Một sự thật ở hiện tại
+--- Một sự thật ở hiện tại.
 
---- Một sự thật hiển nhiên
+--- Một sự thật hiển nhiên.
 
---- Đề cập về lịch trình hoặc sự kiện trong tương lai với thời gian cố định hoặc Nói về cảm xúc hiện tại của subject.
+--- Nói về cảm xúc hiện tại.
 
 --- Chỉ dùng TRỢ ĐỘNG TỪ cho câu nghi vấn hoặc câu phủ định trong HIỆN TẠI ĐƠN. VD: I do not have a car - I have a car. Nếu dùng trong câu khẳng định thì có mục đích nhấn mạnh.
 
@@ -218,7 +218,7 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Diễn tả thứ gì đó đang thay đổi, đang lớn dần, đang phát triển.
 
---- Nói về thứ gì đó cứ lặp đi lặp lại
+--- Nói về thứ gì đó cứ lặp đi lặp lại.
 
 --- Khẳng định (Affirmative): S + am/is/are + V-ing + O
 
@@ -286,7 +286,7 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 -- TƯƠNG LAI TIẾP DIỄN ( FUTURE CONTINUOUS ), Dùng khi:
 
---- Nói về 1 hành động sẽ được tiến hành tại 1 thời điểm trong tương lai.
+--- Nói về 1 hành động sẽ được tiến hành tại 1 thời điểm cụ thể trong tương lai.
 
 --- Nói về 1 hành động sẽ xảy ra trước hoặc sau một thời điểm cụ thể trong tương lai.
 
