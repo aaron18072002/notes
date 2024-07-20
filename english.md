@@ -301,3 +301,13 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 --- Chỉ dùng từ yet trong câu phủ định hoặc nghi vấn.
 
 --- KHÔNG được dùng HTHT cho một hành động xảy ra ở 1 thời điểm xác định trong quá khứ / Dùng QKD cho cái ni.
+
+--- Trong cấu trúc của một câu ở thì HTHT, trạng từ luôn nằm giữa HAVE/HAS và động từ TO BE hoặc ở cuối câu.
+
+-- QUÁ KHỨ HOÀNH THÀNH ( PAST PERFECT )
+
+--- Nói về 1 hành động đã bắt đầu và kết thúc ở thời điểm khác nhau trong quá khứ.
+
+--- Kết hợp với PAST SIMPLE để nói về một hành động đang xảy ra thì một hành động khác gián đoạn nó.
+
+--- KHÔNG dùng QKHT để nói về chỉ 1 sự kiện duy nhất ở quá khứ - nên dùng PAST SIMPLE.
