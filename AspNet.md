@@ -150,6 +150,14 @@
 
 -- Bind: Load values vào 1 object đã được khai báo.
 
+- Enviroment trong 1 dự án ASP.NET Core
+
+-- Development: môi trường cho dev.
+
+-- Staging: môi trường để testing (gần giống production).
+
+-- Production: môi trường thực tế khách hàng sử dụng.
+
 - [ApiController] attribute trong ASP.NET
 
 -- Khi bạn đánh dấu một lớp với [ApiController], ASP.NET sẽ nhận biết lớp đó là một API Controller và tự động thực hiện một số công việc:

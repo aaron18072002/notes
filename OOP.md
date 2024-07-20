@@ -10,7 +10,7 @@
 
 - Interface cũng giống như abstract class, không dùng để tạo ra các object mà dùng để tạo ra các cơ sở cho các lớp kế thửa. Nhưng khác với Abstract class, tất cả các phương thức của interface mặc định là abstract methods, vì vậy các lớp thừa kế bắt buộc phải override lại các phương thức đó ( không cần từ khóa override ). Một lớp kế thừa có thể kế thừa nhiều interface và có nghiệm vụ bắt buộc phải ghi đè lại toàn bộ các phương thức trong interface đó.
 
-- Trong Interface should only define các methods and properties, các methods và properties của Interface không được sealed hay static. Các methods trong Interface đều là Implicit Abstract và Implicit Public. Và các devired class bắt buộc ( obligated ) phải override lại các methods đó.    
+- Trong Interface should only define các methods and properties, các methods và properties của Interface không được sealed hay static. Các methods trong Interface đều là Implicit Abstract và Implicit Public. Và các devired class bắt buộc ( obligated ) phải override lại các methods đó.
 
 - 1 abstract class có thể các fields của nó còn interface thì không.
 
@@ -64,6 +64,8 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 --- Dependency không được tạo từ bên trong lớp mà phải được inject từ bên ngoài vào.
 
+--- IoC sẽ chịu trách nghiệm tạo ra và Dispose các instant của dependency còn tiêm nó vào module cấp cao là việc của DI.
+
 --- Có 3 cách tiêm dependency: Constructor injection, Setter injection, Interface injection.
 
 -- Dependency Injection
@@ -115,5 +117,3 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 - Reverse Proxy là một loại Proxy đặc biệt nằm trước server Back End, có nghiệm vụ bảo vệ server, có nghiệm vụ điều hướng các request tới từng server. Reverse Proxy có thể đóng vai trò như 1 Load Balancer.
 
 - Load Balancer là một chức năng của Reverse Proxy, có nghiệm vụ phân phối các client requests hoặc network load một cách hiệu quả trên nhiều servers.
-
-
