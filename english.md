@@ -298,6 +298,8 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Một trải nghiệm ở một thời điểm không xác định ở quá khứ.
 
+--- Nói về 1 hành động đã xảy ra nhiều lần ở quá khứ.
+
 --- Chỉ dùng từ yet trong câu phủ định hoặc nghi vấn.
 
 --- KHÔNG được dùng HTHT cho một hành động xảy ra ở 1 thời điểm xác định trong quá khứ / Dùng QKD cho cái ni.
@@ -308,6 +310,14 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Nói về 1 hành động đã bắt đầu và kết thúc ở thời điểm khác nhau trong quá khứ.
 
+--- Diễn đạt một sự kiện, hành động hoặc tình trạng đã xảy ra hoặc đã hoàn thành trước một thời điểm hoặc sự kiện khác trong quá khứ.
+
 --- Kết hợp với PAST SIMPLE để nói về một hành động đang xảy ra thì một hành động khác gián đoạn nó.
 
 --- KHÔNG dùng QKHT để nói về chỉ 1 sự kiện duy nhất ở quá khứ - nên dùng PAST SIMPLE.
+
+--- EVER: có là nghĩa là việc gì đã xảy ra ít nhất 1 lần tại một thời điểm cụ thể trong câu.
+
+--- NEVER: có là nghĩa là việc gì đó chưa xảy ra lần nào tại một thời điểm cụ thể trong câu.
+
+--- ALREADY: có nghĩa là đã xảy ra rồi.
