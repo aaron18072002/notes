@@ -140,15 +140,23 @@
 
 -- ErrorCount: Trả về tổng số errors đã catch.
 
-- Sự khác nhau giữa 2 methods Bind() và Get<T>()
+- Attribute Parameter trong Action Method
 
 -- Bind Attribute được sử dụng để chỉ định các thuộc tính của một mô hình mà bạn muốn liên kết từ dữ liệu yêu cầu. Điều này giúp kiểm soát và giới hạn những dữ liệu nào từ người dùng sẽ được ánh xạ đến đối tượng mô hình, ngăn chặn các thuộc tính không mong muốn hoặc không an toàn khỏi việc bị ghi đè. Mặc định thì toàn bộ properties của 1 Model đều được Binded.
 
 -- BindNever Attribute dùng chỉ định 1 field cụ thể không được Binded.
 
--- Get: Load values vào 1 object mới.
+- Sự khác nhau giữa 2 methods Bind(object obj) và Get<T>() khi implement Options Pattern lúc làm việc với Configuration:
 
--- Bind: Load values vào 1 object đã được khai báo.
+-- Get: Load values ( từ key/value pairs của Configuration ) vào 1 object mới.
+
+-- Bind: Load values ( từ key/value pairs của Configuration ) vào 1 object đã được khai báo.
+
+- Thứ tự mà 1 ASP.NET Core Project đọc các file Config
+
+-- Các Configs từ User-Secrets chỉ nên dùng ở Development Env.
+
+-- appsettings.json -> appsettings.Development.json -> User-Secrets -> Environment Variales -> Custom Configs
 
 - Enviroment trong 1 dự án ASP.NET Core
 
