@@ -473,13 +473,13 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - VẤN ĐỀ: Chúng ta muốn truyền 1 tham trị với tư cách là tham số vào 1 function và ta muốn biến tham trị đó modify bởi logic trong function.
 
---- So sánh toán tử == và equals()
+--- So sánh toán tử == và Equals() ( Default Signature của method Equal() )
 
-- Cả 2 đều trả về true, false.
+- Nếu toán hạng là Value Types và giá trị của chúng bằng nhau, return true.
 
-- Toán tử == sẽ so sánh điểm tham chiếu của biến được so sánh.
+- Nếu toán hạng là Referece Types ( ngoại trừ string ) và cả 2 đều refer tới cùng 1 instance, return true ( nghĩa là so sánh địa chỉ của chúng ).
 
-- Phương thức equals() dùng để so sánh giá trị được mang bởi các đối tượng.
+- Nếu toán hạng là String Type và giá trị của chúng bằng nhau, return true.
 
 --- Từ khóa this
 
