@@ -1,5 +1,6 @@
 - occurrence = happening (n): xảy ra
 - obligation (n) = duty (n) : nghĩa vụ
+- ordinary (v) = common: thông thường
 - possession (n): sở hữu
 - predict (v) = guess: dự đoán
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức

@@ -174,7 +174,7 @@
 
 -- Linking (Động từ liên kết) - mô tả của subject của sentence ( có thể thay thế bằng động từ to be )
 
--- Trợ động từ (Auxiliary Verbs): Là những động từ hỗ trợ biến thể một động từ chính như: Do, does, have, has, should, will, can, could,…. Trợ động từ dùng để bổ sung ý nghĩa cho các động từ chính và không thể thay thế cho các động từ chính.
+-- Trợ động từ (Auxiliary Verbs - Helping Verbs): Là những động từ hỗ trợ biến thể một động từ chính như: Do, does, have, has, should, will, can, could,…. Trợ động từ dùng để bổ sung ý nghĩa cho các động từ chính và không thể thay thế cho các động từ chính.
 
 --- Model Verbs - Là 1 kiểu của Trợ động từ: Chỉ ra sự cần thiết (necessity), khả năng (ability) và dự định (intension). Một số VD: can, could, may, might, must, ought to = must, shall, should, will, would, ...
 

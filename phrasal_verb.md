@@ -1,3 +1,4 @@
+- broken down into: chia nhỏ thành
 - check out = leave
 - check [someone/something] out = admire/appreciate - ngưỡng mộ, đánh giá cao ai/thứ gì đó
 - check in = hỏi xem người khác có ổn không, người khác đang làm như thế nào
