@@ -47,3 +47,11 @@
 -- IN
 
 - Toán tử IN cho phép bạn chỉ định nhiều giá trị cho 1 field trong mệnh đề WHERE.
+
+-- GROUP BY
+
+- Dùng để nhóm các dòng có cùng giá trị.
+
+- Thường dùng với các hàm: COUNT(), MAX(), MIN(), SUM(), AVG().
+
+- DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT khi nó tự động sắp xếp kết quả còn DISTINCT thì không.

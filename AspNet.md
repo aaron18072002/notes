@@ -182,7 +182,7 @@
 
 -- DbContext binded với database
 
--- DbSet binded với một table cụ thể.
+-- DBSet là một class đại diện cho một entity(model) trong database.
 
 - Logging trong ASP.NET
 

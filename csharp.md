@@ -227,6 +227,12 @@
 
 - 1 số LINQ methods thường dùng: All(), Any(), Count() - return int, LongCount() - return long, Contains(), OrderBy() - mặc định là ascending, OrderByDescending(), Last(), First(), LastOrDefault(), FirstOrDefault(), Select() = map(), Where() = filter() trong JS
 
+--- Count và Count():
+
+- Count() là 1 extension method của LINQ.
+
+- Count là 1 property của ICollection. ICollection extends IEnumerable.
+
 --- Hash Functions trong .NET
 
 - GetHashCode() là 1 hash function được triển khai cho C# object ( cả value type và reference type ).
@@ -475,11 +481,17 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- So sánh toán tử == và Equals() ( Default Signature của method Equal() )
 
+-- Equal() :
+
 - Nếu toán hạng là Value Types và giá trị của chúng bằng nhau, return true.
 
 - Nếu toán hạng là Referece Types ( ngoại trừ string ) và cả 2 đều refer tới cùng 1 instance, return true ( nghĩa là so sánh địa chỉ của chúng ).
 
 - Nếu toán hạng là String Type và giá trị của chúng bằng nhau, return true.
+
+-- Toán tử == :
+
+- == so sánh object references.
 
 --- Từ khóa this
 
