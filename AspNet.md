@@ -184,6 +184,8 @@
 
 -- DBSet là một class đại diện cho một entity(model) trong database.
 
+-- Lệnh Add-Migration trong Entity Framework Core sẽ theo dõi các thay đổi trong lớp DbContext và các lớp thực thể của bạn. Khi bạn chạy Add-Migration, Entity Framework sẽ so sánh mô hình hiện tại của bạn với mô hình trước đó và tạo ra một tệp migration chứa các thay đổi cần thiết để cập nhật cơ sở dữ liệu theo mô hình mới.
+
 - Logging trong ASP.NET
 
 -- Logging là tiến trình ghi lại các sự kiện xảy ra trong ứng dụng theo thời gian thực. Mục đích của logging là lưu lại các chi tiết của lỗi như phương thức hành động (action method), dịch vụ (service), và các thông tin khác có thể giúp bạn debug và phân tích ứng dụng.
