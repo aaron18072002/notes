@@ -184,7 +184,11 @@
 
 -- DBSet là một class đại diện cho một entity(model) trong database.
 
+-- Method Add(obj) trong DbContext chỉ thêm obj đó vào DbSet và đánh dấu nó là "Added" trong Change Tracker còn SaveChanges() mới là method mà tạo ra các câu lệnh sql để thực thi vào database. Tương tự với Remove(obj) thì là "Deleted" còn lại là "Modified".
+
 -- Lệnh Add-Migration trong Entity Framework Core sẽ theo dõi các thay đổi trong lớp DbContext và các lớp thực thể của bạn. Khi bạn chạy Add-Migration, Entity Framework sẽ so sánh mô hình hiện tại của bạn với mô hình trước đó và tạo ra một tệp migration chứa các thay đổi cần thiết để cập nhật cơ sở dữ liệu theo mô hình mới.
+
+-- Fluent API trong Entity Framework Core là tập hợp các phương thức được thiết kế để tác động và cấu hình các bảng (tables) trong cơ sở dữ liệu theo cách thức "method chaining". Đây là cách để lập trình viên cấu hình chi tiết các thực thể (entities) và các mối quan hệ giữa chúng một cách linh hoạt và rõ ràng.
 
 - Logging trong ASP.NET
 
