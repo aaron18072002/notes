@@ -20,6 +20,8 @@
 
 -- Dont use articles for proper nouns of people or places.
 
+-- Sau mạo từ + danh từ.
+
 - Quantifier (lượng từ)
 
 -- For countable nouns: many, few, a few, fewer, several
@@ -106,7 +108,11 @@
 
 -- Compound prepositions usually a simple preposition and another word: across from, in addition to, from beneath, ...
 
--- Một số cách sử dụng giới từ:
+-- Sau giới từ + danh từ.
+
+-- MỘT SỐ CÁCH DÙNG GIỚI TỪ:
+
+--- in: trong, at: tại, on: trên, for: cho, of: của, with: với
 
 --- ON for days and date, SINCE - AT for specific time, IN for period of time ( khoảng thời gian như năm, tháng, mùa ), FOR indicate the duration of time, DURING indicate events happening at the same time.
 
