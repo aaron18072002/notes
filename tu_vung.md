@@ -1,4 +1,5 @@
 - occurrence = happening (n): xảy ra
+- occsation (n): dịp
 - obligation (n) = duty (n) : nghĩa vụ
 - ordinary (v) = common: thông thường
 - possession (n): sở hữu
