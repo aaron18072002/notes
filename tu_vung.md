@@ -20,3 +20,5 @@
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
 - exclusive (adj) = unique: độc quyền, duy nhất
+- bulletin (n): bản tin
+- bulletin (v) = inform = notify
