@@ -6,6 +6,7 @@
 - predict (v) = guess: dự đoán
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - precidence (n): quyền ưu tiên
+- presive (adj) = exact: chính xác
 - punctual (v): đúng giờ
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
@@ -16,12 +17,18 @@
 - further (adv): xa hơn
 - contraction (n): viết tắt
 - state (v): diễn đạt
+- supply (n): đồ dùng / supply (v): cung cấp
 - suspend (v) = delay: trì hoãn
+- stiff (adj): cứng
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify
+- barn (n): kho thóc, chuồn
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
+- instrument (n): nhạc cụ
+- fortunate (adj) = lucky: may mắn
+- turn (v): xoay, chuyển, đổi

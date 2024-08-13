@@ -8,3 +8,4 @@
 - came across = i found - tôi đã tìm thấy gì đó
 - fell over: ngã lăn ra
 - put up: treo lên
+- turn in: nộp
