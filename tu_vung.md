@@ -16,9 +16,12 @@
 - further (adv): xa hơn
 - contraction (n): viết tắt
 - state (v): diễn đạt
+- suspend (v) = delay: trì hoãn
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify
+- gather (v): tụ họp
+- erect (v): dựng lên = build something
