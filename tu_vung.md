@@ -15,6 +15,7 @@
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
 - further (adv): xa hơn
+- furniture (n): đồ gia dụng
 - contraction (n): viết tắt
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
@@ -32,3 +33,5 @@
 - instrument (n): nhạc cụ
 - fortunate (adj) = lucky: may mắn
 - turn (v): xoay, chuyển, đổi
+- gather (v) = assenble (v): tụ họp
+- so = therefore = thus = hence = consequently: do đó
