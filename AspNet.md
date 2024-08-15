@@ -194,6 +194,10 @@
 
 -- Logging là tiến trình ghi lại các sự kiện xảy ra trong ứng dụng theo thời gian thực. Mục đích của logging là lưu lại các chi tiết của lỗi như phương thức hành động (action method), dịch vụ (service), và các thông tin khác có thể giúp bạn debug và phân tích ứng dụng.
 
---HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
+-- 5 levels của log: Debug, Information, Warning, Error, Critical.
 
--- Logging provider chỉ ra nơi mà store/display logs.
+-- HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
+
+-- Logging provider chỉ ra nơi mà store/display log messages.
+
+-- Có 3 Loggin Prodider: Console, Debug, EventLog.
