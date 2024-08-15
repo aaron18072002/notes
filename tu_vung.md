@@ -17,6 +17,7 @@
 - further (adv): xa hơn
 - furniture (n): đồ gia dụng
 - contraction (n): viết tắt
+- complementary (adj): bổ sung
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - suspend (v) = delay: trì hoãn
