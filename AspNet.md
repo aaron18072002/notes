@@ -196,8 +196,8 @@
 
 -- 5 levels của log: Debug, Information, Warning, Error, Critical.
 
--- HTTP Logging là tiến trình ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
+-- HTTP Logging là 1 middleware mà ghi lại details của HTTP Request và Response ngay khi chúng xảy ra tại thời gian thực.
 
 -- Logging provider chỉ ra nơi mà store/display log messages.
 
--- Có 3 Loggin Prodider: Console, Debug, EventLog.
+-- Có 3 Loggin Provider: Console, Debug, EventLog.
