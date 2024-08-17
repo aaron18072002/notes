@@ -36,3 +36,4 @@
 - turn (v): xoay, chuyển, đổi
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
+- utensil (n): dụng cụ nhà bếp

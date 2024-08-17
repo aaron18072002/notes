@@ -201,3 +201,31 @@
 -- Logging provider chỉ ra nơi mà store/display log messages.
 
 -- Có 3 Loggin Provider: Console, Debug, EventLog.
+
+- Filter trong ASP.NET
+
+-- Middleware hoạt động trên toàn bộ pipeline của ứng dụng, có khả năng can thiệp vào bất kỳ yêu cầu HTTP nào từ lúc bắt đầu cho đến lúc kết thúc. Middleware có thể ảnh hưởng đến mọi yêu cầu và phản hồi, bất kể yêu cầu đó liên quan đến controller nào. Các middleware thường được sử dụng cho các tác vụ như xác thực, logging, xử lý lỗi, định tuyến, và quản lý phiên làm việc.
+
+-- Filter chỉ áp dụng cho các action trong controller. Chúng cho phép bạn can thiệp vào quá trình xử lý của một action cụ thể hoặc một nhóm các action. Các filter có thể thực hiện các tác vụ như kiểm tra quyền truy cập trước khi action chạy (Authorization Filter), thực hiện thao tác trước và sau action (Action Filter), hoặc xử lý kết quả trả về (Result Filter).
+
+-- OnActionExecuting được thực thi trước khi action method trong controller được gọi, nhưng sau khi model binding đã hoàn tất.
+
+-- Dưới đây là thứ tự thực thi trong pipeline của ASP.NET Core khi một yêu cầu HTTP được xử lý:
+
+1. Middleware: Các middleware được thực thi đầu tiên khi một yêu cầu HTTP đi qua pipeline.
+
+2. Routing: Yêu cầu được định tuyến tới controller và action method tương ứng.
+
+3. Authorization Filters: Kiểm tra quyền truy cập trước khi tiếp tục với các thao tác khác.
+
+4. Model Binding: Dữ liệu từ yêu cầu (ví dụ như từ query string, form data) được gán vào các tham số của action method.
+
+5. Action Filters (OnActionExecuting): Đây là nơi OnActionExecuting được thực thi, cho phép can thiệp hoặc kiểm tra trước khi action method được gọi.
+
+6. Action Method: Action method của controller được thực thi.
+
+7. Action Filters (OnActionExecuted): Sau khi action method đã thực thi, OnActionExecuted được gọi.
+
+8. Result Filters: Xử lý kết quả trả về, như định dạng dữ liệu hoặc thay đổi response trước khi gửi về client.
+
+9. Response: Kết quả được gửi trả về client.
