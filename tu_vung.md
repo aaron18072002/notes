@@ -8,6 +8,7 @@
 - precidence (n): quyền ưu tiên
 - presive (adj) = exact: chính xác
 - punctual (v): đúng giờ
+- promptly (adv) = quickly: nhanh chóng
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
@@ -37,3 +38,5 @@
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
 - utensil (n): dụng cụ nhà bếp
+- demolish (v) = destroy: phá hủy
+- enquire (v): hỏi thăm # require (v): yêu cầu
