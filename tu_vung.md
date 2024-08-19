@@ -9,6 +9,7 @@
 - presive (adj) = exact: chính xác
 - punctual (v): đúng giờ
 - promptly (adv) = quickly: nhanh chóng
+- pavement (n) = sidewalk (n): vỉa hè
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
