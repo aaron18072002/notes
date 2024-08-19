@@ -216,16 +216,30 @@
 
 2. Routing: Yêu cầu được định tuyến tới controller và action method tương ứng.
 
-3. Authorization Filters: Kiểm tra quyền truy cập trước khi tiếp tục với các thao tác khác.
+3. Authorization Filters: Kiểm tra quyền truy cập. Nếu người dùng không được phép, pipeline sẽ dừng lại ở đây và trả về kết quả mà không tiếp tục.
 
-4. Model Binding: Dữ liệu từ yêu cầu (ví dụ như từ query string, form data) được gán vào các tham số của action method.
+4. Resource Filters (OnResourceExecuting): Được thực thi sau khi kiểm tra quyền truy cập, trước khi bất kỳ action method nào được thực hiện. Resource filters có thể can thiệp vào toàn bộ yêu cầu và ngăn chặn việc thực thi action method.
 
-5. Action Filters (OnActionExecuting): Đây là nơi OnActionExecuting được thực thi, cho phép can thiệp hoặc kiểm tra trước khi action method được gọi.
+5. Model Binding: Dữ liệu từ yêu cầu (ví dụ như từ query string, form data) được gán vào các tham số của action method.
 
-6. Action Method: Action method của controller được thực thi.
+6. Action Filters (OnActionExecuting): Thực thi trước action method, cho phép can thiệp hoặc kiểm tra trước khi action method được gọi.
 
-7. Action Filters (OnActionExecuted): Sau khi action method đã thực thi, OnActionExecuted được gọi.
+7. Action Method: Action method của controller được thực thi.
 
-8. Result Filters: Xử lý kết quả trả về, như định dạng dữ liệu hoặc thay đổi response trước khi gửi về client.
+8. Action Filters (OnActionExecuted): Thực thi sau khi action method đã hoàn thành.
 
-9. Response: Kết quả được gửi trả về client.
+9. Exception Filters: Xử lý các exception (lỗi) phát sinh trong quá trình thực thi action method hoặc các filters khác. Nếu xảy ra lỗi, exception filter có thể can thiệp và cung cấp một response thay thế.
+
+10. Resource Filters (OnResourceExecuted): Thực thi sau khi action method và các filters khác đã hoàn thành. Có thể can thiệp vào response hoặc hủy bỏ việc xử lý tiếp tục.
+
+11. Result Filters: Xử lý kết quả trả về, như định dạng dữ liệu hoặc thay đổi response trước khi gửi về client.
+
+12. Response: Kết quả được gửi trả về client.
+
+-- Result Filters có hai phương thức chính: OnResultExecuting và OnResultExecuted:
+
+1. OnResultExecuting: Thực thi trước khi result được xử lý. Tại đây, bạn có thể kiểm tra hoặc sửa đổi kết quả trước khi nó được gửi đi. Nếu cần, bạn có thể ngăn chặn việc xử lý tiếp tục bằng cách đặt kết quả khác hoặc hủy bỏ.
+
+2. OnResultExecuted: Thực thi sau khi result đã được xử lý và gửi về client. Đây là nơi để thực hiện các thao tác hậu xử lý như ghi log hoặc giải phóng tài nguyên.
+
+-- Result Filters thường được sử dụng để chuẩn hóa kết quả trả về từ các action methods, chẳng hạn như thêm headers hoặc cookies vào tất cả các phản hồi, hoặc để đảm bảo rằng một loại kết quả cụ thể luôn được trả về từ một nhóm các action methods.
