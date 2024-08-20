@@ -214,7 +214,7 @@
 
 1. Middleware: Các middleware được thực thi đầu tiên khi một yêu cầu HTTP đi qua pipeline.
 
-2. Routing: Yêu cầu được định tuyến tới controller và action method tương ứng.
+2. Routing Middleware: Yêu cầu được định tuyến tới controller và action method tương ứng.
 
 3. Authorization Filters: Kiểm tra quyền truy cập. Nếu người dùng không được phép, pipeline sẽ dừng lại ở đây và trả về kết quả mà không tiếp tục.
 
@@ -242,4 +242,6 @@
 
 2. OnResultExecuted: Thực thi sau khi result đã được xử lý và gửi về client. Đây là nơi để thực hiện các thao tác hậu xử lý như ghi log hoặc giải phóng tài nguyên.
 
--- Result Filters thường được sử dụng để chuẩn hóa kết quả trả về từ các action methods, chẳng hạn như thêm headers hoặc cookies vào tất cả các phản hồi, hoặc để đảm bảo rằng một loại kết quả cụ thể luôn được trả về từ một nhóm các action methods.
+-- Result Filters chính là thứ mà tác động đến RESPONSE lần cuối trước khi nó gửi về client. Như thêm cookie, thêm response-header, ...
+
+-- ExceptionFilters chỉ catch được Exception ở ModelBinding, ActionFilters và ActionMethods. Và không nên display exception details khi đang không ở trong môi trường Development.

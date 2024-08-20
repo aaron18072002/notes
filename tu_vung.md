@@ -10,6 +10,7 @@
 - punctual (v): đúng giờ
 - promptly (adv) = quickly: nhanh chóng
 - pavement (n) = sidewalk (n): vỉa hè
+- prospective (adj) = potensial : tiềm năng
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
@@ -29,7 +30,7 @@
 - remand (v): nhác nhở
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
-- bulletin (v) = inform = notify
+- bulletin (v) = inform = notify = announce
 - barn (n): kho thóc, chuồn
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
@@ -41,3 +42,4 @@
 - utensil (n): dụng cụ nhà bếp
 - demolish (v) = destroy: phá hủy
 - enquire (v): hỏi thăm # require (v): yêu cầu
+- confidential (adj) = private: bí mật
