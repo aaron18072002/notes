@@ -245,3 +245,17 @@
 -- Result Filters chính là thứ mà tác động đến RESPONSE lần cuối trước khi nó gửi về client. Như thêm cookie, thêm response-header, ...
 
 -- ExceptionFilters chỉ catch được Exception ở ModelBinding, ActionFilters và ActionMethods. Và không nên display exception details khi đang không ở trong môi trường Development.
+
+-- Tất cả Filters đều implement IFilterMetadata.
+
+-- Default lifetime của tất cả Filters là Transient.
+
+-- Nếu dùng FilterAttribute thì Filter đó có thể là ActionFilter, ExceptionFilter, ResultFilter. Nhưng nó không support constructor DI.
+
+-- Khi nào thì nên dùng IFilterFactory:
+
+1. Khi bạn cần tạo Filter 1 cách flex, tùy biến theo từng tình huống cụ thể.
+
+2. Khi bạn muốn kiểm soát vòng đời của bộ lọc hoặc tích hợp sâu hơn với hệ thống DI của ASP.NET Core.
+
+3. Khi bộ lọc của bạn có các phụ thuộc phức tạp hoặc cần cấu hình đặc biệt.
