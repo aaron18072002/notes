@@ -43,3 +43,6 @@
 - demolish (v) = destroy: phá hủy
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - confidential (adj) = private: bí mật
+- conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn
+- clothes = garment (n): áo quần
+- enclose (v) = attach: đính kèm
