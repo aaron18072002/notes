@@ -44,5 +44,6 @@
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn
+- compensation (n) = reimbursement (n): sự bồi thường
 - clothes = garment (n): áo quần
 - enclose (v) = attach: đính kèm
