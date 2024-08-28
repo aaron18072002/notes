@@ -11,6 +11,7 @@
 - promptly (adv) = quickly: nhanh chóng
 - pavement (n) = sidewalk (n): vỉa hè
 - prospective (adj) = potensial : tiềm năng
+- put off: cởi / put on: mặc / put up: dựng
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
@@ -39,11 +40,12 @@
 - turn (v): xoay, chuyển, đổi
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
+- significant (v) = substantially (v): đáng kể
 - utensil (n): dụng cụ nhà bếp
 - demolish (v) = destroy: phá hủy
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - confidential (adj) = private: bí mật
-- conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn
+- conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ
 - compensation (n) = reimbursement (n): sự bồi thường
 - clothes = garment (n): áo quần
 - enclose (v) = attach: đính kèm
