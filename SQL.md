@@ -52,6 +52,10 @@
 
 - Dùng để nhóm các dòng có cùng giá trị.
 
-- Thường dùng với các hàm: COUNT(), MAX(), MIN(), SUM(), AVG().
+- Thường dùng với các aggregate functions: COUNT(), MAX(), MIN(), SUM(), AVG().
 
 - DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT khi nó tự động sắp xếp kết quả còn DISTINCT thì không.
+
+-- HAVING
+
+- Thay thế cho Where vì Where không thể dùng với aggregate functions.
