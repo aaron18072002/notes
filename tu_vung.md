@@ -49,3 +49,4 @@
 - compensation (n) = reimbursement (n): sự bồi thường
 - clothes = garment (n): áo quần
 - enclose (v) = attach: đính kèm
+- widen (v) = expand: mở rộng
