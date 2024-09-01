@@ -56,6 +56,8 @@
 
 - DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT khi nó tự động sắp xếp kết quả còn DISTINCT thì không.
 
+- GROUP BY chạy trước aggragation function.
+
 -- HAVING
 
-- Thay thế cho Where vì Where không thể dùng với aggregate functions.
+- Thay thế cho Where vì Where không thể dùng với aggregate functions. WHERE Lọc các hàng dữ liệu trước khi các phép tính toán hoặc hàm tổng hợp được thực hiện. Điều này có nghĩa là bất kỳ điều kiện nào trong câu lệnh WHERE phải dựa trên các cột hoặc giá trị của các hàng dữ liệu ban đầu.
