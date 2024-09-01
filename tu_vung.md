@@ -47,6 +47,7 @@
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ
 - compensation (n) = reimbursement (n): sự bồi thường
+- concentrate (n): tập trung
 - clothes = garment (n): áo quần
 - enclose (v) = attach: đính kèm
 - widen (v) = expand: mở rộng

@@ -246,7 +246,7 @@ Ví dụ: She is really tall (Cô ấy rất cao)
 
 --- Nói về 1 hành động đã xảy 1 ra lần tại quá khứ.
 
---- Nói về 1 hành động đã kết thúc tại một thời điểm không xác định.
+--- Nói về 1 hành động đã kết thúc tại một thời điểm xác định.
 
 --- Nói về 1 hành động xả ra thường xuyên tại quá khứ.
 
