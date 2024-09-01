@@ -94,6 +94,8 @@
 
 -- Khi một url matching với 1 endpoint nào đó, ASP.NET Core sẽ tự động tạo ra 1 object của Controller chứa endpoint đó.
 
+-- Trong ASP.NET Core, các controller có lifetime mặc định là transient. Điều này có nghĩa là một instance mới của controller sẽ được tạo mỗi khi có một yêu cầu (request) đến.
+
 - ContentResult trong ASP.NET
 
 -- Trả về text/plain, html/text, json/text, pdf files, application/xml, ...
