@@ -1,3 +1,5 @@
+@@
+
 --- Khái niệm biến - variable
 
 - Biến là 1 vùng nhớ chúng ta dùng để lưu các dữ liệu tạm thời giúp cho chương trình có thể lưu các giá trị mà nó cần trong lúc chạy.
@@ -134,6 +136,10 @@
 - statement là a piece of code that does not evaluates a value. VD ( if else statement ).
 
 --- Expression-bodied methods: 1 cách viết function shorter trong C# giống với arrow function trong js.
+
+--- Expression<Func<T,bool>> và Func<T,bool> khác gì nhau:
+
+- Expression<Func<T,bool>> là một biểu thức cây (expression tree) đại diện cho một biểu thức lambda không chỉ có thể thực thi mà còn có thể được phân tích cú pháp và chuyển đổi thành các định dạng khác, chẳng hạn như SQL.
 
 --- Break và Continue trong C#
 
