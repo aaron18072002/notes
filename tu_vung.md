@@ -12,6 +12,7 @@
 - pavement (n) = sidewalk (n): vỉa hè
 - prospective (adj) = potensial : tiềm năng
 - put off: cởi / put on: mặc / put up: dựng
+- preservation (n): sự bảo quản
 - recognize (v): nhận ra, nhận biết
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
@@ -38,6 +39,7 @@
 - instrument (n): nhạc cụ
 - fortunate (adj) = lucky: may mắn
 - turn (v): xoay, chuyển, đổi
+- tire (n): lốp xe / tile (n): gạch
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
 - significant (v) = substantially (v): đáng kể
@@ -51,3 +53,4 @@
 - clothes = garment (n): áo quần
 - enclose (v) = attach: đính kèm
 - widen (v) = expand: mở rộng
+- nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
