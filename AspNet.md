@@ -10,6 +10,18 @@
 
 - ASP.NET Core Blazor: Được sử dụng để xây dựng các ứng dụng web với mã nguồn C# cả ở phía máy khách (client-side) và phía máy chủ (server-side). Blazor cho phép phát triển ứng dụng web mà không cần sử dụng JavaScript, thay vào đó sử dụng C# và .NET trên cả hai phía.
 
+--- ViewData, ViewBag, TempData, ViewModel trong MVC
+
+- ViewData và ViewBag đều dùng để passing data từ controller sang view. Nhưng type của ViewBag là dynamic còn type của ViewData là một KeyValuePair<string, object>.
+
+- Cả ViewData và ViewBag đều có lifetime là 1 request. Vậy nên khi user gửi 1 request khác thì ViewData và ViewBag đều mất.
+
+- TempData dùng để passing data trong 2 request liên tiếp. VD: Hiển thị notification khi update, create, ...
+
+- TempData có lifetime là 1 session.
+
+- ViewModel là 1 custom class do user tự định nghĩa để store model và các data cần thiết để ràng buộc với view nào đó. Model ở đây có thể là entity, DTO còn data có thể là ViewBag, ViewData, TempData, SelectItemList ,...
+
 --- Kestrel trong ASP.NET Core
 
 - Kestrel là server http đa nền tảng mặc định cho ASP.NET Core application.
