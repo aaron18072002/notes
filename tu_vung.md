@@ -19,14 +19,17 @@
 - reserve (v): đặt chỗ
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
+- INNOVATIVE (adv): có tính đổi mới
 - further (adv): xa hơn
 - furniture (n): đồ gia dụng
 - contraction (n): viết tắt
 - complementary (adj): bổ sung
+- COMPLIANCE (n): tuân thủ
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - suspend (v) = delay: trì hoãn
 - stiff (adj): cứng
+- steadily (adv): đều đặn
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
@@ -45,12 +48,16 @@
 - significant (v) = substantially (v): đáng kể
 - utensil (n): dụng cụ nhà bếp
 - demolish (v) = destroy: phá hủy
+- devorce (v): ly dị
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ
 - compensation (n) = reimbursement (n): sự bồi thường
 - concentrate (n): tập trung
 - clothes = garment (n): áo quần
+- CONSISTENTLY (adv): liên tục
 - enclose (v) = attach: đính kèm
 - widen (v) = expand: mở rộng
 - nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
+- accompany (n): đồng hành
+- means (n): phương tiện
