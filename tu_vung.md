@@ -14,9 +14,11 @@
 - put off: cởi / put on: mặc / put up: dựng
 - preservation (n): sự bảo quản
 - recognize (v): nhận ra, nhận biết
+- reserve (v): đặt chỗ
+- revise (v) = review (v): ôn lại / revision (n): sự ôn tập
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
-- reserve (v): đặt chỗ
+- factor (n): nhân tố
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
@@ -25,7 +27,7 @@
 - contraction (n): viết tắt
 - complementary (adj): bổ sung
 - COMPLIANCE (n): tuân thủ
-- state (v): diễn đạt
+- state (v): diễn đạtá
 - supply (n): đồ dùng / supply (v): cung cấp
 - suspend (v) = delay: trì hoãn
 - stiff (adj): cứng
@@ -33,29 +35,36 @@
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
+- REMARKABLE (adj) = outstanding (adj): nổi bật
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
 - barn (n): kho thóc, chuồn
+- badge (n): boảng tên
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
 - fortunate (adj) = lucky: may mắn
 - turn (v): xoay, chuyển, đổi
 - tire (n): lốp xe / tile (n): gạch
+- THOROUGHLY (adv): kỹ lưỡng
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
 - significant (v) = substantially (v): đáng kể
 - utensil (n): dụng cụ nhà bếp
+- unforeseen (adv) = expected (v): không lường trước được
+- unanimously (adv): đồng lòng
 - demolish (v) = destroy: phá hủy
 - devorce (v): ly dị
 - enquire (v): hỏi thăm # require (v): yêu cầu
+- entitle (v): trao quyền
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ
 - compensation (n) = reimbursement (n): sự bồi thường
 - concentrate (n): tập trung
 - clothes = garment (n): áo quần
-- CONSISTENTLY (adv): liên tục
+- CONSISTENTLY (adv): liên tục = CONSECUTIVELY (adv): liên tiếp, dồn dập
+- coverage (n): việc đưa tin
 - enclose (v) = attach: đính kèm
 - widen (v) = expand: mở rộng
 - nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
