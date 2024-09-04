@@ -415,7 +415,7 @@ Push(object Value) - Thêm 1 phần tử vào đầu Stack. Và còn nhiều met
 
 - Read-only, không thể modify các biến trong kiểu vô danh.
 
-- Chỉ chứa được fields và methods, không chứa được methods.
+- Chỉ chứa được fields và properties, không chứa được methods.
 
 --- Sự khác biệt giữa late binding và early binding trong C#
 
