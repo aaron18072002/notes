@@ -36,6 +36,7 @@
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
 - REMARKABLE (adj) = outstanding (adj): nổi bật
+- receipt (n) = invoice (n): hóa đơn, biên lai
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
