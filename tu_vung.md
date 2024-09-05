@@ -32,11 +32,14 @@
 - suspend (v) = delay: trì hoãn
 - stiff (adj): cứng
 - steadily (adv): đều đặn
+- seldom (adv) = rarely (adv): hiếm khi
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
 - REMARKABLE (adj) = outstanding (adj): nổi bật
 - receipt (n) = invoice (n): hóa đơn, biên lai
+- rehearsal (n) = drill (n): buổi diễn tập
+- runway (n): đường băng
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
@@ -51,7 +54,7 @@
 - THOROUGHLY (adv): kỹ lưỡng
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
-- significant (v) = substantially (v): đáng kể
+- significant (adj) = substantially (adj) = CONSIDERABLY (adj) đáng kể
 - utensil (n): dụng cụ nhà bếp
 - unforeseen (adv) = expected (v): không lường trước được
 - unanimously (adv): đồng lòng
@@ -66,8 +69,12 @@
 - clothes = garment (n): áo quần
 - CONSISTENTLY (adv): liên tục = CONSECUTIVELY (adv): liên tiếp, dồn dập
 - coverage (n): việc đưa tin
+- competence (n) = qualification (n): năng lực
 - enclose (v) = attach: đính kèm
 - widen (v) = expand: mở rộng
 - nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
+- nevertheless (adv) = however (adv)
 - accompany (n): đồng hành
 - means (n): phương tiện
+- venue (n): nơi gặp mặt
+- absence (n): sự vắng mặt
