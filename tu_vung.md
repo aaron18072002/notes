@@ -78,3 +78,4 @@
 - means (n): phương tiện
 - venue (n): nơi gặp mặt
 - absence (n): sự vắng mặt
+- hadge (n) = hence (n): hàng rào
