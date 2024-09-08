@@ -60,6 +60,7 @@
 - unanimously (adv): đồng lòng
 - demolish (v) = destroy: phá hủy
 - devorce (v): ly dị
+- defect (n): khuyết điểm
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - confidential (adj) = private: bí mật
@@ -71,11 +72,11 @@
 - coverage (n): việc đưa tin
 - competence (n) = qualification (n): năng lực
 - enclose (v) = attach: đính kèm
-- widen (v) = expand: mở rộng
+- widen (v) = extend: mở rộng
 - nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv)
 - accompany (n): đồng hành
 - means (n): phương tiện
 - venue (n): nơi gặp mặt
 - absence (n): sự vắng mặt
-- hadge (n) = hence (n): hàng rào
+- hedge (n) = hence (n): hàng rào
