@@ -76,7 +76,8 @@
 - nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv)
 - accompany (n): đồng hành
+- absence (n): sự vắng mặt
+- attempt (n): sự nỗ lực
 - means (n): phương tiện
 - venue (n): nơi gặp mặt
-- absence (n): sự vắng mặt
 - hedge (n) = hence (n): hàng rào
