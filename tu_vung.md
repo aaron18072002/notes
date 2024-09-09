@@ -71,9 +71,10 @@
 - CONSISTENTLY (adv): liên tục = CONSECUTIVELY (adv): liên tiếp, dồn dập
 - coverage (n): việc đưa tin
 - competence (n) = qualification (n): năng lực
+- cuisine (n): ẩm thực
 - enclose (v) = attach: đính kèm
 - widen (v) = extend: mở rộng
-- nominate (v) = appoint (v) = assign (v): chỉ định, bổ nhiệm
+- nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv)
 - accompany (n): đồng hành
 - absence (n): sự vắng mặt
