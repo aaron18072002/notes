@@ -22,6 +22,7 @@
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
+- involve (v): liên quan
 - further (adv): xa hơn
 - furniture (n): đồ gia dụng
 - contraction (n): viết tắt
@@ -40,6 +41,8 @@
 - receipt (n) = invoice (n): hóa đơn, biên lai
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
+- renowned (adj) = notable (adj): nổi tiếng, đáng chú
+- clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
@@ -72,6 +75,7 @@
 - coverage (n): việc đưa tin
 - competence (n) = qualification (n): năng lực
 - cuisine (n): ẩm thực
+- crucial (adj) = important (adj): quan trọng, chủ yếu
 - enclose (v) = attach: đính kèm
 - widen (v) = extend: mở rộng
 - nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
@@ -79,6 +83,8 @@
 - accompany (n): đồng hành
 - absence (n): sự vắng mặt
 - attempt (n): sự nỗ lực
+- anticipate (v) = estimate (v) = forecast: dự đoán
+- admittance (n) = permisson (n): sự cho phép
 - means (n): phương tiện
 - venue (n): nơi gặp mặt
 - hedge (n) = hence (n): hàng rào
