@@ -13,11 +13,13 @@
 - prospective (adj) = potensial : tiềm năng
 - put off: cởi / put on: mặc / put up: dựng
 - preservation (n): sự bảo quản
+- participant (n) = turnout (n): người tham gia
 - recognize (v): nhận ra, nhận biết
 - reserve (v): đặt chỗ
 - revise (v) = review (v): ôn lại / revision (n): sự ôn tập
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
+- formaly (adv): trước đây
 - factor (n): nhân tố
 - routines (n) = habits: thói quen
 - infinitive (n): dạng nguyên thể
@@ -77,7 +79,9 @@
 - cuisine (n): ẩm thực
 - crucial (adj) = important (adj): quan trọng, chủ yếu
 - enclose (v) = attach: đính kèm
+- emission (n): sự thải ra
 - widen (v) = extend: mở rộng
+- whereas (conj): trong khi đó, ngược lại
 - nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv)
 - accompany (n): đồng hành
