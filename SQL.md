@@ -70,4 +70,8 @@
 
 - INNER JOIN: Trả về tất cả các hàng khi có ít nhất một giá trị ở cả hai bảng.
 
-- LEFT OUTER JOIN - LEFT JOIN: Trả lại tất cả các dòng ở bảng bên trái, và các dòng đúng với điều kiện từ bảng bên phải.
+- LEFT OUTER JOIN - LEFT JOIN: Trả lại tất cả các dòng ở bảng bên phải, với các hàng tương ứng trong bảng bên trái. Chấp nhận các cột có dữ liệu NULL từ bảng bên trái.
+
+- RIGHT OUTER JOIN - RIGHT JOIN: Trả lại tất cả các dòng ở bảng bên trái, với các hàng tương ứng trong bảng bên phải. Chấp nhận các cột có dữ liệu NULL từ bảng bên phải.
+
+- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN VÀ RIGHT JOIN
