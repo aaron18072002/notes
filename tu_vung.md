@@ -89,6 +89,7 @@
 - attempt (n): sự nỗ lực
 - anticipate (v) = estimate (v) = forecast: dự đoán
 - admittance (n) = permisson (n): sự cho phép
+- adequate (v) = complete: đầy đủ
 - means (n): phương tiện
 - venue (n): nơi gặp mặt
 - hedge (n) = hence (n): hàng rào
