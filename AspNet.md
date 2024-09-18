@@ -275,3 +275,11 @@
 2. Khi bạn muốn kiểm soát vòng đời của bộ lọc hoặc tích hợp sâu hơn với hệ thống DI của ASP.NET Core.
 
 3. Khi bộ lọc của bạn có các phụ thuộc phức tạp hoặc cần cấu hình đặc biệt.
+
+- ApiController attribute cho Controller khi làm việc với Asp.Net API
+
+-- Khi đã dùng [ApiController] thì bắt buộc phải dùng luôn [Route("")] nếu không sẽ throw 1 exception.
+
+-- Nếu không dùng [ApiController] thì endpoint sẽ không nhận data từ [FromBody].
+
+-- Khi đã dùng [ApiController] thì nếu ModelState có Error từ validation annotations nào thì Controller sẽ tự động trả về HTTP 400.
