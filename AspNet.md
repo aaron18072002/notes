@@ -283,3 +283,9 @@
 -- Nếu không dùng [ApiController] thì endpoint sẽ không nhận data từ [FromBody].
 
 -- Khi đã dùng [ApiController] thì nếu ModelState có Error từ validation annotations nào thì Controller sẽ tự động trả về HTTP 400.
+
+- Vì sao khi Asp.Net API project lại dùng return type là ActionResult thay vì IActionResult
+
+-- ActionResult<T> có thể sử dụng cơ chế Generic Type để return một hoặc nhiều model types tương ứng.
+
+-- IActionResult thì chỉ có return những type mà là con của IActionResult.
