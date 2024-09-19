@@ -80,7 +80,7 @@
 - crucial (adj) = important (adj): quan trọng, chủ yếu
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
-- widen (v) = extend: mở rộng
+- widen (v) = expand: mở rộng
 - whereas (conj): trong khi đó, ngược lại
 - nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv)
