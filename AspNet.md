@@ -289,3 +289,7 @@
 -- ActionResult<T> có thể sử dụng cơ chế Generic Type để return một hoặc nhiều model types tương ứng.
 
 -- IActionResult thì chỉ có return những type mà là con của IActionResult.
+
+- Content Negotiation
+
+-- Là 1 process mà khi đó ta sẽ lựa chọn format phù hợp hoặc ngôn ngữ của content để mà exchange giữa Client (brrowser) và Web Api.
