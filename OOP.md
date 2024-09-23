@@ -92,7 +92,7 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 --- Cấu trúc DI trong ASP.NET Core
 
-- ServiceCollection - DI Container: Cung cấp các method như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider. Tự động khởi tạo các dependency và inject nó vào dịch vụ của chúng ta. Dịch vụ là lớp thực hiện các chức và dependency là lớp chứa chức năng đó.
+- ServiceCollection - DI Container: Là nơi cung cấp các methods như AddTrasient, AddScoped, AddSingleton để đăng kí dịch vụ hay BuildServiceProvider() để tạo 1 provider. Tự động khởi tạo các dependency và inject nó vào dịch vụ của chúng ta. Dịch vụ là lớp thực hiện các chức và dependency là lớp chứa chức năng đó.
 
 - Service Provider: Là 1 container chứa all các services đã được đăng kí.
 
