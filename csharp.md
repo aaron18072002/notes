@@ -605,6 +605,14 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Lớp Type là lớp cung cấp 1 số methods để lấy thông tin của 1 đối tượng: GetMethod(), GetFields(), GetProperties(), ... trong thời gian chạy ( runtime ).
 
+- 1 số ứng dụng của cơ chế Reflection:
+
+-- Dependency Injection: ASP.NET Core sử dụng Reflection trong hệ thống Dependency Injection để xác định các constructor, xác định loại, và khởi tạo các service.
+
+-- Model Binding: ASP.NET Core sử dụng Reflection để ánh xạ dữ liệu từ các request đến các action method parameters.
+
+-- Routing: Reflection cũng được sử dụng để phát hiện các action method và ánh xạ chúng đến các URL tương ứng.
+
 --- Attribute/Annotation trong C#
 
 - Attribute là 1 thẻ khai báo. Attribute cho phép gán metadata vào lớp, phương thức hoặc thuộc tính những đoạn code mở rộng. Hay nói cách khác Attribute thêm metadata vào type.
