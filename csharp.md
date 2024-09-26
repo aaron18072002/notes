@@ -749,6 +749,12 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Race condition là một vấn đề xảy ra khi hai hoặc nhiều tiến trình hoặc luồng cùng truy cập vào một tài nguyên chia sẻ và thay đổi nó mà không đồng bộ hóa đúng cách. Khi đó, kết quả cuối cùng của tài nguyên chia sẻ phụ thuộc vào thứ tự thực thi của các luồng, và có thể dẫn đến kết quả không mong muốn hoặc không xác định.
 
+--- Semaphore
+
+- Là lớp 1 giúp ta giới hạn số lượng threads có thể truy cập vào 1 shared resource hoặc tập hợp các tài nguyên.
+
+- Mutex chỉ là 1 trường hợp đặc biệt của Semaphore khi chúng ta chỉ muốn 1 thread có thể truy cập.
+
 --- Lock và Mutex trong C#
 
 Lock:
