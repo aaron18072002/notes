@@ -751,7 +751,11 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- EventWaitHandle
 
-- EventWaitHandle trong .NET là một class chuyên dụng để đồng bộ hóa các luồng (threads) bằng cách cho phép chúng đợi cho đến khi một sự kiện được báo hiệu (signaled). Class này thuộc namespace tên System.Threading và kế thừa từ class WaitHandle.
+- EventWaitHandle trong .NET là một class chuyên dụng để đồng bộ hóa các luồng (threads) bằng cách cho phép chúng đợi cho đến khi một sự kiện được báo hiệu (signaled). Class này thuộc namespace tên System.Threading và kế thừa từ class WaitHandle. EventWaitHandle có 2 methods quan trọng là:
+
+- Set(): Set state của event là 'signaled', cho phép 1 hoặc nhiều threads tiến hành.
+
+- WaitOne([int32]): Block thread hiện tại cho đến khi object WaitHandle hiện tại nhận 1 signal.
 
 --- Semaphore
 
