@@ -749,6 +749,10 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Race condition là một vấn đề xảy ra khi hai hoặc nhiều tiến trình hoặc luồng cùng truy cập vào một tài nguyên chia sẻ và thay đổi nó mà không đồng bộ hóa đúng cách. Khi đó, kết quả cuối cùng của tài nguyên chia sẻ phụ thuộc vào thứ tự thực thi của các luồng, và có thể dẫn đến kết quả không mong muốn hoặc không xác định.
 
+--- EventWaitHandle
+
+- EventWaitHandle trong .NET là một class chuyên dụng để đồng bộ hóa các luồng (threads) bằng cách cho phép chúng đợi cho đến khi một sự kiện được báo hiệu (signaled). Class này thuộc namespace tên System.Threading và kế thừa từ class WaitHandle.
+
 --- Semaphore
 
 - Là lớp 1 giúp ta giới hạn số lượng threads có thể truy cập vào 1 shared resource hoặc tập hợp các tài nguyên.
