@@ -78,6 +78,7 @@
 - competence (n) = qualification (n): năng lực
 - cuisine (n): ẩm thực
 - crucial (adj) = important (adj): quan trọng, chủ yếu
+- complex (adj) = intricate (adj): phức tạp
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
 - widen (v) = expand: mở rộng
