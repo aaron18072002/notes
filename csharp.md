@@ -763,6 +763,10 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 - Mutex chỉ là 1 trường hợp đặc biệt của Semaphore khi chúng ta chỉ muốn 1 thread có thể truy cập.
 
+--- Monitor
+
+- Monitor là 1 class dùng để tạo ra các Critical Section. Nhằm quản lý việc đồng bộ hóa các tài nguyên chung (shared resources) khi nhiều luồng (threads) cùng truy cập. Bằng cách sử dụng Monitor, bạn có thể đảm bảo rằng chỉ một luồng được phép truy cập vào một đoạn mã quan trọng tại một thời điểm, ngăn chặn hiện tượng race condition (điều kiện tranh chấp).
+
 --- Lock và Mutex trong C#
 
 Lock:
