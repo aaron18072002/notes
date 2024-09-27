@@ -777,6 +777,8 @@ Lock:
 
 - lock thường được sử dụng để bảo vệ các biến hoặc tài nguyên chia sẻ mà không được thay đổi cùng một lúc bởi nhiều luồng.
 
+- Về cơ bản khi dùng Lock thì khi compile, trình biên dịch sẽ tự động chuyển đổi code lock thành code sử dụng Monitor.Enter và Monitor.Exit. Điều này giúp đơn giản hóa cú pháp, tránh lỗi tiềm tàng khi quên giải phóng khóa bằng Monitor.Exit.
+
 Mutex:
 
 - Mutex là một kiểu đối tượng trong C# được sử dụng để đảm bảo rằng chỉ có một luồng có thể thực hiện một phần mã được bảo vệ (critical section) tại một thời điểm.
