@@ -151,6 +151,12 @@
 
 - VÍ DỤ: new nums[i,j] ( i là chiều ngang - horizen, j là chiều dọc - vertical )
 
+--- Concrete Class là gì?
+
+- Trong .NET, một concrete class (lớp cụ thể) là một lớp có thể được tạo đối tượng (instantiated) trực tiếp. Nó chứa các phương thức và thuộc tính có triển khai cụ thể và không yêu cầu lớp khác kế thừa để cung cấp các chức năng.
+
+- Khác với abstract class (lớp trừu tượng), trong đó có thể chứa các phương thức mà không có triển khai, lớp cụ thể cung cấp đầy đủ các định nghĩa cho tất cả các phương thức của nó. Điều này có nghĩa là bạn có thể tạo đối tượng từ một concrete class mà không cần phải mở rộng hay thực hiện thêm các phương thức nào.
+
 --- Khái niệm Repositories trong C#
 
 - Repositories là khái niệm dùng để nói về class or component mà nó đóng gói ( encapsulate ) logic cần thiết để ( required to ) access data sources.
