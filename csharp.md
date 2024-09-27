@@ -705,7 +705,7 @@ Override: Ghi đè lại method ở class cha mà class con kế thừa
 
 --- Task Class và Task Parallel Library (TPL) trong c#
 
-- Task là một data type đại diện cho một tác vụ (hoặc một công việc) được thực thi bất đồng bộ trên mỗi Thread riêng biệt. Task cung cấp một cơ chế để theo dõi tiến trình và kết quả của tác vụ.
+- Task là một data type đại diện cho một tác vụ (hoặc một công việc) được thực thi bất đồng bộ trên mỗi Thread riêng biệt. Task cung cấp một cơ chế để theo dõi tiến trình và kết quả của tác vụ. Task chứa mọi thông tin của 1 hàm async, bao gồm cả trạng thái và kiểu dữ liệu trả về.
 
 - Khi bạn sử dụng async, phương thức của bạn thường sẽ trả về một đối tượng Task để biểu diễn kết quả của tác vụ đó. Task có thể trả về một giá trị (ví dụ: Task<string>) hoặc không trả về giá trị (ví dụ: Task). Task khá giống với Promise trong JS. Cả hai đều đại diện cho một giá trị mà có thể không khả dụng ngay lập tức, nhưng sẽ được xử lý và trả về kết quả tại một thời điểm trong tương lai.
 
