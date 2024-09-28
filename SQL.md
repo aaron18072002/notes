@@ -68,10 +68,10 @@
 
 -- JOIN
 
-- INNER JOIN: Trả về tất cả các hàng khi có ít nhất một giá trị ở cả hai bảng.
+- INNER JOIN: Trả về các hàng khi có ít nhất một giá trị khớp giữa các bảng. Các hàng không khớp ở cả hai bảng đều bị loại bỏ.
 
-- LEFT OUTER JOIN - LEFT JOIN: Trả lại tất cả các dòng ở bảng bên phải, với các hàng tương ứng trong bảng bên trái. Chấp nhận các cột có dữ liệu NULL từ bảng bên trái.
+- LEFT OUTER JOIN (LEFT JOIN): Trả về tất cả các hàng từ bảng bên trái (Left Table), cùng với các hàng tương ứng từ bảng bên phải (Right Table). Nếu không có hàng khớp từ bảng bên phải, các cột từ bảng bên phải sẽ là NULL.
 
-- RIGHT OUTER JOIN - RIGHT JOIN: Trả lại tất cả các dòng ở bảng bên trái, với các hàng tương ứng trong bảng bên phải. Chấp nhận các cột có dữ liệu NULL từ bảng bên phải.
+- RIGHT OUTER JOIN (RIGHT JOIN): Tương tự như LEFT JOIN, nhưng trả về tất cả các hàng từ bảng bên phải và các hàng tương ứng từ bảng bên trái. Nếu không có hàng khớp từ bảng bên trái, các cột từ bảng bên trái sẽ là NULL.
 
-- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN VÀ RIGHT JOIN
+- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN và RIGHT JOIN. Trả về tất cả các hàng khi có giá trị khớp trong một trong hai bảng. Nếu không có hàng khớp, các cột từ bảng thiếu sẽ là NULL.
