@@ -121,3 +121,5 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 -- Clean Architecture
 
 - Domain là tầng quan trọng nhất của kiến trúc này và nó liên quan chặt chẽ đến Entities và Use Cases.
+
+- Usecase phụ thuộc vào Entity và Interface còn Entity thì không phụ thuộc vào Usecase lẫn Interface.
