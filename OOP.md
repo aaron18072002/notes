@@ -117,3 +117,7 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 - Reverse Proxy là một loại Proxy đặc biệt nằm trước server Back End, có nghiệm vụ bảo vệ server, có nghiệm vụ điều hướng các request tới từng server. Reverse Proxy có thể đóng vai trò như 1 Load Balancer.
 
 - Load Balancer là một chức năng của Reverse Proxy, có nghiệm vụ phân phối các client requests hoặc network load một cách hiệu quả trên nhiều servers.
+
+-- Clean Architecture
+
+- Domain là tầng quan trọng nhất của kiến trúc này và nó liên quan chặt chẽ đến Entities và Use Cases.
