@@ -80,6 +80,7 @@
 - crucial (adj) = important (adj): quan trọng, chủ yếu
 - complex (adj) = intricate (adj): phức tạp
 - competent (adj) = qualified (adj): có năng lực
+- cover letter (n) = application (n): đơn xin việc
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
 - widen (v) = expand: mở rộng
