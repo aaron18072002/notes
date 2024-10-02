@@ -21,6 +21,10 @@ Accept: Các định dạng dữ liệu mà client có thể chấp nhận từ 
 
 -- Body: Phần này có thể chứa HTML, văn bản, JSON, hình ảnh, video, ... Tùy thuộc vào loại nội dung mà server trả về.
 
+- API ( Application Programming Interface ) là gì ?
+
+-- Là 1 tập hợp các định nghĩa và giao thức ( protocols ) để cho phép 1 application hoặc system giao tiếp với với applications hoặc systems khác. Nó cung cấp các phương thức chuẩn hóa để một ứng dụng có thể sử dụng các dịch vụ hoặc chức năng từ một ứng dụng khác mà không cần phải biết chi tiết nội bộ của nó.
+
 - CORS
 
 -- CORS ( Cross-Origin Resource Sharing ) là 1 tính năng được tích hợp trong HTML5 được thiết kế để giải quyết vấn Same-Origin Policy trong trình duyệt web. Same-Origin Policy là 1 cơ chế bảo mật trong trình duyệt web để ngăn các trang web truy cập data của một server khác.
