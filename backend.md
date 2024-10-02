@@ -2,6 +2,8 @@
 
 -- HTTPS (Hypertext Transfer Protocol Secure) là một phiên bản bảo mật của giao thức HTTP (Hypertext Transfer Protocol). HTTPS sử dụng SSL (Secure Sockets Layer) hoặc TLS (Transport Layer Security) để mã hóa dữ liệu truyền từ máy khách đến máy chủ và ngược lại. SSL/TLS cung cấp một lớp bảo vệ bổ sung để đảm bảo rằng thông tin truyền qua mạng được mã hóa và không thể đọc được bởi bất kỳ ai ngoài người gửi và người nhận.
 
+-- HTTP (Hypertext Transfer Protocol) là một giao thức truyền tải siêu văn bản, được thiết kế để trao đổi thông tin trên World Wide Web (WWW). Nó đặt ra các quy tắc cho việc truyền tải dữ liệu giữa máy khách (client), chẳng hạn như trình duyệt web, và máy chủ web (server).
+
 - Cấu trúc của 1 HTTP Request
 
 -- Request Line: Dòng này chứa các thông tin cơ bản về request, bao gồm: Phương thức (method): GET, POST, PUT, DELETE, ... Đường dẫn của tài nguyên được yêu cầu trên máy chủ (URI). Phiên bản của giao thức HTTP được sử dụng (ví dụ: HTTP/1.1)
