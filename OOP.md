@@ -120,6 +120,10 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 -- Clean Architecture
 
-- Domain là tầng quan trọng nhất của kiến trúc này và nó liên quan chặt chẽ đến Entities và Use Cases.
+- Tầng Domain là tầng quan trọng nhất của kiến trúc này và nó liên quan chặt chẽ đến Entities và Use Cases. Chứa các Entities và Business Operations.
 
-- Usecase phụ thuộc vào Entity và Interface còn Entity thì không phụ thuộc vào Usecase lẫn Interface.
+- Tầng Usecase - hay Application: phụ thuộc vào Entity và Interface còn Entity thì không phụ thuộc vào Usecase lẫn Interface.
+
+- Tầng Presentation:
+
+- Tầng Infrastructer: Liên quan tới việc connect db, upload files lên clound, hoặc các external services ...
