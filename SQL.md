@@ -101,3 +101,9 @@
 8. ORDER BY: Cuối cùng, SQL sắp xếp các kết quả theo cột hoặc biểu thức được chỉ định trong ORDER BY.
 
 9. TOP / LIMIT / OFFSET: Giới hạn số lượng bản ghi trả về, thường dùng để chỉ định số lượng kết quả mong muốn hoặc phân trang.
+
+-- COMMON TABLE EXPRESSION (CTE)
+
+- Cho phép người dùng đặt tên và sử dụng một bảng tạm thời trong phạm vi của một truy vấn cụ thể.
+
+- CTE được sử dụng trong việc xử lý các câu truy vấn phức tạp, thường kết hợp với các câu lệnh SELECT, INSERT, UPDATE hoặc DELETE giúp tăng tính rõ ràng, dễ đọc hiểu và quản lý các đoạn mã SQL.
