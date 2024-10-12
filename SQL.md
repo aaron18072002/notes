@@ -81,3 +81,23 @@
 - Subquery ( câu truy vấn con ) trong SQL là 1 truy vấn SELECT được viết bên trong 1 câu truy vấn SELECT, UPDATE, INSERT hoặc DELETE khác.
 
 - Subquery hoạt động như 1 bảng ảo tạm thời, được sử dụng để lấy thông tin là các tables trong cùng 1 câu truy vấn.
+
+-- THỨ TỰ THỰC THI CÁC CÂU LỆNH SQL
+
+1. FROM: SQL bắt đầu bằng cách lấy dữ liệu từ các bảng và thực hiện các phép nối (nếu có) giữa các bảng được liệt kê sau từ khóa FROM.
+
+2. JOIN: Các phép nối (như INNER JOIN, LEFT JOIN, RIGHT JOIN,...) giữa các bảng được xử lý trong bước này. Kết quả sẽ là một bảng tạm chứa dữ liệu từ các bảng được kết nối theo điều kiện nối.
+
+3. WHERE: Sau khi có bảng tạm, các điều kiện lọc ở WHERE sẽ được áp dụng để loại bỏ các hàng không thỏa mãn điều kiện.
+
+4. GROUP BY: Các hàng còn lại sẽ được nhóm lại dựa trên các cột chỉ định trong GROUP BY. Điều này tạo ra các nhóm dữ liệu dựa trên các giá trị chung của các cột được chỉ định.
+
+5. HAVING: Các nhóm dữ liệu được tạo ra từ GROUP BY sẽ được lọc tiếp bởi điều kiện trong HAVING. HAVING thường được sử dụng với các hàm tổng hợp (như SUM, COUNT, AVG,...) để chỉ giữ lại các nhóm thỏa mãn điều kiện nhất định.
+
+6. SELECT: Bước này chọn các cột và các phép tính cần lấy từ bảng tạm (hoặc nhóm dữ liệu sau khi nhóm và lọc). Các hàm tổng hợp và biểu thức sẽ được tính toán trong bước này.
+
+7. DISTINCT: Nếu có DISTINCT, SQL sẽ loại bỏ các bản ghi trùng lặp trong kết quả đã chọn.
+
+8. ORDER BY: Cuối cùng, SQL sắp xếp các kết quả theo cột hoặc biểu thức được chỉ định trong ORDER BY.
+
+9. LIMIT / OFFSET: (hoặc TOP trong SQL Server) Giới hạn số lượng bản ghi trả về, thường dùng để chỉ định số lượng kết quả mong muốn hoặc phân trang.
