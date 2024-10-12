@@ -86,7 +86,7 @@
 
 1. FROM: SQL bắt đầu bằng cách lấy dữ liệu từ các bảng và thực hiện các phép nối (nếu có) giữa các bảng được liệt kê sau từ khóa FROM.
 
-2. JOIN: Các phép nối (như INNER JOIN, LEFT JOIN, RIGHT JOIN,...) giữa các bảng được xử lý trong bước này. Kết quả sẽ là một bảng tạm chứa dữ liệu từ các bảng được kết nối theo điều kiện nối.
+2. JOIN: Các phép nối (như INNER JOIN, LEFT JOIN, RIGHT JOIN,...) giữa các bảng được xử lý trong bước này. Kết quả sẽ là một bảng tạm chứa dữ liệu từ các bảng được kết nối theo điều kiện nối. JOIN diễn ra trước, xác định các bảng nào sẽ được kết nối và loại kết nối nào sẽ được thực hiện. Sau đó, điều kiện nối (câu lệnh ON) sẽ quyết định cách các bản ghi từ các bảng đó được kết hợp với nhau. Dựa trên loại JOIN, điều kiện ON sẽ xử lý khác nhau, và từ đó phân biệt giữa các kiểu INNER JOIN, LEFT JOIN, RIGHT JOIN, và FULL JOIN
 
 3. WHERE: Sau khi có bảng tạm, các điều kiện lọc ở WHERE sẽ được áp dụng để loại bỏ các hàng không thỏa mãn điều kiện.
 
@@ -100,4 +100,4 @@
 
 8. ORDER BY: Cuối cùng, SQL sắp xếp các kết quả theo cột hoặc biểu thức được chỉ định trong ORDER BY.
 
-9. LIMIT / OFFSET: (hoặc TOP trong SQL Server) Giới hạn số lượng bản ghi trả về, thường dùng để chỉ định số lượng kết quả mong muốn hoặc phân trang.
+9. TOP / LIMIT / OFFSET: Giới hạn số lượng bản ghi trả về, thường dùng để chỉ định số lượng kết quả mong muốn hoặc phân trang.
