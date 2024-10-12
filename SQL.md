@@ -82,6 +82,8 @@
 
 - Subquery hoạt động như 1 bảng ảo tạm thời, được sử dụng để lấy thông tin là các tables trong cùng 1 câu truy vấn.
 
+- VẤN ĐỀ CỦA SUB QUERY: Khi bạn sử dụng subquery làm điều kiện trong mệnh đề WHERE, subquery sẽ được thực thi lại cho mỗi hàng trong tập dữ liệu của câu lệnh SELECT. Điều này có nghĩa là nếu truy vấn chính có 1 triệu dòng, subquery có thể sẽ được thực thi 1 triệu lần, dẫn đến hiệu suất kém và thời gian xử lý lâu hơn.
+
 -- THỨ TỰ THỰC THI CÁC CÂU LỆNH SQL
 
 1. FROM: SQL bắt đầu bằng cách lấy dữ liệu từ các bảng và thực hiện các phép nối (nếu có) giữa các bảng được liệt kê sau từ khóa FROM.
