@@ -113,3 +113,13 @@
 - Cho phép người dùng đặt tên và sử dụng một bảng tạm thời trong phạm vi của một truy vấn cụ thể.
 
 - CTE được sử dụng trong việc xử lý các câu truy vấn phức tạp, thường kết hợp với các câu lệnh SELECT, INSERT, UPDATE hoặc DELETE giúp tăng tính rõ ràng, dễ đọc hiểu và quản lý các đoạn mã SQL.
+
+-- 4 NHÓM LỆNH CHÍNH TRONG SQL
+
+- DML (Data Manipulation Language): Các câu lệnh DML được sử dụng để thao tác với dữ liệu trong cơ sở dữ liệu, bao gồm các câu lệnh chèn, cập nhật, xóa và truy vấn.
+
+- DDL (Data Definition Language): Các câu lệnh DDL được sử dụng để định nghĩa cấu trúc của cơ sở dữ liệu, bao gồm các bảng, cột, chỉ mục và ràng buộc.
+
+- DCL (Data Control Language): Các câu lệnh DCL được sử dụng để kiểm soát quyền truy cập vào cơ sở dữ liệu, bao gồm các câu lệnh cấp phép và thu hồi quyền.
+
+- TCL (Transaction Control Language): Các câu lệnh TCL được sử dụng để quản lý các giao dịch trong cơ sở dữ liệu, bao gồm các câu lệnh bắt đầu, xác nhận và hoàn tác giao dịch.
