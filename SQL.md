@@ -66,6 +66,10 @@
 
 - Toán tử UNION được sử dụng để kết hợp tập hợp kết quả của hai hoặc nhiều câu lệnh SELECT. Mỗi câu lệnh SELECT với UNION phải có cùng số lượng cột, các cột phải có cùng kiểu dữ liệu, các cột trong mỗi câu lệnh SELECT phải có cùng trật tự.
 
+- UNION loại bỏ các bản ghi trùng lặp trong kết quả.
+
+- UNION ALL giữ lại tất cả các bản ghi, bao gồm cả các bản ghi trùng lặp.
+
 -- JOIN
 
 - INNER JOIN: Trả về các hàng khi có ít nhất một giá trị khớp giữa các bảng. Các hàng không khớp ở cả hai bảng đều bị loại bỏ.
