@@ -38,6 +38,8 @@
 
 - %: Đại diện cho 1 hoặc không có ký tự nào hoặc nhiều ký tự.
 
+- [_]:@ Đại diện cho 1 ký tự
+
 - []: Đại diện cho bất kỳ ký tự nào trong ngoặc vuông.
 
 - [^]: Đại diện cho bất kỳ ký tự nào không nằm trong ngoặc vuông.
