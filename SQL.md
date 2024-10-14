@@ -133,3 +133,11 @@
 - Nó thường được sử dụng để tạo bảng tạm thời hoặc sao lưu dữ liệu từ một bảng hiện có để thực hiện các phân tích hoặc thao tác dữ liệu khác.
 
 - Câu lệnh SELECT INTO cũng có thể sử dụng để chọn một phần dữ liệu từ bảng nguồn và chèn nó vào bảng mới.
+
+-- TRUNCATE và DELETE
+
+- DELETE: Xóa một hay tất cả dòng trong một bảng theo một điều kiện nhất định, dữ liệu có thể phục hồi lại.
+
+- TRUNCATE: Xóa toàn bộ các dòng của bảng, giải phóng bộ nhớ và không thể phục hồi lại.
+
+- DELETE sẽ kích hoạt TRIGGER còn TRUNCATE thì ngược lại
