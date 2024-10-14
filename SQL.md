@@ -157,3 +157,9 @@
 -- Làm thay đổi dữ liệu liên quan đến tính toán (computed data)
 
 -- Làm thay đổi dữ liệu liên quan đến ghi lại sự kiện (auditing)
+
+- INDEX
+
+-- Index là một cấu trúc dữ liệu được dùng để định vị và truy cập nhanh nhất vào dữ liệu trong các bảng database.
+
+-- Index là một cách tối ưu hiệu suất truy vấn database bằng việc giảm lượng truy cập vào bộ nhớ khi thực hiện truy vấn.
