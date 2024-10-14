@@ -123,3 +123,11 @@
 - DCL (Data Control Language): Các câu lệnh DCL được sử dụng để kiểm soát quyền truy cập vào cơ sở dữ liệu, bao gồm các câu lệnh cấp phép và thu hồi quyền.
 
 - TCL (Transaction Control Language): Các câu lệnh TCL được sử dụng để quản lý các giao dịch trong cơ sở dữ liệu, bao gồm các câu lệnh bắt đầu, xác nhận và hoàn tác giao dịch.
+
+-- SELECT INTO
+
+- Câu lệnh SELECT INTO trong SQL được sử dụng để tạo một bảng mới và sao chép dữ liệu từ một bảng hiện có vào bảng mới này.
+
+- Nó thường được sử dụng để tạo bảng tạm thời hoặc sao lưu dữ liệu từ một bảng hiện có để thực hiện các phân tích hoặc thao tác dữ liệu khác.
+
+- Câu lệnh SELECT INTO cũng có thể sử dụng để chọn một phần dữ liệu từ bảng nguồn và chèn nó vào bảng mới.
