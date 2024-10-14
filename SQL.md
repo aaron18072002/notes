@@ -141,3 +141,19 @@
 - TRUNCATE: Xóa toàn bộ các dòng của bảng, giải phóng bộ nhớ và không thể phục hồi lại.
 
 - DELETE sẽ kích hoạt TRIGGER còn TRUNCATE thì ngược lại
+
+- MỘT SỐ TÌNH HUỐNG KHÔNG THỂ XÓA DỮ LIỆU
+
+-- Khóa ngoại (Foreign Key) cấu hình RESTRICT hoặc NO ACTION
+
+-- Các ràng buộc duy nhất hoặc ràng buộc kiểm tra (CHECK constraint)
+
+-- Quyền truy cập (Permissions)
+
+-- Trong trạng thái giao dịch (Transaction)
+
+-- Có triggers hoặc quy tắc (triggers or rules)
+
+-- Làm thay đổi dữ liệu liên quan đến tính toán (computed data)
+
+-- Làm thay đổi dữ liệu liên quan đến ghi lại sự kiện (auditing)
