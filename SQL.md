@@ -187,3 +187,19 @@
 - CHECK OPTION
 
 -- CHECK OPTION trong View là một điều kiện cho phép bạn xác định ràng buộc về việc cập nhật hoặc chèn dữ liệu vào View. Nó đảm bảo rằng các dòng dữ liệu được chèn hoặc cập nhật thông qua View sẽ tuân theo một điều kiện cụ thể.
+
+- T-SQL
+
+-- T-SQL (Transact-SQL) là một mở rộng của ngôn ngữ SQL tiêu chuẩn, được phát triển bởi Microsoft và Sybase để hỗ trợ các tính năng bổ sung giúp xử lý các yêu cầu phức tạp hơn trong cơ sở dữ liệu.
+
+-- Ngoài các câu lệnh SQL tiêu chuẩn, T-SQL cung cấp các tính năng bổ sung như:
+
+--- Kiểm soát giao dịch: Giúp đảm bảo tính toàn vẹn của dữ liệu thông qua các câu lệnh như BEGIN TRANSACTION, COMMIT, và ROLLBACK, cho phép xử lý các giao dịch (transactions) một cách an toàn.
+
+--- Xử lý lỗi: T-SQL có các khối TRY...CATCH để xử lý lỗi, giúp bạn bắt và xử lý lỗi trong quá trình thực thi các câu lệnh SQL, tăng độ tin cậy của các thao tác cơ sở dữ liệu.
+
+--- Khai báo và sử dụng biến: T-SQL cho phép khai báo và sử dụng biến với cú pháp DECLARE, SET, và SELECT INTO. Điều này rất hữu ích khi bạn cần lưu trữ tạm thời dữ liệu hoặc làm việc với các giá trị trong các phép tính.
+
+--- Lập trình thủ tục: Bạn có thể viết các stored procedure (thủ tục lưu trữ), trigger, và function (hàm) với T-SQL, giúp tăng cường khả năng tái sử dụng và quản lý mã code tốt hơn.
+
+--- Xử lý vòng lặp và rẽ nhánh: T-SQL cung cấp các cấu trúc điều khiển như IF...ELSE, WHILE, và CASE, giúp xử lý logic phức tạp trong các truy vấn và thao tác cơ sở dữ liệu.
