@@ -169,3 +169,9 @@
 -- Trong cơ sở dữ liệu, chỉ mục (index) được đánh vào cột (hoặc các cột) của một bảng, chứ không phải vào dòng. Khi bạn tạo chỉ mục cho một cột, hệ thống sẽ sắp xếp dữ liệu trong cột đó và lưu trữ vị trí của các giá trị, giúp truy vấn dữ liệu từ cột đó nhanh hơn.
 
 -- Cấu trúc của INDEX bao gồm: SEARCH KEY và DATA REFERENCE.
+
+◇ CẨN TRỌNG KHI DÙNG INDEX:
+
+• Index sẽ làm tốn thêm bộ nhớ để lưu trữ.
+• Làm chậm các hoạt động khác, khi insert hay update column sử dụng index, index cần được điều chỉnh (reindex) sẽ tiêu tốn một khoảng thời gian.
+• Việc đánh index bừa bãi, lộn xộn, không những không tăng tốc độ truy vấn mà còn làm giảm hiệu năng hoạt động.
