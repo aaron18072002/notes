@@ -203,3 +203,9 @@
 --- Lập trình thủ tục: Bạn có thể viết các stored procedure (thủ tục lưu trữ), trigger, và function (hàm) với T-SQL, giúp tăng cường khả năng tái sử dụng và quản lý mã code tốt hơn.
 
 --- Xử lý vòng lặp và rẽ nhánh: T-SQL cung cấp các cấu trúc điều khiển như IF...ELSE, WHILE, và CASE, giúp xử lý logic phức tạp trong các truy vấn và thao tác cơ sở dữ liệu.
+
+- STORED PROCEDURE
+
+-- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm đơn vị xử lý logic và được lưu trữ trên Database Server.
+
+-- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
