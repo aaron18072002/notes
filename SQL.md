@@ -183,3 +183,7 @@
 -- Các thao tác select, insert, update và delete với view tương tự như table bình thường.
 
 -- VIEW không lưu data nên tất cả những thao tác được thực hiện trên view thì đều được phản ánh đến base table mà được trích xuất dữ liệu.
+
+- CHECK OPTION
+
+-- CHECK OPTION trong View là một điều kiện cho phép bạn xác định ràng buộc về việc cập nhật hoặc chèn dữ liệu vào View. Nó đảm bảo rằng các dòng dữ liệu được chèn hoặc cập nhật thông qua View sẽ tuân theo một điều kiện cụ thể.
