@@ -175,3 +175,7 @@
 • Index sẽ làm tốn thêm bộ nhớ để lưu trữ.
 • Làm chậm các hoạt động khác, khi insert hay update column sử dụng index, index cần được điều chỉnh (reindex) sẽ tiêu tốn một khoảng thời gian.
 • Việc đánh index bừa bãi, lộn xộn, không những không tăng tốc độ truy vấn mà còn làm giảm hiệu năng hoạt động.
+
+- VIEW
+
+-- Database View là sự trình bày data theo ý muốn được trích xuất từ một hoặc nhiều table/view khác. View không lưu data nên nó còn được biết đến với cái tên "bảng ảo(virtual tables)".
