@@ -179,3 +179,7 @@
 - VIEW
 
 -- Database View là sự trình bày data theo ý muốn được trích xuất từ một hoặc nhiều table/view khác. View không lưu data nên nó còn được biết đến với cái tên "bảng ảo(virtual tables)".
+
+-- Các thao tác select, insert, update và delete với view tương tự như table bình thường.
+
+-- VIEW không lưu data nên tất cả những thao tác được thực hiện trên view thì đều được phản ánh đến base table mà được trích xuất dữ liệu.
