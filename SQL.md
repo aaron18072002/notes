@@ -165,3 +165,7 @@
 -- Index là một cách tối ưu hiệu suất truy vấn database bằng việc giảm lượng truy cập vào bộ nhớ khi thực hiện truy vấn.
 
 -- Nói đơn giản, index trỏ tới địa chỉ dữ liệu trong một bảng, giống như Mục lục của một cuốn sách (Gồm tên đề mục và số trang), nó giúp truy vấn trở nên nhanh chóng như việc bạn xem mục lục và tìm đúng trang cần đọc.
+
+-- Trong cơ sở dữ liệu, chỉ mục (index) được đánh vào cột (hoặc các cột) của một bảng, chứ không phải vào dòng. Khi bạn tạo chỉ mục cho một cột, hệ thống sẽ sắp xếp dữ liệu trong cột đó và lưu trữ vị trí của các giá trị, giúp truy vấn dữ liệu từ cột đó nhanh hơn.
+
+-- Cấu trúc của INDEX bao gồm: SEARCH KEY và DATA REFERENCE.
