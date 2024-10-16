@@ -216,7 +216,7 @@
 
 -- Trigger (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure) được liên kết với một TABLE hoặc VIEW.
 
--- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra, chẳng hạn như INSERT, UPDATE, hoặc DELETE. Triggers thường được sử dụng để:
+-- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra, chẳng hạn như INSERT, UPDATE, hoặc DELETE ( liên qua tới DDL DML ). Triggers thường được sử dụng để:
 
 --- Kiểm tra và xác thực dữ liệu: Đảm bảo rằng dữ liệu nhập vào đáp ứng các điều kiện nhất định trước khi chấp nhận thay đổi.
 
