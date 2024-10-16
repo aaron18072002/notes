@@ -214,7 +214,9 @@
 
 - TRIGGER
 
--- Trigger (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure) được liên kết với một TABLE hoặc VIEW.
+-- TRIGGER (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure) được liên kết với một TABLE hoặc VIEW.
+
+-- TRIGGER có 2 loại: AFTER hoặc BEFORE
 
 -- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra, chẳng hạn như INSERT, UPDATE, hoặc DELETE ( liên qua tới DDL DML ). Triggers thường được sử dụng để:
 
