@@ -15,3 +15,7 @@
 -- JSHELL là công cụ REPL đầu tiên được tích hợp trong Java.
 
 -- Nó được sử dụng để thực hiện và kiểm tra bất kỳ code Java nào như class, interface, enum, object, statements ...vv rất dễ dàng.
+
+- JAVA EXPRESSION
+
+-- EXPRESSION là sự kết hợp giữa các giá trị, biến, toán tử, và các lời gọi phương thức, được tính toán để cho ra một giá trị duy nhất. Biểu thức có thể là một giá trị đơn lẻ hoặc một tổ hợp các giá trị mà khi được đánh giá sẽ tạo ra kết quả. Biểu thức có thể được sử dụng trong nhiều ngữ cảnh, chẳng hạn như trong phép gán giá trị, các câu lệnh điều kiện, và các vòng lặp.
