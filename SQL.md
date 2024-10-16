@@ -211,3 +211,19 @@
 -- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
 
 -- SQL Server sẽ làm việc hiệu quả hơn nếu dùng stored procedure vì người gởi chỉ gởi một câu lệnh đơn và SQL Server chỉ kiếm tra một lần sau đó tạo ra một execute plan và thực thi. Nếu stored procedure được gọi nhiều lần thì execute plan có thể được sử dụng lại nên sẽ làm việc nhanh hơn. Ngoài ra cú pháp của các câu lệnh SQL đã được SQL Sever kiếm tra trước khi save nên nó không cần kiếm lại khi thực thi.
+
+- TRIGGER
+
+-- Trigger (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure) được liên kết với một TABLE hoặc VIEW.
+
+-- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra, chẳng hạn như INSERT, UPDATE, hoặc DELETE. Triggers thường được sử dụng để:
+
+--- Kiểm tra và xác thực dữ liệu: Đảm bảo rằng dữ liệu nhập vào đáp ứng các điều kiện nhất định trước khi chấp nhận thay đổi.
+
+--- Tự động cập nhật dữ liệu: Có thể tự động tính toán và cập nhật các cột hoặc bảng khác dựa trên các thay đổi dữ liệu.
+
+--- Duy trì tính toàn vẹn tham chiếu: Đảm bảo rằng các ràng buộc và mối quan hệ giữa các bảng luôn được giữ vững.
+
+--- Ghi nhật ký thay đổi: Ghi lại lịch sử thay đổi của dữ liệu cho mục đích theo dõi hoặc audit.
+
+--- Thực thi logic nghiệp vụ phức tạp: Để phản hồi ngay lập tức với các sự kiện trong cơ sở dữ liệu mà không cần sự can thiệp từ ứng dụng.
