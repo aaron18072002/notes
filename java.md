@@ -19,3 +19,11 @@
 - JAVA EXPRESSION - BIỂU THỨC
 
 -- EXPRESSION là sự kết hợp giữa các giá trị, biến, toán tử, và các lời gọi phương thức, được tính toán để cho ra một giá trị duy nhất. Biểu thức có thể là một giá trị đơn lẻ hoặc một tổ hợp các giá trị mà khi được đánh giá sẽ tạo ra kết quả. Biểu thức có thể được sử dụng trong nhiều ngữ cảnh, chẳng hạn như trong phép gán giá trị, các câu lệnh điều kiện, và các vòng lặp.
+
+- PRINT, PRINT và PRINT
+
+-- Với PRINT: Xuất kết quả ra màn hình nhưng con trỏ chuột không xuống dòng.
+
+-- Với PRINT: Xuất kết quả ra màn hình đồng thời con trỏ chuột nhảy xuống dòng tiếp theo.
+
+-- Với PRINT: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các đối số thích hợp.
