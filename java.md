@@ -14,7 +14,7 @@
 
 -- JSHELL là công cụ REPL đầu tiên được tích hợp trong Java.
 
--- Nó được sử dụng để thực hiện và kiểm tra bất kỳ code Java nào như class, interface, enum, object, statements ...vv rất dễ dàng.
+-- Nó cho phép các lập trình viên chạy các lệnh và biểu thức Java tương tác trực tiếp trong console mà không cần phải bọc chúng trong các lớp hoặc phương thức.
 
 - JAVA EXPRESSION - BIỂU THỨC
 
