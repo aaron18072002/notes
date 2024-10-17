@@ -26,4 +26,4 @@
 
 -- Với PRINT: Xuất kết quả ra màn hình đồng thời con trỏ chuột nhảy xuống dòng tiếp theo.
 
--- Với PRINT: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các đối số thích hợp.
+-- Với PRINT: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các ARGUMENTS thích hợp.
