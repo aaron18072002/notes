@@ -48,7 +48,7 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 
 - PRIMITIVE VARIABLE TYPES
 
--- SHORT, INT, FLOAT, DOUBLE: nói về số.
+-- BYTE, SHORT, INT, LONG, FLOAT, DOUBLE: nói về số.
 
 -- CHAR: nói về 1 ký tự.
 
