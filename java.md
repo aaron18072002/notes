@@ -45,3 +45,11 @@ Biến cho phép bạn lưu trữ giá trị hoặc thông tin để có thể t
 
 -- Trong JAVA, biến được sử dụng để lưu trữ và thao tác với dữ liệu. Nó là một NAMED MEMORY LOCATION, có thể chứa một giá trị thuộc một kiểu dữ liệu cụ thể.
 Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa các biến, cho phép phân bổ bộ nhớ để lưu trữ dữ liệu trong quá trình thực thi chương trình.
+
+- PRIMITIVE VARIABLE TYPES
+
+-- SHORT, INT, FLOAT, DOUBLE: nói về số.
+
+-- CHAR: nói về 1 ký tự.
+
+-- BOOLEAN: giá trị là 'true' hoặc 'false'.
