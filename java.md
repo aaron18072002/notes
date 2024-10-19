@@ -1,3 +1,9 @@
+- VÌ SAO PHẢI THIẾT LẬP PATH environment variable
+
+-- PATH environment variable là một biến môi trường trong hệ điều hành, chứa danh sách các thư mục nơi hệ thống sẽ tìm kiếm các tệp thực thi (executables). Khi bạn nhập một lệnh vào dòng lệnh (Command Prompt trên Windows hoặc Terminal trên macOS/Linux), hệ thống sẽ tìm kiếm các tệp thực thi trong các thư mục được liệt kê trong PATH.
+
+-- Khi cài đặt JDK, các tệp thực thi của Java như javac và java được đặt trong thư mục bin của JDK (ví dụ: C:\Program Files\Java\jdk-21\bin trên Windows). Nếu không thêm thư mục này vào PATH, bạn sẽ phải nhập đường dẫn đầy đủ mỗi khi muốn sử dụng các lệnh liên quan đến Java, chẳng hạn: C:\Program Files\Java\jdk-17\bin\javac MyProgram.java
+
 - JAVA PLATFORM
 
 -- JAVA là một ngôn ngữ độc lập với nền tảng ( PLATFORM-INDEPENDENT ) vì mã nguồn của JAVA có thể chạy trên nhiều hệ điều hành. Các chương trình Java có thể chạy trên bất kỳ máy nào hoặc hệ điều hành không cần cài đặt bất kỳ phần mềm đặc biệt nào. Mặc dù JVM cần phải có mặt trong máy để thực thi BYTECODE (.class).
