@@ -2,8 +2,7 @@
 
 -- JAVA PLATFORM bao gồm Java Virtual Machine (JVM), Java Runtime Environment (JRE), Java Development Kit (JDK), Java Application Programming Interface (API) và Java Language.
 
--- SOURCE CODE JAVA (.java) sau khi được COMPILE sẽ trở thành BYTECODE (.class), sau đó BYTECODE sẽ được thực thi (EXECUTION) bởi JVM để trở thành ngôn ngữ máy cho từng loại
-HỆ ĐIỀU HÀNH.
+-- SOURCE CODE JAVA (.java) sau khi được COMPILE bởi trình biên dịch JAVAC sẽ trở thành BYTECODE (.class), sau đó BYTECODE sẽ được thực thi (EXECUTION) bởi JVM để trở thành ngôn ngữ máy cho từng loại HỆ ĐIỀU HÀNH.
 
 - JDK
 
@@ -14,8 +13,6 @@ HỆ ĐIỀU HÀNH.
 ---- JVM(Java Virtual Machine):
 
 --- Trình biên dịch Java (javac): Công cụ để biên dịch mã nguồn Java (.java) thành mã bytecode (.class) mà JVM có thể hiểu và thực thi.
-
---- Các công cụ phát triển: Bao gồm trình gỡ lỗi, trình tối ưu hóa, và nhiều công cụ khác để hỗ trợ lập trình viên trong việc viết và kiểm tra mã nguồn.
 
 - JSHELL
 
