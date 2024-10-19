@@ -29,6 +29,8 @@ HỆ ĐIỀU HÀNH.
 
 -- CLASS như một TEMPLATE, có thể dung TEMPLATE này để tạo ra nhiều INSTANCES của CLASS đó.
 
+-- Có thể xem CLASS như 1 bản thiết kế và OBJECT là các tòa nhà được xây bởi bảng thiết đó.
+
 - JAVA EXPRESSION - BIỂU THỨC
 
 -- EXPRESSION là sự kết hợp giữa các giá trị, biến, toán tử, và các lời gọi phương thức, được tính toán để cho ra một giá trị duy nhất.
