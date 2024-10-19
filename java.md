@@ -63,3 +63,9 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 -- METHOD OVERLOADING trong JAVA không thể áp dụng chỉ dựa trên kiểu trả về (return type) của phương thức
 
 -- METHOD main() của 1 class cũng có thể bị OVERLOADING;
+
+- DEFINE and INVOKE METHOD
+
+-- DEFINE và INVOKE phương thức là hai bước khác nhau. DEFINE phương thức là quá trình tạo ra một phương thức, tức là một khối mã có thể được thực thi.
+
+-- INVOKE phương thức là quá trình kích hoạt phương thức, nghĩa là thực thi mã bên trong phương thức đó.
