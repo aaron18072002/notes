@@ -25,6 +25,10 @@ HỆ ĐIỀU HÀNH.
 
 -- Nó cho phép các lập trình viên chạy các lệnh và biểu thức Java tương tác trực tiếp trong console mà không cần phải bọc chúng trong các lớp hoặc phương thức.
 
+- JAVA CLASS và OBJECT
+
+-- CLASS như một TEMPLATE, có thể dung TEMPLATE này để tạo ra nhiều INSTANCES của CLASS đó.
+
 - JAVA EXPRESSION - BIỂU THỨC
 
 -- EXPRESSION là sự kết hợp giữa các giá trị, biến, toán tử, và các lời gọi phương thức, được tính toán để cho ra một giá trị duy nhất.
