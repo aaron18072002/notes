@@ -2,7 +2,7 @@
 
 -- JAVA PLATFORM bao gồm Java Virtual Machine (JVM), Java Runtime Environment (JRE), Java Development Kit (JDK), Java Application Programming Interface (API) và Java Language.
 
--- CODE JAVA sau khi được COMPILE sẽ trở thành BYTECODE, sau đó BYCODE sẽ được thực thi (EXECUTION) bởi JVM đề trở thành ngôn ngữ máy cho từng loại
+-- CODE JAVA sau khi được COMPILE sẽ trở thành BYTECODE, sau đó BYCODE sẽ được thực thi (EXECUTION) bởi JVM để trở thành ngôn ngữ máy cho từng loại
 HỆ ĐIỀU HÀNH.
 
 - JDK
