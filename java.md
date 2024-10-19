@@ -53,3 +53,5 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 -- CHAR: nói về 1 ký tự.
 
 -- BOOLEAN: giá trị là 'true' hoặc 'false'.
+
+- METHOD OVERLOADING
