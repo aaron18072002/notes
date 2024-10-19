@@ -1,3 +1,8 @@
+- JAVA PLATFORM
+
+-- CODE JAVA sau khi được COMPILE sẽ trở thành BYTECODE, sau đó BYCODE sẽ được thực thi (EXECUTION) bởi JVM đề trở thành ngôn ngữ máy cho từng loại
+HỆ ĐIỀU HÀNH.
+
 - JDK
 
 -- JDK (Java Development Kit) là bộ công cụ phần mềm cần thiết cho việc phát triển ứng dụng Java. Nó bao gồm:
