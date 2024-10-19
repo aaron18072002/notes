@@ -41,7 +41,7 @@ chẳng hạn như trong phép gán giá trị, các câu lệnh điều kiện,
 
 -- Với PRINTLN: Xuất kết quả ra màn hình đồng thời con trỏ chuột nhảy xuống dòng tiếp theo.
 
--- Với PRINTF: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các ARGUMENTS thích hợp.
+-- Với PRINTF: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các ARGUMENTS và FORMAT SPECIFER (định dạng chuỗi) thích hợp.
 
 - ESCAPE SEQUENCE
 
