@@ -6,13 +6,13 @@
 
 - JDK
 
--- JDK (Java Development Kit) là bộ công cụ phần mềm cần thiết cho việc phát triển ứng dụng Java. Nó bao gồm:
+-- JDK (Java Development Kit) là bộ công cụ phần mềm cần thiết cho việc phát triển ứng dụng Java. JRM + COMPLILERS + DEBUGGER.
 
---- Java Runtime Environment (JRE): Môi trường chạy cho ứng dụng Java, chứa JVM (Java Virtual Machine) và các thư viện cơ bản.
+-- Java Runtime Environment (JRE): Môi trường chạy cho ứng dụng Java, chứa JVM (Java Virtual Machine) và các thư viện liên quan tới JAVA.
 
----- JVM(Java Virtual Machine):
+-- JVM(Java Virtual Machine): thực thi BYTECODE (.class).
 
---- Trình biên dịch Java (javac): Công cụ để biên dịch mã nguồn Java (.java) thành mã bytecode (.class) mà JVM có thể hiểu và thực thi.
+-- Trình biên dịch - DEBUGGER Java (javac): Công cụ để biên dịch mã nguồn Java (.java) thành mã bytecode (.class) mà JVM có thể hiểu và thực thi.
 
 - JSHELL
 
