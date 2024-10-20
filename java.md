@@ -1,3 +1,5 @@
+- HỌC NHẤT QUÁN, HỌC LIÊN TỤC, SAU TẾT COMBACK!
+
 - VÌ SAO PHẢI THIẾT LẬP PATH environment variable
 
 -- PATH environment variable là một biến môi trường trong hệ điều hành, chứa danh sách các thư mục nơi hệ thống sẽ tìm kiếm các tệp thực thi (executables). Khi bạn nhập một
