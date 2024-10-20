@@ -90,3 +90,12 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 -- DEFINE và INVOKE phương thức là hai bước khác nhau. DEFINE phương thức là quá trình tạo ra một phương thức, tức là một khối mã có thể được thực thi.
 
 -- INVOKE phương thức là quá trình kích hoạt phương thức, nghĩa là thực thi mã bên trong phương thức đó.
+
+- PACKAGE
+
+-- Một PACKAGE (gói) trong JAVA là một nhóm các class, interface và các package con tương tự, liên quan đến nhau.
+
+-- PACKAGE trong JAVA được sử dụng nhằm tránh mâu thuẫn trong cách đặt tên và kiểm soát truy cập của các class, sub-class và interface. Bằng việc sử dụng các package,
+lập trình viên sẽ dễ dàng sắp xếp và tìm kiếm các class, đồng thời package cung cấp một cấu trúc tốt cho dự án, đặc biệt với các dự án có lượng class và file lớn
+
+-- Các PACKAGE được chia làm hai loại: Built-in packages và User defined packages.
