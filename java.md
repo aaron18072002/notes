@@ -1,4 +1,4 @@
-- HỌC NHẤT QUÁN, HỌC LIÊN TỤC, SAU TẾT COMBACK!
+- HỌC NHẤT QUÁN, HỌC LIÊN TỤC, SAU TẾT 2025 COMBACK!
 
 - VÌ SAO PHẢI THIẾT LẬP PATH environment variable
 
