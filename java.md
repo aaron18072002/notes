@@ -101,3 +101,10 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 lập trình viên sẽ dễ dàng sắp xếp và tìm kiếm các class, đồng thời package cung cấp một cấu trúc tốt cho dự án, đặc biệt với các dự án có lượng class và file lớn
 
 -- Các PACKAGE được chia làm hai loại: Built-in packages và User defined packages.
+
+- OOP
+
+-- Lập trình theo hướng OOP, chúng ta phải nghĩ về OBJECT, nghĩ về OBJECT là nghĩ về OBJECT đó có thể chứa DATA gì và nó có thể làm các chức năng gì.
+
+-- lập trình hướng đối tượng (OOP - Object-Oriented Programming) xoay quanh việc tổ chức chương trình theo các đối tượng (OBJECTS). Mỗi đối tượng là một thực thể có
+hai thành phần chính: Dữ liệu (Data) và Chức năng (Behavior).
