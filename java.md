@@ -118,6 +118,9 @@ hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STA
 
 -- Các biến này có thể có giá trị khác nhau đối với mỗi OBJECT khác nhau.
 
+-- Các MEMBER VARIABLE không nên được truy cập trực tiếp từ các OBJECTs khác mà nên được GET và SET thông qua METHOD để ngăn chặn việc các OBJECTs khác truyền vào các INVALID VALUE.
+Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
+
 - LOCAL VARIABLE
 
 -- Là biến nằm trong khai báo và sử dụng trong phạm vi CODE BLOCK của 1 METHOD, 1 câu lệnh IF, 1 vòng FOR, vv...
