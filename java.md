@@ -117,3 +117,9 @@ hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STA
 -- Mỗi OBJECT của lớp sẽ có một bản sao riêng của các biến này.
 
 -- Các biến này có thể có giá trị khác nhau đối với mỗi OBJECT khác nhau.
+
+- LOCAL VARIABLE
+
+-- Là biến nằm trong khai báo và sử dụng trong phạm vi CODE BLOCK của 1 METHOD, 1 câu lệnh IF, 1 vòng FOR, vv...
+
+-- Những biến này chỉ tồn tại trong phạm vi khối mã đó và sẽ không thể được truy cập từ bên ngoài.
