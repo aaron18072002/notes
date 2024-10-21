@@ -109,3 +109,11 @@ lập trình viên sẽ dễ dàng sắp xếp và tìm kiếm các class, đồ
 
 -- lập trình hướng đối tượng (OOP - Object-Oriented Programming) xoay quanh việc tổ chức chương trình theo các đối tượng (OBJECTS). Mỗi đối tượng là một thực thể có
 hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STATE ) và Chức năng (Behavior).
+
+- MEMBER VARIABLE
+
+-- Trong Java, MEMBER VARIABLE (biến thành viên) là các biến được khai báo trong lớp (class) nhưng nằm ngoài bất kỳ phương thức, hàm tạo (constructor), hoặc code block nào. Chúng còn được gọi là instance variables (biến thực thể) hoặc fields (trường) và là một phần quan trọng của đối tượng.
+
+-- Mỗi OBJECT của lớp sẽ có một bản sao riêng của các biến này.
+
+-- Các biến này có thể có giá trị khác nhau đối với mỗi OBJECT khác nhau.
