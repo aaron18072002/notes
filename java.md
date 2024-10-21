@@ -1,4 +1,4 @@
-- HỌC NHẤT QUÁN, HỌC LIÊN TỤC, LẤY CON A TRÍ TUỆ NHÂN TẠO ĐỂ LÊN 3.1 GPA, LẤY ĐIỂM TOEIC CAO NHẤT CÓ THỂ, SAU TẾT 2025 COMBACK!
+- HỌC NHẤT QUÁN, HỌC LIÊN TỤC, LẤY CON A TRÍ TUỆ NHÂN TẠO ĐỂ LÊN 3.1 GPA, LẤY ĐIỂM TOEIC CAO NHẤT CÓ THỂ, CỐ GẮNG HẾT CỠ ĐỂ NĂM 2025 CÓ THỂ PASS FPT ,SAU TẾT 2025 COMBACK!
 
 - VÌ SAO PHẢI THIẾT LẬP PATH environment variable
 
