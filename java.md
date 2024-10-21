@@ -107,4 +107,4 @@ lập trình viên sẽ dễ dàng sắp xếp và tìm kiếm các class, đồ
 -- Lập trình theo hướng OOP, chúng ta phải nghĩ về OBJECT, nghĩ về OBJECT là nghĩ về OBJECT đó có thể chứa DATA gì và nó có thể làm các chức năng gì.
 
 -- lập trình hướng đối tượng (OOP - Object-Oriented Programming) xoay quanh việc tổ chức chương trình theo các đối tượng (OBJECTS). Mỗi đối tượng là một thực thể có
-hai thành phần chính: Dữ liệu (Data) và Chức năng (Behavior).
+hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STATE ) và Chức năng (Behavior).
