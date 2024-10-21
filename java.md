@@ -126,3 +126,9 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 -- Là biến nằm trong khai báo và sử dụng trong phạm vi CODE BLOCK của 1 METHOD, 1 câu lệnh IF, 1 vòng FOR, vv...
 
 -- Những biến này chỉ tồn tại trong phạm vi khối mã đó và sẽ không thể được truy cập từ bên ngoài.
+
+- CONSTRUCTOR (Hàm khởi tạo)
+
+-- CONSTRUCTOR trong java là một dạng đặc biệt của METHOD được sử dụng để khởi tạo các đối tượng.
+
+-- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng, đó là lý do tại sao nó được gọi là CONSTRUCTOR.
