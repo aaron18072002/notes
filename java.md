@@ -35,12 +35,6 @@ với hệ điều hành đó.
 
 -- Nó cho phép các lập trình viên chạy các lệnh và biểu thức Java tương tác trực tiếp trong console mà không cần phải bọc chúng trong các lớp hoặc phương thức.
 
-- JAVA CLASS và OBJECT
-
--- CLASS như một TEMPLATE, có thể dung TEMPLATE này để tạo ra nhiều INSTANCES của CLASS đó.
-
--- Có thể xem CLASS như 1 bản thiết kế và OBJECT là các tòa nhà được xây bởi bảng thiết đó.
-
 - JAVA EXPRESSION - BIỂU THỨC
 
 -- EXPRESSION là sự kết hợp giữa các giá trị, biến, toán tử, và các lời gọi phương thức, được tính toán để cho ra một giá trị duy nhất.
@@ -101,6 +95,12 @@ Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa c�
 lập trình viên sẽ dễ dàng sắp xếp và tìm kiếm các class, đồng thời package cung cấp một cấu trúc tốt cho dự án, đặc biệt với các dự án có lượng class và file lớn
 
 -- Các PACKAGE được chia làm hai loại: Built-in packages và User defined packages.
+
+- JAVA CLASS và OBJECT
+
+-- CLASS như một TEMPLATE, có thể dung TEMPLATE này để tạo ra nhiều INSTANCES của CLASS đó.
+
+-- Có thể xem CLASS như 1 bản thiết kế và OBJECT là các tòa nhà được xây bởi bảng thiết đó.
 
 - OOP
 
