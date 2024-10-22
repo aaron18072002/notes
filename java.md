@@ -135,6 +135,10 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- BOOLEAN: giá trị là 'true' hoặc 'false'.
 
+-- Các toán tử có thể áp dụng cho PRIMITIVE TYPEs gồm: +,-,\*,/,%,++,--.
+
+-- LƯU Ý: Toán tử prefix increment (++) và prefix decrement (--) xảy ra trước toán tử gán (=) trong Java.
+
 - CASTING
 
 -- IMPLICIT CASTING: là quá trình Java tự động chuyển đổi từ kiểu dữ liệu thấp hơn sang kiểu dữ liệu cao hơn mà không
