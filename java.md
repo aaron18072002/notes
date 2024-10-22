@@ -131,7 +131,7 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- BYTE: 1 BYTE, SHORT: 2 BYTEs, INT: 4 BYTEs, LONG: 8 BYTEs, FLOAT, DOUBLE: nói về số.
 
--- CHAR: nói về 1 ký tự.
+-- CHAR - 2 BYTEs: sử dụng 2 byte (16 bit) để biểu diễn một ký tự, và nó dựa trên tiêu chuẩn Unicode.
 
 -- BOOLEAN: giá trị là 'true' hoặc 'false'.
 
