@@ -136,3 +136,10 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 -- BOOLEAN: giá trị là 'true' hoặc 'false'.
 
 - CASTING
+
+-- IMPLICIT CASTING: là quá trình Java tự động chuyển đổi từ kiểu dữ liệu thấp hơn sang kiểu dữ liệu cao hơn mà không
+cần sự can thiệp của lập trình viên. Điều này thường xảy ra khi không có khả năng mất mát dữ liệu,
+ví dụ từ INT sang LONG hoặc từ FLOAT sang DOUBLE.
+
+-- EXPLICIT CASTING: xảy ra khi bạn muốn chuyển đổi từ kiểu dữ liệu cao hơn xuống kiểu thấp hơn.
+Điều này yêu cầu lập trình viên phải chỉ định rõ ràng vì có khả năng mất mát dữ liệu.
