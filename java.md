@@ -134,3 +134,5 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 -- CHAR: nói về 1 ký tự.
 
 -- BOOLEAN: giá trị là 'true' hoặc 'false'.
+
+- CASTING
