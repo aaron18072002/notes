@@ -161,3 +161,5 @@ thời gian.
 -- BigDecimal là một IMMUTABLE CLASS trong Java, có nghĩa là giá trị của một đối tượng BigDecimal không thể bị thay đổi
 sau khi nó được khởi tạo. Bất kỳ phép toán nào (như cộng, trừ, nhân, chia) trên một đối tượng BigDecimal đều tạo ra
 một đối tượng BigDecimal mới với giá trị kết quả, thay vì thay đổi giá trị của đối tượng ban đầu.
+
+-- LƯU Ý: nên dùng new BigDecimal("string"); thay vì new BigDecimal(float/double); thì giá trị sẽ chính xác hơn.
