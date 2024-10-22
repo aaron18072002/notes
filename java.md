@@ -149,3 +149,15 @@ ví dụ từ INT sang LONG hoặc từ FLOAT sang DOUBLE.
 
 -- EXPLICIT CASTING: xảy ra khi bạn muốn chuyển đổi từ kiểu dữ liệu cao hơn xuống kiểu thấp hơn.
 Điều này yêu cầu lập trình viên phải chỉ định rõ ràng vì có khả năng mất mát dữ liệu.
+
+- BigDecimal CLASS
+
+-- Lớp BigDecimal Đây là một lớp mạnh mẽ được sử dụng để xử lý các số thập phân với độ chính xác cao, đặc biệt hữu ích cho
+các phép toán tài chính hoặc các tính toán khoa học mà độ chính xác là rất quan trọng.
+
+-- Lớp BigDecimal có thể xử lý các số dấu phẩy động rất lớn và rất nhỏ với độ chính xác cao nhưng bù lại một chút về độ phức tạp
+thời gian.
+
+-- BigDecimal là một IMMUTABLE CLASS trong Java, có nghĩa là giá trị của một đối tượng BigDecimal không thể bị thay đổi
+sau khi nó được khởi tạo. Bất kỳ phép toán nào (như cộng, trừ, nhân, chia) trên một đối tượng BigDecimal đều tạo ra
+một đối tượng BigDecimal mới với giá trị kết quả, thay vì thay đổi giá trị của đối tượng ban đầu.
