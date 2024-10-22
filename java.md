@@ -139,6 +139,8 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- LƯU Ý: Toán tử prefix increment (++) và prefix decrement (--) xảy ra trước toán tử gán (=) trong Java.
 
+-- LƯU Ý: Không nên sử dụng FLOAT và DOUBLE và 2 TYPEs này không thể hiện chính xác các giá trị thập phân.
+
 - CASTING
 
 -- IMPLICIT CASTING: là quá trình Java tự động chuyển đổi từ kiểu dữ liệu thấp hơn sang kiểu dữ liệu cao hơn mà không
