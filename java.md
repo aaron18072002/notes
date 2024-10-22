@@ -65,14 +65,6 @@ Biến cho phép bạn lưu trữ giá trị hoặc thông tin để có thể t
 -- Trong JAVA, biến được sử dụng để lưu trữ và thao tác với dữ liệu. Nó là một NAMED MEMORY LOCATION, có thể chứa một giá trị thuộc một kiểu dữ liệu cụ thể.
 Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa các biến, cho phép phân bổ bộ nhớ để lưu trữ dữ liệu trong quá trình thực thi chương trình.
 
-- PRIMITIVE VARIABLE TYPES
-
--- BYTE, SHORT, INT, LONG, FLOAT, DOUBLE: nói về số.
-
--- CHAR: nói về 1 ký tự.
-
--- BOOLEAN: giá trị là 'true' hoặc 'false'.
-
 - METHOD OVERLOADING
 
 -- METHOD OVERLOADING trong JAVA có nghĩa là có hai hoặc nhiều phương thức (hoặc hàm) trong một lớp có cùng tên nhưng khác nhau về đối số (hoặc tham số).
@@ -132,3 +124,13 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 -- CONSTRUCTOR trong java là một dạng đặc biệt của METHOD được sử dụng để khởi tạo các đối tượng.
 
 -- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng, đó là lý do tại sao nó được gọi là CONSTRUCTOR.
+
+- PRIMITIVE VARIABLE TYPES
+
+-- 1 BYTE = 8 BIT.
+
+-- BYTE, SHORT, INT, LONG, FLOAT, DOUBLE: nói về số.
+
+-- CHAR: nói về 1 ký tự.
+
+-- BOOLEAN: giá trị là 'true' hoặc 'false'.
