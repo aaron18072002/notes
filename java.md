@@ -163,3 +163,10 @@ sau khi nó được khởi tạo. Bất kỳ phép toán nào (như cộng, tr�
 một đối tượng BigDecimal mới với giá trị kết quả, thay vì thay đổi giá trị của đối tượng ban đầu.
 
 -- LƯU Ý: nên dùng new BigDecimal("string"); thay vì new BigDecimal(float/double); thì giá trị sẽ chính xác hơn.
+
+- TOÁN TỬ && và &
+
+-- && là toán tử AND logic ngắn mạch (short-circuit). Điều này có nghĩa là nếu biểu thức bên trái là false,
+thì biểu thức bên phải sẽ không được đánh giá vì toàn bộ biểu thức đã biết là false.
+
+-- Toán tử & sẽ tiếp tục tính toán biểu thức bên phải ngay cả khi biểu thức bên trái đã false.
