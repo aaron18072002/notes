@@ -129,7 +129,7 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- 1 BYTE = 8 BIT.
 
--- BYTE, SHORT, INT, LONG, FLOAT, DOUBLE: nói về số.
+-- BYTE: 1 BYTE, SHORT: 2 BYTEs, INT: 4 BYTEs, LONG: 8 BYTEs, FLOAT, DOUBLE: nói về số.
 
 -- CHAR: nói về 1 ký tự.
 
