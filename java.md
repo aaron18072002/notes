@@ -172,3 +172,5 @@ một đối tượng BigDecimal mới với giá trị kết quả, thay vì th
 thì biểu thức bên phải sẽ không được đánh giá vì toàn bộ biểu thức đã biết là false.
 
 -- Toán tử & sẽ tiếp tục tính toán biểu thức bên phải ngay cả khi biểu thức bên trái đã false.
+
+- DEFAULT, BREAK và FALL trong SWITCH CASE
