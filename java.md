@@ -173,4 +173,16 @@ thì biểu thức bên phải sẽ không được đánh giá vì toàn bộ b
 
 -- Toán tử & sẽ tiếp tục tính toán biểu thức bên phải ngay cả khi biểu thức bên trái đã false.
 
-- DEFAULT, BREAK và FALL trong SWITCH CASE
+- DEFAULT, BREAK và FALL-THROUGH trong SWITCH CASE
+
+-- DEFAULT là một phần của cấu trúc switch-case, được sử dụng khi không có trường hợp nào (case) khớp với giá trị cần so sánh.
+Nó tương tự như else trong một câu lệnh if-else. DEFAULT không bắt buộc phải có trong switch-case, nhưng nếu có, nó thường là câu lệnh cuối cùng.
+
+-- BREAK trong switch-case dùng để kết thúc một case. Nó giúp ngăn chặn việc thực hiện tiếp các case khác sau khi một case đã khớp.
+Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp tục thực hiện các câu lệnh trong các case phía dưới (đây gọi là fall-through).
+
+-- Chỉ có SWITCH có các TYPEs như INT, CHAR, STRING (JAVA 7) ,BYTE, SHORT hoặc ENUM (JAVA 5).
+
+- TERNARY OPERATION (TOÁN TỬ 3 NGÔI)
+
+-- Cả 2 vế của TOÁN TỬ 3 NGÔI phải trả về cùng 1 kiểu dữ liệu.
