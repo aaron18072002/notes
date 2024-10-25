@@ -192,3 +192,9 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 -- Dùng FOR khi ta xác định số lần chạy.
 
 -- WHILE sẽ kiểm tra CONDITION trước khi chạy còn DO WHILE sẽ chạy code trong block rồi mới check CONDITION.
+
+- BREAK và CONTINUE
+
+-- BREAK sẽ ngay lập tức thoát khỏi tất cả lần lặp còn lại.
+
+-- CONTINUE sẽ ngay lập tức thoát khỏi lần lặp hiện tại.
