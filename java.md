@@ -186,3 +186,9 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 - TERNARY OPERATION (TOÁN TỬ 3 NGÔI)
 
 -- Cả 2 vế của TOÁN TỬ 3 NGÔI phải trả về cùng 1 kiểu dữ liệu.
+
+- WHILE, DO WHILE và FOR
+
+-- Dùng FOR khi ta xác định số lần chạy.
+
+-- WHILE sẽ kiểm tra CONDITION trước khi chạy còn DO WHILE sẽ chạy code trong block rồi mới check CONDITION.
