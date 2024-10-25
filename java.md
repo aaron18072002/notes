@@ -213,3 +213,7 @@ Biến của REFERENCE TYPEs sẽ chỉ chứa địa chỉ của đối tượn
 và được quản lý bởi ngăn xếp trong quá trình thực thi.
 
 -- Nếu là MEMBER VARIABLE của một đối tượng, dù có là PRIMITIVE hay không, nó sẽ được lưu trong HEAP, cùng với đối tượng mà nó thuộc về.
+
+- STRING trong JAVA
+
+-- STRING là 1 CLASS đặc biệt trong JAVA, khác với các class khác, ta không cần gọi CONSTRUCTOR khi khai báo 1 INSTANCE của class STRING.
