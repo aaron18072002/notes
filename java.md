@@ -217,3 +217,5 @@ và được quản lý bởi ngăn xếp trong quá trình thực thi.
 - STRING trong JAVA
 
 -- STRING là 1 CLASS đặc biệt trong JAVA, khác với các class khác, ta không cần gọi CONSTRUCTOR khi khai báo 1 INSTANCE của class STRING.
+
+-- Mọi chuỗi-string đều là INSTANCE của CLASS có kiểu là STRING.
