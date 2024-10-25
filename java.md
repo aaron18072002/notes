@@ -193,6 +193,8 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 
 -- WHILE sẽ kiểm tra CONDITION trước khi chạy còn DO WHILE sẽ chạy code trong block rồi mới check CONDITION.
 
+-- Dùng DO WHILE khi muốn code trong block được EXCECUTE ít nhất 1 lần.
+
 - BREAK và CONTINUE
 
 -- BREAK sẽ ngay lập tức thoát khỏi tất cả lần lặp còn lại.
