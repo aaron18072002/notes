@@ -206,3 +206,10 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 -- Kiểu dữ liệu tham chiếu là kiểu dữ liệu của đối tượng. Biến của kiểu dữ liệu tham chiếu chỉ chứa địa chỉ
 của đối tượng dữ liệu tại bộ nhớ Stack. Đối tượng dữ liệu lại nằm ở bộ nhớ Heap. Một số kiểu dữ liệu cụ thể
 như các mảng (Array), lớp đối tượng (Class) hay kiểu lớp giao tiếp (Interface).
+
+- STACK và HEAP
+
+-- Nếu khai báo trong phương thức, hàm, hoặc khối mã, biến PRIMITIVE sẽ được lưu trong STACK vì nó có phạm vi giới hạn
+và được quản lý bởi ngăn xếp trong quá trình thực thi.
+
+-- Nếu là MEMBER VARIABLE của một đối tượng, dù có là PRIMITIVE hay không, nó sẽ được lưu trong HEAP, cùng với đối tượng mà nó thuộc về.
