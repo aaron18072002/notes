@@ -203,7 +203,9 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 
 - REFERENCE TYPEs
 
--- Khi một INSTANCE của một CLASS (tức là một đối tượng) được tạo, nó sẽ luôn được lưu trữ trong vùng nhớ HEAP.
+-- Khi khai báo một biến kiểu dữ liệu tham chiếu (ví dụ như một đối tượng của một class), biến này sẽ nằm trong STACK.
+Biến này chỉ chứa địa chỉ (tham chiếu) của đối tượng dữ liệu thật sự, không phải dữ liệu của đối tượng.  
+Đối tượng thực sự được tạo trong vùng nhớ heap. Biến tham chiếu trên STACK sẽ chứa địa chỉ trỏ đến vị trí của đối tượng này trên HEAP.
 
 - STACK và HEAP
 
