@@ -200,3 +200,9 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 -- BREAK sẽ ngay lập tức thoát khỏi tất cả lần lặp còn lại.
 
 -- CONTINUE sẽ ngay lập tức thoát khỏi lần lặp hiện tại.
+
+- REFERENCE TYPEs
+
+-- Kiểu dữ liệu tham chiếu là kiểu dữ liệu của đối tượng. Biến của kiểu dữ liệu tham chiếu chỉ chứa địa chỉ
+của đối tượng dữ liệu tại bộ nhớ Stack. Đối tượng dữ liệu lại nằm ở bộ nhớ Heap. Một số kiểu dữ liệu cụ thể
+như các mảng (Array), lớp đối tượng (Class) hay kiểu lớp giao tiếp (Interface).
