@@ -222,3 +222,12 @@ và được quản lý bởi ngăn xếp trong quá trình thực thi.
 
 -- STRING là 1 IMMUTABLE, có nghĩa là khi một đối tượng của lớp String được tạo ra, giá trị của nó không thể thay đổi được.
 Bất kỳ thao tác nào thay đổi giá trị của String sẽ tạo ra một đối tượng String mới thay vì thay đổi nội dung của đối tượng ban đầu.
+
+- String, StringBuffer và StringBuilder trong JAVA
+
+-- Khu vực lưu trữ: Với String, String Pool đóng vai trò là khu vực lưu trữ. Đối với StringBuilder và StringBuffer, bộ nhớ HEAP là vùng lưu trữ.
+
+-- Tính thay đổi: Một String là IMMUTABLE, trong khi cả StringBuilder và StringBuffer đều có thể thay đổi.
+
+-- Thread-safe: Trong trường hợp môi trường luồng, StringBuilder và StringBuffer được sử dụng trong khi một String không được sử dụng.
+Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy nhất và StringBuffer phù hợp với đa luồng.
