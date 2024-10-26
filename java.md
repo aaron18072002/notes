@@ -231,3 +231,9 @@ Bất kỳ thao tác nào thay đổi giá trị của String sẽ tạo ra mộ
 
 -- Thread-safe: Trong trường hợp môi trường luồng, StringBuilder và StringBuffer được sử dụng trong khi một String không được sử dụng.
 Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy nhất và StringBuffer phù hợp với đa luồng.
+
+- WRAPPER CLASS
+
+-- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó cho phép xử lý các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
+
+++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng. Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
