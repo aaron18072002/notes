@@ -218,4 +218,7 @@ và được quản lý bởi ngăn xếp trong quá trình thực thi.
 
 -- STRING là 1 CLASS đặc biệt trong JAVA, khác với các class khác, ta không cần gọi CONSTRUCTOR khi khai báo 1 INSTANCE của class STRING.
 
--- Mọi chuỗi-string đều là INSTANCE của CLASS có kiểu là STRING.
+-- Mọi chuỗi-string đều là INSTANCE của lớp có kiểu là STRING.
+
+-- STRING là 1 IMMUTABLE, có nghĩa là khi một đối tượng của lớp String được tạo ra, giá trị của nó không thể thay đổi được.
+Bất kỳ thao tác nào thay đổi giá trị của String sẽ tạo ra một đối tượng String mới thay vì thay đổi nội dung của đối tượng ban đầu.
