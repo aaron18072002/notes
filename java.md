@@ -249,3 +249,7 @@ có giá trị đã được tạo trước đó, thay vì tạo đối tượng
 - DATETIME API trong JAVA
 
 -- JAVA 8 đã giới thiệu ba lớp quan trọng trong gói java.time để làm việc với ngày và giờ là LocalDate, LocalDateTime và LocalTime.
+
+-- Cả ba lớp LocalDate, LocalTime, và LocalDateTime trong Java 8 đều là immutable. Điều này có nghĩa là một khi đã khởi tạo,
+các đối tượng từ những lớp này không thể thay đổi được. Mọi thao tác trên những đối tượng này, chẳng hạn như cộng thêm hoặc
+trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì thay đổi đối tượng ban đầu.
