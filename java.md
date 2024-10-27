@@ -234,7 +234,8 @@ Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy 
 
 - WRAPPER CLASS
 
--- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó cho phép xử lý các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
+-- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó cho phép xử lý
+các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
 
 ++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng. Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
 
@@ -242,4 +243,5 @@ Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy 
 
 -- Trong Java, có hai cách phổ biến để tạo một đối tượng của Wrapper Class: phương thức valueOf() và từ khóa NEW.
 
--- Khi sử dụng phương thức valueOf() trong các wrapper class như Integer, Double, Boolean, v.v., Java sẽ cố gắng tái sử dụng (reuse) các đối tượng có giá trị đã được tạo trước đó, thay vì tạo đối tượng mới mỗi lần. Cơ chế này được gọi là caching và giúp tiết kiệm bộ nhớ, đặc biệt là với các giá trị thường xuyên được sử dụng.
+-- Khi sử dụng phương thức valueOf() trong các wrapper class như Integer, Double, Boolean, v.v., Java sẽ cố gắng tái sử dụng (reuse) các đối tượng
+có giá trị đã được tạo trước đó, thay vì tạo đối tượng mới mỗi lần. Cơ chế này được gọi là caching và giúp tiết kiệm bộ nhớ, đặc biệt là với các giá trị thường xuyên được sử dụng.
