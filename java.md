@@ -245,3 +245,7 @@ các giá trị nguyên thủy như thể chúng là các đối tượng. Đi�
 
 -- Khi sử dụng phương thức valueOf() trong các wrapper class như Integer, Double, Boolean, v.v., Java sẽ cố gắng tái sử dụng (reuse) các đối tượng
 có giá trị đã được tạo trước đó, thay vì tạo đối tượng mới mỗi lần. Cơ chế này được gọi là caching và giúp tiết kiệm bộ nhớ, đặc biệt là với các giá trị thường xuyên được sử dụng.
+
+- DATETIME API trong JAVA
+
+-- JAVA 8 đã giới thiệu ba lớp quan trọng trong gói java.time để làm việc với ngày và giờ là LocalDate, LocalDateTime và LocalTime.
