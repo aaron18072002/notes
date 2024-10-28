@@ -262,3 +262,7 @@ trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì tha
 -- ARRAY là cấu trúc cơ bản trong Java cho phép chúng ta lưu trữ nhiều giá trị có cùng kiểu giá trị trong một biến duy nhất.
 
 -- Trong JAVA, các phần tử trong một mảng (ARRAY) đều được lưu trữ ở các vị trí bộ nhớ liên tiếp nhau
+
+- VARIABLE ARGUMENT - Varargs
+
+-- https://viblo.asia/p/java-core-tat-tan-tat-ve-varargs-trong-java-WAyK8reelxX#_1-dat-van-de-0
