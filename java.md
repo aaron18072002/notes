@@ -257,7 +257,7 @@ có giá trị đã được tạo trước đó, thay vì tạo đối tượng
 các đối tượng từ những lớp này không thể thay đổi được. Mọi thao tác trên những đối tượng này, chẳng hạn như cộng thêm hoặc
 trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì thay đổi đối tượng ban đầu.
 
-- ARRAY và ARRAYLIST
+- ARRAY
 
 -- ARRAY là cấu trúc cơ bản trong Java cho phép chúng ta lưu trữ nhiều giá trị có cùng kiểu giá trị trong một biến duy nhất.
 
@@ -265,6 +265,11 @@ trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì tha
 
 -- Kích thước cố định: Khi đã tạo, Array có kích thước cố định và không thể thay đổi. Bạn phải biết số phần tử cần lưu trữ ngay từ đầu.
 Nghĩa là không thể thêm và xóa phần tử của 1 ARRAY đã được khởi tạo.
+
+- ARRAYLIST
+
+-- Trong Java, ArrayList chỉ có thể chứa các kiểu tham chiếu (reference types), không thể chứa trực tiếp các kiểu
+nguyên thủy (primitive types) như int, double, boolean, v.v.
 
 - VARIABLE ARGUMENT - Varargs
 
