@@ -264,6 +264,7 @@ trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì tha
 -- Trong JAVA, các phần tử trong một mảng (ARRAY) đều được lưu trữ ở các vị trí bộ nhớ liên tiếp nhau.
 
 -- Kích thước cố định: Khi đã tạo, Array có kích thước cố định và không thể thay đổi. Bạn phải biết số phần tử cần lưu trữ ngay từ đầu.
+Nghĩa là không thể thêm và xóa phần tử của 1 ARRAY đã được khởi tạo.
 
 - VARIABLE ARGUMENT - Varargs
 
