@@ -242,6 +242,12 @@ các giá trị nguyên thủy như thể chúng là các đối tượng. Đi�
 ++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng.
 Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
 
+- AUTO BOXING
+
+-- Autoboxing hay Boxing trong JAVA là quá trình chuyển dữ liệu từ kiểu tham trị sang kiểu tham chiếu.
+Khi bạn gán một giá trị nguyên thủy vào một biến tham chiếu của lớp bao, Java sẽ tự động tạo một đối tượng
+(instance) của lớp bao này trên vùng nhớ HEAP và gán giá trị của kiểu nguyên thủy vào đó.
+
 ++ Hỗ trợ Collection Framework:
 
 -- Trong Java, có hai cách phổ biến để tạo một đối tượng của Wrapper Class: phương thức valueOf() và từ khóa NEW.
