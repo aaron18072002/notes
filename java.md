@@ -223,6 +223,8 @@ và được quản lý bởi ngăn xếp trong quá trình thực thi.
 -- STRING là 1 IMMUTABLE, có nghĩa là khi một đối tượng của lớp String được tạo ra, giá trị của nó không thể thay đổi được.
 Bất kỳ thao tác nào thay đổi giá trị của String sẽ tạo ra một đối tượng String mới thay vì thay đổi nội dung của đối tượng ban đầu.
 
+-- Trong Java, chuỗi (String) thực chất là một mảng các ký tự (char) được sắp xếp liền kề trong bộ nhớ.
+
 - String, StringBuffer và StringBuilder trong JAVA
 
 -- Khu vực lưu trữ: Với String, String Pool đóng vai trò là khu vực lưu trữ. Đối với StringBuilder và StringBuffer, bộ nhớ HEAP là vùng lưu trữ.
