@@ -311,4 +311,4 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 
 -- Lớp con bắt buộc phải implement tất cả các phương thức trừu tượng của lớp cha
 
--- Không thể tạo đối tượng từ lớp trừu tượng.
+-- Không thể khởi tạo đối tượng từ lớp trừu tượng.
