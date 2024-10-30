@@ -281,6 +281,14 @@ nguyên thủy (primitive types) như int, double, boolean, v.v.
 
 -- https://viblo.asia/p/java-core-tat-tan-tat-ve-varargs-trong-java-WAyK8reelxX#_1-dat-van-de-0
 
+- FINAL
+
+-- Sử dụng với biến: Khi một biến được khai báo với từ khóa final, giá trị của nó không thể thay đổi sau khi được khởi tạo. Điều này tương tự như một hằng số. Khác với CONST Biến FINAL có thể được khởi tạo ở giai đoạn runtime bằng CONSTRUCTOR.
+
+-- Sử dụng với phương thức: Khi một phương thức được khai báo là final, phương thức này không thể bị ghi đè (override) bởi các lớp con.
+
+-- Sử dụng với lớp: Khi một lớp được khai báo là final, lớp đó không thể được kế thừa.
+
 - INHERITANCE
 
 -- Kế thừa là sự liên quan giữa hai class với nhau, trong đó có class cha (superclass) và class con (subclass).
