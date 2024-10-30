@@ -304,3 +304,5 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 +) Để ghi đè phương thức (Method Overriding), do đó có thể thu được tính đa hình tại runtime.
 
 +) Để làm tăng tính tái sử dụng của code.
+
+- ABSTRACTION
