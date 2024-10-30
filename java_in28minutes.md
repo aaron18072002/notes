@@ -287,6 +287,11 @@ nguyên thủy (primitive types) như int, double, boolean, v.v.
 Khi kế thừa class con được hưởng tất cả các phương thức và thuộc tính của class cha. Tuy nhiên, nó chỉ được truy cập các thành viên public và protected của class cha.
 Nó không được phép truy cập đến thành viên private của class cha.
 
+-- Trong Java, khi một đối tượng con được tạo, một đối tượng cha cũng được khởi tạo ngầm. Điều này xảy ra vì lớp con luôn phải gọi constructor của lớp cha,
+trực tiếp hoặc gián tiếp. Nếu bạn không gọi constructor của lớp cha rõ ràng bằng từ khóa super(), Java sẽ tự động gọi constructor
+không tham số (nếu có) của lớp cha trước khi thực hiện constructor của lớp con. Quy trình này giúp đảm bảo rằng tất cả các phần thuộc lớp cha đều
+được khởi tạo trước khi lớp con có thể sử dụng.
+
 -- Tại sao sử dụng tính kế thừa trong Java?
 
 +) Để ghi đè phương thức (Method Overriding), do đó có thể thu được tính đa hình tại runtime.
