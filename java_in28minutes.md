@@ -280,3 +280,15 @@ nguyên thủy (primitive types) như int, double, boolean, v.v.
 - VARIABLE ARGUMENT - Varargs
 
 -- https://viblo.asia/p/java-core-tat-tan-tat-ve-varargs-trong-java-WAyK8reelxX#_1-dat-van-de-0
+
+- INHERITANCE
+
+-- Kế thừa là sự liên quan giữa hai class với nhau, trong đó có class cha (superclass) và class con (subclass).
+Khi kế thừa class con được hưởng tất cả các phương thức và thuộc tính của class cha. Tuy nhiên, nó chỉ được truy cập các thành viên public và protected của class cha.
+Nó không được phép truy cập đến thành viên private của class cha.
+
+-- Tại sao sử dụng tính kế thừa trong Java?
+
++) Để ghi đè phương thức (Method Overriding), do đó có thể thu được tính đa hình tại runtime.
+
++) Để làm tăng tính tái sử dụng của code.
