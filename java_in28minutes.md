@@ -309,6 +309,8 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 
 -- Trong JAVA, abstract class (lớp trừu tượng) được sử dụng để làm lớp cha, chứa các đặc điểm và hành vi chung mà các lớp con kế thừa,abstract class được sử dụng để định nghĩa các hành vi và thuộc tính chung.
 
--- Lớp con bắt buộc phải implement tất cả các phương thức trừu tượng của lớp cha
+-- Lớp con bắt buộc phải implement tất cả các phương thức trừu tượng của lớp cha.
 
 -- Không thể khởi tạo đối tượng từ lớp trừu tượng.
+
+-- Trong JAVA, một abstract method (phương thức trừu tượng) bắt buộc phải được override (ghi đè) trong các lớp con kế thừa. Phương thức trừu tượng chỉ được khai báo trong lớp cha, nhưng không có phần thân thực thi (implementation), vì vậy các lớp con cần phải cung cấp chi tiết cụ thể cho phương thức này.
