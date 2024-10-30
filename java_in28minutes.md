@@ -335,3 +335,10 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 Phiên bản Java 9, có thể thêm private methods.
 
 -- Interface chỉ có các biến static final.
+
+- POLYMORPHISM
+
+-- Tính đa hình là khả năng một đối tượng có thể thực hiện một tác vụ theo nhiều cách khác nhau.
+
+-- Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức
+(method overriding) để có tính đa hình.
