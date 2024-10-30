@@ -316,3 +316,10 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 -- Trong JAVA, một abstract method (phương thức trừu tượng) bắt buộc phải được override (ghi đè) trong các lớp con kế thừa. Phương thức trừu tượng chỉ được khai báo trong lớp cha, nhưng không có phần thân thực thi (implementation), vì vậy các lớp con cần phải cung cấp chi tiết cụ thể cho phương thức này.
 
 -- Trong 1 lớp trừu tượng, từ khóa this vẫn có thể được sử dụng mặc dù lớp này không thể được khởi tạo trực tiếp. Điều này là do this là một tham chiếu đến đối tượng hiện tại và sẽ trỏ tới các đối tượng của bất kỳ lớp con nào kế thừa từ lớp trừu tượng đó.
+
+-- Abstract thể hiện mối quan hệ IS-A còn Interface thể hiện mối quan hệ HAS-A.
+
+-- Phiên bản Java < 8, Interface chỉ có thể có phương thức abstract. Phiên bản Java 8, có thể thêm default và static methods.
+Phiên bản Java 9, có thể thêm private methods.
+
+-- Interface chỉ có các biến static final.
