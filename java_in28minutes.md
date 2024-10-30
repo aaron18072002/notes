@@ -296,6 +296,9 @@ không tham số (nếu có) của lớp cha trước khi thực hiện construc
 trong Java và cung cấp một số phương thức cơ bản như toString(), equals(), hashCode(), và clone(). Do đó, ngay cả khi bạn không viết
 extends Object, mọi lớp trong Java vẫn kế thừa lớp Object và có thể sử dụng các phương thức này.
 
+-- JAVA không hỗ trợ đa kế thừa (multiple inheritance) để tránh vấn đề "diamond problem". Vấn đề này xảy ra khi một lớp kế thừa từ hai lớp cha,
+mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham số (signature). Khi đó, trình biên dịch sẽ gặp khó khăn trong việc xác định nên gọi phương thức nào.
+
 -- Tại sao sử dụng tính kế thừa trong Java?
 
 +) Để ghi đè phương thức (Method Overriding), do đó có thể thu được tính đa hình tại runtime.
