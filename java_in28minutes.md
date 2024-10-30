@@ -292,6 +292,10 @@ trực tiếp hoặc gián tiếp. Nếu bạn không gọi constructor của l�
 không tham số (nếu có) của lớp cha trước khi thực hiện constructor của lớp con. Quy trình này giúp đảm bảo rằng tất cả các phần thuộc lớp cha đều
 được khởi tạo trước khi lớp con có thể sử dụng.
 
+-- Trong Java, nếu một lớp không mở rộng (extend) bất kỳ lớp nào, thì nó mặc định sẽ kế thừa lớp Object. Object là lớp gốc của tất cả các lớp
+trong Java và cung cấp một số phương thức cơ bản như toString(), equals(), hashCode(), và clone(). Do đó, ngay cả khi bạn không viết
+extends Object, mọi lớp trong Java vẫn kế thừa lớp Object và có thể sử dụng các phương thức này.
+
 -- Tại sao sử dụng tính kế thừa trong Java?
 
 +) Để ghi đè phương thức (Method Overriding), do đó có thể thu được tính đa hình tại runtime.
