@@ -289,6 +289,10 @@ nguyên thủy (primitive types) như int, double, boolean, v.v.
 
 -- Sử dụng với lớp: Khi một lớp được khai báo là final, lớp đó không thể được kế thừa.
 
+- DEFAULT
+
+-- Kể từ Java 8, có thể định nghĩa các phương thức có thân (body) trong một interface bằng cách sử dụng từ khóa default. Điều này cho phép các interface cung cấp các phương thức mặc định mà các lớp triển khai có thể sử dụng hoặc ghi đè.
+
 - INHERITANCE
 
 -- Kế thừa là sự liên quan giữa hai class với nhau, trong đó có class cha (superclass) và class con (subclass).
