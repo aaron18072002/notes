@@ -344,3 +344,17 @@ Phiên bản Java 9, có thể thêm private methods.
 (method overriding) để có tính đa hình.
 
 - COLLECTIONS
+
+-- Iterable -> Collection -> List.
+
+-- Iterable: Đây là Interface gốc, cung cấp phương thức iterator() để lặp qua các phần tử. Tất cả các lớp triển khai Iterable
+có thể được duyệt bằng vòng lặp for-each.
+
+-- Collection: Kế thừa Iterable và định nghĩa một tập hợp các phương thức cơ bản cho các cấu trúc dữ liệu dạng tập hợp
+(collection) như thêm, xóa, kiểm tra kích thước, kiểm tra trống, và duyệt các phần tử.
+
+-- List: Kế thừa Collection và mở rộng thêm các phương thức cụ thể cho kiểu danh sách (list), bao gồm truy cập phần tử
+theo chỉ mục, tìm kiếm phần tử, thêm/xóa theo vị trí, và hỗ trợ các danh sách có thứ tự và trùng lặp.
+
+-- List trong JAVA là 1 Interface nằm trong gói java.util. List định nghĩa một tập hợp các phương thức mà các Class
+như ArrayList, LinkedList, và Vector phải implement.
