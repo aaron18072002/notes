@@ -377,3 +377,5 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- Iterable -> Collection -> Set
 
 -- Set (tập hợp) trong Java là một Interface, được kế thừa từ Interface Collection. Set không chứa các phần tử trùng nhau.
+
+-- Khác với Interface List, Interface Set không có các phương thức thao tác với phần tử theo vị trí/chỉ mục.
