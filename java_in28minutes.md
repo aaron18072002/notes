@@ -358,3 +358,6 @@ theo chỉ mục, tìm kiếm phần tử, thêm/xóa theo vị trí, và hỗ t
 
 -- List trong JAVA là 1 Interface nằm trong gói java.util. List định nghĩa một tập hợp các phương thức mà các Class
 như ArrayList, LinkedList, và Vector phải implement.
+
+-- Bất kỳ collection nào được tạo từ phương thức tĩnh of() trong các interface như List, Set, hoặc Map đều là immutable (bất biến).
+Điều này có nghĩa là sau khi được khởi tạo bằng of(), collection sẽ không thể thay đổi—không thể thêm, xóa, hoặc cập nhật các phần tử.
