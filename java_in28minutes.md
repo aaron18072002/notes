@@ -361,3 +361,13 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 -- Bất kỳ collection nào được tạo từ phương thức tĩnh of() trong các interface như List, Set, hoặc Map đều là immutable (bất biến).
 Điều này có nghĩa là sau khi được khởi tạo bằng of(), collection sẽ không thể thay đổi—không thể thêm, xóa, hoặc cập nhật các phần tử.
+
+- VERTOR và ARRAYLIST
+
+-- Cả 2 class đều implement Interface List.
+
+-- Cả 2 class đều sử dụng cấu trúc dữ liệu Array.
+
+-- Tất cả các phương thức (methods) của lớp Vector trong Java đều được đồng bộ hóa (synchronized).
+Điều này có nghĩa là các phương thức của Vector được bảo vệ để chỉ một luồng (thread) có thể truy cập vào chúng tại một thời điểm.
+Điều này giúp đảm bảo tính an toàn khi truy cập dữ liệu trong môi trường đa luồng.
