@@ -371,3 +371,9 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- Tất cả các phương thức (methods) của lớp Vector trong Java đều được đồng bộ hóa (synchronized).
 Điều này có nghĩa là các phương thức của Vector được bảo vệ để chỉ một luồng (thread) có thể truy cập vào chúng tại một thời điểm.
 Điều này giúp đảm bảo tính an toàn khi truy cập dữ liệu trong môi trường đa luồng.
+
+- SET
+
+-- Iterable -> Collection -> Set
+
+-- Set (tập hợp) trong Java là một Interface, được kế thừa từ Interface Collection. Set không chứa các phần tử trùng nhau.
