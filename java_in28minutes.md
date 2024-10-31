@@ -342,3 +342,5 @@ Phiên bản Java 9, có thể thêm private methods.
 
 -- Trong Java, chúng ta sử dụng nạp chồng phương thức (method overloading) và ghi đè phương thức
 (method overriding) để có tính đa hình.
+
+- COLLECTIONS
