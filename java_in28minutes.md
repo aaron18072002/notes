@@ -265,6 +265,8 @@ trừ bớt ngày, giờ, sẽ tạo ra một đối tượng mới thay vì tha
 
 - ARRAY
 
+-- Array không phải là 1 COLLECTION.
+
 -- ARRAY là cấu trúc cơ bản trong Java cho phép chúng ta lưu trữ nhiều giá trị có cùng kiểu giá trị trong một biến duy nhất.
 
 -- Trong JAVA, các phần tử trong một mảng (ARRAY) đều được lưu trữ ở các vị trí bộ nhớ liên tiếp nhau.
@@ -274,8 +276,8 @@ Nghĩa là không thể thêm và xóa phần tử của 1 ARRAY đã được k
 
 - ARRAYLIST
 
--- Trong Java, ArrayList chỉ có thể chứa các kiểu tham chiếu (reference types), không thể chứa trực tiếp các kiểu
-nguyên thủy (primitive types) như int, double, boolean, v.v.
+-- Trong Java, ArrayList là 1 COLLECTION. Do đó, nó chỉ có thể chứa các kiểu tham chiếu (reference types),
+không thể chứa trực tiếp các kiểu nguyên thủy (primitive types) như int, double, boolean, v.v.
 
 - VARIABLE ARGUMENT - Varargs
 
@@ -360,7 +362,7 @@ theo chỉ mục, tìm kiếm phần tử, thêm/xóa theo vị trí, và hỗ t
 như ArrayList, LinkedList, và Vector phải implement.
 
 -- Bất kỳ collection nào được tạo từ phương thức tĩnh of() trong các interface như List, Set, hoặc Map đều là immutable (bất biến).
-Điều này có nghĩa là sau khi được khởi tạo bằng of(), collection sẽ không thể thay đổi—không thể thêm, xóa, hoặc cập nhật các phần tử.
+Điều này có nghĩa là sau khi được khởi tạo bằng of(), collection sẽ không thể thay đổi—không thể thêm, xóa, hoặc cập nhật các phần tử
 
 - VERTOR và ARRAYLIST
 
@@ -379,3 +381,5 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- Set (tập hợp) trong Java là một Interface, được kế thừa từ Interface Collection. Set không chứa các phần tử trùng nhau.
 
 -- Khác với Interface List, Interface Set không có các phương thức thao tác với phần tử theo vị trí/chỉ mục.
+
+-- Set định nghĩa một tập hợp các phương thức mà các Class như HashSet,
