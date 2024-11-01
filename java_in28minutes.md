@@ -386,6 +386,6 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 -- HashSet: Không đảm bảo thứ tự của phần tử, vì nó sử dụng bảng băm (hash table) để lưu trữ.
 
--- LinkedHashSet: Giữ thứ tự của phần tử theo thứ tự chèn.
+-- LinkedHashSet: Sắp xếp thứ tự của phần tử theo thứ tự chèn.
 
 -- TreeSet: Sắp xếp phần tử theo thứ tự tự nhiên hoặc theo Comparator tùy chỉnh.
