@@ -389,3 +389,11 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- LinkedHashSet: Sắp xếp thứ tự của phần tử theo thứ tự chèn.
 
 -- TreeSet: Sắp xếp phần tử theo thứ tự tự nhiên hoặc theo Comparator tùy chỉnh.
+
+- QUEUE
+
+-- Iterable -> Collection -> Queue
+
+-- QUEUE (tập hợp) trong Java là một Interface, được kế thừa từ Interface Collection và hoạt động theo cơ chế FIFO (First-In-First-Out).
+
+-- QUEUE được sử dụng khi muốn sắp xếp mọi thứ theo thứ tự mà bạn muốn xử lý chúng.
