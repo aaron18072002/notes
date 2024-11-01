@@ -382,4 +382,4 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 -- Khác với Interface List, Interface Set ĐẶC BIỆT không có các phương thức thao tác với phần tử theo vị trí/chỉ mục.
 
--- Set định nghĩa một tập hợp các phương thức mà các Class như HashSet phải implement.
+-- Set định nghĩa một tập hợp các phương thức mà các Class như HashSet, LinkedHashSet và TreeSet phải implement.
