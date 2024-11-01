@@ -383,3 +383,9 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- Khác với Interface List, Interface Set ĐẶC BIỆT không có các phương thức thao tác với phần tử theo vị trí/chỉ mục.
 
 -- Set định nghĩa một tập hợp các phương thức mà các Class như HashSet, LinkedHashSet và TreeSet phải implement.
+
+-- HashSet: Không đảm bảo thứ tự của phần tử, vì nó sử dụng bảng băm (hash table) để lưu trữ.
+
+-- LinkedHashSet: Giữ thứ tự của phần tử theo thứ tự chèn.
+
+-- TreeSet: Sắp xếp phần tử theo thứ tự tự nhiên hoặc theo Comparator tùy chỉnh.
