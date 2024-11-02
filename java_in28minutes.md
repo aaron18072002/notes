@@ -400,11 +400,14 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 - Map
 
--- Trong java, map được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp khóa (key) và giá trị (value). Mỗi cặp key và value được gọi là entry.
+-- Map trong Java không có super Interface trực tiếp. Tuy nhiên, Map vẫn gián tiếp kế thừa một số đặc điểm từ các interface khác thông qua
+các phương thức mặc định hoặc các tính năng chung của Collection Framework.
+
+-- Trong java, Map là 1 Interface được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp khóa (key) và giá trị (value). Mỗi cặp key và value được gọi là entry.
 
 -- Map chỉ chứa các giá trị key duy nhất, không chứa các key trùng lặp.
 
-Các lớp triển khai (implements) Map interface là HashMap, HashTable, LinkedHashMap and TreeMap:
+Các lớp triển khai (implements) Map Interface là HashMap, HashTable, LinkedHashMap and TreeMap:
 
 +) HashMap không đảm bảo thứ tự các entry được thêm vào. HashMap cho phép một key duy nhất có giá trị null nhưng bất kỳ value nào cũng có thể null
 
