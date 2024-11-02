@@ -406,7 +406,7 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 Các lớp triển khai (implements) Map interface là HashMap, HashTable, LinkedHashMap and TreeMap:
 
-+) HashMap không đảm bảo thứ tự các entry được thêm vào. HashMap chỉ cho phép một key null nhưng bất kỳ value nào cũng có thể null
++) HashMap không đảm bảo thứ tự các entry được thêm vào. HashMap cho phép một key duy nhất có giá trị null nhưng bất kỳ value nào cũng có thể null
 
 +) HashTable giống với HashMap nhưng tất cả các methods của HashTable đều có thêm synchronized. HashTable không cho phép null trong cả key lẫn value.
 
