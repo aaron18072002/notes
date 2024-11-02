@@ -404,7 +404,7 @@ như ArrayList, LinkedList, và Vector phải implement.
 
 -- Map chỉ chứa các giá trị key duy nhất, không chứa các key trùng lặp.
 
-Các lớp triển khai (implements) Map interface là HashMap, LinkedHashMap and TreeMap:
+Các lớp triển khai (implements) Map interface là HashMap, HashTable, LinkedHashMap and TreeMap:
 
 +) HashMap không đảm bảo thứ tự các entry được thêm vào.
 
