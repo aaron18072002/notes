@@ -397,3 +397,19 @@ như ArrayList, LinkedList, và Vector phải implement.
 -- QUEUE (tập hợp) trong Java là một Interface, được kế thừa từ Interface Collection và hoạt động theo cơ chế FIFO (First-In-First-Out).
 
 -- QUEUE được sử dụng khi muốn sắp xếp mọi thứ theo thứ tự mà bạn muốn xử lý chúng.
+
+- Map
+
+-- Trong java, map được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp khóa (key) và giá trị (value). Mỗi cặp key và value được gọi là entry.
+
+-- Map chỉ chứa các giá trị key duy nhất, không chứa các key trùng lặp.
+
+Các lớp triển khai (implements) Map interface là HashMap, LinkedHashMap and TreeMap:
+
++) HashMap không đảm bảo thứ tự các entry được thêm vào.
+
++) LinkedHashMap đảm bảo thứ tự các entry được thêm vào.
+
++) TreeMap duy trình thứ tự các phần tử dựa vào bộ so sánh Comparator.
+
+-- Sức chứa (compacity) mặc định khi khởi tạo map là 24 = 16. Kích thước này sẽ tự động tăng gấp đôi mỗi khi thêm phần tử vượt quá kích thước của nó.
