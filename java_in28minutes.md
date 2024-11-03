@@ -431,8 +431,8 @@ cho từng loại dữ liệu.
 trong các phương thức, lớp hoặc interface mà không cần chỉ rõ kiểu cụ thể, giúp các lớp generic có thể làm việc với nhiều loại dữ liệu khác nhau
 mà không bị hạn chế vào một kiểu cố định.
 
--- ?: Chấp nhận bất kỳ kiểu nào.
+-- Unbounded Wildcard (?): Chấp nhận bất kỳ kiểu nào.
 
--- ? extends T: Chấp nhận các kiểu là con của T, hữu ích khi đọc dữ liệu từ cấu trúc generic.
+-- Upper Bounded Wildcard (? extends T) - Giới hạn trên.: Chấp nhận các kiểu là con của T, hữu ích khi đọc dữ liệu từ cấu trúc generic.
 
--- ? super T: Chấp nhận các kiểu là cha của T, hữu ích khi thêm dữ liệu vào cấu trúc generic.
+-- Lower Bounded Wildcard (? super T) - Giới hạn dưới.: Chấp nhận các kiểu là cha của T, hữu ích khi thêm dữ liệu vào cấu trúc generic.
