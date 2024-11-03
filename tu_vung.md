@@ -63,9 +63,10 @@
 - utensil (n): dụng cụ nhà bếp
 - unforeseen (adv) = expected (v): không lường trước được
 - unanimously (adv): đồng lòng
-- demolish (v) = destroy: phá hủy
+- demolish (v) = destroy = torn down: phá hủy, phá bỏ
 - devorce (v): ly dị
 - defect (n): khuyết điểm
+- directly (adv) = in person: trực tiếp
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - confidential (adj) = private: bí mật
