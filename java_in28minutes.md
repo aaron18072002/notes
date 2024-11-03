@@ -421,6 +421,6 @@ Các lớp triển khai (implements) Map Interface là HashMap, HashTable, Linke
 
 - GENERICS
 
--- Generics trong Java là một tính năng cho phép chúng ta tạo ra các lớp, interface và phương thức có thể hoạt động với nhiều kiểu dữ liệu khác nhau
+-- Generics trong Java là một tính năng cho phép chúng ta tạo ra các Class, Interface và Method có thể hoạt động với nhiều kiểu dữ liệu khác nhau
 mà không cần phải xác định rõ kiểu dữ liệu đó từ trước. Điều này giúp mã có thể xử lý nhiều loại dữ liệu khác nhau mà không cần phải tạo ra các lớp riêng biệt
 cho từng loại dữ liệu.
