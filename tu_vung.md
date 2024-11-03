@@ -39,11 +39,11 @@
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
-- REMARKABLE (adj) = outstanding (adj): nổi bật
+- REMARKABLE (adj) = outstanding (adj) = noticeable = substantial = considerable: nổi bật
 - receipt (n) = invoice (n): hóa đơn, biên lai
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
-- renowned (adj) = notable (adj): nổi tiếng, đáng chú
+- renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
