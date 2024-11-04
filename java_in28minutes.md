@@ -439,24 +439,46 @@ mà không bị hạn chế vào một kiểu cố định.
 
 - STREAM trong JAVA
 
--- Trong Java, Stream là một chuỗi dữ liệu mà bạn có thể xử lý theo kiểu khai báo (declarative) và phong cách hàm (functional). Stream cho phép thực hiện các thao tác như lọc (filtering), ánh xạ (mapping), và tổng hợp (reducing) trên một tập hợp dữ liệu. Stream có thể được sử dụng với nhiều nguồn dữ liệu khác nhau, bao gồm mảng (arrays), bộ sưu tập (collections), và thậm chí cả kênh I/O (I/O channels).
+-- Trong Java, Stream là một chuỗi dữ liệu mà bạn có thể xử lý theo kiểu khai báo (declarative) và phong cách hàm (functional).
+Stream cho phép thực hiện các thao tác như lọc (filtering), ánh xạ (mapping), và tổng hợp (reducing) trên một tập hợp dữ liệu.
+Stream có thể được sử dụng với nhiều nguồn dữ liệu khác nhau, bao gồm mảng (arrays), bộ sưu tập (collections),
+và thậm chí cả kênh I/O (I/O channels).
 
--- Không lưu trữ các phần tử của collection hoặc array: Stream không phải là một cấu trúc dữ liệu lưu trữ như List hoặc Set. Thay vào đó, nó xử lý từng phần tử khi chúng được yêu cầu (demand-driven) thông qua pipeline các thao tác. Khi sử dụng Stream, các phần tử sẽ được đọc từ nguồn (collection, array, hoặc các nguồn khác), truyền qua các thao tác và cuối cùng kết thúc ở thao tác terminal.
+-- Không lưu trữ các phần tử của collection hoặc array: Stream không phải là một cấu trúc dữ liệu lưu trữ như List hoặc Set.
+Thay vào đó, nó xử lý từng phần tử khi chúng được yêu cầu (demand-driven) thông qua pipeline các thao tác.
+Khi sử dụng Stream, các phần tử sẽ được đọc từ nguồn (collection, array, hoặc các nguồn khác), truyền qua các thao tác
+và cuối cùng kết thúc ở thao tác terminal.
 
 -- Không phải là cấu trúc dữ liệu: Do không chứa dữ liệu thực tế, Stream chỉ là một abstraction để xử lý và thao tác trên dữ liệu nguồn. Nó giúp loại bỏ sự cần thiết phải lưu trữ hoặc thao tác trực tiếp trên cấu trúc dữ liệu nguồn, mà thay vào đó xử lý các phần tử thông qua pipeline các thao tác trung gian và kết thúc.
 
--- Immutable Object: Các thao tác trên Stream (như filter(), map()) không thay đổi dữ liệu gốc mà trả về một Stream mới. Điều này đảm bảo rằng nguồn dữ liệu ban đầu không bị ảnh hưởng, tránh side-effects. Tính bất biến này cũng góp phần vào tính an toàn khi xử lý song song vì các thao tác trên luồng sẽ không làm thay đổi trạng thái của dữ liệu.
+-- Immutable Object: Các thao tác trên Stream (như filter(), map()) không thay đổi dữ liệu gốc mà trả về một Stream mới.
+Điều này đảm bảo rằng nguồn dữ liệu ban đầu không bị ảnh hưởng, tránh side-effects. Tính bất biến này cũng góp phần vào
+tính an toàn khi xử lý song song vì các thao tác trên luồng sẽ không làm thay đổi trạng thái của dữ liệu.
 
--- Lazy Evaluation (đánh giá lười biếng): Tính lười biếng có nghĩa là các thao tác trung gian (như filter() và map()) không được thực thi ngay lập tức. Thay vào đó, chúng được xâu chuỗi lại thành một pipeline và chỉ thực thi khi có thao tác kết thúc (terminal operation) như collect(), forEach(). Điều này giúp Java tối ưu hóa các thao tác trên Stream, chỉ xử lý các phần tử cần thiết và tránh xử lý dư thừa. Để làm được điều này, hầu hết các thao tác với Stream đều return lại một Stream mới, giúp tạo một mắc xích bao gồm một loạt các thao tác nhằm thực thi các thao tác đó một cách tối ưu nhất. Mắc xích này còn được gọi là pipeline.
+-- Lazy Evaluation (đánh giá lười biếng): Tính lười biếng có nghĩa là các thao tác trung gian (như filter() và map())
+không được thực thi ngay lập tức. Thay vào đó, chúng được xâu chuỗi lại thành một pipeline và chỉ thực thi khi có
+thao tác kết thúc (terminal operation) như collect(), forEach(). Điều này giúp Java tối ưu hóa các thao tác trên Stream,
+chỉ xử lý các phần tử cần thiết và tránh xử lý dư thừa. Để làm được điều này, hầu hết các thao tác với Stream đều return
+lại một Stream mới, giúp tạo một mắc xích bao gồm một loạt các thao tác nhằm thực thi các thao tác đó một cách tối ưu nhất.
+Mắc xích này còn được gọi là pipeline.
 
--- Pipeline: Khi sử dụng các thao tác trung gian và terminal, Stream tạo thành một pipeline các thao tác. Pipeline cho phép xây dựng các chuỗi thao tác rõ ràng, linh hoạt và tối ưu. Các thao tác này có thể được sắp xếp thành chuỗi từ các thao tác trung gian đến thao tác cuối cùng để đảm bảo chúng được thực hiện theo thứ tự tối ưu nhất.
+-- Pipeline: Khi sử dụng các thao tác trung gian và terminal, Stream tạo thành một pipeline các thao tác.
+Pipeline cho phép xây dựng các chuỗi thao tác rõ ràng, linh hoạt và tối ưu. Các thao tác này có thể được sắp xếp thành
+chuỗi từ các thao tác trung gian đến thao tác cuối cùng để đảm bảo chúng được thực hiện theo thứ tự tối ưu nhất.
 
--- Truy cập một lần duy nhất: Stream có tính chất "chỉ đọc một lần", tương tự như Iterator. Các phần tử chỉ có thể được xử lý một lần trong suốt vòng đời của Stream. Sau khi thao tác kết thúc được thực thi, Stream trở nên vô hiệu và không thể tái sử dụng. Để duyệt lại, cần tạo một Stream mới từ nguồn dữ liệu ban đầu.
+-- Truy cập một lần duy nhất: Stream có tính chất "chỉ đọc một lần", tương tự như Iterator. Các phần tử chỉ có thể được xử lý
+một lần trong suốt vòng đời của Stream. Sau khi thao tác kết thúc được thực thi, Stream trở nên vô hiệu và không thể tái sử dụng.
+Để duyệt lại, cần tạo một Stream mới từ nguồn dữ liệu ban đầu.
 
--- Không thể tái sử dụng: Sau khi một thao tác kết thúc được thực thi trên Stream, nó không còn sử dụng được nữa, và mọi nỗ lực truy xuất hoặc thao tác lại trên nó sẽ dẫn đến lỗi. Điều này đảm bảo các luồng không bị xử lý nhiều lần không cần thiết.
+-- Không thể tái sử dụng: Sau khi một thao tác kết thúc được thực thi trên Stream, nó không còn sử dụng được nữa,
+và mọi nỗ lực truy xuất hoặc thao tác lại trên nó sẽ dẫn đến lỗi. Điều này đảm bảo các luồng không bị xử lý nhiều lần không cần thiết.
 
--- Không hỗ trợ index: Stream không cung cấp quyền truy cập trực tiếp vào các phần tử dựa trên chỉ số (index). Đây là khác biệt lớn so với danh sách (List) hoặc mảng (Array). Stream hoạt động trên từng phần tử mà không cần biết vị trí của chúng, phù hợp cho việc xử lý tuần tự và song song.
+-- Không hỗ trợ index: Stream không cung cấp quyền truy cập trực tiếp vào các phần tử dựa trên chỉ số (index).
+Đây là khác biệt lớn so với danh sách (List) hoặc mảng (Array). Stream hoạt động trên từng phần tử mà không cần biết
+vị trí của chúng, phù hợp cho việc xử lý tuần tự và song song.
 
--- Hỗ trợ xử lý song song: Với parallelStream(), Stream hỗ trợ chia công việc thành nhiều luồng xử lý song song, giúp tăng hiệu năng khi xử lý dữ liệu lớn. Việc này cho phép Stream tận dụng đa lõi CPU mà không cần quản lý trực tiếp luồng (thread).
+-- Hỗ trợ xử lý song song: Với parallelStream(), Stream hỗ trợ chia công việc thành nhiều luồng xử lý song song,
+giúp tăng hiệu năng khi xử lý dữ liệu lớn. Việc này cho phép Stream tận dụng đa lõi CPU mà không cần quản lý trực tiếp luồng (thread).
 
--- Trong Java Stream, một chuỗi thao tác (pipeline) có thể bao gồm nhiều intermediate operators (các toán tử trung gian) nhưng chỉ có một terminal operator (toán tử kết thúc) để kích hoạt pipeline.
+-- Trong Java Stream, một chuỗi thao tác (pipeline) có thể bao gồm nhiều intermediate operators (các toán tử trung gian)
+nhưng chỉ có một terminal operator (toán tử kết thúc) để kích hoạt pipeline.
