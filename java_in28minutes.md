@@ -482,3 +482,9 @@ giúp tăng hiệu năng khi xử lý dữ liệu lớn. Việc này cho phép S
 
 -- Trong Java Stream, một chuỗi thao tác (pipeline) có thể bao gồm nhiều intermediate operators (các toán tử trung gian)
 nhưng chỉ có một terminal operator (toán tử kết thúc) để kích hoạt pipeline.
+
+- FUNCTIONAL INTERFACE
+
+-- Functional Interface là một interface chỉ có một phương thức trừu tượng. Điều này cho phép Java biết rằng interface đó có thể được thay thế bởi một biểu thức lambda, giúp đơn giản hóa cú pháp khi làm việc với các hàm callback, xử lý sự kiện, hoặc các phương thức ngắn gọn.
+
+-- Lợi ích chính của functional interface là chúng ta có thể sử dụng Lambda Expression để tạo ra thể hiện (instance) cho interface đó.
