@@ -439,6 +439,8 @@ mà không bị hạn chế vào một kiểu cố định.
 
 - STREAM trong JAVA
 
+-- Trong Java, Stream là một chuỗi dữ liệu mà bạn có thể xử lý theo kiểu khai báo (declarative) và phong cách hàm (functional). Stream cho phép thực hiện các thao tác như lọc (filtering), ánh xạ (mapping), và tổng hợp (reducing) trên một tập hợp dữ liệu. Stream có thể được sử dụng với nhiều nguồn dữ liệu khác nhau, bao gồm mảng (arrays), bộ sưu tập (collections), và thậm chí cả kênh I/O (I/O channels).
+
 -- Không lưu trữ các phần tử của collection hoặc array: Stream không phải là một cấu trúc dữ liệu lưu trữ như List hoặc Set. Thay vào đó, nó xử lý từng phần tử khi chúng được yêu cầu (demand-driven) thông qua pipeline các thao tác. Khi sử dụng Stream, các phần tử sẽ được đọc từ nguồn (collection, array, hoặc các nguồn khác), truyền qua các thao tác và cuối cùng kết thúc ở thao tác terminal.
 
 -- Không phải là cấu trúc dữ liệu: Do không chứa dữ liệu thực tế, Stream chỉ là một abstraction để xử lý và thao tác trên dữ liệu nguồn. Nó giúp loại bỏ sự cần thiết phải lưu trữ hoặc thao tác trực tiếp trên cấu trúc dữ liệu nguồn, mà thay vào đó xử lý các phần tử thông qua pipeline các thao tác trung gian và kết thúc.
