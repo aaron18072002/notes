@@ -436,3 +436,23 @@ mà không bị hạn chế vào một kiểu cố định.
 -- Upper Bounded Wildcard (? extends T) - Giới hạn trên.: Chấp nhận các kiểu là con của T, hữu ích khi đọc dữ liệu từ cấu trúc generic.
 
 -- Lower Bounded Wildcard (? super T) - Giới hạn dưới.: Chấp nhận các kiểu là cha của T, hữu ích khi thêm dữ liệu vào cấu trúc generic.
+
+- STREAM trong JAVA
+
+-- Không lưu trữ các phần tử của collection hoặc array: Stream không phải là một cấu trúc dữ liệu lưu trữ như List hoặc Set. Thay vào đó, nó xử lý từng phần tử khi chúng được yêu cầu (demand-driven) thông qua pipeline các thao tác. Khi sử dụng Stream, các phần tử sẽ được đọc từ nguồn (collection, array, hoặc các nguồn khác), truyền qua các thao tác và cuối cùng kết thúc ở thao tác terminal.
+
+-- Không phải là cấu trúc dữ liệu: Do không chứa dữ liệu thực tế, Stream chỉ là một abstraction để xử lý và thao tác trên dữ liệu nguồn. Nó giúp loại bỏ sự cần thiết phải lưu trữ hoặc thao tác trực tiếp trên cấu trúc dữ liệu nguồn, mà thay vào đó xử lý các phần tử thông qua pipeline các thao tác trung gian và kết thúc.
+
+-- Immutable Object: Các thao tác trên Stream (như filter(), map()) không thay đổi dữ liệu gốc mà trả về một Stream mới. Điều này đảm bảo rằng nguồn dữ liệu ban đầu không bị ảnh hưởng, tránh side-effects. Tính bất biến này cũng góp phần vào tính an toàn khi xử lý song song vì các thao tác trên luồng sẽ không làm thay đổi trạng thái của dữ liệu.
+
+-- Lazy Evaluation (đánh giá lười biếng): Tính lười biếng có nghĩa là các thao tác trung gian (như filter() và map()) không được thực thi ngay lập tức. Thay vào đó, chúng được xâu chuỗi lại thành một pipeline và chỉ thực thi khi có thao tác kết thúc (terminal operation) như collect(), forEach(). Điều này giúp Java tối ưu hóa các thao tác trên Stream, chỉ xử lý các phần tử cần thiết và tránh xử lý dư thừa.
+
+-- Pipeline: Khi sử dụng các thao tác trung gian và terminal, Stream tạo thành một pipeline các thao tác. Pipeline cho phép xây dựng các chuỗi thao tác rõ ràng, linh hoạt và tối ưu. Các thao tác này có thể được sắp xếp thành chuỗi từ các thao tác trung gian đến thao tác cuối cùng để đảm bảo chúng được thực hiện theo thứ tự tối ưu nhất.
+
+-- Truy cập một lần duy nhất: Stream có tính chất "chỉ đọc một lần", tương tự như Iterator. Các phần tử chỉ có thể được xử lý một lần trong suốt vòng đời của Stream. Sau khi thao tác kết thúc được thực thi, Stream trở nên vô hiệu và không thể tái sử dụng. Để duyệt lại, cần tạo một Stream mới từ nguồn dữ liệu ban đầu.
+
+-- Không thể tái sử dụng: Sau khi một thao tác kết thúc được thực thi trên Stream, nó không còn sử dụng được nữa, và mọi nỗ lực truy xuất hoặc thao tác lại trên nó sẽ dẫn đến lỗi. Điều này đảm bảo các luồng không bị xử lý nhiều lần không cần thiết.
+
+-- Không hỗ trợ index: Stream không cung cấp quyền truy cập trực tiếp vào các phần tử dựa trên chỉ số (index). Đây là khác biệt lớn so với danh sách (List) hoặc mảng (Array). Stream hoạt động trên từng phần tử mà không cần biết vị trí của chúng, phù hợp cho việc xử lý tuần tự và song song.
+
+-- Hỗ trợ xử lý song song: Với parallelStream(), Stream hỗ trợ chia công việc thành nhiều luồng xử lý song song, giúp tăng hiệu năng khi xử lý dữ liệu lớn. Việc này cho phép Stream tận dụng đa lõi CPU mà không cần quản lý trực tiếp luồng (thread).
