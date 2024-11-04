@@ -489,10 +489,16 @@ nhưng chỉ có một terminal operator (toán tử kết thúc) để kích ho
 
 -- Lợi ích chính của functional interface là chúng ta có thể sử dụng Lambda Expression để tạo ra thể hiện (instance) cho interface đó.
 
--- Một Functional Interface hợp lệ chỉ có duy nhất một method trừu tượng.
+-- Các đặc điểm của 1 Functional Interface:
 
--- Một Functional Interface có thể có các phương thức của lớp java.lang.Object.
++) Một Functional Interface hợp lệ chỉ có duy nhất một phương thức trừu tượng
+Đây là đặc điểm cốt lõi của functional interface. Một functional interface chỉ có một phương thức trừu tượng (abstract method), nghĩa là chỉ có một phương thức chưa được triển khai. Điều này giúp Java biết rằng interface đó có thể được thay thế bằng một biểu thức lambda. Đặc điểm này còn được gọi là Single Abstract Method (SAM).
 
--- Phương thức default and static không phá vỡ quy tắc của functional interface.
++) Một Functional Interface có thể có các phương thức của lớp java.lang.Object
+Functional interface có thể kế thừa các phương thức từ java.lang.Object (chẳng hạn như equals(), hashCode(), và toString()). Những phương thức này không ảnh hưởng đến tính chất của functional interface vì chúng không được xem là các phương thức trừu tượng.
 
--- Một Functional Interface có thể mở rộng một Interface khác chỉ khi nó không có bất kỳ phương thức trừu tượng nào.
++) Phương thức default và static không phá vỡ quy tắc của functional interface
+Functional interface có thể chứa các phương thức default và static mà không làm mất đi tính chất của nó. Các phương thức default và static đều có phần triển khai (implementation), nên chúng không được xem là các phương thức trừu tượng và không ảnh hưởng đến đặc tính "một phương thức trừu tượng duy nhất".
+
++) Một Functional Interface có thể mở rộng một interface khác chỉ khi nó không có bất kỳ phương thức trừu tượng nào
+Functional interface có thể mở rộng một interface khác, nhưng chỉ khi interface kia không có phương thức trừu tượng hoặc có chính xác một phương thức trừu tượng (bao gồm cả trường hợp nó là một functional interface). Điều này đảm bảo rằng functional interface mở rộng vẫn tuân theo quy tắc "một phương thức trừu tượng duy nhất".
