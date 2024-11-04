@@ -488,3 +488,11 @@ nhưng chỉ có một terminal operator (toán tử kết thúc) để kích ho
 -- Functional Interface là một interface chỉ có một phương thức trừu tượng. Điều này cho phép Java biết rằng interface đó có thể được thay thế bởi một biểu thức lambda, giúp đơn giản hóa cú pháp khi làm việc với các hàm callback, xử lý sự kiện, hoặc các phương thức ngắn gọn.
 
 -- Lợi ích chính của functional interface là chúng ta có thể sử dụng Lambda Expression để tạo ra thể hiện (instance) cho interface đó.
+
+-- Một Functional Interface hợp lệ chỉ có duy nhất một method trừu tượng.
+
+-- Một Functional Interface có thể có các phương thức của lớp java.lang.Object.
+
+-- Phương thức default and static không phá vỡ quy tắc của functional interface.
+
+-- Một Functional Interface có thể mở rộng một Interface khác chỉ khi nó không có bất kỳ phương thức trừu tượng nào.
