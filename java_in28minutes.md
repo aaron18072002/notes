@@ -458,3 +458,5 @@ mà không bị hạn chế vào một kiểu cố định.
 -- Không hỗ trợ index: Stream không cung cấp quyền truy cập trực tiếp vào các phần tử dựa trên chỉ số (index). Đây là khác biệt lớn so với danh sách (List) hoặc mảng (Array). Stream hoạt động trên từng phần tử mà không cần biết vị trí của chúng, phù hợp cho việc xử lý tuần tự và song song.
 
 -- Hỗ trợ xử lý song song: Với parallelStream(), Stream hỗ trợ chia công việc thành nhiều luồng xử lý song song, giúp tăng hiệu năng khi xử lý dữ liệu lớn. Việc này cho phép Stream tận dụng đa lõi CPU mà không cần quản lý trực tiếp luồng (thread).
+
+-- Trong Java Stream, một chuỗi thao tác (pipeline) có thể bao gồm nhiều intermediate operators (các toán tử trung gian) nhưng chỉ có một terminal operator (toán tử kết thúc) để kích hoạt pipeline.
